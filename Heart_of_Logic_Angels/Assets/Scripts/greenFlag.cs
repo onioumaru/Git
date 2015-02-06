@@ -4,7 +4,7 @@ using System.Collections;
 public class greenFlag : MonoBehaviour {
 
 	void Start() {
-		print("Start!");
+
 	}
 
 	void Update(){
