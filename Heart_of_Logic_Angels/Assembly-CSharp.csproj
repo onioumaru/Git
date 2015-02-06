@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\fadeOutBitMapFont.cs" />
      <Compile Include="Assets\Scripts\greenFlag.cs" />
      <Compile Include="Assets\Scripts\mob_basicAttack.cs" />
+     <Compile Include="Assets\Scripts\stage_dragErea.cs" />
      <Compile Include="Assets\Scripts\test_Regeneiter.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
