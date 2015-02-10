@@ -38,10 +38,12 @@ public class common_damage : MonoBehaviour {
 			var tmpInt = int.Parse (convStr.Substring(tmpI,1));
 			
 			//offset2
-			Vector3 tmpV2 = new Vector3 (-1 * (convStr.Length - tmpI) * 0.09f, 0f);
+			Vector3 tmpV2 = new Vector3 (-1 * (convStr.Length - tmpI) * 0.18f, 0f);
 
 			//bitMapFont[tmpInt]
 			GameObject retObj =	Instantiate(bitMapFont[tmpInt],(this.transform.position + tmpV2), this.transform.rotation) as GameObject;
+			
+			retObj.transform.localScale = new Vector3(2f,2f,1f);
 
 			retObj.transform.parent = this.transform;
 		}

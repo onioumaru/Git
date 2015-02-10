@@ -41,7 +41,7 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
-  - name: Mouse
+  - name: DamageFont
     userID: 1
     uniqueID: 3036771373
     locked: 0

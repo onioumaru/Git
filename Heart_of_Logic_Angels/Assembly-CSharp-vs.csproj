@@ -49,13 +49,19 @@
      <Compile Include="Assets\Scripts\GameManagerScript.cs" />
      <Compile Include="Assets\Scripts\allChara.cs" />
      <Compile Include="Assets\Scripts\allEnemy.cs" />
+     <Compile Include="Assets\Scripts\cameraTrackerScript.cs" />
+     <Compile Include="Assets\Scripts\charaIcon_Action.cs" />
      <Compile Include="Assets\Scripts\chara_basicAttack.cs" />
      <Compile Include="Assets\Scripts\common_damage.cs" />
+     <Compile Include="Assets\Scripts\deadEffectParent_Script.cs" />
+     <Compile Include="Assets\Scripts\deadEffect_Script.cs" />
      <Compile Include="Assets\Scripts\enemyYellowRingRemoved.cs" />
+     <Compile Include="Assets\Scripts\enemy_basicAttack.cs" />
      <Compile Include="Assets\Scripts\fadeOutBitMapFont.cs" />
-     <Compile Include="Assets\Scripts\greenFlag.cs" />
      <Compile Include="Assets\Scripts\mob_basicAttack.cs" />
+     <Compile Include="Assets\Scripts\stage_bg.cs" />
      <Compile Include="Assets\Scripts\stage_dragErea.cs" />
+     <Compile Include="Assets\Scripts\systemMenu_Script.cs" />
      <Compile Include="Assets\Scripts\test_Regeneiter.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>

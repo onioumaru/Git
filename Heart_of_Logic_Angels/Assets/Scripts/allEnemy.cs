@@ -7,6 +7,10 @@ public class allEnemy : MonoBehaviour {
 
 	private int nowHP;
 
+	public float thisExp;
+
+
+
 	// 死亡時エフェクトのPrefab
 	public GameObject removeEnemyPrefab;
 	public GameObject bitmapFontBasePrefab;
@@ -14,6 +18,7 @@ public class allEnemy : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		nowHP = 10;
+		thisExp = 50;
 	}
 	
 	// Update is called once per frame
@@ -21,14 +26,18 @@ public class allEnemy : MonoBehaviour {
 	
 	}
 
-	public void setDamage(int argsInt){
+	public float setDamage(int argsInt){
+		//戻り値で経験値を返す
 		GameObject retObj = Instantiate (bitmapFontBasePrefab, this.transform.position, this.transform.rotation) as GameObject;
 		retObj.GetComponentInChildren<common_damage> ().showDamage (this.transform, argsInt);
 
 		nowHP -= argsInt;
 
 		if (nowHP <= 0) {
-			this.removedMe(this.transform);
+			this.removedMe (this.transform);
+			return thisExp;
+		} else {
+			return 0f;
 		}
 	}
 

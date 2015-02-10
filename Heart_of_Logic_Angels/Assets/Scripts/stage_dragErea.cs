@@ -6,7 +6,7 @@ public class stage_dragErea : MonoBehaviour {
 	private Camera mainCamera;
 	
 	private Vector3 firstMouseDown;
-	private Vector3 firstCameraPosi;
+	//private Vector3 firstCameraPosi;
 	private bool mouseDown = false;
 
 	private Vector2 lastVelocity;
@@ -18,7 +18,7 @@ public class stage_dragErea : MonoBehaviour {
 	void OnMouseDown(){
 		if (Input.GetMouseButtonDown (0)) {
 			firstMouseDown = mainCamera.ScreenToWorldPoint (Input.mousePosition);
-			firstCameraPosi = mainCamera.transform.position;
+			//firstCameraPosi = mainCamera.transform.position;
 			mouseDown = true;
 		}
 	}
