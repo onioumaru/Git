@@ -51,6 +51,8 @@
      <Compile Include="Assets\Scripts\allEnemy.cs" />
      <Compile Include="Assets\Scripts\cameraTrackerScript.cs" />
      <Compile Include="Assets\Scripts\charaIcon_Action.cs" />
+     <Compile Include="Assets\Scripts\charaMenu_base.cs" />
+     <Compile Include="Assets\Scripts\charaMenu_parent.cs" />
      <Compile Include="Assets\Scripts\chara_basicAttack.cs" />
      <Compile Include="Assets\Scripts\common_damage.cs" />
      <Compile Include="Assets\Scripts\deadEffectParent_Script.cs" />

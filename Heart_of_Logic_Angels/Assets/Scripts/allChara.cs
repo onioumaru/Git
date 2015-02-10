@@ -13,6 +13,8 @@ public class allChara : MonoBehaviour {
 
 	public int nowLv=1;
 
+	public string nowMode= "Attack";
+
 	private float totalExp;
 
 
@@ -95,14 +97,31 @@ public class allChara : MonoBehaviour {
 	public void getExp(float argsExp){
 		this.totalExp += argsExp;
 
-		gmScript.calcLv (this.totalExp);
+		retTypeExp tmpExp = gmScript.calcLv (this.totalExp);
 		
-		if(nowLv != retTypeExp.Lv){
+		if(nowLv != tmpExp.Lv){
 			//
-			this.nowLv = retTypeExp.Lv;
+			this.nowLv = tmpExp.Lv;
 			thisAudio.Play();
 		}
 	}
 
+	public void setMode(string argsStr){
+		switch (argsStr) {
+		case "Attack":
+			nowMode = "Attack";
+			break;
+		case "Defence":
+			nowMode = "Defence";
+			break;
+		case "Move":
+			nowMode = "Move";
+			break;
+		case "Skill":
+			nowMode = "Skill";
+
+			break;
+		}
+	}
 
 }

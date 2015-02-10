@@ -10,9 +10,11 @@ public class stage_dragErea : MonoBehaviour {
 	private bool mouseDown = false;
 
 	private Vector2 lastVelocity;
+	private GameObject cameraTrackingObj;
 
 	void Start(){
 		mainCamera = Camera.main;
+		cameraTrackingObj = GameObject.Find ("CameraTracker");
 	}
 
 	void OnMouseDown(){
@@ -20,6 +22,8 @@ public class stage_dragErea : MonoBehaviour {
 			firstMouseDown = mainCamera.ScreenToWorldPoint (Input.mousePosition);
 			//firstCameraPosi = mainCamera.transform.position;
 			mouseDown = true;
+
+			cameraTrackingObj.GetComponentInChildren<cameraTrackerScript>().setCharaTrackReset();
 		}
 	}
 

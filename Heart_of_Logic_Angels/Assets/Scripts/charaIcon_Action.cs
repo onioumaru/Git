@@ -5,34 +5,63 @@ public class charaIcon_Action : MonoBehaviour {
 	
 	public GameObject thisCharaFlag;
 	public GameObject thisCharaStates;
-
-	private GameObject cloneCharaFlag;
-
-	private bool cloneFlag = false;
-
-	//private Transform firstMouseDown;
-
-	// Use this for initialization
-	void Start () {
-
-	}
-	// Update is called once per frame
-	void Update () {
+	public GameObject characterMenu;
 	
+	private GameObject cloneCharaFlag;
+	private GameObject trackingObj;
+	
+	private bool cloneFlag = false;
+	private bool dragCancelF = false;
+	
+	private bool leftDragF = false;
+	private bool rightDragF = false;
+
+	private bool doubleClickCheck = false;
+	private float coubleClickDeleySec = 0.3f;
+
+	void Start(){
+		trackingObj = GameObject.Find("CameraTracker");
+
 	}
+
 	
 	void OnMouseDown(){
+		dragCancelF = false;
 
+		if (doubleClickCheck == false) {
+			doubleClickCheck = true;
+			StartCoroutine(doubleClickWait());
+		} else {
+			doubleClickCheck = false;
+
+			Vector3 tmpV = new Vector3(thisCharaStates.transform.localPosition.x, thisCharaStates.transform.localPosition.y, -10f);
+			Camera.main.transform.position = tmpV;
+
+			GameObject retGO = Instantiate(characterMenu) as GameObject;
+			retGO.GetComponentInChildren<charaMenu_parent>().setParentChara(thisCharaStates);
+		}
 	}
+
+	IEnumerator doubleClickWait(){
+		yield return new WaitForSeconds(coubleClickDeleySec);
+		doubleClickCheck = false;
+		//Debug.Log ("clear");
+		}
 
 	void OnMouseDrag(){
 
 		Vector2 firstMouseDown = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-
+		
 		float tmpY = this.gameObject.transform.localPosition.y + this.gameObject.transform.parent.transform.localPosition.y + 0.5f;
+		float tmpX = this.gameObject.transform.localPosition.x + this.gameObject.transform.parent.transform.localPosition.x;
 
 		if (firstMouseDown.y > tmpY) {
-			//
+			//アイコン上部に移動した場合
+
+			//キャラのトラッキングフラグは直ぐにOFF
+			leftDragF = false;
+			rightDragF = false;
+
 			if (cloneFlag == false){
 				cloneCharaFlag = Instantiate(thisCharaFlag,firstMouseDown , Quaternion.identity) as GameObject;
 				//半透明にする
@@ -49,29 +78,69 @@ public class charaIcon_Action : MonoBehaviour {
 
 		} else {
 			if (cloneFlag == false){
-				//ボーダーより下、且つ、クローン作製していない
-				
-				//左右ドラッグの判定
+				if (dragCancelF == false){
+					//ボーダーより下、且つ、クローン作製していない
+					//左右ドラッグの判定
 
+					//クローン作製されて、削除されている場合、dragCancelF=trueになる
+
+					float diffX = firstMouseDown.x - tmpX;
+					
+					if (Mathf.Abs(diffX) > 1f){
+						if (diffX > 0){
+							//右
+							//Debug.Log("diffX > 0");
+							rightDragF = true;
+						} else {
+							//左
+							//Debug.Log("diffX < 0");
+							leftDragF = true;
+						}
+					}
+				}
 			}else {
 				//ボーダーより下、且つ、クローン作製済み
 				//クローンの削除
 				cloneFlag = false;
 				Destroy(cloneCharaFlag);
+
+				dragCancelF = true;
 			}
 		}
-
 	}
+
 	void OnMouseUp(){
 		if (cloneFlag == true) {
 			//本物のフラグを移動させる
-			thisCharaFlag.transform.position  = cloneCharaFlag.transform.position ;
+			thisCharaFlag.transform.position = cloneCharaFlag.transform.position;
 			//移動開始
-			thisCharaStates.GetComponentInChildren<allChara>().stopFlag= false;
+			thisCharaStates.GetComponentInChildren<allChara> ().stopFlag = false;
 			//Clone削除
-			cloneFlag = false;
-			Destroy(cloneCharaFlag);
+			Destroy (cloneCharaFlag);
+			
+			this.dragFlagReset();
+		} else if (leftDragF == true) {
+			//フラグのクローンがつくられていた場合は、ここは通らない
+			trackingObj.GetComponentInChildren<cameraTrackerScript> ().setCharaTracking (thisCharaStates);
+			
+			this.dragFlagReset();
+		} else if (rightDragF == true) {
+			
+			float cameraZ = Camera.main.transform.localPosition.z;
+			//Tracking中止
+			trackingObj.GetComponentInChildren<cameraTrackerScript>().setCharaTrackReset();
+			
+			Vector3 tmpV_right = new Vector3(thisCharaFlag.transform.position.x, thisCharaFlag.transform.position.y, cameraZ);
+			Camera.main.transform.position = tmpV_right;
+
+			this.dragFlagReset();
 		}
+	}
+
+	void dragFlagReset(){
+		cloneFlag = false;
+		leftDragF = false;
+		rightDragF = false;
 	}
 
 }

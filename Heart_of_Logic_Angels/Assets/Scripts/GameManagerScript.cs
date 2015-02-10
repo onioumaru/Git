@@ -19,20 +19,20 @@ public class GameManagerScript : MonoBehaviour {
 	
 	}
 
-	public void calcLv(float argsExp){
+	public retTypeExp calcLv(float argsExp){
+		retTypeExp retExp = new retTypeExp ();
 
 		for (int i = 0; i < 200; i++) {
 			if (expList[i] > argsExp){
 				//対象の経験値より小さい場合,このレベル
 
-				retTypeExp.Lv = i;
-				retTypeExp.nextExp = expList[i] - argsExp;
+				retExp.Lv = i;
+				retExp.nextExp = expList[i] - argsExp;
 
-				//return retTypeExp;
 				break;
 			}
 		}
-
+		return retExp;
 	}
 
 
@@ -50,7 +50,9 @@ public class GameManagerScript : MonoBehaviour {
 	}
 }
 
-static public class retTypeExp{
+public class retTypeExp{
 	public int Lv;
 	public float nextExp;
 }
+
+	
