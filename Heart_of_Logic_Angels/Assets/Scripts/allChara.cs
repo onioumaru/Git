@@ -6,46 +6,42 @@ using System.Collections;
 [RequireComponent(typeof(AudioSource))]
 public class allChara : MonoBehaviour {
 
-	//Basic Para
-
-	public int nowHP;
-	public int maxHP;
-
-	public int nowLv=1;
-
-	public string nowMode= "Attack";
-
-	private float totalExp;
-
-
-	// 
-
-
+	//以下、開始時にSetが必要
 	// 死亡時エフェクトのPrefab
-	public GameObject removeCharaPrefab;
-	public GameObject bitmapFontBasePrefab;
-	public GameManagerScript gmScript;
-	
-	public GameObject flag_chara11;
+	public GameObject dyingAnimation;
+	public GameObject thisCharaFlag;
 
+	//静的に設定済み。Prefabs上でアタッチ
+	public GameObject bitmapFontBasePrefab;
+	
+	//以下設定不要、自動Set
+	public GameManagerScript gmScript;
+	public charaUserStatus thisChara;
+	
+	//スクリプト起動時はTrue（停止）にしておく事
+	public bool stopFlag;
+
+	//private
+	private cameraTrackerScript cmrTracker;
 	private Animator thisAnimeter;
 	private AudioSource thisAudio;
 
-
 	//この値が0になるまで、硬直時間とする
 	public int movingFreezeCnt = 0;
-
-	public bool stopFlag;
-
+	
 	float offsetX = -0.28f;
 	float offsetY = 0f;
 
 	
 	// Use this for initialization
 	void Start () {
-		thisAnimeter = this.gameObject.GetComponentInChildren<Animator>();
 		gmScript = GameObject.Find("GameManager").GetComponentInChildren<GameManagerScript>();
+		cmrTracker = GameObject.Find ("CameraTracker").GetComponentInChildren<cameraTrackerScript> ();
+
+		thisAnimeter = this.gameObject.GetComponentInChildren<Animator>();
 		thisAudio = this.gameObject.GetComponentInChildren<AudioSource>();
+
+		thisChara = new charaUserStatus (10 , 1f);
 	}
 
 	// Update is called once per frame
@@ -55,7 +51,7 @@ public class allChara : MonoBehaviour {
 			rigidbody2D.velocity = tmpVct;
 			
 		} else {
-			Vector3 offsetP = new Vector3(flag_chara11.transform.position.x + offsetX, flag_chara11.transform.position.y + offsetY);
+			Vector3 offsetP = new Vector3(thisCharaFlag.transform.position.x + offsetX, thisCharaFlag.transform.position.y + offsetY);
 			
 			Vector3 tmpV = (offsetP - transform.position);
 
@@ -70,58 +66,56 @@ public class allChara : MonoBehaviour {
 			if (tmpV.magnitude < 0.02f){
 				stopFlag = true;
 			}else{
-				rigidbody2D.velocity = tmpV.normalized;
+				rigidbody2D.velocity = tmpV.normalized * thisChara.battleStatus.thisInfo.movingSpeedMagn ;
 			}
 		} 
 	}
 
 
+	//
+
+
+	//ダメージ処理
 	public void setDamage(int argsInt){
 		GameObject retObj = Instantiate (bitmapFontBasePrefab, this.transform.position, this.transform.rotation) as GameObject;
 		retObj.GetComponentInChildren<common_damage> ().showDamage (this.transform, argsInt);
 		thisAnimeter.SetTrigger ("gotoDamage");
 
-		nowHP -= argsInt;
+		thisChara.nowHP -= argsInt;
 		
-		if (nowHP <= 0) {
+		if (thisChara.nowHP <= 0) {
 			this.removedMe(this.transform);
 		}
 	}
 	
+	//死亡時処理
 	public void removedMe(Transform origin){
-		Instantiate (removeCharaPrefab, origin.position, origin.rotation);
+		//カメラの追従はリセット
+		cmrTracker.setCharaTrackReset();
+
+		Instantiate (dyingAnimation, origin.position, origin.rotation);
 		Destroy (this.gameObject);
-		Destroy (flag_chara11);
+		Destroy (thisCharaFlag);
 	}
 
+	
 	public void getExp(float argsExp){
-		this.totalExp += argsExp;
+		thisChara.totalExp += argsExp;
 
-		retTypeExp tmpExp = gmScript.calcLv (this.totalExp);
+		retTypeExp tmpExp = gmScript.calcLv (thisChara.totalExp);
 		
-		if(nowLv != tmpExp.Lv){
+		if(thisChara.nowLv != tmpExp.Lv){
 			//
-			this.nowLv = tmpExp.Lv;
+			thisChara.nowLv = tmpExp.Lv;
 			thisAudio.Play();
 		}
 	}
-
-	public void setMode(string argsStr){
-		switch (argsStr) {
-		case "Attack":
-			nowMode = "Attack";
-			break;
-		case "Defence":
-			nowMode = "Defence";
-			break;
-		case "Move":
-			nowMode = "Move";
-			break;
-		case "Skill":
-			nowMode = "Skill";
-
-			break;
-		}
+	
+	public float getCharaDamage(){
+		return thisChara.nowLv * 2f;
 	}
 
+	public void setMode(string argsStr){
+		thisChara.setMode(argsStr);
+	}
 }

@@ -6,7 +6,7 @@ public class charaMenu_parent : MonoBehaviour {
 	private Camera trackedCamera;
 	private float posiZ;
 
-	public allChara argsAllChara;
+	private allChara argsChara;
 
 	// Use this for initialization
 	void Start () {
@@ -23,11 +23,19 @@ public class charaMenu_parent : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
+		this.closeMe();
+	}
+
+	public void closeMe(){
 		Time.timeScale = 1f;
 		Destroy(this.gameObject);
 	}
 
 	public void setParentChara(GameObject arsGO){
-		argsAllChara = arsGO.GetComponentInChildren<allChara>();
+		argsChara = arsGO.GetComponentInChildren<allChara>();
+	}
+
+	public allChara getAllCharaScript(){
+		return argsChara;
 	}
 }

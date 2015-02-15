@@ -27,7 +27,7 @@ public class chara_basicAttack : MonoBehaviour {
 
 				thisAnimetor.SetTrigger("gotoAttack");
 
-				int tmpDm = (parentCharaScrpt.nowLv * 2) + Mathf.FloorToInt(Random.value * 4);
+				int tmpDm = Mathf.FloorToInt(parentCharaScrpt.getCharaDamage()) + Mathf.FloorToInt(Random.value * 4);
 				float retExt = c.gameObject.GetComponent<allEnemy> ().setDamage (tmpDm);
 
 				//敵が倒せている場合
