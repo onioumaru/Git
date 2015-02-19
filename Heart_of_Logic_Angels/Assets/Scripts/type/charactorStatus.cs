@@ -8,7 +8,8 @@ public class charactorStatus : MonoBehaviour {
 
 public class charaUserStatus{
 	public charaBattleStatus battleStatus;
-	
+
+	public int charaNo;
 	public int nowLv;
 	
 	public int nowHP;
@@ -16,22 +17,68 @@ public class charaUserStatus{
 
 	public float totalExp;
 	public float nextExp;
+
+	public bool flyingFlag = false;
 	
+	public float flyingAtkMagn;
+	public float flyingDefMagn;
+
 	public GameManagerScript gmScript;
 
 	
 	public charaUserStatus(int charaNo, float charaExp){
 		this.battleStatus = new charaBattleStatus (charaNo);
 		this.totalExp = charaExp;
+		this.charaNo = charaNo;
 
 		gmScript = GameObject.Find("GameManager").GetComponentInChildren<GameManagerScript>();
 		retTypeExp tmpExp = gmScript.calcLv (charaExp);
 		this.nowLv = tmpExp.Lv;
 		this.nextExp = tmpExp.nextExp;
+
+		this.initParameter ();
 	}
 	
-	public void setMode(string argsStr){
-		this.battleStatus.setCharacterMode(argsStr);
+	public void setMode(chatacterMode argsMode){
+		this.battleStatus.setCharacterMode(argsMode);
+	}
+
+	public void initParameter(){
+		switch (this.charaNo){
+		case 1:
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+			this.nowHP = (this.nowLv*13); // 100 +
+			flyingAtkMagn = 0.2f;
+			flyingDefMagn = 4f;
+			break;
+		}
+
+		this.resetMaxParameter ();
+	}
+
+	public void resetMaxParameter(){
+		switch (this.charaNo){
+		case 1:
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+			this.maxHP = (this.nowLv*13); // 100 +
+			break;
+		}
 	}
 }
 
@@ -39,8 +86,9 @@ public class charaUserStatus{
 //
 //
 //
+
 public class charaBattleStatus{
-	private string charaMode;
+	private chatacterMode charaMode;
 
 	public charaBattle_info thisInfo;
 		
@@ -53,30 +101,39 @@ public class charaBattleStatus{
 	public charaBattleStatus(int charaNo){
 		//init
 		switch (charaNo) {
+		case 1:
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
 		case 10:
-			_atk_info = new charaBattle_info(1 ,0.5f ,1f ,1 ,0.1f ,1);
-			_def_info = new charaBattle_info(0.5f ,0.5f ,0.3f ,1 ,0.05f ,0.2f);
-			_mov_info = new charaBattle_info(0.1f ,0.5f ,1f ,1 ,0.2f ,1.5f);
+			_atk_info = new charaBattle_info(  1f ,0.5f ,1f   ,0.5f ,0.1f ,1);
+			_def_info = new charaBattle_info(0.5f ,1.0f ,0.5f ,0    ,0.05f ,0.2f);
+			_mov_info = new charaBattle_info(0.1f ,1.0f ,0.2f ,0    ,0.2f ,1.5f);
 			_skill_info = new charaBattle_info(0,0,0,0,0,0);
 			break;
 		}
-		this.setCharacterMode("attack");
+		this.setCharacterMode(chatacterMode.Attack);
 	}
 
-	public void setCharacterMode(string argsStr){
-		charaMode = argsStr;
+	public void setCharacterMode(chatacterMode argsMode){
+		charaMode = argsMode;
 
-		switch (argsStr) {
-		case "attack":
+		switch (argsMode) {
+		case chatacterMode.Attack:
 			thisInfo = _atk_info;
 			break;
-		case "defence":
+		case chatacterMode.Defence:
 			thisInfo = _def_info;
 			break;
-		case "move":
+		case chatacterMode.Move:
 			thisInfo = _mov_info;
 			break;
-		case "skill":
+		case chatacterMode.Skill:
 			thisInfo = _mov_info;
 			break;
 		default:
@@ -104,4 +161,8 @@ public class charaBattle_info{
 	}
 }
 
+
+public enum chatacterMode{
+	Attack, Defence, Move, Skill
+}
 

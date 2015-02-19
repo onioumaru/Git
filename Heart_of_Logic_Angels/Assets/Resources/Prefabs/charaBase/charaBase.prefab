@@ -30,8 +30,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 430842}
   - 212: {fileID: 21230842}
+  - 114: {fileID: 11445938}
   m_Layer: 0
-  m_Name: redCircle
+  m_Name: atkCircle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,6 +50,23 @@ GameObject:
   - 114: {fileID: 11490036}
   m_Layer: 8
   m_Name: AttackErea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &146970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 446970}
+  - 58: {fileID: 5846970}
+  - 114: {fileID: 11446970}
+  m_Layer: 11
+  m_Name: flyingChk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,6 +101,7 @@ Transform:
   - {fileID: 431830}
   - {fileID: 494308}
   - {fileID: 430842}
+  - {fileID: 446970}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &430842
@@ -109,6 +128,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 406456}
   m_RootOrder: 0
+--- !u!4 &446970
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 406456}
+  m_RootOrder: 3
 --- !u!4 &494308
 Transform:
   m_ObjectHideFlags: 1
@@ -158,6 +189,17 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_Radius: .159999996
   m_Center: {x: 0, y: 0}
+--- !u!58 &5846970
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146970}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .0500000007
+  m_Center: {x: 0, y: -.100000001}
 --- !u!58 &5894308
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -252,6 +294,29 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11445938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 746459aa99736b246a9efe8136c07f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11446970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19bdf9d3f9e54844b9acf3a5a2645fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wingEffect: {fileID: 155906, guid: d44e05032c3d394418c6cb188c492e57, type: 2}
 --- !u!114 &11490034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -263,12 +328,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea58d13538773649abd6bc6d78c02b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dyingAnimation: {fileID: 0}
   thisCharaFlag: {fileID: 0}
+  thisCharaIndex: 0
   bitmapFontBasePrefab: {fileID: 175532, guid: 1e2c4b408a8f4df4e89961863610e1b5, type: 2}
+  dyingAnimation: {fileID: 169508, guid: c267f4fab5fd6e4459a493df4ca43490, type: 2}
+  attackCycle_red: {fileID: 21300000, guid: 3435f022e32ecd44b89dc4a5b0a444f3, type: 3}
+  attackCycle_blue: {fileID: 21300000, guid: f3060839f703008478a7ccbf6d6ad6bf, type: 3}
+  attackCycle_green: {fileID: 21300000, guid: b03a76c7501cf7b4e84d78817d22674d, type: 3}
   gmScript: {fileID: 0}
   stopFlag: 1
-  movingFreezeCnt: 0
+  movingFreezeFlag: 0
 --- !u!114 &11490036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -280,7 +349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfbdeddae419b1c4fb642c12344912db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDeley: .5
 --- !u!212 &21206456
 SpriteRenderer:
   m_ObjectHideFlags: 1

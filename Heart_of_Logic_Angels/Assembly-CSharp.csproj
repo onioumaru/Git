@@ -46,21 +46,29 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BuildTexture.cs" />
      <Compile Include="Assets\Scripts\GameManagerScript.cs" />
-     <Compile Include="Assets\Scripts\allChara.cs" />
      <Compile Include="Assets\Scripts\allEnemy.cs" />
      <Compile Include="Assets\Scripts\cameraTrackerScript.cs" />
+     <Compile Include="Assets\Scripts\charaBase\allChara.cs" />
+     <Compile Include="Assets\Scripts\charaBase\chara_attackEreaVisible.cs" />
+     <Compile Include="Assets\Scripts\charaBase\chara_basicAttack.cs" />
+     <Compile Include="Assets\Scripts\charaBase\chara_flyingCheck.cs" />
+     <Compile Include="Assets\Scripts\charaBase\deadEffectParent_Script.cs" />
+     <Compile Include="Assets\Scripts\charaBase\deadEffect_Script.cs" />
+     <Compile Include="Assets\Scripts\charaBase\wingAuto.cs" />
      <Compile Include="Assets\Scripts\charaIconSet\charaIcon_Action.cs" />
      <Compile Include="Assets\Scripts\charaIconSet\charaIconsetManager.cs" />
-     <Compile Include="Assets\Scripts\charaMenu_base.cs" />
-     <Compile Include="Assets\Scripts\charaMenu_parent.cs" />
-     <Compile Include="Assets\Scripts\chara_basicAttack.cs" />
+     <Compile Include="Assets\Scripts\charaIconSet\charaIconset_modeIcon.cs" />
+     <Compile Include="Assets\Scripts\charaMenu\charaMenu_base.cs" />
+     <Compile Include="Assets\Scripts\charaMenu\charaMenu_heal.cs" />
+     <Compile Include="Assets\Scripts\charaMenu\charaMenu_parent.cs" />
      <Compile Include="Assets\Scripts\common_damage.cs" />
-     <Compile Include="Assets\Scripts\deadEffectParent_Script.cs" />
-     <Compile Include="Assets\Scripts\deadEffect_Script.cs" />
-     <Compile Include="Assets\Scripts\enemyYellowRingRemoved.cs" />
-     <Compile Include="Assets\Scripts\enemy_basicAttack.cs" />
+     <Compile Include="Assets\Scripts\enemyBase\enemyYellowRingRemoved.cs" />
+     <Compile Include="Assets\Scripts\enemyBase\enemy_basicAttack.cs" />
      <Compile Include="Assets\Scripts\fadeOutBitMapFont.cs" />
+     <Compile Include="Assets\Scripts\healEffect\healEffect.cs" />
+     <Compile Include="Assets\Scripts\healEffect\healEffectBase.cs" />
      <Compile Include="Assets\Scripts\mob_basicAttack.cs" />
      <Compile Include="Assets\Scripts\stage_bg.cs" />
      <Compile Include="Assets\Scripts\stage_dragErea.cs" />

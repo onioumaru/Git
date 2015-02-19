@@ -17,7 +17,7 @@ public class test_Regeneiter : MonoBehaviour {
 
 			boundFlag = true ;
 
-			yield return new WaitForSeconds (2f);
+			yield return new WaitForSeconds (0.3f);
 		}
 	}
 	

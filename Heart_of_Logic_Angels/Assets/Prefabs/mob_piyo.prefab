@@ -13,6 +13,7 @@ GameObject:
   - 58: {fileID: 5838134}
   - 50: {fileID: 5038134}
   - 114: {fileID: 11464922}
+  - 96: {fileID: 9681948}
   m_Layer: 8
   m_Name: mob_piyo
   m_TagString: Untagged
@@ -113,6 +114,47 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!96 &9681948
+TrailRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102074}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Time: 22.5599995
+  m_StartWidth: 22.8700008
+  m_EndWidth: 11.3299999
+  m_Colors:
+    m_Color[0]:
+      serializedVersion: 2
+      rgba: 4278190335
+    m_Color[1]:
+      serializedVersion: 2
+      rgba: 4294901779
+    m_Color[2]:
+      serializedVersion: 2
+      rgba: 4279992320
+    m_Color[3]:
+      serializedVersion: 2
+      rgba: 4278255569
+    m_Color[4]:
+      serializedVersion: 2
+      rgba: 0
+  m_MinVertexDistance: .100000001
+  m_Autodestruct: 0
 --- !u!114 &11464922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e264b506b6fea2142bb45aa4b9c41fce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisExp: 0
   removeEnemyPrefab: {fileID: 181530, guid: 60080e6b4afb15241b3c1b9e9df58254, type: 2}
   bitmapFontBasePrefab: {fileID: 175532, guid: 1e2c4b408a8f4df4e89961863610e1b5, type: 2}
 --- !u!212 &21202074
