@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\healEffect\healEffect.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\charaBase\allCharaBase.cs">
     <Files>
-      <File FileName="Assets\Scripts\healEffect\healEffect.cs" Line="41" Column="20" />
+      <File FileName="Assets\Scripts\allEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\charaBase\allCharaBase.cs" Line="79" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

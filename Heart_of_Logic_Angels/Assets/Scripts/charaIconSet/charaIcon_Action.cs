@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class charaIcon_Action : MonoBehaviour {
@@ -124,7 +124,7 @@ public class charaIcon_Action : MonoBehaviour {
 			//本物のフラグを移動させる
 			thisCharaFlag.transform.position = cloneCharaFlag.transform.position;
 			//移動開始
-			thisCharaBase.GetComponentInChildren<allChara> ().stopFlag = false;
+			thisCharaBase.GetComponentInChildren<allCharaBase> ().stopFlag = false;
 			//Clone削除
 			Destroy (cloneCharaFlag);
 			

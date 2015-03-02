@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class chara_basicAttack : MonoBehaviour {
@@ -6,12 +6,12 @@ public class chara_basicAttack : MonoBehaviour {
 	private bool attackDeleyFlag = false;
 
 	private Animator thisAnimetor;
-	private allChara parentCharaScrpt;
+	private allCharaBase parentCharaScrpt;
 
 	// Use this for initialization
 	void Start () {
-		thisAnimetor = this.gameObject.GetComponentInParent<Animator>();
-		parentCharaScrpt = this.gameObject.GetComponentInParent<allChara>();
+		thisAnimetor = this.transform.parent.GetComponentInChildren<Animator>();
+		parentCharaScrpt = this.gameObject.GetComponentInParent<allCharaBase>();
 	}
 	
 	// Update is called once per frame
@@ -21,7 +21,7 @@ public class chara_basicAttack : MonoBehaviour {
 	
 	void OnTriggerStay2D(Collider2D c){
 		if (attackDeleyFlag == false) {
-			if (c.gameObject.name != "AttackErea") {
+			if (c.gameObject.name.Substring(0,10) != "AttackErea") {
 				//Attack erea でない
 
 				thisAnimetor.SetTrigger("gotoAttack");

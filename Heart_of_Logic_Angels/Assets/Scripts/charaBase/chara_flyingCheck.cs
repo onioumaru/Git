@@ -1,14 +1,14 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class chara_flyingCheck : MonoBehaviour {
 	//GUI上でアタッチ
 	public GameObject wingEffect;
 	private GameObject instanceWing = null;
-	private allChara thisChara;
+	private allCharaBase thisChara;
 
 	void Start(){
-		thisChara = this.transform.parent.GetComponent<allChara> ();
+		thisChara = this.transform.parent.GetComponent<allCharaBase> ();
 
 		}
 

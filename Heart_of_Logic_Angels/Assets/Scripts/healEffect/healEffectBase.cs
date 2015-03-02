@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class healEffectBase : MonoBehaviour {
@@ -33,7 +33,7 @@ public class healEffectBase : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D co){
 		if (co.name == "charaBase(Clone)") {
-			allChara tmpAC = co.gameObject.GetComponent<allChara>();
+			allCharaBase tmpAC = co.gameObject.GetComponent<allCharaBase>();
 			tmpAC.setHealing(1);
 		}
 	}

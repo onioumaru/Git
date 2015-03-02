@@ -6,14 +6,28 @@ public class charaIconset_modeIcon : MonoBehaviour {
 	public Sprite iconDef;
 	public Sprite iconMov;
 	public Sprite iconSkill;
-
+	
 	private SpriteRenderer thisSR;
+	private charaIconsetManager thisManager;
+	private chatacterMode nowMode;
 
 	void Start(){
 		thisSR = this.GetComponentInChildren<SpriteRenderer>();
+		thisManager = this.transform.parent.GetComponent<charaIconsetManager>();
+	}
+	
+	void Update () {
+		chatacterMode tmpMode = thisManager.getThisCharaMode ();
+
+		if (this.nowMode == tmpMode) { return;}
+
+		this.setModeIcon (tmpMode);
 	}
 
 	public void setModeIcon(chatacterMode argsMode){
+
+		nowMode = argsMode;
+
 		switch (argsMode) {
 		case chatacterMode.Attack:
 			thisSR.sprite = iconAtk;

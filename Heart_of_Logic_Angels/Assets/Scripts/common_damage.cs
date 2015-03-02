@@ -12,13 +12,15 @@ public class common_damage : MonoBehaviour {
 		//showDamage (this.transform, 123);
 
 	}
+	IEnumerator mainLoop(){
+		while (true) {
+			yield return new WaitForSeconds(1f / 30f);
 
-	void Update(){
-		//float tmpPP = Mathf.PingPong (Time.time, 0.4f);
-		destroyCnt -=1;
+			destroyCnt -= 1;
 
-		if (destroyCnt < 0){
-			Destroy(this.gameObject);
+			if (destroyCnt < 0) {
+				Destroy (this.gameObject);
+			}
 		}
 	}
 

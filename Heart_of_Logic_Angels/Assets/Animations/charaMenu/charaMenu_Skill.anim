@@ -104,7 +104,7 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_Events:
   - time: 1.33333337
-    functionName: closeParent
+    functionName: switchSkillTarget
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

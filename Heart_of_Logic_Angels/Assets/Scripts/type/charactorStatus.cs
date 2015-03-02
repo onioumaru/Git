@@ -5,11 +5,10 @@ public class charactorStatus : MonoBehaviour {
 	
 }
 
-
 public class charaUserStatus{
 	public charaBattleStatus battleStatus;
 
-	public int charaNo;
+	public enumCharaNum charaNo;
 	public int nowLv;
 	
 	public int nowHP;
@@ -25,8 +24,10 @@ public class charaUserStatus{
 
 	public GameManagerScript gmScript;
 
+	public float MaxSkillCoolTime;
+	public float restSkillCoolTime;
 	
-	public charaUserStatus(int charaNo, float charaExp){
+	public charaUserStatus(enumCharaNum charaNo, float charaExp){
 		this.battleStatus = new charaBattleStatus (charaNo);
 		this.totalExp = charaExp;
 		this.charaNo = charaNo;
@@ -45,19 +46,21 @@ public class charaUserStatus{
 
 	public void initParameter(){
 		switch (this.charaNo){
-		case 1:
-		case 2:
-		case 3:
-		case 4:
-		case 5:
-		case 6:
-		case 7:
-		case 8:
-		case 9:
-		case 10:
+		case enumCharaNum.enju_01:
+		case enumCharaNum.syusuran_02:
+		case enumCharaNum.suzusiro_03:
+		case enumCharaNum.gyokuran_04:
+		case enumCharaNum.houzuki_05:
+		case enumCharaNum.mokuren_06:
+		case enumCharaNum.shion_07:
+		case enumCharaNum.syukaido_08:
+		case enumCharaNum.hiragi_09:
+		case enumCharaNum.test_10:
 			this.nowHP = (this.nowLv*13); // 100 +
 			flyingAtkMagn = 0.2f;
 			flyingDefMagn = 4f;
+			MaxSkillCoolTime = 3f;
+			restSkillCoolTime = 0;
 			break;
 		}
 
@@ -66,16 +69,16 @@ public class charaUserStatus{
 
 	public void resetMaxParameter(){
 		switch (this.charaNo){
-		case 1:
-		case 2:
-		case 3:
-		case 4:
-		case 5:
-		case 6:
-		case 7:
-		case 8:
-		case 9:
-		case 10:
+		case enumCharaNum.enju_01:
+		case enumCharaNum.syusuran_02:
+		case enumCharaNum.suzusiro_03:
+		case enumCharaNum.gyokuran_04:
+		case enumCharaNum.houzuki_05:
+		case enumCharaNum.mokuren_06:
+		case enumCharaNum.shion_07:
+		case enumCharaNum.syukaido_08:
+		case enumCharaNum.hiragi_09:
+		case enumCharaNum.test_10:
 			this.maxHP = (this.nowLv*13); // 100 +
 			break;
 		}
@@ -88,8 +91,8 @@ public class charaUserStatus{
 //
 
 public class charaBattleStatus{
-	private chatacterMode charaMode;
-
+	public chatacterMode charaMode;
+	public chatacterMode beforeCharaMode;
 	public charaBattle_info thisInfo;
 		
 	private charaBattle_info _atk_info;
@@ -97,31 +100,33 @@ public class charaBattleStatus{
 	private charaBattle_info _mov_info;
 	private charaBattle_info _skill_info;
 
-
-	public charaBattleStatus(int charaNo){
+	public charaBattleStatus(enumCharaNum charaNo){
 		//init
 		switch (charaNo) {
-		case 1:
-		case 2:
-		case 3:
-		case 4:
-		case 5:
-		case 6:
-		case 7:
-		case 8:
-		case 9:
-		case 10:
+		case enumCharaNum.enju_01:
+		case enumCharaNum.syusuran_02:
+		case enumCharaNum.suzusiro_03:
+		case enumCharaNum.gyokuran_04:
+		case enumCharaNum.houzuki_05:
+		case enumCharaNum.mokuren_06:
+		case enumCharaNum.shion_07:
+		case enumCharaNum.syukaido_08:
+		case enumCharaNum.hiragi_09:
+		case enumCharaNum.test_10:
 			_atk_info = new charaBattle_info(  1f ,0.5f ,1f   ,0.5f ,0.1f ,1);
 			_def_info = new charaBattle_info(0.5f ,1.0f ,0.5f ,0    ,0.05f ,0.2f);
 			_mov_info = new charaBattle_info(0.1f ,1.0f ,0.2f ,0    ,0.2f ,1.5f);
-			_skill_info = new charaBattle_info(0,0,0,0,0,0);
+			_skill_info = new charaBattle_info(4f, 99, 0, 0, 0, 0);
 			break;
 		}
 		this.setCharacterMode(chatacterMode.Attack);
 	}
 
 	public void setCharacterMode(chatacterMode argsMode){
-		charaMode = argsMode;
+		//直前のモードは取っておく
+		this.beforeCharaMode = this.charaMode;
+
+		this.charaMode = argsMode;
 
 		switch (argsMode) {
 		case chatacterMode.Attack:
@@ -134,7 +139,7 @@ public class charaBattleStatus{
 			thisInfo = _mov_info;
 			break;
 		case chatacterMode.Skill:
-			thisInfo = _mov_info;
+			thisInfo = _skill_info;
 			break;
 		default:
 			break;
@@ -162,7 +167,14 @@ public class charaBattle_info{
 }
 
 
+
 public enum chatacterMode{
 	Attack, Defence, Move, Skill
 }
+
+public enum enumCharaNum{
+	enju_01, syusuran_02, suzusiro_03, gyokuran_04, houzuki_05, mokuren_06, shion_07, syukaido_08, hiragi_09 ,test_10,noInit
+}
+
+
 

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class enemy_basicAttack : MonoBehaviour {
@@ -22,7 +22,7 @@ public class enemy_basicAttack : MonoBehaviour {
 				//Attack erea でない
 				
 				int tmpDm = 1 + Mathf.FloorToInt(Random.value * 4);
-				c.gameObject.GetComponent<allChara> ().setDamage (tmpDm);
+				c.gameObject.GetComponent<allCharaBase> ().setDamage (tmpDm);
 				
 				deleyFlag = true;
 				

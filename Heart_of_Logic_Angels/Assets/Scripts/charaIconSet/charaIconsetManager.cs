@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class charaIconsetManager : MonoBehaviour {
@@ -10,21 +10,24 @@ public class charaIconsetManager : MonoBehaviour {
 	private Transform hpBar;
 	private Transform expBar;
 	private Transform skillTimeBar;
-	private Transform modeIcon;
+	//private Transform modeIcon;
 
-	private allChara thisCharaBaseScrpt;
+	private allCharaBase thisCharaBaseScrpt;
 
 	// Use this for initialization
 	void Start () {
 		hpBar = this.transform.Find("1_hpBar");
-		skillTimeBar = this.transform.Find("2_skillBge");
+		skillTimeBar = this.transform.Find("2_skillBar");
 		expBar = this.transform.Find("3_expBar");
-		modeIcon = this.transform.Find("4_modeIcon");
+		//modeIcon = this.transform.Find("4_modeIcon");
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		thisCharaBaseScrpt = thisCharaBase.GetComponentInChildren<allChara> ();
+		//
+		//各種ゲージの更新
+		//
+		thisCharaBaseScrpt = thisCharaBase.GetComponentInChildren<allCharaBase> ();
 
 		float hpBarLength = (float)thisCharaBaseScrpt.thisChara.nowHP / (float)thisCharaBaseScrpt.thisChara.maxHP;
 		Vector3 tmpV = new Vector3 (hpBarLength, 1, 1);
@@ -41,9 +44,16 @@ public class charaIconsetManager : MonoBehaviour {
 		expBar.localScale = tmpV2;
 
 
+		float coolTimeBarLength = thisCharaBaseScrpt.getRestCoolTime ();
+		Vector3 tmpV3 = new Vector3 (coolTimeBarLength, 1f, 1f);
+		skillTimeBar.localScale = tmpV3;
 	}
-
+	
 	public void destoryMe(){
 		Destroy (this.gameObject);
+	}
+
+	public chatacterMode getThisCharaMode(){
+		return thisCharaBaseScrpt.thisChara.battleStatus.charaMode;
 	}
 }

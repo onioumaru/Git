@@ -10,6 +10,21 @@ GameObject:
   - 4: {fileID: 406456}
   - 212: {fileID: 21206456}
   - 95: {fileID: 9506456}
+  m_Layer: 9
+  m_Name: charaAnime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &112604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 412604}
   - 58: {fileID: 5831832}
   - 50: {fileID: 5094308}
   - 114: {fileID: 11490034}
@@ -95,6 +110,18 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 412604}
+  m_RootOrder: 4
+--- !u!4 &412604
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.96000004, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -102,6 +129,7 @@ Transform:
   - {fileID: 494308}
   - {fileID: 430842}
   - {fileID: 446970}
+  - {fileID: 406456}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &430842
@@ -114,7 +142,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: .779999971, y: .779999971, z: 1}
   m_Children: []
-  m_Father: {fileID: 406456}
+  m_Father: {fileID: 412604}
   m_RootOrder: 2
 --- !u!4 &431830
 Transform:
@@ -126,7 +154,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 406456}
+  m_Father: {fileID: 412604}
   m_RootOrder: 0
 --- !u!4 &446970
 Transform:
@@ -138,7 +166,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 406456}
+  m_Father: {fileID: 412604}
   m_RootOrder: 3
 --- !u!4 &494308
 Transform:
@@ -150,14 +178,14 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 406456}
+  m_Father: {fileID: 412604}
   m_RootOrder: 1
 --- !u!50 &5094308
 Rigidbody2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106456}
+  m_GameObject: {fileID: 112604}
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
@@ -183,7 +211,7 @@ CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106456}
+  m_GameObject: {fileID: 112604}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -216,7 +244,7 @@ AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106456}
+  m_GameObject: {fileID: 112604}
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 7561c0d60a372d1479433b53dad5ced8, type: 3}
@@ -322,21 +350,22 @@ MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106456}
+  m_GameObject: {fileID: 112604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ea58d13538773649abd6bc6d78c02b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 74ff145783367e247ab0cd62a220b3a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   thisCharaFlag: {fileID: 0}
   thisCharaIndex: 0
   bitmapFontBasePrefab: {fileID: 175532, guid: 1e2c4b408a8f4df4e89961863610e1b5, type: 2}
   dyingAnimation: {fileID: 169508, guid: c267f4fab5fd6e4459a493df4ca43490, type: 2}
+  _charaSkillCreater: {fileID: 141120, guid: a7804a008dd314643ab37e4c85a3a3b8, type: 2}
   attackCycle_red: {fileID: 21300000, guid: 3435f022e32ecd44b89dc4a5b0a444f3, type: 3}
   attackCycle_blue: {fileID: 21300000, guid: f3060839f703008478a7ccbf6d6ad6bf, type: 3}
-  attackCycle_green: {fileID: 21300000, guid: b03a76c7501cf7b4e84d78817d22674d, type: 3}
+  attackCycle_green: {fileID: 21300000, guid: f3060839f703008478a7ccbf6d6ad6bf, type: 3}
   gmScript: {fileID: 0}
-  stopFlag: 1
+  stopFlag: 0
   movingFreezeFlag: 0
 --- !u!114 &11490036
 MonoBehaviour:
@@ -402,6 +431,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 106456}
+  m_RootGameObject: {fileID: 112604}
   m_IsPrefabParent: 1
   m_IsExploded: 1

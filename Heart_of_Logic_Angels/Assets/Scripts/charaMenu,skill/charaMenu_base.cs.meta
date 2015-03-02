@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 02128520532e15548a4536cb07b167f0
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - _charaSkillTargetBase: {fileID: 197776, guid: 6f9f68b8e6a71b842a7204001cb5ef53,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
