@@ -86,9 +86,9 @@ public class charaSkill_TargetMain : MonoBehaviour {
 		} else {
 			//スキル情報を戻す
 			parentChara.setSkillTatgetInfo(thisTrgt);
-			parentChara.setMode(chatacterMode.Skill);
+			parentChara.setMode(characterMode.Skill);
 
-			parentMenu.setCharaModeIcon(chatacterMode.Skill);
+			parentMenu.setCharaModeIcon(characterMode.Skill);
 			parentMenu.closeMe();
 		}
 	}

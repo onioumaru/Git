@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class charaIconset_modeIcon : MonoBehaviour {
@@ -9,7 +9,7 @@ public class charaIconset_modeIcon : MonoBehaviour {
 	
 	private SpriteRenderer thisSR;
 	private charaIconsetManager thisManager;
-	private chatacterMode nowMode;
+	private characterMode nowMode;
 
 	void Start(){
 		thisSR = this.GetComponentInChildren<SpriteRenderer>();
@@ -17,28 +17,28 @@ public class charaIconset_modeIcon : MonoBehaviour {
 	}
 	
 	void Update () {
-		chatacterMode tmpMode = thisManager.getThisCharaMode ();
+		characterMode tmpMode = thisManager.getThisCharaMode ();
 
 		if (this.nowMode == tmpMode) { return;}
 
 		this.setModeIcon (tmpMode);
 	}
 
-	public void setModeIcon(chatacterMode argsMode){
+	public void setModeIcon(characterMode argsMode){
 
 		nowMode = argsMode;
 
 		switch (argsMode) {
-		case chatacterMode.Attack:
+		case characterMode.Attack:
 			thisSR.sprite = iconAtk;
 			break;
-		case chatacterMode.Defence:
+		case characterMode.Defence:
 			thisSR.sprite = iconDef;
 			break;
-		case chatacterMode.Move:
+		case characterMode.Move:
 			thisSR.sprite = iconMov;
 			break;
-		case chatacterMode.Skill:
+		case characterMode.Skill:
 			thisSR.sprite = iconSkill;
 			break;
 		}

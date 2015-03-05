@@ -68,18 +68,18 @@ public class charaMenu_base : MonoBehaviour {
 
 		switch(thisButtonType){
 		case 0:
-			parentChara.setMode(chatacterMode.Attack);
-			parentMenu.setCharaModeIcon(chatacterMode.Attack);
+			parentChara.setMode(characterMode.Attack);
+			parentMenu.setCharaModeIcon(characterMode.Attack);
 			thisAudioS.Play();
 			break;
 		case 1:
-			parentChara.setMode(chatacterMode.Defence);
-			parentMenu.setCharaModeIcon(chatacterMode.Defence);
+			parentChara.setMode(characterMode.Defence);
+			parentMenu.setCharaModeIcon(characterMode.Defence);
 			thisAudioS.Play();
 			break;
 		case 2:
-			parentChara.setMode(chatacterMode.Move);
-			parentMenu.setCharaModeIcon(chatacterMode.Move);
+			parentChara.setMode(characterMode.Move);
+			parentMenu.setCharaModeIcon(characterMode.Move);
 			thisAudioS.Play();
 			break;
 		case 3:

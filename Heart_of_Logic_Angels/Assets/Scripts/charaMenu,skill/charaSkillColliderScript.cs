@@ -17,7 +17,7 @@ public class charaSkillColliderScript : MonoBehaviour {
 			int tmpDm = Mathf.FloorToInt(thisChara.getCharaDamage()) + Mathf.FloorToInt(Random.value * 4);
 			Debug.Log (thisChara.getCharaDamage());
 			//float retExt = 
-			c.gameObject.GetComponent<allEnemy> ().setDamage (tmpDm);
+			c.gameObject.GetComponent<allEnemyBase> ().setDamage (tmpDm, thisChara.thisCharaIndex);
 
 			break;
 				}

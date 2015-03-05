@@ -40,7 +40,7 @@ public class charaUserStatus{
 		this.initParameter ();
 	}
 	
-	public void setMode(chatacterMode argsMode){
+	public void setMode(characterMode argsMode){
 		this.battleStatus.setCharacterMode(argsMode);
 	}
 
@@ -91,8 +91,8 @@ public class charaUserStatus{
 //
 
 public class charaBattleStatus{
-	public chatacterMode charaMode;
-	public chatacterMode beforeCharaMode;
+	public characterMode charaMode;
+	public characterMode beforeCharaMode;
 	public charaBattle_info thisInfo;
 		
 	private charaBattle_info _atk_info;
@@ -113,32 +113,32 @@ public class charaBattleStatus{
 		case enumCharaNum.syukaido_08:
 		case enumCharaNum.hiragi_09:
 		case enumCharaNum.test_10:
-			_atk_info = new charaBattle_info(  1f ,0.5f ,1f   ,0.5f ,0.1f ,1);
-			_def_info = new charaBattle_info(0.5f ,1.0f ,0.5f ,0    ,0.05f ,0.2f);
+			_atk_info = new charaBattle_info(  1f ,0.51f ,1f   ,0.5f ,0.1f ,1);
+			_def_info = new charaBattle_info(0.5f ,0.6f ,0.5f ,0    ,0.05f ,0.2f);
 			_mov_info = new charaBattle_info(0.1f ,1.0f ,0.2f ,0    ,0.2f ,1.5f);
 			_skill_info = new charaBattle_info(4f, 99, 0, 0, 0, 0);
 			break;
 		}
-		this.setCharacterMode(chatacterMode.Attack);
+		this.setCharacterMode(characterMode.Attack);
 	}
 
-	public void setCharacterMode(chatacterMode argsMode){
+	public void setCharacterMode(characterMode argsMode){
 		//直前のモードは取っておく
 		this.beforeCharaMode = this.charaMode;
 
 		this.charaMode = argsMode;
 
 		switch (argsMode) {
-		case chatacterMode.Attack:
+		case characterMode.Attack:
 			thisInfo = _atk_info;
 			break;
-		case chatacterMode.Defence:
+		case characterMode.Defence:
 			thisInfo = _def_info;
 			break;
-		case chatacterMode.Move:
+		case characterMode.Move:
 			thisInfo = _mov_info;
 			break;
-		case chatacterMode.Skill:
+		case characterMode.Skill:
 			thisInfo = _skill_info;
 			break;
 		default:
@@ -168,7 +168,7 @@ public class charaBattle_info{
 
 
 
-public enum chatacterMode{
+public enum characterMode{
 	Attack, Defence, Move, Skill
 }
 

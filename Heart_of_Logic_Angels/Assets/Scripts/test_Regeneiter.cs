@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class test_Regeneiter : MonoBehaviour {
 
-	public GameObject mobEnemy;
+	public GameObject _mobEnemy;
+	public float _generateTiming;
 
 	bool boundFlag = false;
 	int cntI = 0;
@@ -11,16 +12,17 @@ public class test_Regeneiter : MonoBehaviour {
 	// Use this for initialization
 	IEnumerator Start () {
 		while (true) {
-			GameObject retMobs = Instantiate (mobEnemy, this.transform.position, this.transform.rotation) as GameObject;
+			GameObject retMobs = Instantiate (_mobEnemy, this.transform.position, this.transform.rotation) as GameObject;
 
-			retMobs.GetComponentInChildren<allEnemy>().setMoving(1, 0.5f);
+			retMobs.GetComponentInChildren<allEnemyBase>().setMoving(1, 0.5f);
 
 			boundFlag = true ;
 
-			yield return new WaitForSeconds (1f);
+			yield return new WaitForSeconds (_generateTiming);
 		}
 	}
-	
+
+	/*
 	// Update is called once per frame
 	void Update () {
 		if (boundFlag == true) {
@@ -48,4 +50,5 @@ public class test_Regeneiter : MonoBehaviour {
 			}
 		}
 	}
+	*/
 }

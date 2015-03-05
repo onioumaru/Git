@@ -67,7 +67,7 @@ public class charaMenu_parent : MonoBehaviour {
 		return argsChara;
 	}
 
-	public void setCharaModeIcon(chatacterMode argsMode){
+	public void setCharaModeIcon(characterMode argsMode){
 		charaIconset_modeIcon tmp =	parentIconSet.transform.Find ("4_modeIcon").GetComponentInChildren<charaIconset_modeIcon> ();
 		tmp.setModeIcon(argsMode);
 	}

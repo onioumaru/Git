@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 // Rigidbody2Dコンポーネントを必須にするExp
@@ -24,6 +24,7 @@ public class allCharaBase : MonoBehaviour {
 	public GameManagerScript gmScript;
 	public charaUserStatus thisChara;
 	public retTypeExp calcdExp;
+	public bool destroyF = false;
 	
 	//スクリプト起動時はTrue（停止）にしておく事
 	public bool stopFlag;
@@ -76,17 +77,17 @@ public class allCharaBase : MonoBehaviour {
 	IEnumerator mainLoop(){
 		//内部60f
 		while (true) {
-			yield return new WaitForSeconds (1f / 30f);
+			yield return new WaitForSeconds (1f / 60f);
 
 			if (stopFlag == true) {
 					Vector2 tmpVct = new Vector2 (0, 0);
-					rigidbody2D.velocity = tmpVct;
+					GetComponent<Rigidbody2D>().velocity = tmpVct;
 
 			} else {
 					if (movingFreezeFlag == true) {
 							//停止
 							Vector2 tmpVct = new Vector2 (0, 0);
-							rigidbody2D.velocity = tmpVct;
+							GetComponent<Rigidbody2D>().velocity = tmpVct;
 	
 					} else {
 							//移動硬直がない場合
@@ -105,7 +106,7 @@ public class allCharaBase : MonoBehaviour {
 							if (tmpV.magnitude < 0.02f) {
 									stopFlag = true;
 							} else {
-									rigidbody2D.velocity = tmpV.normalized * thisChara.battleStatus.thisInfo.movingSpeedMagn;
+									GetComponent<Rigidbody2D>().velocity = tmpV.normalized * thisChara.battleStatus.thisInfo.movingSpeedMagn;
 							}
 					}
 			} 
@@ -128,6 +129,7 @@ public class allCharaBase : MonoBehaviour {
 		thisChara.nowHP -= damage;
 		
 		if (thisChara.nowHP <= 0) {
+			this.destroyF = true;
 			this.removedMe(this.transform);
 		}
 	}
@@ -177,7 +179,7 @@ public class allCharaBase : MonoBehaviour {
 		return retDm;
 	}
 
-	public void setMode(chatacterMode argsMode){
+	public void setMode(characterMode argsMode){
 		thisChara.setMode(argsMode);
 
 		CircleCollider2D tmpCC2D = thisAttackErea.GetComponent<CircleCollider2D> ();
@@ -192,16 +194,16 @@ public class allCharaBase : MonoBehaviour {
 		this.setAttackCycleShow ();
 
 		switch(argsMode){
-		case chatacterMode.Attack:
+		case characterMode.Attack:
 			thisAtkCircle.sprite = attackCycle_red;
 			break;
-		case chatacterMode.Defence:
+		case characterMode.Defence:
 			thisAtkCircle.sprite = attackCycle_blue;
 			break;
-		case chatacterMode.Move:
+		case characterMode.Move:
 			thisAtkCircle.sprite = attackCycle_green;
 			break;
-		case chatacterMode.Skill:
+		case characterMode.Skill:
 			//
 			charaSkill_Creater tmpScr = _charaSkillCreater.GetComponent<charaSkill_Creater> ();
 			tmpScr.instantiateSkillEffect (this.transform, thisSkillTatgetInfo);

@@ -10,7 +10,7 @@ public class GameManagerScript : MonoBehaviour {
 	//
 	private bool initF = false;
 	private List<float> expList;
-	private gameStartingVariable chataList;
+	public gameStartingVariable chataList;
 
 	public GameObject cmrTracker;
 	private int charaIconPage=1;
@@ -134,11 +134,24 @@ public class GameManagerScript : MonoBehaviour {
 		}
 	}
 
+	public void grantExp_forAllChara(HashSet<int> argsList, float argsGrantExp){
+		//対象キャラが多いほど補正をかける
+		float totalExp = argsGrantExp * (1f + (0.2f * (argsList.Count - 1f)));
+		
+		foreach (int intI in argsList) {
+			//しんでいないか確認
+
+			if (chataList.charalist[intI].charaBase != null){
+				float tmpExp = totalExp / argsList.Count;
+				chataList.charalist[intI].charaScript.getExp(tmpExp);
+			}
+		}
+	}
 
 	public retTypeExp calcLv(float argsExp){
 		retTypeExp retExp = new retTypeExp ();
 
-		if (initF==false) {
+		if (initF == false) {
 			this.initExpMaster();
 		}
 

@@ -33,7 +33,7 @@ public class stage_dragErea : MonoBehaviour {
 
 			//mainCamera.transform.position = firstCameraPosi + tapPoint;
 			
-			mainCamera.transform.rigidbody2D.velocity= tapPoint * 10f;
+			mainCamera.transform.GetComponent<Rigidbody2D>().velocity= tapPoint * 10f;
 		}
 	}
 	
@@ -46,14 +46,14 @@ public class stage_dragErea : MonoBehaviour {
 	IEnumerator inertiaMove(){
 		//Debug.Log("Loop Start : " + Time.time);
 		while (true) {
-			if (mainCamera.transform.rigidbody2D.velocity.magnitude > 0.5f) {
-				Vector2 tmpV2 = mainCamera.transform.rigidbody2D.velocity;
+			if (mainCamera.transform.GetComponent<Rigidbody2D>().velocity.magnitude > 0.5f) {
+				Vector2 tmpV2 = mainCamera.transform.GetComponent<Rigidbody2D>().velocity;
 
-				mainCamera.transform.rigidbody2D.velocity = new Vector2(tmpV2.x * 0.9F, tmpV2.y * 0.9F);
+				mainCamera.transform.GetComponent<Rigidbody2D>().velocity = new Vector2(tmpV2.x * 0.9F, tmpV2.y * 0.9F);
 			} else {
 				//stop
 				Vector3 tmpZero = new Vector3(0f, 0f, 0f);
-				mainCamera.transform.rigidbody2D.velocity = tmpZero;
+				mainCamera.transform.GetComponent<Rigidbody2D>().velocity = tmpZero;
 				break;
 			}
 

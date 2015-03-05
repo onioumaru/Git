@@ -53,7 +53,7 @@ public class charaIconsetManager : MonoBehaviour {
 		Destroy (this.gameObject);
 	}
 
-	public chatacterMode getThisCharaMode(){
+	public characterMode getThisCharaMode(){
 		return thisCharaBaseScrpt.thisChara.battleStatus.charaMode;
 	}
 }
