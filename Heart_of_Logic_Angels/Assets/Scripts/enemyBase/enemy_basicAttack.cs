@@ -70,7 +70,7 @@ public class enemy_basicAttack : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D c){
 		if (deleyFlag == false) {
-			if (c.gameObject.name.Substring(0,10) != "AttackErea") {
+			if (c.gameObject.name.Substring(0, 9) == "charaBase") {
 				//Attack erea でない
 
 				//リストにストック

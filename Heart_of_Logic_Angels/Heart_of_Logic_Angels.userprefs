@@ -1,16 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\enemyBase\allEnemyBase.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\enemys\Nightmares\torch\torchsFire.cs">
     <Files>
-      <File FileName="Assets\Scripts\enemyBase\allEnemyBase.cs" Line="104" Column="2" />
-      <File FileName="Assets\Scripts\charaBase\chara_basicAttack.cs" Line="15" Column="12" />
-      <File FileName="Assets\Scripts\test_Regeneiter.cs" Line="14" Column="17" />
+      <File FileName="Assets\Scripts\enemys\Nightmares\torch\torchsFire.cs" Line="32" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="C:\Users\admin\Documents\Git\Heart_of_Logic_Angels\Assets\Scripts\enemyBase\allEnemyBase.cs" line="28" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

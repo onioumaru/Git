@@ -68,10 +68,13 @@
      <Compile Include="Assets\Scripts\charaMenu,skill\charaSkill_FreezeManager.cs" />
      <Compile Include="Assets\Scripts\charaMenu,skill\charaSkill_TargetMain.cs" />
      <Compile Include="Assets\Scripts\charaMenu,skill\charaSkill_okCancel.cs" />
-     <Compile Include="Assets\Scripts\common_damage.cs" />
+     <Compile Include="Assets\Scripts\commonDamage\common_damage.cs" />
+     <Compile Include="Assets\Scripts\commonDamage\damageErea.cs" />
      <Compile Include="Assets\Scripts\enemyBase\allEnemyBase.cs" />
+     <Compile Include="Assets\Scripts\enemyBase\enemyHPBarScript.cs" />
      <Compile Include="Assets\Scripts\enemyBase\enemyYellowRingRemoved.cs" />
      <Compile Include="Assets\Scripts\enemyBase\enemy_basicAttack.cs" />
+     <Compile Include="Assets\Scripts\enemys\Nightmares\torch\torchsFire.cs" />
      <Compile Include="Assets\Scripts\fadeOutBitMapFont.cs" />
      <Compile Include="Assets\Scripts\healEffect\healEffect.cs" />
      <Compile Include="Assets\Scripts\healEffect\healEffectBase.cs" />
@@ -85,7 +88,6 @@
      <Compile Include="Assets\Scripts\test_Regeneiter.cs" />
      <Compile Include="Assets\Scripts\type\charactorStatus.cs" />
      <Compile Include="Assets\Scripts\type\textureVector.cs" />
-     <Compile Include="Assets\testScript.cs" />
      <None Include="Assets\Text\Z軸一覧.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

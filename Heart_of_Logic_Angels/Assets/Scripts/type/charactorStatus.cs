@@ -113,10 +113,10 @@ public class charaBattleStatus{
 		case enumCharaNum.syukaido_08:
 		case enumCharaNum.hiragi_09:
 		case enumCharaNum.test_10:
-			_atk_info = new charaBattle_info(  1f ,0.51f ,1f   ,0.5f ,0.1f ,1);
+			_atk_info = new charaBattle_info(  1f ,0.5f ,1f   ,0.5f ,0.1f ,1);
 			_def_info = new charaBattle_info(0.5f ,0.6f ,0.5f ,0    ,0.05f ,0.2f);
 			_mov_info = new charaBattle_info(0.1f ,1.0f ,0.2f ,0    ,0.2f ,1.5f);
-			_skill_info = new charaBattle_info(4f, 99, 0, 0, 0, 0);
+			_skill_info = new charaBattle_info(4f, 1f, 0, 0, 0, 0);
 			break;
 		}
 		this.setCharacterMode(characterMode.Attack);

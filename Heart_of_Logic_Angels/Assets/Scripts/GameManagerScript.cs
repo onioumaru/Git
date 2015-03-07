@@ -10,7 +10,7 @@ public class GameManagerScript : MonoBehaviour {
 	//
 	private bool initF = false;
 	private List<float> expList;
-	public gameStartingVariable chataList;
+	public gameStartingVariable loadedCharaList;
 
 	public GameObject cmrTracker;
 	private int charaIconPage=1;
@@ -29,7 +29,7 @@ public class GameManagerScript : MonoBehaviour {
 	
 	public void destoryChara(int argsCharaNoIndex){
 		//削除フラグ ON
-		gameStartingVariable_Single tmpChara = chataList.charalist [argsCharaNoIndex];
+		gameStartingVariable_Single tmpChara = loadedCharaList.charalist [argsCharaNoIndex];
 		tmpChara.charaDestoryF = true;
 
 		Destroy (tmpChara.charaBase);
@@ -40,18 +40,18 @@ public class GameManagerScript : MonoBehaviour {
 
 	void battleStageStarter(argGameStageInfo argsInfo){
 
-		chataList = new gameStartingVariable ();
+		loadedCharaList = new gameStartingVariable ();
 
 		//Prefabsからロード
-		chataList.setData (enumCharaNum.enju_01, 1, 0);
-		chataList.setData (enumCharaNum.syusuran_02, 1, 0);
+		loadedCharaList.setData (enumCharaNum.enju_01, 1, 0);
+		loadedCharaList.setData (enumCharaNum.syusuran_02, 1, 0);
 		//chataList.setData (enumCharaNum.suzusiro_03, 1, 0);
 		//chataList.setData (enumCharaNum.gyokuran_04, 1, 0);
 
-		for (int i=0 ; i < chataList.charalist.Count;i++){
+		for (int i=0 ; i < loadedCharaList.charalist.Count;i++){
 			Vector3 tmpV = new Vector3(-2.5f, (i * 0.2f), 0);
 
-			gameStartingVariable_Single tmpChara = chataList.charalist[i];
+			gameStartingVariable_Single tmpChara = loadedCharaList.charalist[i];
 
 			//charaMain
 			tmpChara.charaBase = Instantiate(tmpChara.Prefab_charaGrh) as GameObject;
@@ -72,10 +72,10 @@ public class GameManagerScript : MonoBehaviour {
 
 	public void createCharaIconSet(int argsPage){
 		//初期化処理
-		for (int i=0; i < chataList.charalist.Count; i++) {
-			if (chataList.charalist[i].charaIconSet != null){
+		for (int i=0; i < loadedCharaList.charalist.Count; i++) {
+			if (loadedCharaList.charalist[i].charaIconSet != null){
 				//既に存在している場合は消去
-				chataList.charalist[i].charaIconScript.destoryMe();
+				loadedCharaList.charalist[i].charaIconScript.destoryMe();
 			}
 		}
 
@@ -106,9 +106,9 @@ public class GameManagerScript : MonoBehaviour {
 		for (int i = 0; i < 3; i++){
 			int tgtIndex = i + indexOffset;
 
-			if (tgtIndex > chataList.charalist.Count -1) {break;}
+			if (tgtIndex > loadedCharaList.charalist.Count -1) {break;}
 
-			gameStartingVariable_Single tmpChara = chataList.charalist[tgtIndex];
+			gameStartingVariable_Single tmpChara = loadedCharaList.charalist[tgtIndex];
 
 			if (tmpChara.charaDestoryF == false){
 				//既に破壊されていないか確認
@@ -141,9 +141,9 @@ public class GameManagerScript : MonoBehaviour {
 		foreach (int intI in argsList) {
 			//しんでいないか確認
 
-			if (chataList.charalist[intI].charaBase != null){
+			if (loadedCharaList.charalist[intI].charaBase != null){
 				float tmpExp = totalExp / argsList.Count;
-				chataList.charalist[intI].charaScript.getExp(tmpExp);
+				loadedCharaList.charalist[intI].charaScript.getExp(tmpExp);
 			}
 		}
 	}
@@ -209,7 +209,23 @@ public class GameManagerScript : MonoBehaviour {
 			this.createCharaIconSet(charaIconPage);
 		}
 	}
+
+	public GameObject getMostNearCharacter(Vector3 argsBasePosision){
+		float tmpNearVal = 999999;
+		GameObject retGO = null;
+
+		foreach (gameStartingVariable_Single tmp in this.loadedCharaList.charalist) {
+			Vector3 tmpV = tmp.charaBase.transform.position - argsBasePosision;
+			if (tmpNearVal > tmpV.magnitude){
+				tmpNearVal = tmpV.magnitude;
+				retGO = tmp.charaBase;
+			}
+		}
+
+		return retGO;
+	}
 }
+
 
 
 
@@ -294,4 +310,16 @@ public class gameStartingVariable{
 	}
 }
 
+
+public static class GameManagerGetter{
+	private static GameManagerScript keepGMS = null;
+	
+	public static GameManagerScript getGameManager(){
+		if (keepGMS == null) {
+			GameObject retGO = GameObject.Find("GameManager");
+			keepGMS = retGO.GetComponent<GameManagerScript>();
+		}
+		return keepGMS;
+	}
+}
 

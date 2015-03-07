@@ -3,30 +3,36 @@ using System.Collections;
 
 public class textureVector {
 	private Sprite tgtTexture;
+	private Vector3 thisScale;
 
 	//constracter
 	public textureVector(Sprite argsSprite){
 		tgtTexture = argsSprite;
 	}
 
+	public textureVector(GameObject argsGameobject){
+		SpriteRenderer tmpSR = argsGameobject.GetComponentInChildren<SpriteRenderer> ();
+		thisScale = tmpSR.transform.localScale;
+		tgtTexture = tmpSR.sprite;
+	}
+
 
 
 	public float getWidth(){
-		return tgtTexture.texture.width / tgtTexture.pixelsPerUnit;
+//		Debug.Log (tgtTexture.textureRect);
+		return thisScale.x * tgtTexture.textureRect.width / tgtTexture.pixelsPerUnit;
 	}
 
 	public float getHeight(){
-		return tgtTexture.texture.height / tgtTexture.pixelsPerUnit;
+		return thisScale.y * tgtTexture.textureRect.height / tgtTexture.pixelsPerUnit;
 	}
 
-	public Vector2 aaa(){
-		return tgtTexture.textureRect.center;
-		}
-/*
-	public Vector3 getBottomOffset_ForCenterPivot(){
-		Vector3 tmpV = new Vector3 (-1 * this.getWidth / 2f, -1 * this.getHeight / 2f, 0);
+	public Vector3 getBottomOffset_ForCenterPivot(float offsetX, float offsetY){
+		float tmpWidth = this.getWidth() / -2f + offsetX; 
+		float tmpHeight = this.getHeight() / -2f + offsetY;
+
+		Vector3 tmpV = new Vector3 (tmpWidth, tmpHeight, 0);
 
 		return tmpV;
 	}
-	*/
 }

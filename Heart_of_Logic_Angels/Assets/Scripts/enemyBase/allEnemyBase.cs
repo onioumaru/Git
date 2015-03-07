@@ -6,6 +6,7 @@ using System.Collections.Generic;
 [RequireComponent(typeof(Rigidbody2D))]
 public class allEnemyBase : MonoBehaviour {
 	public GameObject _HPBar;
+	private enemyHPBarScript hpBar;
 	
 	private GameObject thisGameManager;
 	private GameManagerScript gmS;
@@ -18,15 +19,28 @@ public class allEnemyBase : MonoBehaviour {
 
 	private HashSet<int> grantExpChara;
 	private typeEnemyStatus thisEnemyStat;
+	//private GameObject 
 	
 	// Use this for initialization
 	void Start() {
-
 		grantExpChara = new HashSet<int>();
-		thisEnemyStat = new typeEnemyStatus(300f, 100f,2f,1f);
+		thisEnemyStat = new typeEnemyStatus(100f, 100f,2f,1f);
+
+		//HP Barの作成
+		GameObject tmpHpbarGO = Instantiate (_HPBar) as GameObject;
+		tmpHpbarGO.transform.parent = this.transform;
+
+		tmpHpbarGO.transform.localPosition = Vector3.zero;
+
+		//位置補正
+		textureVector ttv = new textureVector (this.gameObject);
+		Vector3 tmpV = ttv.getBottomOffset_ForCenterPivot(0, -0.05f);
+		tmpHpbarGO.transform.localPosition += tmpV;
+
+		hpBar = tmpHpbarGO.GetComponent<enemyHPBarScript>();
+		hpBar.setMaxBarLength_argsWidth (ttv.getWidth(), thisEnemyStat.maxHP);
 
 		StartCoroutine (checkGameManager ());
-		//StartCoroutine(mainLoop()());
 	}
 
 	IEnumerator checkGameManager(){
@@ -73,6 +87,7 @@ public class allEnemyBase : MonoBehaviour {
 			this.removedMe (this.transform);
 			return 0;
 		} else {
+			hpBar.setHP(thisEnemyStat.nowHP);
 			return 0;
 		}
 	}
