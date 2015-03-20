@@ -6,7 +6,7 @@ public class common_damage : MonoBehaviour {
 	//GUI上でアタッチ済み
 	public GameObject[] bitMapFont;
 
-	private int destroyCnt = 10;
+	private int destroyCnt = 50;
 
 	void Start(){
 		//showDamage (this.transform, 123);
@@ -16,7 +16,7 @@ public class common_damage : MonoBehaviour {
 
 	IEnumerator mainLoop(){
 		while (true) {
-			yield return new WaitForSeconds(1f / 60f);
+			yield return new WaitForSeconds(0.001f);
 
 			destroyCnt -= 1;
 
@@ -27,7 +27,7 @@ public class common_damage : MonoBehaviour {
 	}
 
 
-	public void showDamage(Transform origin, int argsVal){
+	public void showDamage(Transform origin, float argsVal){
 		Vector3 tmpVcDef = new Vector3 (0f, 1f);
 		this.GetComponent<Rigidbody2D>().velocity = tmpVcDef;
 
@@ -36,7 +36,7 @@ public class common_damage : MonoBehaviour {
 
 		this.transform.position = origin.position + tmpV;
 
-		string convStr = argsVal.ToString();
+		string convStr = Mathf.Floor(argsVal).ToString();
 
 		for (int tmpI = 0; tmpI < convStr.Length; tmpI++) {
 			var tmpInt = int.Parse (convStr.Substring(tmpI,1));
@@ -53,3 +53,5 @@ public class common_damage : MonoBehaviour {
 		}
 	}
 }
+
+

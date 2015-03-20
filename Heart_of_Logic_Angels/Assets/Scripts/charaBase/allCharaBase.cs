@@ -77,7 +77,7 @@ public class allCharaBase : MonoBehaviour {
 	IEnumerator mainLoop(){
 		//内部60f
 		while (true) {
-			yield return new WaitForSeconds (1f / 60f);
+			yield return null;//new WaitForSeconds (1f / 61f);
 
 			if (stopFlag == true) {
 					Vector2 tmpVct = new Vector2 (0, 0);
@@ -115,12 +115,12 @@ public class allCharaBase : MonoBehaviour {
 
 	//
 	//ダメージ処理
-	public void setDamage(int argsInt){
+	public void setDamage(float argsInt){
 		GameObject retObj = Instantiate (bitmapFontBasePrefab, this.transform.position, this.transform.rotation) as GameObject;
 
-		int damage = argsInt;
+		float damage = argsInt;
 		if (thisChara.flyingFlag == true) {
-			damage = Mathf.FloorToInt(damage * thisChara.flyingDefMagn);
+			damage = damage * thisChara.flyingDefMagn;
 		}
 
 		retObj.GetComponentInChildren<common_damage> ().showDamage (this.transform, damage);
@@ -128,7 +128,7 @@ public class allCharaBase : MonoBehaviour {
 
 		thisChara.nowHP -= damage;
 		
-		if (thisChara.nowHP <= 0) {
+		if (thisChara.nowHP < 1) {
 			this.destroyF = true;
 			this.removedMe(this.transform);
 		}

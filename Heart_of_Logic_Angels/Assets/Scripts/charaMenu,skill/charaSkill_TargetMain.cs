@@ -87,6 +87,10 @@ public class charaSkill_TargetMain : MonoBehaviour {
 			//スキル情報を戻す
 			parentChara.setSkillTatgetInfo(thisTrgt);
 			parentChara.setMode(characterMode.Skill);
+			
+			//thisAnimetor.SetTrigger("gotoAttack");
+			Animator tmpAnime = parentChara.gameObject.GetComponentInChildren<Animator>();
+			tmpAnime.SetTrigger("gotoSkill");
 
 			parentMenu.setCharaModeIcon(characterMode.Skill);
 			parentMenu.closeMe();

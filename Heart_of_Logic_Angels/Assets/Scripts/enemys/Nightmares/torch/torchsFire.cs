@@ -6,16 +6,23 @@ public class torchsFire : MonoBehaviour {
 	private Rigidbody2D thisRidiB;
 	private GameManagerScript gms;
 
-	private float movingStartWait = 1f;
+	private float movingStartWait = 6f;
 	private float movingSpeed = 1f;
 
 	// Use this for initialization
 	void Start () {
 		thisRidiB = this.GetComponent<Rigidbody2D>();
+		//thisRidiB.angularVelocity = 360f;
+
 		gms = GameManagerGetter.getGameManager ();
 
 		StartCoroutine (mainLoop ());
 	}
+
+	void Update(){
+		//force up
+		this.transform.rotation = Quaternion.AngleAxis(0f, Vector3.forward);
+		}
 
 	IEnumerator mainLoop(){
 		yield return new WaitForSeconds (movingStartWait);
@@ -26,6 +33,7 @@ public class torchsFire : MonoBehaviour {
 		GameObject tgtChara = gms.getMostNearCharacter (this.transform.position);
 
 		if (tgtChara == null) {
+			Destroy (this.gameObject);
 			yield break;
 				}
 
@@ -34,6 +42,8 @@ public class torchsFire : MonoBehaviour {
 
 		//モーメント設定
 		thisRidiB.velocity = tmpVelo.normalized * movingSpeed;
-
+		
+		yield return new WaitForSeconds (10f);
+		Destroy (this.gameObject);
 	}
 }

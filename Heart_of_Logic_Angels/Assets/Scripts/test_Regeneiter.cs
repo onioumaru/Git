@@ -14,7 +14,7 @@ public class test_Regeneiter : MonoBehaviour {
 		while (true) {
 			GameObject retMobs = Instantiate (_mobEnemy, this.transform.position, this.transform.rotation) as GameObject;
 
-			retMobs.GetComponentInChildren<allEnemyBase>().setMoving(1, 0.5f);
+			retMobs.GetComponent<allEnemyBase>().setMoving(1, 0.5f);
 
 			boundFlag = true ;
 

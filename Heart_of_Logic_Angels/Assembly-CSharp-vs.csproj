@@ -48,6 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BuildTexture.cs" />
      <Compile Include="Assets\Scripts\GameManagerScript.cs" />
+     <Compile Include="Assets\Scripts\bulletBase\bulletBase_CanDestory.cs" />
+     <Compile Include="Assets\Scripts\bulletBase\bulletBase_CannotDestory.cs" />
+     <Compile Include="Assets\Scripts\bulletBase\damageErea.cs" />
      <Compile Include="Assets\Scripts\cameraTrackerScript.cs" />
      <Compile Include="Assets\Scripts\charaBase\allCharaBase.cs" />
      <Compile Include="Assets\Scripts\charaBase\chara_attackEreaVisible.cs" />
@@ -68,12 +71,15 @@
      <Compile Include="Assets\Scripts\charaMenu,skill\charaSkill_FreezeManager.cs" />
      <Compile Include="Assets\Scripts\charaMenu,skill\charaSkill_TargetMain.cs" />
      <Compile Include="Assets\Scripts\charaMenu,skill\charaSkill_okCancel.cs" />
+     <Compile Include="Assets\Scripts\commonDamage\commonCharaAttack.cs" />
      <Compile Include="Assets\Scripts\commonDamage\common_damage.cs" />
-     <Compile Include="Assets\Scripts\commonDamage\damageErea.cs" />
      <Compile Include="Assets\Scripts\enemyBase\allEnemyBase.cs" />
      <Compile Include="Assets\Scripts\enemyBase\enemyHPBarScript.cs" />
      <Compile Include="Assets\Scripts\enemyBase\enemyYellowRingRemoved.cs" />
      <Compile Include="Assets\Scripts\enemyBase\enemy_basicAttack.cs" />
+     <Compile Include="Assets\Scripts\enemys\Nightmares\Wizerd\blueWizBase.cs" />
+     <Compile Include="Assets\Scripts\enemys\Nightmares\torch\torchBase.cs" />
+     <Compile Include="Assets\Scripts\enemys\Nightmares\torch\torchman_Base.cs" />
      <Compile Include="Assets\Scripts\enemys\Nightmares\torch\torchsFire.cs" />
      <Compile Include="Assets\Scripts\fadeOutBitMapFont.cs" />
      <Compile Include="Assets\Scripts\healEffect\healEffect.cs" />

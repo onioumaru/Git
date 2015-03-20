@@ -7,6 +7,10 @@ public class GameManagerScript : MonoBehaviour {
 	public Sprite[] charaIconEmptyGrp;
 	public SpriteRenderer[] charaIconEmptyPosision;
 
+	public Sprite[] _charaMainSprite;
+
+	public RuntimeAnimatorController[] _charaMainAnimetion;
+
 	//
 	private bool initF = false;
 	private List<float> expList;
@@ -17,6 +21,7 @@ public class GameManagerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//Application.targetFrameRate = 30;
 		//cmrTracker = GameObject.Find ("CameraTracker");
 		argGameStageInfo argsInfo = new argGameStageInfo ();
 
@@ -55,6 +60,18 @@ public class GameManagerScript : MonoBehaviour {
 
 			//charaMain
 			tmpChara.charaBase = Instantiate(tmpChara.Prefab_charaGrh) as GameObject;
+			tmpChara.charaBase.transform.position = Vector3.up * i;
+
+
+			//charaAnime
+			Animator tmpAnime = tmpChara.charaBase.transform.FindChild("charaAnime").GetComponent<Animator>();
+			tmpAnime.runtimeAnimatorController = _charaMainAnimetion[0];
+
+			//charaAnime
+			SpriteRenderer tmpSprite = tmpChara.charaBase.transform.FindChild("charaAnime").GetComponent<SpriteRenderer>();
+			tmpSprite.sprite = _charaMainSprite[0];
+
+
 			tmpChara.charaScript = tmpChara.charaBase.GetComponentInParent<allCharaBase>();
 			
 			tmpChara.charaScript.thisChara = new charaUserStatus (tmpChara.CharaNumber, 1f);
@@ -68,6 +85,14 @@ public class GameManagerScript : MonoBehaviour {
 		}
 
 		this.createCharaIconSet(1);
+	}
+
+	private SpriteRenderer getCharaSpriteRenderer(enumCharaNum charaNo){
+		SpriteRenderer retSR = null;
+
+
+
+		return retSR;
 	}
 
 	public void createCharaIconSet(int argsPage){
@@ -210,15 +235,17 @@ public class GameManagerScript : MonoBehaviour {
 		}
 	}
 
-	public GameObject getMostNearCharacter(Vector3 argsBasePosision){
+	public GameObject getMostNearCharacter(Vector3 argsWorldPosision){
 		float tmpNearVal = 999999;
 		GameObject retGO = null;
 
 		foreach (gameStartingVariable_Single tmp in this.loadedCharaList.charalist) {
-			Vector3 tmpV = tmp.charaBase.transform.position - argsBasePosision;
-			if (tmpNearVal > tmpV.magnitude){
-				tmpNearVal = tmpV.magnitude;
-				retGO = tmp.charaBase;
+			if (tmp.charaDestoryF == false){
+				Vector3 tmpV = tmp.charaBase.transform.position - argsWorldPosision;
+				if (tmpNearVal > tmpV.magnitude){
+					tmpNearVal = tmpV.magnitude;
+					retGO = tmp.charaBase;
+				}
 			}
 		}
 

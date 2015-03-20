@@ -11,8 +11,8 @@ public class charaUserStatus{
 	public enumCharaNum charaNo;
 	public int nowLv;
 	
-	public int nowHP;
-	public int maxHP;
+	public float nowHP;
+	public float maxHP;
 
 	public float totalExp;
 	public float nextExp;
@@ -113,9 +113,9 @@ public class charaBattleStatus{
 		case enumCharaNum.syukaido_08:
 		case enumCharaNum.hiragi_09:
 		case enumCharaNum.test_10:
-			_atk_info = new charaBattle_info(  1f ,0.5f ,1f   ,0.5f ,0.1f ,1);
-			_def_info = new charaBattle_info(0.5f ,0.6f ,0.5f ,0    ,0.05f ,0.2f);
-			_mov_info = new charaBattle_info(0.1f ,1.0f ,0.2f ,0    ,0.2f ,1.5f);
+			_atk_info = new charaBattle_info(  1f ,1f ,1f   ,0.5f ,0.1f ,1);
+			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0    ,0.05f ,0.2f);
+			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0    ,0.2f ,1.5f);
 			_skill_info = new charaBattle_info(4f, 1f, 0, 0, 0, 0);
 			break;
 		}
@@ -176,5 +176,20 @@ public enum enumCharaNum{
 	enju_01, syusuran_02, suzusiro_03, gyokuran_04, houzuki_05, mokuren_06, shion_07, syukaido_08, hiragi_09 ,test_10,noInit
 }
 
+public class typeEnemyStatus{
+	public float maxHP;
+	public float nowHP;
+	public float grantExp;
+	public float attackDeleySec;
+	public float multiAttackCount;
+	
+	public typeEnemyStatus(float argsmaxHp,float argsgrantExp,float argsatkDeley,float argsmltAttack){
+		this.maxHP            = argsmaxHp;
+		this.nowHP            = this.maxHP;
+		this.grantExp         = argsgrantExp;
+		this.attackDeleySec   = argsatkDeley;
+		this.multiAttackCount = argsmltAttack;
+	}
+}
 
 

@@ -23,7 +23,7 @@ public class chara_basicAttack : MonoBehaviour {
 
 	IEnumerator mainLoop(){
 		while (true) {
-			yield return new WaitForSeconds(1f/60f);
+			yield return new WaitForSeconds(1f/61f);
 
 			if (lastFrameAttackTarget.Count != 0 && attackDeleyFlag == false){
 
@@ -53,18 +53,12 @@ public class chara_basicAttack : MonoBehaviour {
 
 		int tmpDm = Mathf.FloorToInt(parentCharaScrpt.getCharaDamage()) + Mathf.FloorToInt(Random.value * 4);
 
-
-		if (nearTarget == null) {
-			Debug.Log ("isNull!!");
+		commonCharaAttack tmpAtk = new commonCharaAttack (nearTarget.gameObject, parentCharaScrpt.gameObject, tmpDm);
+		//チェックと実行
+		if (tmpAtk.exec() == false) {
 			yield break;
-			//稀に破壊されてNullになるため
-				}
-		if (nearTarget.gameObject.GetComponent<allEnemyBase> ().destoryF == true) {
-			Debug.Log ("isDestoryFlag!!");
-			yield break;
-				}
+		}
 
-		nearTarget.gameObject.GetComponent<allEnemyBase> ().setDamage (tmpDm, parentCharaScrpt.thisCharaIndex);
 
 		lastFrameAttackTarget.Clear();
 		attackDeleyFlag = true;
@@ -84,7 +78,7 @@ public class chara_basicAttack : MonoBehaviour {
 	
 	void OnTriggerStay2D(Collider2D c){
 		if (attackDeleyFlag == false) {
-			if (c.gameObject.name.Substring(0,10) != "AttackErea") {
+			if (commonCharaAttack.checkTargetCollider(c)) {
 				//Attack erea でない
 				
 				//リストにストック

@@ -2,8 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-// Rigidbody2Dコンポーネントを必須にする
-[RequireComponent(typeof(Rigidbody2D))]
+
 public class allEnemyBase : MonoBehaviour {
 	public GameObject _HPBar;
 	private enemyHPBarScript hpBar;
@@ -24,7 +23,7 @@ public class allEnemyBase : MonoBehaviour {
 	// Use this for initialization
 	void Start() {
 		grantExpChara = new HashSet<int>();
-		thisEnemyStat = new typeEnemyStatus(100f, 100f,2f,1f);
+		thisEnemyStat = new typeEnemyStatus(10000f, 100f,2f,1f);
 
 		//HP Barの作成
 		GameObject tmpHpbarGO = Instantiate (_HPBar) as GameObject;
@@ -40,25 +39,7 @@ public class allEnemyBase : MonoBehaviour {
 		hpBar = tmpHpbarGO.GetComponent<enemyHPBarScript>();
 		hpBar.setMaxBarLength_argsWidth (ttv.getWidth(), thisEnemyStat.maxHP);
 
-		StartCoroutine (checkGameManager ());
-	}
-
-	IEnumerator checkGameManager(){
-		//Findコマンドはなるべくやりたくないので、
-		//0.1秒後に確認する
-		yield return new WaitForSeconds (0.1f);
-
-		if (thisGameManager != null) {
-			yield break;
-		}
-
-		setGameManager (GameObject.Find ("GameManager"));
-	}
-
-	public void setGameManager(GameObject argsGM){
-		thisGameManager = argsGM;
-		
-		gmS = thisGameManager.GetComponent<GameManagerScript> ();
+		gmS = GameManagerGetter.getGameManager ();
 	}
 
 
@@ -77,7 +58,7 @@ public class allEnemyBase : MonoBehaviour {
 
 		thisEnemyStat.nowHP -= argsInt;
 
-		Debug.Log (thisEnemyStat.nowHP);
+//		Debug.Log (thisEnemyStat.nowHP);
 
 		if (thisEnemyStat.nowHP <= 0) {
 			this.destoryF = true;
@@ -101,9 +82,9 @@ public class allEnemyBase : MonoBehaviour {
 		switch (argsType) {
 		case 1:
 			// simlpe reft Moving
-			Vector2 tmpV = new Vector2(-1,0);
-
-			this.GetComponent<Rigidbody2D>().velocity = tmpV.normalized * argsMovingSpeed;
+			
+			//this.GetComponent<Rigidbody2D>().isKinematic = true;
+			this.GetComponent<Rigidbody2D>().velocity = Vector2.right * argsMovingSpeed * -1f;
 
 			break;
 		case 2:
@@ -118,18 +99,3 @@ public class allEnemyBase : MonoBehaviour {
 	}
 }
 
-public class typeEnemyStatus{
-	public float maxHP;
-	public float nowHP;
-	public float grantExp;
-	public float attackDeleySec;
-	public float multiAttackCount;
-
-	public typeEnemyStatus(float argsmaxHp,float argsgrantExp,float argsatkDeley,float argsmltAttack){
-		this.maxHP            = argsmaxHp;
-		this.nowHP            = this.maxHP;
-		this.grantExp         = argsgrantExp;
-		this.attackDeleySec   = argsatkDeley;
-		this.multiAttackCount = argsmltAttack;
-	}
-}

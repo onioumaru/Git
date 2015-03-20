@@ -53,6 +53,26 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  _charaMainSprite:
+  - {fileID: 21300000, guid: ebee80a0eb701f341a99e47f4c33dcb1, type: 3}
+  - {fileID: 21300000, guid: ebee80a0eb701f341a99e47f4c33dcb1, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _charaMainAnimetion:
+  - {fileID: 9100000, guid: be87b107831a4d94d87466e49b4345dd, type: 2}
+  - {fileID: 0}
+  - {fileID: 9100000, guid: be87b107831a4d94d87466e49b4345dd, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   cmrTracker: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
@@ -65,4 +85,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197690}
   m_IsPrefabParent: 1
-  m_IsExploded: 1

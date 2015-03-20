@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\enemys\Nightmares\torch\torchsFire.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\charaMenu,skill\charaSkillColliderScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\enemys\Nightmares\torch\torchsFire.cs" Line="32" Column="48" />
+      <File FileName="Assets\Scripts\charaMenu,skill\charaSkillColliderScript.cs" Line="24" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -19,7 +19,7 @@ public class enemy_basicAttack : MonoBehaviour {
 	
 	IEnumerator mainLoop(){
 		while(true){
-			yield return new WaitForSeconds (1f / 60f);
+			yield return new WaitForSeconds (1f / 61f);
 
 			if (lastFrameAttackTarget.Count != 0 && deleyFlag == false){
 				
