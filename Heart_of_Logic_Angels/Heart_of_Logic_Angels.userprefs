@@ -1,12 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\charaMenu,skill\charaSkillColliderScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\public\battleStageSelectVal.cs">
     <Files>
-      <File FileName="Assets\Scripts\charaMenu,skill\charaSkillColliderScript.cs" Line="24" Column="3" />
+      <File FileName="Assets\Scripts\StageSelectScenes\stageSelectNode.cs" Line="35" Column="13" />
+      <File FileName="Assets\Scripts\StageSelectScenes\stageSelectManagerScript.cs" Line="81" Column="30" />
+      <File FileName="Assets\Scripts\public\battleStageSelectVal.cs" Line="24" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Assets\Scripts\public\tapedObjectMotion.cs" line="10" offsetX="368" offsetY="144" expression="waitTimeCor" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>

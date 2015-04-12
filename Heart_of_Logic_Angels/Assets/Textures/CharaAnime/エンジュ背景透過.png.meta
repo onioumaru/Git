@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ebee80a0eb701f341a99e47f4c33dcb1
-timeCreated: 1426655660
+timeCreated: 1426937251
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -13,6 +13,7 @@ TextureImporter:
     21300012: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_7"
     21300014: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_8"
     21300016: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_9"
+    21300018: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_10"
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -66,7 +67,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_1"
       rect:
@@ -76,7 +77,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_2"
       rect:
@@ -86,7 +87,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_3"
       rect:
@@ -96,7 +97,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_4"
       rect:
@@ -106,17 +107,17 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_5"
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 32
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_7"
       rect:
@@ -126,7 +127,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_8"
       rect:
@@ -136,7 +137,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_9"
       rect:
@@ -146,7 +147,17 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\u30A8\u30F3\u30B8\u30E5\u80CC\u666F\u900F\u904E_10"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
