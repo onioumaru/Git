@@ -3,6 +3,7 @@ using System.Collections;
 
 public class stageSelectOKButton : MonoBehaviour {
 	public GameObject _TapEffectPrefab;
+	public GameObject _SenceChangePrefab;
 
 	private tapedObjectMotion tapS;
 	private stageSelectManagerScript sSMS;
@@ -27,11 +28,12 @@ public class stageSelectOKButton : MonoBehaviour {
 		tapS.actionTapEffect ();
 
 		if (tgtStage == null) {
-			return;
+			//return;
 				}
 
-
-
+		GameObject senceChange = Instantiate(_SenceChangePrefab) as GameObject;
+		senceChangeManagerScript sc = senceChange.GetComponent<senceChangeManagerScript>();
+		sc.startSenceChange ();
 
 	}
 }

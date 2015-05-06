@@ -126,56 +126,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11415770, guid: 9866f093ad5fe274caffd383670ee436, type: 2}
+      propertyPath: _SenceChangePrefab
+      value: 
+      objectReference: {fileID: 151222, guid: 7147fdda73039e9439f8c80adf38669f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9866f093ad5fe274caffd383670ee436, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &626387717
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: .652999997
-      objectReference: {fileID: 0}
-    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .0329999998
-      objectReference: {fileID: 0}
-    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
-  m_IsPrefabParent: 0
---- !u!20 &767306348
+--- !u!20 &767306348 stripped
 Camera:
   m_PrefabParentObject: {fileID: 2049728, guid: 6869bbff05e7e94488847f68bdd47e89,
     type: 2}
-  m_PrefabInternal: {fileID: 626387717}
+  m_PrefabInternal: {fileID: 1383352792}
 --- !u!1001 &858726820
 Prefab:
   m_ObjectHideFlags: 0
@@ -218,24 +180,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18d0e47d39387dd4283cfb65fcd52a9b, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1638711460
-GameObject:
-  m_PrefabParentObject: {fileID: 143912, guid: edbd12221381e454d8f606100fc4640e, type: 2}
-  m_PrefabInternal: {fileID: 2064895772}
---- !u!114 &1638711464
-MonoBehaviour:
+--- !u!1001 &1383352792
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1638711460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: .501960814}
-  m_EffectDistance: {x: 1, y: -1}
-  m_UseGraphicAlpha: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .652999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .0329999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 417758, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11421718, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6869bbff05e7e94488847f68bdd47e89, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &2064895772
 Prefab:
   m_ObjectHideFlags: 0
@@ -319,52 +309,26 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 767306348}
-    - target: {fileID: 11404662, guid: edbd12221381e454d8f606100fc4640e, type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 41
-      objectReference: {fileID: 0}
-    - target: {fileID: 11404662, guid: edbd12221381e454d8f606100fc4640e, type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11404662, guid: edbd12221381e454d8f606100fc4640e, type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11404662, guid: edbd12221381e454d8f606100fc4640e, type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11404662, guid: edbd12221381e454d8f606100fc4640e, type: 2}
-      propertyPath: m_FontData.m_RichText
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11404662, guid: edbd12221381e454d8f606100fc4640e, type: 2}
-      propertyPath: m_FontData.m_FontStyle
+    - target: {fileID: 11453328, guid: edbd12221381e454d8f606100fc4640e, type: 2}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11404662, guid: edbd12221381e454d8f606100fc4640e, type: 2}
-      propertyPath: m_FontData.m_LineSpacing
+    - target: {fileID: 11466668, guid: edbd12221381e454d8f606100fc4640e, type: 2}
+      propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11404662, guid: edbd12221381e454d8f606100fc4640e, type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 92fc284c13ea1c243b1f5d2fda30da39,
-        type: 3}
-    - target: {fileID: 11404662, guid: edbd12221381e454d8f606100fc4640e, type: 2}
-      propertyPath: m_FontData.m_BestFit
+    - target: {fileID: 11466668, guid: edbd12221381e454d8f606100fc4640e, type: 2}
+      propertyPath: m_ReferenceResolution.x
+      value: 854
+      objectReference: {fileID: 0}
+    - target: {fileID: 11466668, guid: edbd12221381e454d8f606100fc4640e, type: 2}
+      propertyPath: m_ReferenceResolution.y
+      value: 480
+      objectReference: {fileID: 0}
+    - target: {fileID: 11466668, guid: edbd12221381e454d8f606100fc4640e, type: 2}
+      propertyPath: m_ScreenMatchMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11404662, guid: edbd12221381e454d8f606100fc4640e, type: 2}
-      propertyPath: m_Text
-      value: "1-1-1\u3000\u4F53\u80B2\u9928\u3068\u304B"
-      objectReference: {fileID: 0}
-    - target: {fileID: 11471644, guid: edbd12221381e454d8f606100fc4640e, type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 92fc284c13ea1c243b1f5d2fda30da39,
-        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: edbd12221381e454d8f606100fc4640e, type: 2}
   m_IsPrefabParent: 0
