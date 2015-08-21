@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -7,10 +7,10 @@ public class stageSelectManagerScript : MonoBehaviour {
 	private GameObject mainMenuCanvas;
 	private GameObject parentFrame;
 	private Image backGroundImage;
-	private stageSelectDataStockerScript dataStoker;
-	private storyProgress thisStoryProgress;
 	private battleStageSelectVal selecedStageVal;
 	private Coroutine bgCortn;
+
+	private staticValueManagerS sVMS;
 
 	//ステージセレクトシーンのメインキャンバスの GameObject
 	public GameObject getMainCanvas(){
@@ -36,7 +36,7 @@ public class stageSelectManagerScript : MonoBehaviour {
 
 	//ステージセレクトシーンのバックグラウンドイメージ
 	public Image getbackGroundImage(){
-		GameObject tmpMainCanvas = getMainCanvas();
+		//GameObject tmpMainCanvas = getMainCanvas();
 
 		if (backGroundImage == null) {
 			backGroundImage = mainMenuCanvas.transform.Find("BackGroundImage").gameObject.GetComponent<Image>();
@@ -60,7 +60,7 @@ public class stageSelectManagerScript : MonoBehaviour {
 	IEnumerator bgImageFadeIn(Sprite argsSprite){
 		backGroundImage.sprite = argsSprite;
 
-		Color tmpC = new Color (1, 1, 1, 0);
+		Color tmpC = new Color (0.5f, 0.5f, 0.5f, 0);
 		backGroundImage.color = tmpC;
 
 		float fadeCnt = 30f;
@@ -69,7 +69,7 @@ public class stageSelectManagerScript : MonoBehaviour {
 		for (float i = 0; i < fadeCnt; i++) {
 			yield return new WaitForSeconds(0.01f);
 
-			Color tmpC2 = new Color (1, 1, 1, i * j);
+			Color tmpC2 = new Color (0.5f, 0.5f, 0.5f, i * j);
 			backGroundImage.color = tmpC2;
 		}
 	}
@@ -90,18 +90,8 @@ public class stageSelectManagerScript : MonoBehaviour {
 		txtStageComment.text = argsComment;
 	}
 
-	//データストッカーへのアクセス
-	public stageSelectDataStockerScript getDataStocker(){
-		if (dataStoker == null) {
-			dataStoker = this.transform.parent.gameObject.GetComponentInChildren<stageSelectDataStockerScript>();
-		}
-		return dataStoker;
-	}
-
-
-
-
 	public void setSelecedStageVal(battleStageSelectVal argsStageVal){
+		//stageSelectNode などから呼ばれる
 		selecedStageVal = argsStageVal;
 	}
 	public battleStageSelectVal getSelecedStageVal(){
@@ -112,23 +102,18 @@ public class stageSelectManagerScript : MonoBehaviour {
 
 
 	void Start(){
-		//staticValues
-		staticValuesScript tmpS = GameObject.Find("staticValues").GetComponent<staticValuesScript>();
+		sVMS = staticValueManagerGetter.getManager ();
 
-		thisStoryProgress = tmpS.getStoryProgress ();
+		int thisStoryProgress = sVMS.getStoryProgress();
+		int thisStoryStage = sVMS.getStoryStage ();
 
 		//for debug
-		thisStoryProgress.progress = storyProgressEnum.addHouzuki_nextStageSelect01;
-		//thisStoryProgress.eventFlag
+		//thisStoryProgress = 4;
 
-		this.startThisStageSelectSence ();
-		}
-
-
-	private void startThisStageSelectSence(){
+		Debug.Log ("chapter " + thisStoryProgress + " Stage" + thisStoryStage);
+		
 		mainFrameScript mainFrameS = this.getParentFrame().GetComponent<mainFrameScript>();
-
-		mainFrameS.createThisList (thisStoryProgress);
+		mainFrameS.createThisList (thisStoryProgress, thisStoryStage);
 	}
 }
 

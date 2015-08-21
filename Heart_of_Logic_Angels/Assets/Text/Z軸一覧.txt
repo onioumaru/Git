@@ -1,8 +1,8 @@
-//  Z軸は、Colliderのマウスイベントの取得で整理必須 //
+// Z position //
 
 -20	Main Camera
 -6	Skill Target
--5	CharacterMenu　（モード変更・スキル）
+-5	CharacterMenu
 -4	Chara Icon set
--3	Camera Tracker (メニューその他全部)
+-3	Camera Tracker
 0	other

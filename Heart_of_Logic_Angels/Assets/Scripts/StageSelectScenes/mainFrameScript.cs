@@ -6,25 +6,28 @@ using System.Collections.Generic;
 public class mainFrameScript : MonoBehaviour {
 	public GameObject _Prefab_Node;
 
-	private storyProgress thisProgress;
+	private int thisProgress;
 	private List<battleStageSelectVal> nodeItem;
 //	private stageSelectManagerScript sSMS;
 
-	public void createThisList(storyProgress argsProgress){
+	public void createThisList(int argsProgress , int argsStage){
 		//ノードの削除
 		this.deleteChildNodes ();
 
 		//ノードの作成
 		nodeItem = new List<battleStageSelectVal> ();
-		this.thisProgress = argsProgress;
+		thisProgress = argsProgress;
 
-		switch(this.thisProgress.progress){
+		//マルチステージはここで区切る
+		switch(thisProgress){
+		case 4:
+
+			break;
+
 		default:
-			battleStageSelectVal tmpVal = new battleStageSelectVal(this.thisProgress.progress,0,0);
+			Debug.Log (thisProgress);
+			battleStageSelectVal tmpVal = new battleStageSelectVal(thisProgress, argsStage,0);
 			nodeItem.Add(tmpVal);
-
-			battleStageSelectVal tmpVal2 = new battleStageSelectVal(this.thisProgress.progress,1,0);
-			nodeItem.Add(tmpVal2);
 
 			break;
 		}

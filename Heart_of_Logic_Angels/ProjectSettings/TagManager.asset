@@ -2,58 +2,65 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
+  serializedVersion: 2
   tags:
+  - StaticSceneManager
+  - SoundManager
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
   - 
-  Builtin Layer 0: Default
-  Builtin Layer 1: TransparentFX
-  Builtin Layer 2: Ignore Raycast
-  Builtin Layer 3: 
-  Builtin Layer 4: Water
-  Builtin Layer 5: UI
-  Builtin Layer 6: 
-  Builtin Layer 7: 
-  User Layer 8: PlayerAttackErea
-  User Layer 9: EnemyAttaclErea
-  User Layer 10: PlayerMoveCheck
-  User Layer 11: StageBase
-  User Layer 12: CharacterMenu
-  User Layer 13: systemMenu
-  User Layer 14: 
-  User Layer 15: 
-  User Layer 16: 
-  User Layer 17: 
-  User Layer 18: 
-  User Layer 19: 
-  User Layer 20: 
-  User Layer 21: 
-  User Layer 22: 
-  User Layer 23: 
-  User Layer 24: 
-  User Layer 25: 
-  User Layer 26: 
-  User Layer 27: 
-  User Layer 28: 
-  User Layer 29: 
-  User Layer 30: 
-  User Layer 31: 
+  - Water
+  - UI
+  - 
+  - 
+  - PlayerAttackErea
+  - EnemyAttaclErea
+  - PlayerMoveCheck
+  - StageBase
+  - CharacterMenu
+  - systemMenu
+  - groundEffect
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
-    userID: 0
     uniqueID: 0
     locked: 0
   - name: charactors
-    userID: 3
     uniqueID: 3568555955
     locked: 0
   - name: DamageFont
-    userID: 1
     uniqueID: 3036771373
     locked: 0
   - name: charaMenu
-    userID: 2
     uniqueID: 1545376071
     locked: 0
   - name: systemMenu
-    userID: 4
     uniqueID: 1596970747
+    locked: 0
+  - name: talkingScene
+    uniqueID: 3178214791
+    locked: 0
+  - name: GUI_forBattle
+    uniqueID: 773111051
+    locked: 0
+  - name: GUI_foward
+    uniqueID: 3856342391
     locked: 0

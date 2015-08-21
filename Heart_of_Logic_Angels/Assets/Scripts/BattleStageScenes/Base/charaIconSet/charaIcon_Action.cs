@@ -23,9 +23,12 @@ public class charaIcon_Action : MonoBehaviour {
 	private float coubleClickDeleySec = 0.3f;
 
 	private GameObject charaMenuInstance;
+	private GameManagerScript GMS;
 
 	void Start(){
 		trackingObj = GameObject.Find("CameraTracker");
+
+		GMS = GameManagerGetter.getGameManager ();
 
 	}
 
@@ -132,7 +135,9 @@ public class charaIcon_Action : MonoBehaviour {
 		} else if (leftDragF == true) {
 			//フラグのクローンがつくられていた場合は、ここは通らない
 			trackingObj.GetComponentInChildren<cameraTrackerScript> ().setCharaTracking (thisCharaBase);
-			
+
+			GMS.getBattleTextCanvasS().showHoldText();
+
 			this.dragFlagReset();
 		} else if (rightDragF == true) {
 			
@@ -144,6 +149,9 @@ public class charaIcon_Action : MonoBehaviour {
 			Camera.main.transform.position = tmpV_right;
 
 			this.dragFlagReset();
+
+			
+			GMS.getBattleTextCanvasS().showFlagText();
 		}
 	}
 

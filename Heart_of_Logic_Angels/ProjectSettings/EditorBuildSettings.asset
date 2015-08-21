@@ -6,6 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/notBattleScene/title.unity
+  - enabled: 1
+    path: Assets/Scenes/00.TestSence/soundTest.unity
+  - enabled: 1
+    path: Assets/Scenes/notBattleScene/talkScene.unity
+  - enabled: 1
     path: Assets/Scenes/notBattleScene/stageSelect.unity
   - enabled: 1
-    path: Assets/Scenes/battleScene/scene01.unity
+    path: Assets/Scenes/notBattleScene/selectSortieCharactersScene.unity
+  - enabled: 1
+    path: Assets/Scenes/battleScene/0-1-0-0.unity

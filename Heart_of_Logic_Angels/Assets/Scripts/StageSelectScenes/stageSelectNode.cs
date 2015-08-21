@@ -36,6 +36,7 @@ public class stageSelectNode : MonoBehaviour {
 		tapS.actionTapEffect ();
 		//選択結果を返す
 		sSMS.setSelecedStageVal (thisStage);
+
 	}
 
 	void Start(){

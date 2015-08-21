@@ -7,12 +7,22 @@ public class tapedObjectMotion : MonoBehaviour {
 
 	public float defaultScale = 1f;
 	public float scalePingPong = 0.05f;
+	
+	public bool _cancelButtonFlag = false;
+
+	private soundManager_Base sMB;
+
+	void Start(){
+		sMB = soundManagerGetter.getManager ();
+	}
 
 	public void actionTapEffect(){
 		if (waitTimeCor != null) {
 			StopCoroutine(waitTimeCor);
 			waitTimeCor=null;
 				}
+
+		sMB.playOneShotSound (enm_oneShotSound.nomalButton);
 
 		waitTimeCor = StartCoroutine ( pushThis () );
 	}

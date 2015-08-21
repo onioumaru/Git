@@ -16,23 +16,66 @@ public class GameManagerScript : MonoBehaviour {
 	private bool initF = false;
 	private List<float> expList;
 	public gameStartingVariable loadedCharaList;
-
-	public GameObject cmrTracker;
+	
+	public GameObject _cmrTracker;
+	private GameObject instantedCmrTracker;
 	private int charaIconPage=1;
+
+	public GameObject _talkPartPerefab;
+	private staticValueManagerS sVMS;
+
+	
+	public GameObject _battleTextCanvasPrefab;
+	private battleTextCanvasParentScript battleTextInstance;
+
 
 	// Use this for initialization
 	void Start () {
-		//Application.targetFrameRate = 30;
-		//cmrTracker = GameObject.Find ("CameraTracker");
-		argGameStageInfo argsInfo = new argGameStageInfo ();
+		instantedCmrTracker = (GameObject)Instantiate (_cmrTracker);
+		instantedCmrTracker.name = "CameraTracker";
+		charaIconEmptyPosision = instantedCmrTracker.GetComponent<cameraTrackerScript> ().getemptyWaku ();
 
-		//Object obj = Resources.Load<GameObject>("Prefabs/charaBase/charaBase");
+		sVMS = staticValueManagerGetter.getManager ();
 
-		this.battleStageStarter(argsInfo);
-		//Debug.Log (obj.name);
+		this.battleStageStarter();
+
 	}
 
+	public void talkingPartLoader(string argsStr){
+		//コライダーはすべて停止
+		Time.timeScale = 0f;
+		this.setAllCollider2DEnabale (false);
+
+		//会話表示
+		sVMS.getNowSceneChangeValue().sceneFileName = argsStr;
+		GameObject tmpGO = (GameObject)Instantiate (_talkPartPerefab);
+
+		StartCoroutine (talkingPartWaiter(tmpGO) );
+	}
+
+	IEnumerator talkingPartWaiter(GameObject argsGO){
+		// トークシーンが破壊されるまでループして待つ
+		while (argsGO != null) {
+			yield return null;
+		}
+		
+		this.setAllCollider2DEnabale (true);
+		Time.timeScale = 1f;
+	}
+
+
 	
+	public void setAllCollider2DEnabale(bool argsBool){
+		//全てのコライダーを使用不可にして、イベントが起きないようにする
+		Collider2D[] allCollider = GameObject.FindObjectsOfType<Collider2D>();
+		
+		//Debug.Log (allCollider.Length);
+		foreach (Collider2D cld in allCollider) {
+			cld.enabled = argsBool;
+		}
+	}
+
+
 	public void destoryChara(int argsCharaNoIndex){
 		//削除フラグ ON
 		gameStartingVariable_Single tmpChara = loadedCharaList.charalist [argsCharaNoIndex];
@@ -44,13 +87,22 @@ public class GameManagerScript : MonoBehaviour {
 	}
 	
 
-	void battleStageStarter(argGameStageInfo argsInfo){
+	void battleStageStarter( ){
 
 		loadedCharaList = new gameStartingVariable ();
 
+		bool[] sortieCharas = sVMS.getSortieCharaNo ();
+
+		for (int loopI = 0; loopI < 9; loopI++){
+			enumCharaNum tmpC = (enumCharaNum)loopI;
+
+			if (sortieCharas[loopI]){
+				loadedCharaList.setData (tmpC, 1, 0);
+			}
+		}
+
 		//Prefabsからロード
-		loadedCharaList.setData (enumCharaNum.enju_01, 1, 0);
-		loadedCharaList.setData (enumCharaNum.syusuran_02, 1, 0);
+		//loadedCharaList.setData (enumCharaNum.syusuran_02, 1, 0);
 		//chataList.setData (enumCharaNum.suzusiro_03, 1, 0);
 		//chataList.setData (enumCharaNum.gyokuran_04, 1, 0);
 
@@ -189,7 +241,7 @@ public class GameManagerScript : MonoBehaviour {
 				tmpChara.charaIconSet = Instantiate(tmpChara.Prefab_charaIconSet) as GameObject;
 				tmpChara.charaIconScript =  tmpChara.charaIconSet.GetComponentInParent<charaIconsetManager>();
 				//親に設定
-				tmpChara.charaIconSet.transform.parent = cmrTracker.transform;
+				tmpChara.charaIconSet.transform.parent = instantedCmrTracker.transform;
 				//設定後位置修正
 				tmpChara.charaIconSet.transform.localPosition = tmpV2;
 				
@@ -301,6 +353,18 @@ public class GameManagerScript : MonoBehaviour {
 
 		return retGO;
 	}
+
+	
+	public battleTextCanvasParentScript getBattleTextCanvasS(){
+
+		if (battleTextInstance == null) {
+			GameObject tmpGO = (GameObject)Instantiate(_battleTextCanvasPrefab);
+			battleTextInstance = tmpGO.GetComponent<battleTextCanvasParentScript>();
+				}
+
+		return battleTextInstance;
+	}
+
 }
 
 
@@ -314,11 +378,6 @@ public class retTypeExp{
 	public float nextExp;
 	public float beforeExp;
 	public float nextLvExp;
-}
-
-public class argGameStageInfo{
-	public int StageNo = 0;
-	public int ClearCnt = 0;
 }
 
 //
@@ -385,6 +444,7 @@ public class gameStartingVariable{
 
 		return retGO;
 	}
+
 }
 
 

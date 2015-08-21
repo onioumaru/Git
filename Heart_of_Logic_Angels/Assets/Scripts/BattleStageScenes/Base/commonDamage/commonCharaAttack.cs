@@ -14,7 +14,6 @@ public class commonCharaAttack
 	}
 	
 	public bool exec(){
-		bool ret = true;
 		allCharaBase attackCharaBase = attackChara.GetComponent<allCharaBase>();
 
 		//基本チェック

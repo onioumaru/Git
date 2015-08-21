@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class cameraTrackerScript : MonoBehaviour {
+	public SpriteRenderer[] _emptyWaku;
 
 	private Camera trackedCamera;
 	private float posiZ;
@@ -31,5 +32,9 @@ public class cameraTrackerScript : MonoBehaviour {
 	}
 	public void setCharaTrackReset(){
 		charaTracking = false;
+	}
+
+	public SpriteRenderer[] getemptyWaku(){
+		return _emptyWaku;
 	}
 }

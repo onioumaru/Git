@@ -83,7 +83,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  cmrTracker: {fileID: 0}
+  _cmrTracker: {fileID: 172386, guid: ffc2ef41de190b8408ac3f6604fa9a12, type: 2}
+  _talkPartPerefab: {fileID: 130128, guid: 3c98178b1421f584182e4356c1b23993, type: 2}
+  _battleTextCanvasPrefab: {fileID: 138386, guid: c2f2d5f000450e040a9f6e53a61ff6e0,
+    type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

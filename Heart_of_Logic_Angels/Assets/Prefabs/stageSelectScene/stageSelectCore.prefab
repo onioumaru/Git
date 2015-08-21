@@ -35,7 +35,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &127250
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,7 +113,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 408322}
-  - 114: {fileID: 11425204}
   m_Layer: 0
   m_Name: stageSelectDataStocker
   m_TagString: Untagged
@@ -218,6 +217,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!81 &8157608
 AudioListener:
   m_ObjectHideFlags: 1
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -287,28 +287,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &11425204
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7dd299cd53f86438dc44d3f2bfc9b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _BackGroungImage:
-  - {fileID: 21300000, guid: 4f183d13b6c883e438df5b3ab4c82adb, type: 3}
-  - {fileID: 21300000, guid: 18a42e127c30a8b4c8a944ca456cb65a, type: 3}
-  - {fileID: 21300000, guid: 32a21d8b4bce9ab40acd3c2f4bd7cda1, type: 3}
-  - {fileID: 21300000, guid: 0094ffc97a91b784eab731bd1b0fc8e1, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &11432520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -376,6 +354,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
+  m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &11487486
 MonoBehaviour:

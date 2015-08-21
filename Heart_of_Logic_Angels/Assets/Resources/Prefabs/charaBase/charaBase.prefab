@@ -80,7 +80,7 @@ GameObject:
   - 4: {fileID: 446970}
   - 58: {fileID: 5846970}
   - 114: {fileID: 11446970}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: flyingChk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,6 +182,7 @@ Transform:
   m_RootOrder: 1
 --- !u!50 &5094308
 Rigidbody2D:
+  serializedVersion: 2
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -190,11 +191,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!58 &5831830
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -214,7 +215,7 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146970}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
@@ -229,7 +230,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 194308}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -379,7 +380,7 @@ MonoBehaviour:
   _charaSkillCreater: {fileID: 141120, guid: a7804a008dd314643ab37e4c85a3a3b8, type: 2}
   attackCycle_red: {fileID: 21300000, guid: 3435f022e32ecd44b89dc4a5b0a444f3, type: 3}
   attackCycle_blue: {fileID: 21300000, guid: f3060839f703008478a7ccbf6d6ad6bf, type: 3}
-  attackCycle_green: {fileID: 21300000, guid: f3060839f703008478a7ccbf6d6ad6bf, type: 3}
+  attackCycle_green: {fileID: 21300000, guid: b03a76c7501cf7b4e84d78817d22674d, type: 3}
   gmScript: {fileID: 0}
   destroyF: 0
   stopFlag: 0
@@ -453,7 +454,24 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attackCycle_green
+      value: 
+      objectReference: {fileID: 21300000, guid: b03a76c7501cf7b4e84d78817d22674d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 112604}

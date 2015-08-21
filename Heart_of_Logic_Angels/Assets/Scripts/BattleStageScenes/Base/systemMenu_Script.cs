@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class systemMenu_Script : MonoBehaviour {
+	public GameObject _optionMenuPrefab;
+
+	private tapedObjectMotion tapM;
 
 	// Use this for initialization
 	void Start () {
@@ -14,10 +17,10 @@ public class systemMenu_Script : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
-		if (Time.timeScale == 0) {
-			Time.timeScale = 1;
-		} else {
-			Time.timeScale = 0;
-		}
+		tapM = this.GetComponent<tapedObjectMotion> ();
+		tapM.actionTapEffect ();
+
+		Instantiate (_optionMenuPrefab);
+
 	}
 }
