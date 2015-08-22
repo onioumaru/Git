@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 60451f5fb77be2545987b7cf149c424a
+timeCreated: 1439877335
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - _optionWindowsPrefab: {fileID: 109922, guid: 6bda1a6d1e62e044c802e9ed61d5abb5,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

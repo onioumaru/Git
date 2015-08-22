@@ -19,16 +19,17 @@ public class talkingMainScript : MonoBehaviour {
 	private enm_textControllStatus thisStatus;
 	private Boolean tapedFlag;
 	
-	private Image BGImage;
+	public Image _BGImage;
+	public Image _fazerIconSR;
 
 	private Text thisUIText;
-	private Image fazerIconSR;
 	private float txtColorAlpha;
 	private float fadeSpeed = 0.1f;
 	
 	private staticValueManagerS sVMS;
 	private soundManager_Base sMB;
 
+	public GameObject _groundParent;
 	
 	//初期値
 	DateTime endWaitTime = DateTime.Now;
@@ -36,19 +37,17 @@ public class talkingMainScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Debug.Log ("fIn this scene, fastest Start is talkingMainScript");
+
 		if (Application.loadedLevelName == "talkScene" ){
 			_bgColor.color = Color.black;
 		}
 
 		thisUIText = this.transform.GetComponent<Text> ();
-		BGImage = transform.parent.Find ("bgImage").GetComponent<Image> ();
-		BGImage.color = new Color(0f, 0f, 0f, 0.3f);
+		_BGImage.color = new Color(0f, 0f, 0f, 0.3f);
 
 		sVMS = staticValueManagerGetter.getManager ();
 		sMB = soundManagerGetter.getManager ();
-
-		//waitIconFazer
-		fazerIconSR = this.transform.parent.Find ("waitIconFazer").GetComponent<Image>();
 
 		//初期値　止める
 		Time.timeScale = 0;
@@ -66,7 +65,6 @@ public class talkingMainScript : MonoBehaviour {
 	public void startResouceRead(string argsFileName){
 		string fPath = "ScenarioTxt/";
 		string fFullPath = fPath + argsFileName;
-		//Debug.Log (fFullPath);
 
 		TextAsset txtA = Resources.Load(fFullPath) as TextAsset;
 
@@ -77,12 +75,9 @@ public class talkingMainScript : MonoBehaviour {
 		this.pageStart ();
 		tapedFlag = false;
 
-		//Debug.Log (allTxt.Length);
-
 	}
 
 	public void onTap_goNextPage(){
-
 		tapedFlag = true;
 		sMB.playOneShotSound (enm_oneShotSound.massegeNext);
 	}
@@ -100,7 +95,7 @@ public class talkingMainScript : MonoBehaviour {
 					
 					thisStatus = enm_textControllStatus.inputWait;
 					//fazerボタンの使用可能に
-					fazerIconSR.enabled = true;
+					_fazerIconSR.enabled = true;
 
 					tapedFlag=false;
 				}else{
@@ -109,13 +104,13 @@ public class talkingMainScript : MonoBehaviour {
 					if (txtColorAlpha >= 1f){
 						thisStatus = enm_textControllStatus.inputWait;
 						//fazerボタンの使用可能に
-						fazerIconSR.enabled = true;
+						_fazerIconSR.enabled = true;
 					}
 				}
 				break;
 			case enm_textControllStatus.inputWait:
 				if (tapedFlag){
-					fazerIconSR.enabled = false;
+					_fazerIconSR.enabled = false;
 
 					tapedFlag=false;
 					this.pageNext();
@@ -127,14 +122,14 @@ public class talkingMainScript : MonoBehaviour {
 				break;
 			case enm_textControllStatus.sleep:
 				//ウィンドウの非表示
-				_textMainFrame.SetActive(false);
+				this.setChildImageEnable(false);
 
 				if (tapedFlag){
 					tapedFlag=false;
 				}else{
 					if (DateTime.Now > endWaitTime){
 						//時間待機
-						_textMainFrame.SetActive(true);
+						setChildImageEnable(true);
 
 						this.pageNext();
 					}
@@ -145,6 +140,17 @@ public class talkingMainScript : MonoBehaviour {
 
 		}
 	}
+
+	private void setChildImageEnable(bool argsBool){
+		_textMainFrame.GetComponent<Image> ().enabled = argsBool;
+
+		Image[] childImages = _textMainFrame.GetComponentsInChildren<Image> ();
+
+		foreach (Image tmpI in childImages) {
+			tmpI.enabled = argsBool;
+				}
+		}
+
 	
 	private void pageStart(){
 		//最初だけ呼ばれる
@@ -161,7 +167,7 @@ public class talkingMainScript : MonoBehaviour {
 
 
 		//クリック待ちアイコンは非表示にする
-		fazerIconSR.enabled = false;
+		_fazerIconSR.enabled = false;
 	}
 
 	private void pageNext(){
@@ -189,7 +195,8 @@ public class talkingMainScript : MonoBehaviour {
 		//親ごと破壊
 		Time.timeScale = 1f;
 		//this.transform.parent.gameObject.SetActive (false);
-		Destroy (this.transform.parent.gameObject) ;
+
+		Destroy (_groundParent) ;
 
 	}
 
@@ -230,7 +237,7 @@ public class talkingMainScript : MonoBehaviour {
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
 		
-		//イベントフラグ
+		//進捗増加
 		tmpFindStr = "<forwardEvent:[abcd]>";
 		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
 		if (findF) {
@@ -267,7 +274,7 @@ public class talkingMainScript : MonoBehaviour {
 			
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
-
+		
 		//image
 		tmpFindStr = "<image:[0-9]{4}:[lrc]>";
 		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
@@ -277,6 +284,19 @@ public class talkingMainScript : MonoBehaviour {
 			
 			Debug.Log(matchStr);
 			this.setADVImage(matchStr);			//Commond
+			
+			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
+		}
+		
+		//image
+		tmpFindStr = "<bgm:[0-9]{2}>";
+		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
+		if (findF) {
+			//match の取得
+			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
+			
+			Debug.Log("matchStr : " + matchStr);
+			this.setBGM(matchStr);			//Commond
 			
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
@@ -295,17 +315,6 @@ public class talkingMainScript : MonoBehaviour {
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
 
-		//sleep time
-		tmpFindStr = "<sleep:[0-9]{1,5}>";
-		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
-		if (findF) {
-			//match の取得
-			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
-
-			this.setSleep(matchStr);
-
-			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
-		}
 
 		
 		//立ち絵の明るさを設定する
@@ -324,7 +333,18 @@ public class talkingMainScript : MonoBehaviour {
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
 
-
+		
+		//sleep time
+		tmpFindStr = "<sleep:[0-9]{1,5}>";
+		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
+		if (findF) {
+			//match の取得
+			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
+			
+			this.setSleep(matchStr);
+			
+			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
+		}
 
 		
 		//Scene移動
@@ -383,42 +403,52 @@ public class talkingMainScript : MonoBehaviour {
 	}
 
 
-
+	
 	//
 	//
 	private void setSpot(string argsStr){
 		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//各個の消去
 		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
-
+		
 		string argsPosi = spritStr[1];
-
+		
 		standingCharaImageParent sSCIS_L = _attachedLeftChara.GetComponent<standingCharaImageParent>();
 		standingCharaImageParent sSCIS_R = _attachedRightChara.GetComponent<standingCharaImageParent>();
 		standingCharaImageParent sSCIS_C = _attachedCenterChara.GetComponent<standingCharaImageParent>();
-
+		
 		//自分以外のイラストは暗くする
-
+		
 		switch (argsPosi) {
 		case "l":
 			sSCIS_L.setThisChildsSpot(true);
 			sSCIS_C.setThisChildsSpot(false);
 			sSCIS_R.setThisChildsSpot(false);
-
+			
 			break;
 		case "r":
 			sSCIS_L.setThisChildsSpot(false);
 			sSCIS_C.setThisChildsSpot(false);
 			sSCIS_R.setThisChildsSpot(true);
-
+			
 			break;
 		case "c":
 			sSCIS_L.setThisChildsSpot(false);
 			sSCIS_C.setThisChildsSpot(true);
 			sSCIS_R.setThisChildsSpot(false);
-
+			
 			break;
 		}
+		
+	}
+	//
+	//
+	private void setBGM(string argsStr){
+		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//各個の消去
+		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
+		
+		int tmpInt = int.Parse(spritStr[1]);
 
+		soundManagerGetter.getManager ().playBGM (tmpInt);
 	}
 	
 	//
@@ -542,7 +572,7 @@ public class talkingMainScript : MonoBehaviour {
 		string argsImageNo = spritStr[1];
 
 		//初期値
-		BGImage.color = Color.black;
+		_BGImage.color = Color.black;
 
 		String fFullPath = "";
 		Sprite[] charaBase;
@@ -550,18 +580,18 @@ public class talkingMainScript : MonoBehaviour {
 		switch (argsImageNo) {
 		case "98":
 			//半透明 黒
-			BGImage.sprite = null;
-			BGImage.color = new Color(0f, 0f, 0f, 0.3f);
+			_BGImage.sprite = null;
+			_BGImage.color = new Color(0f, 0f, 0f, 0.3f);
 
 			break;
 		case "99":
 			//黒塗り
-			BGImage.sprite = null;
-			BGImage.color = Color.black;
+			_BGImage.sprite = null;
+			_BGImage.color = Color.black;
 			
 			break;
 		default:
-			BGImage.sprite = largeBGImageLoader.getImage(argsImageNo);
+			_BGImage.sprite = largeBGImageLoader.getImage(argsImageNo);
 			
 			break;
 				}
@@ -571,14 +601,14 @@ public class talkingMainScript : MonoBehaviour {
 		}
 	
 	IEnumerator backGrougImageShow(){
-		BGImage.color = Color.black;
+		_BGImage.color = Color.black;
 
 		for (int loopI = 0; loopI < 60; loopI++) {
 			yield return null;
 
 			Color tmpC = new Color(loopI/60f, loopI/60f, loopI/60f ,1 );
 			
-			BGImage.color = tmpC;
+			_BGImage.color = tmpC;
 		} 
 	}
 

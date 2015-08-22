@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 241794a1465570049ab510ed92daa123
+timeCreated: 1439285819
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: syusuran_14
+    21300002: syusuran_11
+    21300004: syusuran_08
+    21300006: syusuran_10
+    21300008: syusuran_09
+    21300010: syusuran_06
+    21300012: syusuran_07
+    21300014: syusuran_05
+    21300016: syusuran_01
+    21300018: syusuran_03
+    21300020: syusuran_04
+    21300022: syusuran_02
+    21300024: syusuran_00
+    21300026: syusuran_shadow
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: syusuran_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1818
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: .461240321, y: .548245609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_11
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1818
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: .461240321, y: .548245609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_08
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1818
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: .461240321, y: .548245609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1588
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: .461240321, y: .548245609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_09
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1588
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: .461240321, y: .548245609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_06
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1588
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: .461240321, y: .548245609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_07
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1358
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: .461240321, y: .548245609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_05
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1358
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: .461240321, y: .548245609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_01
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1358
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: .461240321, y: .548245609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_03
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1128
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: .461240321, y: .548245609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_04
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1128
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: .461240321, y: .548245609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_02
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1128
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: .461240321, y: .548245609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_00
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 200
+        width: 328
+        height: 926
+      alignment: 9
+      pivot: {x: .466463417, y: .51079911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: syusuran_shadow
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 196
+        width: 332
+        height: 930
+      alignment: 9
+      pivot: {x: .466867477, y: .510752678}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

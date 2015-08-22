@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 public class allEnemyBase : MonoBehaviour {
 	public GameObject _HPBar;
+
 	private enemyHPBarScript hpBar;
 	
 	private GameObject thisGameManager;
@@ -19,11 +20,15 @@ public class allEnemyBase : MonoBehaviour {
 	private HashSet<int> grantExpChara;
 	private typeEnemyStatus thisEnemyStat;
 	//private GameObject 
+
+	private soundManager_Base sMB;
 	
 	// Use this for initialization
 	void Start() {
+		sMB = soundManagerGetter.getManager ();
+
 		grantExpChara = new HashSet<int>();
-		thisEnemyStat = new typeEnemyStatus(50f, 100f,2f,1f);
+		thisEnemyStat = new typeEnemyStatus(1f, 1);
 
 		//HP Barの作成
 		GameObject tmpHpbarGO = Instantiate (_HPBar) as GameObject;
@@ -42,6 +47,17 @@ public class allEnemyBase : MonoBehaviour {
 		gmS = GameManagerGetter.getGameManager ();
 	}
 
+	public void setThisEnemyStatus(typeEnemyStatus argsVal){
+		thisEnemyStat = argsVal;
+	}
+	
+	public float getAttackingPower(){
+		return thisEnemyStat.AttackingPower;
+	}
+	
+	public float getAttackingDelay(){
+		return thisEnemyStat.attackDeleySec;
+	}
 
 	/*
 	IEnumerator mainLoop(){
@@ -58,8 +74,6 @@ public class allEnemyBase : MonoBehaviour {
 
 		thisEnemyStat.nowHP -= argsInt;
 
-//		Debug.Log (thisEnemyStat.nowHP);
-
 		if (thisEnemyStat.nowHP <= 0) {
 			this.destoryF = true;
 
@@ -68,6 +82,7 @@ public class allEnemyBase : MonoBehaviour {
 			this.removedMe (this.transform);
 			return 0;
 		} else {
+			sMB.playOneShotSound(enm_oneShotSound.enemyHit);
 			hpBar.setHP(thisEnemyStat.nowHP);
 			return 0;
 		}

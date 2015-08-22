@@ -1,0 +1,3 @@
+﻿<bgimage:00><size=45><b><color=blue> Title Test </color></b></size>this is 0-0-0-1@pg
+end
+<forwardEvent:b><nextScene:s:null>

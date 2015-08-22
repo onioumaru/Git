@@ -1,0 +1,13 @@
+//ストーリー進行表//
+
+0-0-0-0	//new Game
+0-0-0-1 //talk
+0-1-0-0 //battle
+0-1-0-1 //talk tutorial
+0-1-0-2 //talk tutorial
+
+
+
+
+
+

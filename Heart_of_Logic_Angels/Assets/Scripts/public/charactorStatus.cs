@@ -181,16 +181,28 @@ public enum enumCharaNum{
 public class typeEnemyStatus{
 	public float maxHP;
 	public float nowHP;
+
+	public float level;
 	public float grantExp;
 	public float attackDeleySec;
 	public float multiAttackCount;
-	
-	public typeEnemyStatus(float argsmaxHp,float argsgrantExp,float argsatkDeley,float argsmltAttack){
-		this.maxHP            = argsmaxHp;
+	public float AttackingPower;
+
+	public typeEnemyStatus(float argsLevel, int argsType){
+		this.maxHP            = argsLevel * 50f;
 		this.nowHP            = this.maxHP;
-		this.grantExp         = argsgrantExp;
-		this.attackDeleySec   = argsatkDeley;
-		this.multiAttackCount = argsmltAttack;
+
+		this.grantExp         = argsLevel * argsLevel;
+
+		switch (argsType) {
+		default:
+			this.attackDeleySec = 1.5f;
+			this.multiAttackCount = 2f;
+			this.AttackingPower = argsLevel * 10f;
+
+			break;
+		}
+
 	}
 }
 

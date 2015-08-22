@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class GameManagerScript : MonoBehaviour {
+	public bool _forDebug = false;
+
 	//GUI上で設定
 	public Sprite[] charaIconEmptyGrp;
 	public SpriteRenderer[] charaIconEmptyPosision;
@@ -91,7 +93,15 @@ public class GameManagerScript : MonoBehaviour {
 
 		loadedCharaList = new gameStartingVariable ();
 
-		bool[] sortieCharas = sVMS.getSortieCharaNo ();
+		bool[] sortieCharas;
+		if (_forDebug) {
+			//for debug
+			sortieCharas = new bool[9];
+			sortieCharas[0] = true;
+		} else {
+			sortieCharas = sVMS.getSortieCharaNo ();
+		}
+
 
 		for (int loopI = 0; loopI < 9; loopI++){
 			enumCharaNum tmpC = (enumCharaNum)loopI;

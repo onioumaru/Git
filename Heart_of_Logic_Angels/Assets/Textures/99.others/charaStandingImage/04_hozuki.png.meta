@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 2aea99171a10c0742b3b075a1b111089
+timeCreated: 1439452198
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: hozuki_00
+    21300002: hozuki_01
+    21300004: hozuki_02
+    21300006: hozuki_03
+    21300008: hozuki_04
+    21300010: hozuki_05
+    21300012: hozuki_06
+    21300014: hozuki_base
+    21300016: hozuki_shadow
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: hozuki_00
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 938
+        width: 102
+        height: 84
+      alignment: 9
+      pivot: {x: .450980395, y: -3.9523809}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hozuki_01
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 939
+        width: 102
+        height: 83
+      alignment: 9
+      pivot: {x: .450980395, y: -4.01204824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hozuki_02
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 783
+        width: 95
+        height: 77
+      alignment: 9
+      pivot: {x: .431578934, y: -4.27272749}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hozuki_03
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 944
+        width: 102
+        height: 78
+      alignment: 9
+      pivot: {x: .450980395, y: -4.26923084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hozuki_04
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 864
+        width: 102
+        height: 78
+      alignment: 9
+      pivot: {x: .450980395, y: -4.26923084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hozuki_05
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 859
+        width: 102
+        height: 78
+      alignment: 9
+      pivot: {x: .441176474, y: -4.26923084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hozuki_06
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 862
+        width: 102
+        height: 74
+      alignment: 9
+      pivot: {x: .450980395, y: -4.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hozuki_base
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 30
+        width: 313
+        height: 992
+      alignment: 9
+      pivot: {x: .562300324, y: .498991936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hozuki_shadow
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 40
+        width: 315
+        height: 982
+      alignment: 9
+      pivot: {x: .561904788, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

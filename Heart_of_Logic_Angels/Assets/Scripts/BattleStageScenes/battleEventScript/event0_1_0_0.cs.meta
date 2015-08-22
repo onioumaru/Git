@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1c09fa1a8b599e041bb19f146550c6b6
+timeCreated: 1439880180
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - _talkPartPerefab: {fileID: 130128, guid: 3c98178b1421f584182e4356c1b23993, type: 2}
+  - _missionTargetPrefab: {fileID: 177672, guid: 47030e60a554446439b46c43b1cd4313,
+      type: 2}
+  - _battleStartCaption: {fileID: 135718, guid: a5d5a36604f2e314fa565056cd469519,
+      type: 2}
+  - _stageClearCaption: {fileID: 107780, guid: 5f57ffb8b1a3d9645b01085283d46ce0, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

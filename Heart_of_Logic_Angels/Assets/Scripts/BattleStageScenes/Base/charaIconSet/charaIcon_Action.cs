@@ -48,6 +48,8 @@ public class charaIcon_Action : MonoBehaviour {
 			Vector3 tmpV = new Vector3(thisCharaBase.transform.localPosition.x, thisCharaBase.transform.localPosition.y, -10f);
 			Camera.main.transform.position = tmpV;
 
+			soundManagerGetter.getManager().playOneShotSound(enm_oneShotSound.charaMenu);
+
 			charaMenuInstance = Instantiate(characterMenu) as GameObject;
 			charaMenuInstance.GetComponentInChildren<charaMenu_parent>().setParentChara(thisCharaBase);
 			charaMenuInstance.GetComponentInChildren<charaMenu_parent>().setParentIconSet(this.gameObject.transform.parent.gameObject);

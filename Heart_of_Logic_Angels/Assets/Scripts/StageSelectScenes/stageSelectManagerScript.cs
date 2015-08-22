@@ -102,6 +102,9 @@ public class stageSelectManagerScript : MonoBehaviour {
 
 
 	void Start(){
+		Debug.Log ("fIn this scene, fastest Start is " + this.name);
+		soundManagerGetter.getManager ().playBGM (10);
+
 		sVMS = staticValueManagerGetter.getManager ();
 
 		int thisStoryProgress = sVMS.getStoryProgress();

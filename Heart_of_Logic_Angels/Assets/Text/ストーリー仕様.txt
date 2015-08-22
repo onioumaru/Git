@@ -1,0 +1,26 @@
+//ストーリー管理//
+
+//基本 数値は0スタート
+StoryRoute		//ルート大分岐 (Berserker, Angels, Not Angels)
+StoryProgress	//ストーリー進度,Chapter
+StoryStage		//面の設定、選択式ステージに使用する。ステージ選択が一つの場合は、常に０
+StoryStep		//ステージごとの進度
+StoryMode		//nomal or maniac
+
+StoryScene		//どのステージか。これはセーブデータには保存されない。シーン移行の為に使用される
+				//default = 0
+
+
+eventflag_XXX	//
+
+
+
+
+chara Number		//0-8
+chara enable		//
+chara Exp			//
+chara Lv			//
+chara equipment		//
+
+
+

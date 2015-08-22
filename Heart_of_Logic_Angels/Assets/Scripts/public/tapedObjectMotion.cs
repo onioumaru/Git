@@ -22,7 +22,11 @@ public class tapedObjectMotion : MonoBehaviour {
 			waitTimeCor=null;
 				}
 
-		sMB.playOneShotSound (enm_oneShotSound.nomalButton);
+		if (_cancelButtonFlag) {
+			sMB.playOneShotSound (enm_oneShotSound.closeButton);
+		} else {
+			sMB.playOneShotSound (enm_oneShotSound.nomalButton);
+		}
 
 		waitTimeCor = StartCoroutine ( pushThis () );
 	}

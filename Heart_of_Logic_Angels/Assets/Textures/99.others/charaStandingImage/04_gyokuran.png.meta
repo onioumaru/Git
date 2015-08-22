@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 326731bc5c247b146b5e1fe6d880ceb3
+timeCreated: 1439482496
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: gyoku_00
+    21300002: gyoku_01
+    21300004: gyoku_02
+    21300006: gyoku_03
+    21300008: gyoku_04
+    21300010: gyoku_05
+    21300012: gyoku_06
+    21300014: gyoku_shadow
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: gyoku_00
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 94
+        width: 254
+        height: 928
+      alignment: 9
+      pivot: {x: .498031497, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gyoku_01
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 829
+        width: 238
+        height: 193
+      alignment: 9
+      pivot: {x: .474789917, y: .510362685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gyoku_02
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 829
+        width: 238
+        height: 193
+      alignment: 9
+      pivot: {x: .474789917, y: .510362685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gyoku_03
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 634
+        width: 238
+        height: 193
+      alignment: 9
+      pivot: {x: .474789917, y: .510362685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gyoku_04
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 634
+        width: 238
+        height: 193
+      alignment: 9
+      pivot: {x: .474789917, y: .510362685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gyoku_05
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 439
+        width: 238
+        height: 193
+      alignment: 9
+      pivot: {x: .474789917, y: .510362685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gyoku_06
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 439
+        width: 238
+        height: 193
+      alignment: 9
+      pivot: {x: .474789917, y: .510362685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gyoku_shadow
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 90
+        width: 258
+        height: 932
+      alignment: 9
+      pivot: {x: .498062015, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -37,8 +37,10 @@ public class allCharaBase : MonoBehaviour {
 	private AudioSource thisAudio;
 	private SpriteRenderer thisAtkCircle;
 	private GameObject thisAttackErea;
-
+	
 	private skillTargetInfo thisSkillTatgetInfo;
+
+	private soundManager_Base sMB;
 
 
 	//この値が0になるまで、硬直時間とする
@@ -50,6 +52,8 @@ public class allCharaBase : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+		sMB = soundManagerGetter.getManager ();
+
 		gmScript = GameObject.Find("GameManager").GetComponentInChildren<GameManagerScript>();
 		cmrTracker = GameObject.Find ("CameraTracker").GetComponentInChildren<cameraTrackerScript> ();
 		
@@ -129,8 +133,10 @@ public class allCharaBase : MonoBehaviour {
 		thisChara.nowHP -= damage;
 		
 		if (thisChara.nowHP < 1) {
-			this.destroyF = true;
-			this.removedMe(this.transform);
+				this.destroyF = true;
+				this.removedMe (this.transform);
+		} else {
+			sMB.playOneShotSound(enm_oneShotSound.playerDamage);
 		}
 	}
 	

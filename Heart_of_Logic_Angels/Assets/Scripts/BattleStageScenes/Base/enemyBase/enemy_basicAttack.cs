@@ -6,13 +6,16 @@ public class enemy_basicAttack : MonoBehaviour {
 	
 	private List<Transform> lastFrameAttackTarget;
 
+	private allEnemyBase aEB;
 
-	public float attackDeley = 0.5f;
+	public float thisEnemyAttackDeleySec = 10f;
 	private bool deleyFlag = false;
 
 	// Use this for initialization
 	void Start () {
 		lastFrameAttackTarget = new List<Transform> ();
+
+		aEB = this.transform.parent.GetComponent<allEnemyBase>();
 
 		StartCoroutine (mainLoop ());
 	}
@@ -60,10 +63,13 @@ public class enemy_basicAttack : MonoBehaviour {
 
 		lastFrameAttackTarget.Clear();
 		deleyFlag = true;
-		
-		int tmpDm = 1 + Mathf.FloorToInt(Random.value * 4);
+
+		int tmpDm = 1 + Mathf.FloorToInt(aEB.getAttackingPower() + (Random.value * 2));
 		nearTarget.gameObject.GetComponent<allCharaBase> ().setDamage (tmpDm);
-		
+
+		//ここで再取得
+		thisEnemyAttackDeleySec = aEB.getAttackingDelay ();
+
 		yield return StartCoroutine (this.attackDeleyClearer());
 	}
 
@@ -80,7 +86,7 @@ public class enemy_basicAttack : MonoBehaviour {
 	}
 	
 	IEnumerator attackDeleyClearer(){
-		yield return new WaitForSeconds(attackDeley);
+		yield return new WaitForSeconds(thisEnemyAttackDeleySec);
 		deleyFlag = false;
 	}
 
