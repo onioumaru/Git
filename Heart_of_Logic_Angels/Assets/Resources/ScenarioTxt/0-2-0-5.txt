@@ -1,0 +1,8 @@
+﻿<sleep:1000>@pg
+<image:0002:l>エンジュ
+「よっゆ～」@pg
+<image:9203:r>謎の鳥たち
+『畜生っ…！　覚えて…やがれ…！
+　ガクッ』@pg
+<remove:r><se:01>
+<forwardEvent:d>

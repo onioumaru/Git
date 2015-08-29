@@ -12,6 +12,7 @@ public class titleScript : MonoBehaviour {
 	}
 
 	public void touchStart(){
+		soundManagerGetter.getManager ().playOneShotSound (enm_oneShotSound.charaMenu);
 		_saveDataSelecter.SetActive(true);
 	}
 }

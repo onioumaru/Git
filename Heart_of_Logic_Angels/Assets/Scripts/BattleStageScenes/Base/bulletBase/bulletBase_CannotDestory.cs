@@ -8,18 +8,27 @@ using System.Collections;
  * この弾は必ず時間経過で破壊される物とする。
  * */
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class bulletBase_CannotDestory : MonoBehaviour {
 	private float dealDamage = 999999f;
-	private float deleteTime = 10f;
+	public float deleteTime = 10f;
+	public Vector3 _movingSpeedforSec;
 	
 	// Use this for initialization
 	void Start () {
 		StartCoroutine (removeTime());
+		StartCoroutine (mainLoop());
 	}
 	
 	public void setRemoveTime(float argsSec){
 		deleteTime = argsSec;
+	}
+	
+	IEnumerator mainLoop(){
+		while (true) {
+			this.transform.localPosition = this.transform.localPosition + (_movingSpeedforSec * Time.deltaTime);
+
+			yield return new WaitForSeconds (0.0001f);
+		}
 	}
 
 	IEnumerator removeTime(){
@@ -43,7 +52,4 @@ public class bulletBase_CannotDestory : MonoBehaviour {
 		}
 	}
 
-	public void setRigidVelocity(Vector2 argsVect){
-		this.GetComponent<Rigidbody2D>().velocity = argsVect;
-	}
 }

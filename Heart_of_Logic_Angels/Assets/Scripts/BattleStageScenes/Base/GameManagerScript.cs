@@ -14,9 +14,6 @@ public class GameManagerScript : MonoBehaviour {
 	
 	public Sprite[] _charaFaceIconSprite;
 
-	//
-	private bool initF = false;
-	private List<float> expList;
 	public gameStartingVariable loadedCharaList;
 	
 	public GameObject _cmrTracker;
@@ -30,7 +27,6 @@ public class GameManagerScript : MonoBehaviour {
 	public GameObject _battleTextCanvasPrefab;
 	private battleTextCanvasParentScript battleTextInstance;
 
-
 	// Use this for initialization
 	void Start () {
 		instantedCmrTracker = (GameObject)Instantiate (_cmrTracker);
@@ -42,27 +38,43 @@ public class GameManagerScript : MonoBehaviour {
 		this.battleStageStarter();
 
 	}
+	/// <summary>
+	/// 第2引数を省略すると、自動的にポーズ処理を行う
+	/// 第二引数 False で、ポーズ処理は飛ばす。連続でイベント処理を粉う場合は False で呼ぶと便利
+	/// </summary>
+	/// <param name="argsStr">Arguments string.</param>
 
 	public void talkingPartLoader(string argsStr){
+		talkingPartLoader(argsStr, true);
+	}
+	
+	public void talkingPartLoader(string argsStr,bool freezChenged){
 		//コライダーはすべて停止
-		Time.timeScale = 0f;
-		this.setAllCollider2DEnabale (false);
 
+		if (freezChenged) {
+			Time.timeScale = 0f;
+			this.setAllCollider2DEnabale (false);
+		}
+		
 		//会話表示
 		sVMS.getNowSceneChangeValue().sceneFileName = argsStr;
 		GameObject tmpGO = (GameObject)Instantiate (_talkPartPerefab);
-
-		StartCoroutine (talkingPartWaiter(tmpGO) );
+		
+		StartCoroutine (talkingPartWaiter(tmpGO, freezChenged) );
 	}
 
-	IEnumerator talkingPartWaiter(GameObject argsGO){
+
+
+	IEnumerator talkingPartWaiter(GameObject argsGO, bool freezChenged){
 		// トークシーンが破壊されるまでループして待つ
 		while (argsGO != null) {
 			yield return null;
 		}
-		
-		this.setAllCollider2DEnabale (true);
-		Time.timeScale = 1f;
+
+		if (freezChenged) {
+			this.setAllCollider2DEnabale (true);
+			Time.timeScale = 1f;
+		}
 	}
 
 
@@ -92,6 +104,7 @@ public class GameManagerScript : MonoBehaviour {
 	void battleStageStarter( ){
 
 		loadedCharaList = new gameStartingVariable ();
+		charaStartBattleInfo cSBI = new charaStartBattleInfo (sVMS.getNowSceneChangeValue ());
 
 		bool[] sortieCharas;
 		if (_forDebug) {
@@ -117,15 +130,17 @@ public class GameManagerScript : MonoBehaviour {
 		//chataList.setData (enumCharaNum.gyokuran_04, 1, 0);
 
 		for (int i=0 ; i < loadedCharaList.charalist.Count;i++){
-			Vector3 tmpV = new Vector3(-2.5f, (i * 0.2f), 0);
+			//Vector3 tmpV = new Vector3(-2.5f, (i * 0.2f), 0);
 
 			gameStartingVariable_Single tmpChara = loadedCharaList.charalist[i];
 
 			//charaMain
 			tmpChara.charaBase = Instantiate(tmpChara.Prefab_charaGrh) as GameObject;
-			
-			Vector2 tmpV2 = new Vector2(-2f, i / 2f);
-			tmpChara.charaBase.transform.position = tmpV2;
+
+
+			//キャラクターの初期位置
+			//Vector2 tmpV2 = new Vector2(-2f, i / 2f);
+			tmpChara.charaBase.transform.position = cSBI.getCharaPosition(i);
 
 
 			//charaAnime
@@ -139,11 +154,12 @@ public class GameManagerScript : MonoBehaviour {
 			tmpChara.charaScript = tmpChara.charaBase.GetComponentInParent<allCharaBase>();
 			
 			tmpChara.charaScript.thisChara = new charaUserStatus (tmpChara.CharaNumber, 1f);
-			tmpChara.charaFlag = Instantiate(tmpChara.Prefab_charaFlag ,tmpV ,Quaternion.identity) as GameObject;
+			tmpChara.charaFlag = Instantiate(tmpChara.Prefab_charaFlag , cSBI.getFlagPosition(i) ,Quaternion.identity) as GameObject;
 			
 			tmpChara.charaScript.thisCharaIndex = i;
 			tmpChara.charaScript.thisCharaFlag = tmpChara.charaFlag;
-			tmpChara.charaScript.calcdExp = this.calcLv(tmpChara.totalExp);
+
+			tmpChara.charaScript.calcdExp = characterLevelManagerGetter.getManager().calcLv(tmpChara.totalExp);
 
 			tmpChara.charaScript.stopFlag = false;
 		}
@@ -285,48 +301,6 @@ public class GameManagerScript : MonoBehaviour {
 		}
 	}
 
-	public retTypeExp calcLv(float argsExp){
-		retTypeExp retExp = new retTypeExp ();
-
-		if (initF == false) {
-			this.initExpMaster();
-		}
-
-		for (int i = 0; i < 200; i++) {
-			if (expList[i] > argsExp){
-				//対象の経験値より小さい場合,このレベル
-
-				retExp.Lv = i;
-				retExp.nextExp = expList[i] - argsExp;
-
-				if (i == 0){
-					retExp.beforeExp = 0;
-				}else{
-					retExp.beforeExp = expList[i-1];
-				}
-
-				retExp.nextLvExp = expList[i];
-				retExp.totalExp = argsExp;
-
-				break;
-			}
-		}
-		return retExp;
-	}
-
-
-	// init
-
-	private void initExpMaster(){
-		expList = new List<float>();
-		float tmpF = 0f;
-
-		for (int i=0; i < 200; i++) {
-			tmpF = (i * i * i)+(37 * i * i)-38;
-			expList.Add(tmpF);
-		}
-		initF = true;
-	}
 
 	//
 	//chara Icon Menu のスクロール
@@ -375,19 +349,6 @@ public class GameManagerScript : MonoBehaviour {
 		return battleTextInstance;
 	}
 
-}
-
-
-
-
-// args Type
-
-public class retTypeExp{
-	public int Lv;
-	public float totalExp;
-	public float nextExp;
-	public float beforeExp;
-	public float nextLvExp;
 }
 
 //

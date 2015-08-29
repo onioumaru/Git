@@ -87,7 +87,7 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1514611870
+--- !u!1001 &534397077
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -170,6 +170,10 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1835350056}
+    - target: {fileID: 11406710, guid: 3c98178b1421f584182e4356c1b23993, type: 2}
+      propertyPath: _forDebug
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c98178b1421f584182e4356c1b23993, type: 2}
   m_IsPrefabParent: 0

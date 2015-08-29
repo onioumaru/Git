@@ -43,9 +43,10 @@ public class charaIcon_Action : MonoBehaviour {
 			doubleClickCheck = true;
 			StartCoroutine(doubleClickWait());
 		} else {
+			//ダブルクリックされた
 			doubleClickCheck = false;
 
-			Vector3 tmpV = new Vector3(thisCharaBase.transform.localPosition.x, thisCharaBase.transform.localPosition.y, -10f);
+			Vector3 tmpV = new Vector3(thisCharaBase.transform.position.x, thisCharaBase.transform.position.y, -20f);
 			Camera.main.transform.position = tmpV;
 
 			soundManagerGetter.getManager().playOneShotSound(enm_oneShotSound.charaMenu);

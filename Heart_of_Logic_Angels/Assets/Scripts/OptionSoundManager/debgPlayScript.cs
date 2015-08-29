@@ -5,6 +5,7 @@ using System.Collections;
 public class debgPlayScript : MonoBehaviour {
 	private soundManager_Base sndM;
 	public Text bgmNumText;
+	public Text _SENumText;
 
 	public void testPlay(){
 		sndM = soundManagerGetter.getManager ();
@@ -22,9 +23,10 @@ public class debgPlayScript : MonoBehaviour {
 
 	public void testSEplay(){
 		sndM = soundManagerGetter.getManager ();
-		
-		sndM.playOneShotSound(enm_oneShotSound.nomalButton);
-		sndM.playOneShotSound(enm_oneShotSound.enemyHit);
+
+		int tmpNo = int.Parse (_SENumText.text);
+
+		sndM.playOneShotSound((enm_oneShotSound)tmpNo );
 	}
 
 }

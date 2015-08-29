@@ -23,12 +23,15 @@ public class allEnemyBase : MonoBehaviour {
 
 	private soundManager_Base sMB;
 	
+	public float _defaultLevel = 5f;
+	public enumEnemyType _defaultEnemyType = enumEnemyType.small001;
+
 	// Use this for initialization
 	void Start() {
 		sMB = soundManagerGetter.getManager ();
 
 		grantExpChara = new HashSet<int>();
-		thisEnemyStat = new typeEnemyStatus(1f, 1);
+		thisEnemyStat = new typeEnemyStatus(_defaultLevel, _defaultEnemyType);
 
 		//HP Barの作成
 		GameObject tmpHpbarGO = Instantiate (_HPBar) as GameObject;
@@ -78,6 +81,8 @@ public class allEnemyBase : MonoBehaviour {
 			this.destoryF = true;
 
 			gmS.grantExp_forAllChara(grantExpChara, thisEnemyStat.grantExp);
+			
+			sMB.playOneShotSound(enm_oneShotSound.attack03);
 
 			this.removedMe (this.transform);
 			return 0;

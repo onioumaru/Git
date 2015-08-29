@@ -10,6 +10,8 @@ public class standingCharaImageS : MonoBehaviour {
 	public Sprite _shadowSprite;
 	public Sprite[] _childDiffSprite;
 	public bool _fadeInAlfaChannelUseF;		// fadein時に顔を表示するか？　首から上のイラストの場合,Falseとする
+
+	public bool _notMainCharaF = false;
 	
 	private bool fadeInStartF = false;
 	private int movCnt;
@@ -30,10 +32,16 @@ public class standingCharaImageS : MonoBehaviour {
 	void Start () {
 		//初期位置
 		this.transform.localPosition = _thisCharaDefaultLocalPosition;
+		
+		thisImage = this.GetComponent<Image> ();
+
+		if (_notMainCharaF == true) {
+			return;
+		}
 
 		this.initThis ();
 
-		initFlag = true;
+		//initFlag = true;
 
 		this.startFadeIn ();
 
@@ -41,7 +49,7 @@ public class standingCharaImageS : MonoBehaviour {
 	}
 	
 	public void setFaceDiff(string argsString){
-		long tmpL = long.Parse (argsString);
+		long tmpL = long.Parse (argsString) -1 ;
 		_childDiffImage.sprite = _childDiffSprite[tmpL];
 		
 	}
@@ -59,6 +67,8 @@ public class standingCharaImageS : MonoBehaviour {
 		}
 
 		thisImage.color = tmpC;
+		
+		if (_notMainCharaF == true) {return;}
 		thisImageShadow.color = tmpC;
 		_childDiffImage.color = tmpC;
 
@@ -69,8 +79,6 @@ public class standingCharaImageS : MonoBehaviour {
 		if (initFlag == true) {
 				return;
 				}
-
-		thisImage = this.GetComponent<Image> ();
 
 		//新規作成
 		//動的に作成

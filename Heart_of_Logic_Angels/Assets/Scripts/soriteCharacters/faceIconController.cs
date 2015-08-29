@@ -40,9 +40,11 @@ public class faceIconController : MonoBehaviour {
 
 		saveCharaValueClass tmpChara = sVMS.getSaveCharaValue (selectedIconIndex);
 
-		string tmpCap = "Level " + tmpChara.level + "\n";
+		expLevelInfo tmpExpInfo = characterLevelManagerGetter.getManager ().calcLv (tmpChara.exp);
+
+		string tmpCap = "Level " + tmpChara.level + "\n\n";
 		tmpCap += tmpChara.getCharaName() + "\n";
-		tmpCap += "Next Level " + tmpChara.getCharaName() + "\n";
+		tmpCap += "Next Level\n" + tmpExpInfo.nextExp + "\n";
 		tmpCap += "\n";
 		tmpCap += "Equipment:\n";
 

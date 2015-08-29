@@ -26,9 +26,9 @@ public class soundManager_Base : MonoBehaviour {
 			oneShotSound = new Hashtable();
 		}
 
-		this.setDefaultVolume(  "BGMVol");
-		this.setDefaultVolume(  "MasterVol");
-		this.setDefaultVolume(  "SEVol");
+		this.setDefaultVolume("BGMVol");
+		this.setDefaultVolume("MasterVol");
+		this.setDefaultVolume("SEVol");
 	}
 
 	private void setDefaultVolume(string argsKey){
@@ -42,7 +42,7 @@ public class soundManager_Base : MonoBehaviour {
 			tmpVal = PlayerPrefs.GetFloat(volumeName);
 		}
 
-		Debug.Log (tmpVal);
+		//Debug.Log (tmpVal);
 
 		float clampVal = Mathf.Clamp(tmpVal, 0.0001f, 1.0f);
 		float volumeDB = 40f * Mathf.Log10(clampVal);
@@ -222,6 +222,12 @@ public enum enm_oneShotSound{
 	,enemyHit
 	,nomalButton
 	,closeButton
+	,effect001
+	,attack03
+	,scream_of_a_monster_C1
+	,knocking_a_wooden_door
+	,removeCloud
+	,duck
 }
 
 

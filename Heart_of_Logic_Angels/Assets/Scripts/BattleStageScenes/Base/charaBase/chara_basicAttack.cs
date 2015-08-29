@@ -56,6 +56,7 @@ public class chara_basicAttack : MonoBehaviour {
 		commonCharaAttack tmpAtk = new commonCharaAttack (nearTarget.gameObject, parentCharaScrpt.gameObject, tmpDm);
 		//チェックと実行
 		if (tmpAtk.exec() == false) {
+			//Debug.Log ("yield break");
 			yield break;
 		}
 
@@ -81,6 +82,7 @@ public class chara_basicAttack : MonoBehaviour {
 			if (commonCharaAttack.checkTargetCollider(c)) {
 				//Attack erea でない
 				
+				//Debug.Log("add attack List");
 				//リストにストック
 				lastFrameAttackTarget.Add(c.transform);
 			}
@@ -90,10 +92,11 @@ public class chara_basicAttack : MonoBehaviour {
 	/*
 	void OnTriggerEnter2D(Collider2D c){
 		if (attackDeleyFlag == false) {
-			if (c.gameObject.name.Substring(0,10) != "AttackErea") {
+			if (commonCharaAttack.checkTargetCollider(c)) {
 				//Attack erea でない
 				
 				//リストにストック
+				Debug.Log("add List");
 				lastFrameAttackTarget.Add(c.transform);
 			}
 		}

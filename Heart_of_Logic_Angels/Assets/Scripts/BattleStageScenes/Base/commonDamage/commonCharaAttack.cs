@@ -50,6 +50,8 @@ public class commonCharaAttack
 			return true;
 		}
 
+		//Debug.Log ("not Selected");
+
 		return false;
 	}
 

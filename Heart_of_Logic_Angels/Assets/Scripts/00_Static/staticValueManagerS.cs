@@ -162,11 +162,20 @@ public class staticValueManagerS : MonoBehaviour {
 		selectedUserSaveDat.Add(argsFlagName, flagVal);
 	}
 	
-	
-	public void addStoryProgresses(string argsStr, bool resetF){
+	/// <summary>
+	/// 指定した進捗階層を１加算する
+	/// 第２引数で True を指定した際には、対象の進捗度を０にする。基本打に2引数は省略して使用する
+	/// </summary>
+	public void addStoryProgresses(enum_StoryProgressType argsStr){
+		//
+		this.addStoryProgresses (argsStr, false);
+		}
+
+	public void addStoryProgresses(enum_StoryProgressType argsStr, bool resetF){
+		//下位の進行度は、自動的にリセットされる
 
 		switch(argsStr){
-		case "a":
+		case enum_StoryProgressType.Route:
 			// StoryRoute
 			long tmpRoute = (long)selectedUserSaveDat["StoryRoute"];
 
@@ -176,28 +185,31 @@ public class staticValueManagerS : MonoBehaviour {
 				selectedUserSaveDat["StoryRoute"] = tmpRoute + 1;
 			}
 			break;
-		case "b":
+		case enum_StoryProgressType.Progress:
 			//storyProgress_Key
-			long tmpProgress = (long)selectedUserSaveDat[storyProgress_Key];
+			int  tmpProgress = int.Parse(selectedUserSaveDat[storyProgress_Key].ToString() );
 			if (resetF){
 				selectedUserSaveDat[storyProgress_Key] = 0;
 			}else{
 				selectedUserSaveDat[storyProgress_Key] = tmpProgress + 1;
+				this.addStoryProgresses(enum_StoryProgressType.Stage,true);
+				this.addStoryProgresses(enum_StoryProgressType.Step,true);
 			}
 			break;
-		case "c":
+		case enum_StoryProgressType.Stage:
 			//storyStage_Key
-			long tmpStage = (long)selectedUserSaveDat[storyStage_Key];
+			int tmpStage = int.Parse(selectedUserSaveDat[storyStage_Key].ToString() );
 
 			if (resetF){
 				selectedUserSaveDat[storyStage_Key] = 0;
 			}else{
 				selectedUserSaveDat[storyStage_Key] = tmpStage + 1; 
+				this.addStoryProgresses(enum_StoryProgressType.Step,true);
 			}
 			break;
-		case "d":
+		case enum_StoryProgressType.Step:
 			// StoryStep
-			long tmpStep = (long)selectedUserSaveDat["StoryStep"];
+			int tmpStep = int.Parse( selectedUserSaveDat["StoryStep"].ToString() );
 
 			if (resetF){
 				selectedUserSaveDat["StoryStep"] = 0;
@@ -206,6 +218,10 @@ public class staticValueManagerS : MonoBehaviour {
 			}
 			break;
 		}
+
+		nowSceneValue.convertSelectedUserSaveData ();
+
+		Debug.Log ("進捗増加 : " + nowSceneValue.sceneFileName);
 	}
 
 	//
@@ -292,9 +308,7 @@ public class staticValueManagerS : MonoBehaviour {
 			break;
 		}
 
-		tmpStoryProgress = (long)tmpSelectedDic[storyProgress_Key];
-		
-		return (int)tmpStoryProgress;
+		return int.Parse(tmpSelectedDic[storyProgress_Key].ToString() );
 	}
 
 	/*
@@ -668,6 +682,13 @@ public enum sceneChangeStatusEnum{
 	gotoTalkScene
 }
 
+public enum enum_StoryProgressType{
+	Route,
+	Progress,	//データロードの場合は、進行度により進むシーンが違う為、個別に判断する
+	Stage,
+	Step
+}
+
 
 
 
@@ -711,7 +732,8 @@ public class sceneChangeValue{
 
 		//Debug.Log (tmpStr);
 	}
-	
+
+	/*
 	public void setStoryRoute(long argsNum){
 		//Route 情報については、直接値をセットする
 		userSaveData ["StoryRoute"] = argsNum;
@@ -740,6 +762,7 @@ public class sceneChangeValue{
 		//Debug.Log (userSaveData["StoryStep"].ToString() );
 		this.convertSelectedUserSaveData();
 	}
+	*/
 }
 
 

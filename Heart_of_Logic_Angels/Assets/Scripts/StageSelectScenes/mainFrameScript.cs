@@ -20,9 +20,9 @@ public class mainFrameScript : MonoBehaviour {
 
 		//マルチステージはここで区切る
 		switch(thisProgress){
-		case 4:
+		//case 4:
 
-			break;
+		//	break;
 
 		default:
 			Debug.Log (thisProgress);

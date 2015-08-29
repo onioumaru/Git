@@ -23,7 +23,7 @@ public class allCharaBase : MonoBehaviour {
 	//以下設定不要、自動Set
 	public GameManagerScript gmScript;
 	public charaUserStatus thisChara;
-	public retTypeExp calcdExp;
+	public expLevelInfo calcdExp;
 	public bool destroyF = false;
 	
 	//スクリプト起動時はTrue（停止）にしておく事
@@ -157,7 +157,7 @@ public class allCharaBase : MonoBehaviour {
 	public void getExp(float argsExp){
 		thisChara.totalExp += argsExp;
 
-		this.calcdExp = gmScript.calcLv (thisChara.totalExp);
+		this.calcdExp = characterLevelManagerGetter.getManager ().calcLv (thisChara.totalExp);
 		
 		if(thisChara.nowLv != this.calcdExp.Lv){
 			//

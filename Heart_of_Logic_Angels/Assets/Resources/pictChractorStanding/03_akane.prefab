@@ -77,7 +77,8 @@ MonoBehaviour:
   - {fileID: 21300008, guid: 5ba91cd405fbc2a4fa022da8abeea61f, type: 3}
   - {fileID: 21300010, guid: 5ba91cd405fbc2a4fa022da8abeea61f, type: 3}
   - {fileID: 21300012, guid: 5ba91cd405fbc2a4fa022da8abeea61f, type: 3}
-  _fadeInAlfaChannelUseF: 1
+  _fadeInAlfaChannelUseF: 0
+  _notMainCharaF: 0
 --- !u!114 &11471446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -168,7 +169,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _fadeInAlfaChannelUseF
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

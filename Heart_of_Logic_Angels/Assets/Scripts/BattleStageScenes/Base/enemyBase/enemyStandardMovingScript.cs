@@ -6,33 +6,50 @@ public class enemyStandardMovingScript : MonoBehaviour {
 	public float _defaultMovingSpeed = 0.1f;
 
 	private GameManagerScript gms;
+	private Coroutine _thisCoro;
 
 	// Use this for initialization
 	void Start () {
 		gms = GameManagerGetter.getGameManager ();
-
-		if (thisMoveType > -1) {
-			this.setMoveType(thisMoveType);
-		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
-
+	
 	public void setMoveType(int argsType){
+		
+		if (_thisCoro != null) {
+			StopCoroutine(_thisCoro);
+			_thisCoro = null;
+		}
+		
 		switch(argsType){
 		case 0:
-
-			StartCoroutine( simpleMoving() );
-
+			_thisCoro = StartCoroutine( simpleCharacterTrackingMoving() );
 			break;
 		}
 	}
 
+
+	public void setMoveTypeTargetPosi(int argsType, Vector3 argsVect){
+		
+		if (_thisCoro != null) {
+			StopCoroutine(_thisCoro);
+			_thisCoro = null;
+		}
+		
+		switch(argsType){
+		case 0:
+			iTween.MoveTo(this.gameObject, iTween.Hash("x", argsVect.x, "y", argsVect.y, "speed", _defaultMovingSpeed));
+			break;
+		}
+
+	}
 	
-	IEnumerator simpleMoving(){
+
+	IEnumerator simpleCharacterTrackingMoving(){
 		while (true) {
 			yield return new WaitForSeconds(1f);
 
@@ -47,5 +64,6 @@ public class enemyStandardMovingScript : MonoBehaviour {
 			iTween.MoveTo(this.gameObject, iTween.Hash("x", targetVctr.x, "y", targetVctr.y, "speed", _defaultMovingSpeed));
 		}
 	}
+
 
 }

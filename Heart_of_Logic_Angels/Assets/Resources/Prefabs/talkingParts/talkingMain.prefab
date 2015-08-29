@@ -367,6 +367,7 @@ MonoBehaviour:
   _BGImage: {fileID: 11483510}
   _fazerIconSR: {fileID: 11455140}
   _groundParent: {fileID: 130128}
+  _forDebug: 0
 --- !u!114 &11414416
 MonoBehaviour:
   m_ObjectHideFlags: 1

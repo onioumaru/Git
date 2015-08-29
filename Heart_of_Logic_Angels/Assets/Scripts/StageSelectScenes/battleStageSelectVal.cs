@@ -29,11 +29,12 @@ public class battleStageSelectVal{
 		switch(argsStoryChapter){
 		case 1:
 		case 2:
+		case 3:
 			//廊下の場合
 			bgImage = largeBGImageLoader.getImage("00");
 			
 			break;
-		case 3:
+		case 10:
 			//運動場02(陸上競技場)の場合
 			bgImage = largeBGImageLoader.getImage("01");
 			
@@ -49,20 +50,20 @@ public class battleStageSelectVal{
 		
 		switch (storyChapter) {
 		case 1:
-			stageTitle = "1-1-1 始まり";
-			stageComment = "一体ここはどこなのか。\n記憶も曖昧なエンジュだったが、\n今は立ちあがり、歩みを進める他ない。\n\n※　チュートリアル１\nここでは基本的なルール・操作について確認します。";
+			stageTitle = "1 : 始まり";
+			stageComment = "　一体ここはどこなのか。\n記憶も曖昧なエンジュだったが、\n今は立ちあがり、歩みを進める他ない。\n\n※　チュートリアル１\nここでは基本的なルール・操作について確認します。";
 
 			break;
 
 		case  2:
-			stageTitle = "2-1-1 シュスラン救出";
-			stageComment = "";
+			stageTitle = "2 : シュスラン救出";
+			stageComment = "　謎の生命体改め、柄の悪いトサカに絡まれてしまったエンジュ。\n　何だかよく分からないが、謎の声もイイって言っていたので、とりあえず ぶちのめしておこう。\n\n※　チュートリアル２\n基本的な戦闘について確認します。";
 			break;
 		case  3:
-			stageTitle = "3-1 1F：体育館";
-			stageComment = "";
+			stageTitle = "3 : 2F 廊下";
+			stageComment = " 階段の下から騒がしく声が聞こえる。\n　先ほどの青い鳥の様だが、\nかなりの数がいるような雰囲気だ。\n";
 			break;
-		case  4:
+		case  10:
 			switch(stageNo){
 			case 0:
 				stageTitle = "4-1 1F：図書館";

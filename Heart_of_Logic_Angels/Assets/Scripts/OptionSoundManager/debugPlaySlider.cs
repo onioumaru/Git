@@ -13,7 +13,7 @@ public class debugPlaySlider : MonoBehaviour {
 	}
 
 	public void setSliderValue(){
-		float bgmNum = thisSlider.value * 30f;
+		float bgmNum = thisSlider.value;
 
 		bgmNumText.text = bgmNum.ToString ("0");
 

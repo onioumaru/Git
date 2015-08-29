@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 /*
@@ -24,8 +24,6 @@ public class charaUserStatus{
 	public float flyingAtkMagn;
 	public float flyingDefMagn;
 
-	public GameManagerScript gmScript;
-
 	public float MaxSkillCoolTime;
 	public float restSkillCoolTime;
 	
@@ -34,8 +32,8 @@ public class charaUserStatus{
 		this.totalExp = charaExp;
 		this.charaNo = charaNo;
 
-		gmScript = GameObject.Find("GameManager").GetComponentInChildren<GameManagerScript>();
-		retTypeExp tmpExp = gmScript.calcLv (charaExp);
+		expLevelInfo tmpExp = characterLevelManagerGetter.getManager ().calcLv (charaExp);
+
 		this.nowLv = tmpExp.Lv;
 		this.nextExp = tmpExp.nextExp;
 
@@ -58,7 +56,7 @@ public class charaUserStatus{
 		case enumCharaNum.syukaido_08:
 		case enumCharaNum.hiragi_09:
 		case enumCharaNum.test_10:
-			this.nowHP = (this.nowLv*13); // 100 +
+			this.nowHP = (this.nowLv * 29f) + 20f; // 100 +
 			flyingAtkMagn = 0.2f;
 			flyingDefMagn = 4f;
 			MaxSkillCoolTime = 3f;
@@ -81,7 +79,7 @@ public class charaUserStatus{
 		case enumCharaNum.syukaido_08:
 		case enumCharaNum.hiragi_09:
 		case enumCharaNum.test_10:
-			this.maxHP = (this.nowLv*13); // 100 +
+			this.maxHP = (this.nowLv * 29f) + 20f; // 100 +
 			break;
 		}
 	}
@@ -178,6 +176,11 @@ public enum enumCharaNum{
 	enju_01, syusuran_02, suzusiro_03, gyokuran_04, houzuki_05, mokuren_06, shion_07, syukaido_08, hiragi_09 ,test_10,noInit
 }
 
+public enum enumEnemyType{
+	small001
+	,a
+}
+
 public class typeEnemyStatus{
 	public float maxHP;
 	public float nowHP;
@@ -188,17 +191,16 @@ public class typeEnemyStatus{
 	public float multiAttackCount;
 	public float AttackingPower;
 
-	public typeEnemyStatus(float argsLevel, int argsType){
-		this.maxHP            = argsLevel * 50f;
-		this.nowHP            = this.maxHP;
-
-		this.grantExp         = argsLevel * argsLevel;
-
+	public typeEnemyStatus(float argsLevel, enumEnemyType argsType){
 		switch (argsType) {
 		default:
-			this.attackDeleySec = 1.5f;
+			this.maxHP            = argsLevel * 14f;
+			this.nowHP            = this.maxHP;
+			this.grantExp         = argsLevel * 10;
+
+			this.attackDeleySec = 3f;
 			this.multiAttackCount = 2f;
-			this.AttackingPower = argsLevel * 10f;
+			this.AttackingPower = argsLevel * 1f;
 
 			break;
 		}

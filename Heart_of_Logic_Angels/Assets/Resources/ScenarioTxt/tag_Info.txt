@@ -10,10 +10,50 @@
  /* sleep の後には @pg を入れる事 */
 <sleep:2000>@pg
 
+
+<eff:[0-9]{2}:[lrca]>
+
+
+
 <bgimage:00>
+//00 = 廊下
+//01 = トラック
 
 * tag *
 
 <size=45><b><color=blue> Title Test </color></b></size>
 
+//上から progress, Stage, Step
 <forwardEvent:b>
+<forwardEvent:c>
+<forwardEvent:d>
+
+
+<bgm:11>
+//11:悲しい会話用
+
+
+<remove:c>
+
+<abyssCloud:[lrc]>
+
+
+
+<se:00>
+
+			tmpS = enm_oneShotSound.effect001;
+			break;
+		case 1:
+			tmpS = enm_oneShotSound.attack03;
+			break;
+		case 2:
+			tmpS = enm_oneShotSound.scream_of_a_monster_C1;
+			break;
+		case 3:
+			tmpS = enm_oneShotSound.knocking_a_wooden_door;
+			4
+			tmpS = enm_oneShotSound.removeCloud;
+			
+			
+			
+			

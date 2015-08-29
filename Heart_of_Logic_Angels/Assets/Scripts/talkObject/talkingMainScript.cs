@@ -28,8 +28,10 @@ public class talkingMainScript : MonoBehaviour {
 	
 	private staticValueManagerS sVMS;
 	private soundManager_Base sMB;
-
+	
 	public GameObject _groundParent;
+
+	public bool _forDebug = false;
 	
 	//初期値
 	DateTime endWaitTime = DateTime.Now;
@@ -56,7 +58,11 @@ public class talkingMainScript : MonoBehaviour {
 		//ない場合はログを吐いて初期値を入れる
 		String sceneFileName = sVMS.getTalkingSceneName ();
 
-		this.startResouceRead (sceneFileName);
+		if (_forDebug) {
+			this.startResouceRead ("0-2-0-6");
+		} else {
+			this.startResouceRead (sceneFileName);
+		}
 
 		//メイン処理
 		StartCoroutine ( loopText () );
@@ -212,9 +218,20 @@ public class talkingMainScript : MonoBehaviour {
 		if (findF) {
 			//match の取得
 			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
-
-
+			
 			this.setADVImageRemoveAll();		//Commond
+			
+			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
+		}
+		
+		//絵の消去
+		tmpFindStr = "<remove:[lrc]>";
+		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
+		if (findF) {
+			//match の取得
+			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
+			
+			this.setADVImageRemove(matchStr);		//Commond
 			
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
@@ -288,7 +305,7 @@ public class talkingMainScript : MonoBehaviour {
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
 		
-		//image
+		//bgm
 		tmpFindStr = "<bgm:[0-9]{2}>";
 		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
 		if (findF) {
@@ -300,7 +317,20 @@ public class talkingMainScript : MonoBehaviour {
 			
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
-
+		
+		//se
+		tmpFindStr = "<se:[0-9]{2}>";
+		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
+		if (findF) {
+			//match の取得
+			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
+			
+			Debug.Log("matchStr : " + matchStr);
+			this.setSE(matchStr);			//Commond
+			
+			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
+		}
+		
 		//表情effect
 		tmpFindStr = "<eff:[0-9]{2}:[lrc]>";
 		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
@@ -311,10 +341,24 @@ public class talkingMainScript : MonoBehaviour {
 			//Commond
 			Debug.Log(matchStr);
 			this.setEmotionEffect(matchStr);
-
+			
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
 
+		//表情effect
+		tmpFindStr = "<abyssCloud:[lrc]>";
+		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
+		if (findF) {
+			//match の取得
+			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
+			
+			//Commond
+			Debug.Log(matchStr);
+			this.setAbyssCloud(matchStr);
+			
+			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
+		}
+		
 
 		
 		//立ち絵の明るさを設定する
@@ -384,20 +428,17 @@ public class talkingMainScript : MonoBehaviour {
 
 		switch(argsPosi){
 		case "a":
-			sVMS.addStoryProgresses("a",false);
+			sVMS.addStoryProgresses(enum_StoryProgressType.Route);
 			break;
 
 		case "b":
-			sVMS.addStoryProgresses("b",false);
-			sVMS.addStoryProgresses("c",true);
-			sVMS.addStoryProgresses("d",true);
+			sVMS.addStoryProgresses(enum_StoryProgressType.Progress);
 			break;
 		case "c":
-			sVMS.addStoryProgresses("c",false);
-			sVMS.addStoryProgresses("d",true);
+			sVMS.addStoryProgresses(enum_StoryProgressType.Stage);
 			break;
 		case "d":
-			sVMS.addStoryProgresses("d",false);
+			sVMS.addStoryProgresses(enum_StoryProgressType.Step);
 			break;
 		}
 	}
@@ -447,10 +488,43 @@ public class talkingMainScript : MonoBehaviour {
 		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
 		
 		int tmpInt = int.Parse(spritStr[1]);
-
+		
 		soundManagerGetter.getManager ().playBGM (tmpInt);
 	}
 	
+	private void setSE(string argsStr){
+		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//各個の消去
+		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
+		
+		int tmpInt = int.Parse(spritStr[1]);
+
+
+		enm_oneShotSound tmpS = enm_oneShotSound.charaMenu;
+
+		switch(tmpInt){
+		case 0:
+			tmpS = enm_oneShotSound.effect001;
+			break;
+		case 1:
+			tmpS = enm_oneShotSound.attack03;
+			break;
+		case 2:
+			tmpS = enm_oneShotSound.scream_of_a_monster_C1;
+			break;
+		case 3:
+			tmpS = enm_oneShotSound.knocking_a_wooden_door;
+			break;
+		case 4:
+			tmpS = enm_oneShotSound.removeCloud;
+			break;
+		case 5:
+			tmpS = enm_oneShotSound.duck;
+			break;
+		}
+
+		soundManagerGetter.getManager().playOneShotSound (tmpS);
+	}
+
 	//
 	//
 	private void setSleep(string argsStr){
@@ -486,8 +560,7 @@ public class talkingMainScript : MonoBehaviour {
 			//トークシーンからトークシーンに移動するため、第2引数は特に不要
 			//自動的にステップ１追加
 
-			sceneChangeValue tmpV = sVMS.getNowSceneChangeValue();
-			tmpV.addStoryStep(1);
+			sVMS.addStoryProgresses(enum_StoryProgressType.Step);
 
 			sVMS.changeScene(sceneChangeStatusEnum.gotoTalkScene);
 			
@@ -542,7 +615,7 @@ public class talkingMainScript : MonoBehaviour {
 		case "c":
 			tmpBaseTrn = _attachedCenterChara.gameObject;
 			baseCharaPosi = new Vector3(100f,180f,0);
-
+			
 			break;
 		}
 
@@ -552,18 +625,67 @@ public class talkingMainScript : MonoBehaviour {
 		copyEff.transform.localPosition = baseCharaPosi;
 	}
 
-	private void setADVImageRemoveAll(){
+	//setAbyssCloud
+	private void setAbyssCloud(string argsStr){
+		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//各個の消去
+		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
 
-		standingCharaImageParent sSCIS_L = _attachedLeftChara.transform.GetComponent<standingCharaImageParent>();
-		sSCIS_L.destoryChild();
+		string argsPosi = spritStr[1];
 
-		standingCharaImageParent sSCIS_R = _attachedRightChara.transform.GetComponent<standingCharaImageParent>();
-		sSCIS_R.destoryChild();
-		
-		standingCharaImageParent sSCIS_C = _attachedCenterChara.transform.GetComponent<standingCharaImageParent>();
-		sSCIS_C.destoryChild();
+		string fFullPath = "pictChractorStanding/Eff_abyssCloud";
+		GameObject tmpResouce = Resources.Load(fFullPath) as GameObject;
 
+		GameObject tmpGO = (GameObject)Instantiate(tmpResouce);
+
+		switch (argsPosi) {
+		case "l":
+			tmpGO.transform.parent = _attachedLeftChara.transform;
+			break;
+		case "r":
+			tmpGO.transform.parent = _attachedRightChara.transform;
+			break;
+		case "c":
+			tmpGO.transform.parent = _attachedCenterChara.transform;
+			break;
 		}
+		
+		tmpGO.transform.localScale = new Vector3(0.7f, 0.7f, 0f);
+		tmpGO.transform.localPosition = Vector3.zero;
+
+	}
+
+
+	private void setADVImageRemoveAll(){
+			this.setADVImageRemoveSingle ("c");
+			this.setADVImageRemoveSingle ("l");
+			this.setADVImageRemoveSingle ("r");
+		}
+
+	private void setADVImageRemove(string argsStr){
+		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//各個の消去
+		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
+		
+		string argsIconNo = spritStr[1];
+
+		this.setADVImageRemoveSingle (argsIconNo);
+	}
+
+	private void setADVImageRemoveSingle(string argsStr){
+		switch(argsStr){
+		case "c":
+			standingCharaImageParent sSCIS_C = _attachedCenterChara.transform.GetComponent<standingCharaImageParent>();
+			sSCIS_C.destoryChild();
+			break;
+		case "l":
+			standingCharaImageParent sSCIS_L = _attachedLeftChara.transform.GetComponent<standingCharaImageParent>();
+			sSCIS_L.destoryChild();
+			break;
+		case "r":
+			standingCharaImageParent sSCIS_R = _attachedRightChara.transform.GetComponent<standingCharaImageParent>();
+			sSCIS_R.destoryChild();
+			break;
+		}
+	}
 
 	private void setBGImage(string argsStr){
 		string tagMain = argsStr.Substring (1, (argsStr.Length-2));

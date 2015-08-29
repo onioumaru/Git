@@ -26,6 +26,15 @@ public class event0_1_0_0 : MonoBehaviour {
 		StartCoroutine ( timeEvent() );
 	}
 
+	/*
+	 * 
+	void Update(){
+		if (Input.GetKeyDown (KeyCode.Z)) {
+			//debuf
+			this.OnTriggerStay2D(null);
+				}
+	}
+*/
 
 	IEnumerator timeEvent(){
 		// 時間経過 系
@@ -74,11 +83,11 @@ public class event0_1_0_0 : MonoBehaviour {
 
 		sceneChangeValue sceneCV = sVMS.getNowSceneChangeValue ();
 
-		//
-		sceneCV.addStoryProgress (1);
+		//例外差分修正
+		sVMS.addStoryProgresses (enum_StoryProgressType.Step);
 
 		//Debug.Log ("gotoStageSelect");
-		sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
+		sVMS.changeScene (sceneChangeStatusEnum.gotoTalkScene);
 
 	}
 
