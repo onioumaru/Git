@@ -122,10 +122,15 @@ public class allCharaBase : MonoBehaviour {
 	public void setDamage(float argsInt){
 		GameObject retObj = Instantiate (bitmapFontBasePrefab, this.transform.position, this.transform.rotation) as GameObject;
 
-		float damage = argsInt;
+		//
+
+		float damage = argsInt * thisChara.battleStatus.getDamage_CalCharaMode();
 		if (thisChara.flyingFlag == true) {
 			damage = damage * thisChara.flyingDefMagn;
 		}
+
+
+		// ここまでにダメージ計算
 
 		retObj.GetComponentInChildren<common_damage> ().showDamage (this.transform, damage);
 		thisAnimeter.SetTrigger ("gotoDamage");
@@ -133,8 +138,8 @@ public class allCharaBase : MonoBehaviour {
 		thisChara.nowHP -= damage;
 		
 		if (thisChara.nowHP < 1) {
-				this.destroyF = true;
-				this.removedMe (this.transform);
+			this.destroyF = true;
+			this.removedMe (this.transform);
 		} else {
 			sMB.playOneShotSound(enm_oneShotSound.playerDamage);
 		}
@@ -176,7 +181,7 @@ public class allCharaBase : MonoBehaviour {
 		//=10+(A5*A5*0.1)+3*A5
 
 		// 基本計算式 * 飛行適正 * モード倍率
-		float retDm = (10 + (thisChara.nowLv * thisChara.nowLv * 0.1f) + 3 * thisChara.nowLv) * thisChara.battleStatus.thisInfo.attackMagn;
+		float retDm = (10 + (thisChara.nowLv * thisChara.nowLv * 0.6f) + 3 * thisChara.nowLv) * thisChara.battleStatus.thisInfo.attackMagn;
 
 		if (thisChara.flyingFlag == true) {
 			retDm = retDm * thisChara.flyingAtkMagn ;

@@ -12,12 +12,14 @@ public class faceIconScript : MonoBehaviour {
 	private Image checkIcon;
 	private tapedObjectMotion tapSc;
 	private faceIconController fIC;
+	private soriteCharaDotChanger charaDotScript;
 
 	// Use this for initialization
 	void Start () {
 		checkIcon = this.transform.Find ("chkImage").GetComponent<Image> ();
 		tapSc = this.GetComponent<tapedObjectMotion> ();
 		fIC = this.transform.parent.GetComponent<faceIconController>();
+		charaDotScript = GameObject.Find ("soriteCharaDot").GetComponent<soriteCharaDotChanger>();
 	}
 
 	public void clickIcon(){
@@ -27,6 +29,7 @@ public class faceIconScript : MonoBehaviour {
 			//未選択から選択へ
 
 			fIC.showSelectedCharaInfo(_thisIndex);
+			charaDotScript.setAnimation(_thisIndex);
 
 			return;
 		}

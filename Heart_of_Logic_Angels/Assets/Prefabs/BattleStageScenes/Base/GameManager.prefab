@@ -57,33 +57,33 @@ MonoBehaviour:
   _charaMainSprite:
   - {fileID: 21300000, guid: ebee80a0eb701f341a99e47f4c33dcb1, type: 3}
   - {fileID: 21300020, guid: 7fd540662557dc144a6b66c3921f91c5, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: a883ec2a9474f3d4fad56e06e56878e9, type: 3}
+  - {fileID: 21300000, guid: da2a416e03c85604da90009bdc006f87, type: 3}
+  - {fileID: 21300000, guid: ac4472d1b9b0a4645af1c41079e97eb2, type: 3}
+  - {fileID: 21300000, guid: 1eb1f6fae20449946b5a86d0e7c0716d, type: 3}
+  - {fileID: 21300000, guid: 3c0c675f706ad0848b7e73f8ea94c7c6, type: 3}
+  - {fileID: 21300000, guid: 061b3bdc8521f7445a97f29c69c17e93, type: 3}
+  - {fileID: 21300000, guid: 867fbb662dc33a6438acfb54d715446c, type: 3}
   _charaMainAnimetion:
   - {fileID: 9100000, guid: be87b107831a4d94d87466e49b4345dd, type: 2}
   - {fileID: 9100000, guid: 0f574b008e36d4645abc4a1d5028b60b, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 9100000, guid: fc28a21980f55364bbc4e9e12d47268a, type: 2}
+  - {fileID: 9100000, guid: 6bd14aa86c3d8a547b6a6befc40794ab, type: 2}
+  - {fileID: 9100000, guid: 747df4c122bdf584b87432dab2bc2a80, type: 2}
+  - {fileID: 9100000, guid: b639b7d6d91ea42498cae6717bae85c1, type: 2}
+  - {fileID: 9100000, guid: 8e6556cf6ae4f7e44be720af1a4c825e, type: 2}
+  - {fileID: 9100000, guid: cb691b09ba1849843b8f2010a99701cd, type: 2}
+  - {fileID: 9100000, guid: ef546566c690f9140bf7201a2671ec12, type: 2}
   _charaFaceIconSprite:
   - {fileID: 21300000, guid: 37cff894e3b22e8428d600b20ffe34a8, type: 3}
   - {fileID: 21300000, guid: 00334eb8f1455654c81808d0a49dafd2, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 10bdebe193b73a54a8da4d5e056d667b, type: 3}
+  - {fileID: 21300000, guid: aef58bfe01f995f46b9d4d97ea0e7901, type: 3}
+  - {fileID: 21300000, guid: e8bf5c3af4a82ad4dbf7295a453e52c2, type: 3}
+  - {fileID: 21300000, guid: 681c0501e99fd00438991a4c3aa16cc7, type: 3}
+  - {fileID: 21300000, guid: 6f9882f528eaa0143a3c3690e00117e2, type: 3}
+  - {fileID: 21300000, guid: 44e2889ee273d7a4f90f27fa8a239ecc, type: 3}
+  - {fileID: 21300000, guid: 51408a048812ef5428af6498e1c9582b, type: 3}
   _cmrTracker: {fileID: 172386, guid: ffc2ef41de190b8408ac3f6604fa9a12, type: 2}
   _talkPartPerefab: {fileID: 130128, guid: 3c98178b1421f584182e4356c1b23993, type: 2}
   _battleTextCanvasPrefab: {fileID: 138386, guid: c2f2d5f000450e040a9f6e53a61ff6e0,
@@ -94,7 +94,105 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: _charaFaceIconSprite.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 10bdebe193b73a54a8da4d5e056d667b,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaFaceIconSprite.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: aef58bfe01f995f46b9d4d97ea0e7901,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaFaceIconSprite.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: e8bf5c3af4a82ad4dbf7295a453e52c2,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaFaceIconSprite.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 681c0501e99fd00438991a4c3aa16cc7,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaFaceIconSprite.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6f9882f528eaa0143a3c3690e00117e2,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaFaceIconSprite.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 51408a048812ef5428af6498e1c9582b,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaFaceIconSprite.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 44e2889ee273d7a4f90f27fa8a239ecc,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaMainAnimetion.Array.data[2]
+      value: 
+      objectReference: {fileID: 9100000, guid: fc28a21980f55364bbc4e9e12d47268a, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaMainAnimetion.Array.data[3]
+      value: 
+      objectReference: {fileID: 9100000, guid: 6bd14aa86c3d8a547b6a6befc40794ab, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaMainAnimetion.Array.data[4]
+      value: 
+      objectReference: {fileID: 9100000, guid: 747df4c122bdf584b87432dab2bc2a80, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaMainAnimetion.Array.data[5]
+      value: 
+      objectReference: {fileID: 9100000, guid: b639b7d6d91ea42498cae6717bae85c1, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaMainAnimetion.Array.data[6]
+      value: 
+      objectReference: {fileID: 9100000, guid: 8e6556cf6ae4f7e44be720af1a4c825e, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaMainAnimetion.Array.data[7]
+      value: 
+      objectReference: {fileID: 9100000, guid: cb691b09ba1849843b8f2010a99701cd, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaMainAnimetion.Array.data[8]
+      value: 
+      objectReference: {fileID: 9100000, guid: ef546566c690f9140bf7201a2671ec12, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaMainSprite.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: a883ec2a9474f3d4fad56e06e56878e9,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaMainSprite.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: da2a416e03c85604da90009bdc006f87,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaMainSprite.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: ac4472d1b9b0a4645af1c41079e97eb2,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaMainSprite.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eb1f6fae20449946b5a86d0e7c0716d,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaMainSprite.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c0c675f706ad0848b7e73f8ea94c7c6,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaMainSprite.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 061b3bdc8521f7445a97f29c69c17e93,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _charaMainSprite.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 867fbb662dc33a6438acfb54d715446c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197690}

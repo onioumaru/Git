@@ -8,6 +8,7 @@ public class tapedObjectMotion : MonoBehaviour {
 	public float defaultScale = 1f;
 	public float scalePingPong = 0.05f;
 	
+	public bool _soundFlag = true;
 	public bool _cancelButtonFlag = false;
 
 	private soundManager_Base sMB;
@@ -15,6 +16,7 @@ public class tapedObjectMotion : MonoBehaviour {
 	void Start(){
 		sMB = soundManagerGetter.getManager ();
 	}
+
 
 	public void actionTapEffect(){
 		if (waitTimeCor != null) {
@@ -30,6 +32,7 @@ public class tapedObjectMotion : MonoBehaviour {
 
 		waitTimeCor = StartCoroutine ( pushThis () );
 	}
+
 
 	IEnumerator pushThis(){
 		//Debug.Log ("start");

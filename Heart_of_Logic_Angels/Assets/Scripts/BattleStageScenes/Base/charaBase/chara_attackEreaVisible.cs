@@ -22,4 +22,11 @@ public class chara_attackEreaVisible : MonoBehaviour {
 			yield return new WaitForSeconds(0.1f);
 		}
 	}
+
+	public void setVisibleThisCicle(){
+		Color tmpC = thisSR.color;
+		tmpC.a = 0.3f;
+
+		thisSR.color = tmpC;
+	}
 }

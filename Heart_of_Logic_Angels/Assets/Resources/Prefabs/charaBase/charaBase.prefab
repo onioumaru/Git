@@ -245,9 +245,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -.0500000007}
+  m_Offset: {x: 0, y: -.075000003}
   serializedVersion: 2
-  m_Size: {x: .100000001, y: .200000003}
+  m_Size: {x: .100000001, y: .150000006}
 --- !u!82 &8214056
 AudioSource:
   m_ObjectHideFlags: 1
@@ -472,6 +472,14 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: b03a76c7501cf7b4e84d78817d22674d,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Offset.y
+      value: -.075000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Size.y
+      value: .150000006
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 112604}

@@ -47,8 +47,15 @@ public class chara_basicAttack : MonoBehaviour {
 				if (tmpV.magnitude < minLength){
 					minLength = tmpV.magnitude;
 					nearTarget = t;
-					}
+				}
 			}
+		}
+
+		if (nearTarget == null) {
+			//ターゲットが他キャラが同一フレームで倒した場合,ここを通る
+			//1体の場合、起りやすい
+			//即終了
+			yield break;
 		}
 
 		int tmpDm = Mathf.FloorToInt(parentCharaScrpt.getCharaDamage()) + Mathf.FloorToInt(Random.value * 4);

@@ -47,7 +47,7 @@ TagManager:
   - name: charactors
     uniqueID: 3568555955
     locked: 0
-  - name: DamageFont
+  - name: DamageFontAndEffect
     uniqueID: 3036771373
     locked: 0
   - name: charaMenu
@@ -59,9 +59,6 @@ TagManager:
   - name: talkingScene
     uniqueID: 3178214791
     locked: 0
-  - name: GUI_forBattle
+  - name: GUI
     uniqueID: 773111051
-    locked: 0
-  - name: GUI_foward
-    uniqueID: 3856342391
     locked: 0

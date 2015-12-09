@@ -16,7 +16,7 @@ public class event0_3_0_0 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//soundManagerGetter.getManager ().playBGM (1);
+		soundManagerGetter.getManager ().playBGM (1);
 
 		generatedTargetEnemys = new List<GameObject>();
 		//最初の1匹
@@ -48,9 +48,6 @@ public class event0_3_0_0 : MonoBehaviour {
 		Time.timeScale = 1f;
 		GMS.setAllCollider2DEnabale (true);
 
-
-		return;
-
 		StartCoroutine ( startTargetCall() );
 
 		StartCoroutine ( timeEvent() );
@@ -60,27 +57,25 @@ public class event0_3_0_0 : MonoBehaviour {
 
 		GameObject tmpGO = (GameObject)Instantiate (argsGO, argsPosition, Quaternion.identity);
 		generatedTargetEnemys.Add (tmpGO);
+
 	}
 
 	private bool checkTargetEnemyAlive(){
-
 		for (int loopI = 0; loopI < generatedTargetEnemys.Count; loopI++) {
 			if (generatedTargetEnemys[loopI] != null){
 				//破壊されていない奴がいる場合
 				return true;
 			}
 		}
-
 		return false;
 	}
 
 
 	IEnumerator timeEvent(){
 		// 時間経過 系
+		yield return new WaitForSeconds (30f);
 
-		yield return new WaitForSeconds (5f);
-		
-		GMS.talkingPartLoader ("0-2-0-2");
+		//GMS.talkingPartLoader ("0-3-0-2");
 
 		while (true) {
 			yield return new WaitForSeconds (2f);
@@ -94,7 +89,6 @@ public class event0_3_0_0 : MonoBehaviour {
 		}
 		
 		yield return new WaitForSeconds (0.2f);
-
 		StartCoroutine ( stageClear() );
 	}
 	
@@ -110,6 +104,12 @@ public class event0_3_0_0 : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D argsCo){
 		//Debug.Log ("Enter Collider");
+
+		//このコライダー停止
+		Destroy (this.gameObject.GetComponent<BoxCollider2D> ());  //.enabled = false;
+		
+		GMS.talkingPartLoader ("0-3-0-3");
+
 	}
 
 
@@ -134,7 +134,7 @@ public class event0_3_0_0 : MonoBehaviour {
 		sVMS.addStoryProgresses(enum_StoryProgressType.Step);
 
 		//Debug.Log ("gotoStageSelect");
-		sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
+		//sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
 
 	}
 
@@ -142,15 +142,19 @@ public class event0_3_0_0 : MonoBehaviour {
 
 	
 	IEnumerator startTargetCall(){
-		float movingFlameSec = 2f;
-		float targetX = this.transform.localPosition.x;
-		float targetY = this.transform.localPosition.y + 0.5f;
-		float pauseFlameSec = 4f;
+		float movingFlameSec = 3f;
+		float targetX = -20f;
+		float targetY = 0.1f;
+		float pauseFlameSec = 2f;
+
+		//カメラの移動
+		Camera.main.transform.position = new Vector3 (11f, 0f, -20f);
+		GMS.setAllCollider2DEnabale (false);
 
 		//開始会話
 		staticValueManagerS sVMS = staticValueManagerGetter.getManager ();
 		sVMS.addStoryProgresses (enum_StoryProgressType.Step);
-		sVMS.getNowSceneChangeValue().sceneFileName = "0-2-0-1";
+		sVMS.getNowSceneChangeValue().sceneFileName = "0-3-0-1";
 
 		GameObject tmpTalkObj = (GameObject)Instantiate (_talkPartPerefab);
 		// トークシーンが破壊されるまでループして待つ
@@ -159,7 +163,6 @@ public class event0_3_0_0 : MonoBehaviour {
 		}
 
 		Time.timeScale = 0f;
-
 
 		//作戦目標
 		missionTargetTitleS _mTTS;
@@ -184,8 +187,6 @@ public class event0_3_0_0 : MonoBehaviour {
 		}
 
 
-		/* このバトルは不要
-
 		//目標地点までの移動
 		tmpPassedSec = 0f;
 		while(tmpPassedSec < movingFlameSec){
@@ -201,15 +202,12 @@ public class event0_3_0_0 : MonoBehaviour {
 
 			Camera.main.transform.position = new Vector3(tmpX, tmpY, -20f);
 		}
-		*/
-
 
 		//　作戦目標を見せるWait
-		// 矢印不要
 		//_mTTS.startArrowMotion (pauseFlameSec);
 
 
-		/* 戻り時のWaitも不要
+		/*
 		tmpPassedSec = 0f;
 		while(tmpPassedSec < pauseFlameSec){
 			yield return null;
@@ -217,26 +215,25 @@ public class event0_3_0_0 : MonoBehaviour {
 			tmpPassedSec += Time.fixedDeltaTime;
 		}
 		*/
-		
-		/* このバトルは不要
+
+
+		float returnTime = 3f;
 
 		//スタート位置にカメラを戻す
 		tmpPassedSec = 0f;
-		while(tmpPassedSec < (movingFlameSec / 2)){
+		while(tmpPassedSec < (movingFlameSec / returnTime)){
 			yield return null;
 			
 			tmpPassedSec += Time.fixedDeltaTime;
 			
-			tmpX = (targetX / movingFlameSec) * Time.fixedDeltaTime * -2f;
-			tmpY = (targetY / movingFlameSec) * Time.fixedDeltaTime * -2f;
+			tmpX = (targetX / movingFlameSec) * Time.fixedDeltaTime * -1f * returnTime;
+			tmpY = (targetY / movingFlameSec) * Time.fixedDeltaTime * -1f * returnTime;
 			
 			tmpX += Camera.main.transform.position.x;
 			tmpY += Camera.main.transform.position.y;
 			
 			Camera.main.transform.position = new Vector3(tmpX, tmpY, -20f);
 		}
-
-		*/
 
 		//パーティクルを使うので時間開始
 		Time.timeScale = 1f;
@@ -249,6 +246,7 @@ public class event0_3_0_0 : MonoBehaviour {
 			// トークシーンが破壊されるまでループして待つ
 			yield return null;
 		}
+
 		GMS.setAllCollider2DEnabale (true);
 	}
 }

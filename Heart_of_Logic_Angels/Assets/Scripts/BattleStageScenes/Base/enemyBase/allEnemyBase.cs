@@ -26,6 +26,8 @@ public class allEnemyBase : MonoBehaviour {
 	public float _defaultLevel = 5f;
 	public enumEnemyType _defaultEnemyType = enumEnemyType.small001;
 
+	public Sprite _enemyShadow;
+
 	// Use this for initialization
 	void Start() {
 		sMB = soundManagerGetter.getManager ();
@@ -38,7 +40,6 @@ public class allEnemyBase : MonoBehaviour {
 		tmpHpbarGO.transform.parent = this.transform;
 
 		tmpHpbarGO.transform.localPosition = Vector3.zero;
-
 		//位置補正
 		textureVector ttv = new textureVector (this.gameObject);
 		Vector3 tmpV = ttv.getBottomOffset_ForCenterPivot(0, -0.05f);
@@ -46,6 +47,26 @@ public class allEnemyBase : MonoBehaviour {
 
 		hpBar = tmpHpbarGO.GetComponent<enemyHPBarScript>();
 		hpBar.setMaxBarLength_argsWidth (ttv.getWidth(), thisEnemyStat.maxHP);
+
+		//影の作成
+		if (_enemyShadow != null) {
+			//影がセットされているときは表示
+			GameObject tmpEnemyShadow = new GameObject ("enemyShadow");
+			tmpEnemyShadow.AddComponent<SpriteRenderer> ();
+			tmpEnemyShadow.GetComponent<SpriteRenderer> ().sprite = _enemyShadow;
+			tmpEnemyShadow.GetComponent<SpriteRenderer> ().color = new Color(1f, 1f, 1f, 0.3f);
+
+			tmpEnemyShadow.transform.parent = this.transform;
+			tmpEnemyShadow.transform.localPosition = Vector3.zero;
+			
+			Vector3 tmpThisWidth = ttv.getBottomOffset_ForCenterPivot(0f, 0.1f);
+			tmpEnemyShadow.transform.localPosition += tmpThisWidth;
+
+			//影画像は128
+			float tmpScale = ttv.getWidth() / 1.28f;
+			tmpEnemyShadow.transform.localScale = new Vector3(tmpScale,tmpScale,1f);
+
+		}
 
 		gmS = GameManagerGetter.getGameManager ();
 	}

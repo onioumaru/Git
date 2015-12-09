@@ -6,6 +6,7 @@ using System;
 using System.Text.RegularExpressions;
 
 public class talkingMainScript : MonoBehaviour {
+	
 	public GameObject _attachedLeftChara;
 	public GameObject _attachedRightChara;
 	public GameObject _attachedCenterChara;
@@ -30,8 +31,9 @@ public class talkingMainScript : MonoBehaviour {
 	private soundManager_Base sMB;
 	
 	public GameObject _groundParent;
-
+	
 	public bool _forDebug = false;
+	public string _forDebugFileName;
 	
 	//初期値
 	DateTime endWaitTime = DateTime.Now;
@@ -59,7 +61,7 @@ public class talkingMainScript : MonoBehaviour {
 		String sceneFileName = sVMS.getTalkingSceneName ();
 
 		if (_forDebug) {
-			this.startResouceRead ("0-2-0-6");
+			this.startResouceRead (_forDebugFileName);
 		} else {
 			this.startResouceRead (sceneFileName);
 		}

@@ -3,8 +3,8 @@ using System.Collections;
 
 public class enemyYellowRingRemoved : MonoBehaviour {
 
-	void OnAnimationFinish ()
-	{
+	void OnAnimationFinish (){
 		Destroy (this.gameObject);
 	}
+
 }

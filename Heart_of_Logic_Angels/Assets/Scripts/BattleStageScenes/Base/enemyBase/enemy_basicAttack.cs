@@ -3,25 +3,30 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class enemy_basicAttack : MonoBehaviour {
-	
+	public enemyAttackAnimation _animetionPrefabs;
+
 	private List<Transform> lastFrameAttackTarget;
 
 	private allEnemyBase aEB;
 
-	public float thisEnemyAttackDeleySec = 10f;
+	private float thisEnemyAttackDeleySec;
 	private bool deleyFlag = false;
+
+	public GameObject _attackEffectPrefab;
 
 	// Use this for initialization
 	void Start () {
 		lastFrameAttackTarget = new List<Transform> ();
 
-		aEB = this.transform.parent.GetComponent<allEnemyBase>();
+		aEB = this.transform.parent.gameObject.GetComponent<allEnemyBase>();
+		thisEnemyAttackDeleySec = aEB.getAttackingDelay ();
 
 		StartCoroutine (mainLoop ());
 	}
 	
 	IEnumerator mainLoop(){
 		while(true){
+			//実質毎フレーム
 			yield return new WaitForSeconds (1f / 61f);
 
 			if (lastFrameAttackTarget.Count != 0 && deleyFlag == false){
@@ -64,13 +69,24 @@ public class enemy_basicAttack : MonoBehaviour {
 		lastFrameAttackTarget.Clear();
 		deleyFlag = true;
 
+		if (_animetionPrefabs != null) {
+			//アニメーションがセットしてある場合
+			_animetionPrefabs.enabled = true;
+			}
+
 		int tmpDm = 1 + Mathf.FloorToInt(aEB.getAttackingPower() + (Random.value * 2));
-		nearTarget.gameObject.GetComponent<allCharaBase> ().setDamage (tmpDm);
+		charaB.setDamage (tmpDm);
+
+		if (_attackEffectPrefab != null) {
+			Instantiate(_attackEffectPrefab, nearTarget.transform.position, Quaternion.identity);
+		}
+
+		this.GetComponent<chara_attackEreaVisible>().setVisibleThisCicle();
 
 		//ここで再取得
 		thisEnemyAttackDeleySec = aEB.getAttackingDelay ();
 
-		yield return StartCoroutine (this.attackDeleyClearer());
+		StartCoroutine (this.attackDeleyClearer());
 	}
 
 

@@ -6,3 +6,32 @@
 -4	Chara Icon set
 -3	Camera Tracker
 0	other
+
+
+// sorting Layer //
+
+backGround : skybox
+
+0.Default
+-100 : ステージのスプライト
+-50 : 各キャラの影
+0　：　基本
+
+
+
+1.charactors
+-1 : モクレンの弓・薙刀
+0　：　基本
+
+
+2.DamageFontAndEffect
+0　：　基本
+
+
+3.charaMenu
+
+
+4.systemMenu
+
+5.GUI
+

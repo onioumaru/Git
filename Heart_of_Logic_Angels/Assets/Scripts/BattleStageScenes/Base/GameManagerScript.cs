@@ -27,6 +27,8 @@ public class GameManagerScript : MonoBehaviour {
 	public GameObject _battleTextCanvasPrefab;
 	private battleTextCanvasParentScript battleTextInstance;
 
+	private HashSet<int> colliderIDs;
+
 	// Use this for initialization
 	void Start () {
 		instantedCmrTracker = (GameObject)Instantiate (_cmrTracker);
@@ -82,10 +84,27 @@ public class GameManagerScript : MonoBehaviour {
 	public void setAllCollider2DEnabale(bool argsBool){
 		//全てのコライダーを使用不可にして、イベントが起きないようにする
 		Collider2D[] allCollider = GameObject.FindObjectsOfType<Collider2D>();
-		
+
+		if (argsBool == false) {
+			//Falseをセットする場合
+			//元々Falseだったものは取っておくので初期化する
+			colliderIDs = new HashSet<int>();
+				}
+
 		//Debug.Log (allCollider.Length);
-		foreach (Collider2D cld in allCollider) {
-			cld.enabled = argsBool;
+		foreach (Collider2D cldr in allCollider) {
+			if (argsBool){
+				if (colliderIDs.Contains(cldr.GetInstanceID()) == false ){
+					//元々FalseだったものはTrueに戻さない
+					cldr.enabled = argsBool;
+				}
+			} else {
+				if (cldr.enabled == false){
+					//使用停止中の場合はリストにキープ
+					colliderIDs.Add(cldr.GetInstanceID());
+				}
+				cldr.enabled = argsBool;
+			}
 		}
 	}
 
@@ -104,6 +123,10 @@ public class GameManagerScript : MonoBehaviour {
 	void battleStageStarter( ){
 
 		loadedCharaList = new gameStartingVariable ();
+
+		//charaStartBattleInfo cSBI = new charaStartBattleInfo (sVMS.getNowSceneChangeValue ());
+		//sVMS.getNowSceneChangeValue ().sceneFileName = "0-3-0-0";
+
 		charaStartBattleInfo cSBI = new charaStartBattleInfo (sVMS.getNowSceneChangeValue ());
 
 		bool[] sortieCharas;
@@ -111,6 +134,14 @@ public class GameManagerScript : MonoBehaviour {
 			//for debug
 			sortieCharas = new bool[9];
 			sortieCharas[0] = true;
+			sortieCharas[1] = true;
+			sortieCharas[2] = false;
+			sortieCharas[3] = false;
+			sortieCharas[4] = false;
+			sortieCharas[5] = false;
+			sortieCharas[6] = false;
+			sortieCharas[7] = true;
+			sortieCharas[8] = true;
 		} else {
 			sortieCharas = sVMS.getSortieCharaNo ();
 		}
@@ -119,6 +150,7 @@ public class GameManagerScript : MonoBehaviour {
 		for (int loopI = 0; loopI < 9; loopI++){
 			enumCharaNum tmpC = (enumCharaNum)loopI;
 
+			//すべてのキャラを作成
 			if (sortieCharas[loopI]){
 				loadedCharaList.setData (tmpC, 1, 0);
 			}
@@ -130,18 +162,14 @@ public class GameManagerScript : MonoBehaviour {
 		//chataList.setData (enumCharaNum.gyokuran_04, 1, 0);
 
 		for (int i=0 ; i < loadedCharaList.charalist.Count;i++){
-			//Vector3 tmpV = new Vector3(-2.5f, (i * 0.2f), 0);
-
 			gameStartingVariable_Single tmpChara = loadedCharaList.charalist[i];
 
 			//charaMain
 			tmpChara.charaBase = Instantiate(tmpChara.Prefab_charaGrh) as GameObject;
-
+			tmpChara.charaBase.transform.name = tmpChara.CharaNumber.ToString();
 
 			//キャラクターの初期位置
-			//Vector2 tmpV2 = new Vector2(-2f, i / 2f);
 			tmpChara.charaBase.transform.position = cSBI.getCharaPosition(i);
-
 
 			//charaAnime
 			Animator tmpAnime = tmpChara.charaBase.transform.FindChild("charaAnime").GetComponent<Animator>();
@@ -164,6 +192,7 @@ public class GameManagerScript : MonoBehaviour {
 			tmpChara.charaScript.stopFlag = false;
 		}
 
+		//キャラアイコンの1ページ目の作成
 		this.createCharaIconSet(1);
 	}
 
@@ -171,6 +200,7 @@ public class GameManagerScript : MonoBehaviour {
 	private Sprite getCharaSprite(enumCharaNum charaNo){
 		Sprite retSR = null;
 
+		/*
 		switch (charaNo) {
 		case enumCharaNum.syusuran_02:
 			retSR = _charaMainSprite[1];
@@ -180,30 +210,46 @@ public class GameManagerScript : MonoBehaviour {
 			retSR = _charaMainSprite[0];
 			break;
 				}
+		*/
+
+		int tmpInt = (int)charaNo;
+		retSR = _charaMainSprite[tmpInt];
 
 		return retSR;
 	}
 
 	private RuntimeAnimatorController getCharaAnimator(enumCharaNum charaNo){
 		RuntimeAnimatorController retRAC = null;
-		
+
+		/*
 		switch (charaNo) {
 		case enumCharaNum.syusuran_02:
 			retRAC = _charaMainAnimetion[1];
 			break;
 		case enumCharaNum.enju_01:
 		default:
-			retRAC = _charaMainAnimetion[0];
+			int tmpInt = (int)charaNo;
+
+			Debug.Log (tmpInt);
+
+			retRAC = _charaMainAnimetion[tmpInt];
 			break;
 		}
+*/
 		
+		int tmpInt = (int)charaNo;
+		//Debug.Log (tmpInt);
+		
+		retRAC = _charaMainAnimetion[tmpInt];
+
 		return retRAC;
 	}
 
 	
 	private Sprite getCharacterIconSprite(enumCharaNum argsCharaNo){
 		Sprite retSR = null;
-		
+
+		/*
 		switch (argsCharaNo) {
 		case enumCharaNum.syusuran_02:
 			retSR = _charaFaceIconSprite[1];
@@ -213,7 +259,12 @@ public class GameManagerScript : MonoBehaviour {
 			retSR = _charaFaceIconSprite[0];
 			break;
 		}
+		*/
 		
+		int tmpInt = (int)argsCharaNo;
+		
+		retSR = _charaFaceIconSprite[tmpInt];
+
 		return retSR;
 	}
 
@@ -400,11 +451,9 @@ public class gameStartingVariable{
 		Object[] tmpObj = Resources.LoadAll<GameObject>("Prefabs/Flags");
 		Object retGO = null;
 
-
-		//Debug.Log (argsCharaNo.ToString());
 		int tmpLen = argsCharaNo.ToString ().Length;
-//		Debug.Log (argsCharaNo.ToString().Substring(tmpLen - 3,2));
 		string tmpFileName = "flag_" + argsCharaNo.ToString().Substring(tmpLen - 2,2);
+		//Debug.Log (tmpFileName);
 
 		for (int i=0; i < tmpObj.Length; i++) {
 			if (tmpObj[i].name.Substring(0,7) == tmpFileName ){

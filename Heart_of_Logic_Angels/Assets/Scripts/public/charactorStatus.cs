@@ -47,14 +47,77 @@ public class charaUserStatus{
 	public void initParameter(){
 		switch (this.charaNo){
 		case enumCharaNum.enju_01:
+			this.nowHP = (this.nowLv * 61f) + 20f; // 100 +
+			flyingAtkMagn = 0.2f;
+			flyingDefMagn = 4f;
+			MaxSkillCoolTime = 15f;
+			restSkillCoolTime = 0;
+			break;
+
 		case enumCharaNum.syusuran_02:
+			this.nowHP = (this.nowLv * 35f) + 20f; // 100 +
+			flyingAtkMagn = 0.2f;
+			flyingDefMagn = 4f;
+			MaxSkillCoolTime = 15f;
+			restSkillCoolTime = 0;
+			break;
+
 		case enumCharaNum.suzusiro_03:
+			this.nowHP = (this.nowLv * 56f) + 20f; // 100 +
+			flyingAtkMagn = 0.4f;
+			flyingDefMagn = 3f;
+			MaxSkillCoolTime = 15f;
+			restSkillCoolTime = 0;
+			break;
+
 		case enumCharaNum.gyokuran_04:
+			this.nowHP = (this.nowLv * 59f) + 20f; // 100 +
+			flyingAtkMagn = 0.2f;
+			flyingDefMagn = 4f;
+			MaxSkillCoolTime = 15f;
+			restSkillCoolTime = 0;
+			break;
+
 		case enumCharaNum.houzuki_05:
+			this.nowHP = (this.nowLv * 47f) + 20f; // 100 +
+			flyingAtkMagn = 0.2f;
+			flyingDefMagn = 4f;
+			MaxSkillCoolTime = 15f;
+			restSkillCoolTime = 0;
+			break;
+
 		case enumCharaNum.mokuren_06:
-		case enumCharaNum.shion_07:
-		case enumCharaNum.syukaido_08:
+			this.nowHP = (this.nowLv * 32f) + 20f; // 100 +
+			flyingAtkMagn = 0.2f;
+			flyingDefMagn = 4f;
+			MaxSkillCoolTime = 15f;
+			restSkillCoolTime = 0;
+			break;
+
+		case enumCharaNum.sakura_07:
+			this.nowHP = (this.nowLv * 29f) + 20f; // 100 +
+			flyingAtkMagn = 0.2f;
+			flyingDefMagn = 4f;
+			MaxSkillCoolTime = 15f;
+			restSkillCoolTime = 0;
+			break;
+
+		case enumCharaNum.sion_08:
+			this.nowHP = (this.nowLv * 41f) + 20f; // 100 +
+			flyingAtkMagn = 0.2f;
+			flyingDefMagn = 4f;
+			MaxSkillCoolTime = 15f;
+			restSkillCoolTime = 0;
+			break;
+
 		case enumCharaNum.hiragi_09:
+			this.nowHP = (this.nowLv * 54f) + 20f; // 100 +
+			flyingAtkMagn = 0.2f;
+			flyingDefMagn = 4f;
+			MaxSkillCoolTime = 15f;
+			restSkillCoolTime = 0;
+			break;
+
 		case enumCharaNum.test_10:
 			this.nowHP = (this.nowLv * 29f) + 20f; // 100 +
 			flyingAtkMagn = 0.2f;
@@ -64,19 +127,26 @@ public class charaUserStatus{
 			break;
 		}
 
-		this.resetMaxParameter ();
+		this.maxHP = this.nowHP;
+
+		// 一旦保留
+		//this.resetMaxParameter ();
 	}
 
 	public void resetMaxParameter(){
 		switch (this.charaNo){
 		case enumCharaNum.enju_01:
+			this.maxHP = (this.nowLv * 61f) + 20f; // 100 +
+			break;
 		case enumCharaNum.syusuran_02:
+			this.maxHP = (this.nowLv * 29f) + 20f; // 100 +
+			break;
 		case enumCharaNum.suzusiro_03:
 		case enumCharaNum.gyokuran_04:
 		case enumCharaNum.houzuki_05:
 		case enumCharaNum.mokuren_06:
-		case enumCharaNum.shion_07:
-		case enumCharaNum.syukaido_08:
+		case enumCharaNum.sakura_07:
+		case enumCharaNum.sion_08:
 		case enumCharaNum.hiragi_09:
 		case enumCharaNum.test_10:
 			this.maxHP = (this.nowLv * 29f) + 20f; // 100 +
@@ -104,15 +174,70 @@ public class charaBattleStatus{
 		//init
 		switch (charaNo) {
 		case enumCharaNum.enju_01:
+			//近接タンク型
+			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
+			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
+			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
+			_skill_info = new charaBattle_info(4f, 1f, 0, 0, 0 , 0);
+			break;
 		case enumCharaNum.syusuran_02:
+			//遠距離バランス型
+			_atk_info = new charaBattle_info(  1f , 1.2f, 2f, 0.9f , 0.09f , 1.05f);
+			_def_info = new charaBattle_info(0.5f , 2f ,0.1f , 0.1f, 0.05f , 0.2f);
+			_mov_info = new charaBattle_info(0.6f , 3f ,1.5f , 0.2f, 0.15f , 2.5f);
+			_skill_info = new charaBattle_info(4f, 1f, 0, 0, 0, 0);
+			break;
 		case enumCharaNum.suzusiro_03:
+			//バランスタンク型
+			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
+			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
+			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
+			_skill_info = new charaBattle_info(4f, 1f, 0, 0, 0 , 0);
+			break;
 		case enumCharaNum.gyokuran_04:
+			//近距離攻撃型
+			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
+			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
+			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
+			_skill_info = new charaBattle_info(4f, 1f, 0, 0, 0 , 0);
+			break;
 		case enumCharaNum.houzuki_05:
+			//近距離スピード型
+			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
+			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
+			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
+			_skill_info = new charaBattle_info(4f, 1f, 0, 0, 0 , 0);
+			break;
 		case enumCharaNum.mokuren_06:
-		case enumCharaNum.shion_07:
-		case enumCharaNum.syukaido_08:
+			//遠距離特化型
+			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
+			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
+			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
+			_skill_info = new charaBattle_info(4f, 1f, 0, 0, 0 , 0);
+			break;
+		case enumCharaNum.sakura_07:
+			//遠距離スピード型
+			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
+			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
+			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
+			_skill_info = new charaBattle_info(4f, 1f, 0, 0, 0 , 0);
+			break;
+		case enumCharaNum.sion_08:
+			//遠距離特殊型
+			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
+			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
+			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
+			_skill_info = new charaBattle_info(4f, 1f, 0, 0, 0 , 0);
+			break;
 		case enumCharaNum.hiragi_09:
+			//万能型
+			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
+			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
+			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
+			_skill_info = new charaBattle_info(4f, 1f, 0, 0, 0 , 0);
+			break;
 		case enumCharaNum.test_10:
+			//for debug
 			_atk_info = new charaBattle_info(  1f ,1f ,1f   ,0.5f ,0.1f ,1);
 			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0    ,0.05f ,0.2f);
 			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0    ,0.2f ,1.5f);
@@ -120,6 +245,29 @@ public class charaBattleStatus{
 			break;
 		}
 		this.setCharacterMode(characterMode.Attack);
+	}
+
+	
+	public float getDamage_CalCharaMode(){
+
+		switch (this.charaMode) {
+		case characterMode.Attack:
+			return _atk_info.defenceMagn;
+			break;
+
+		case characterMode.Defence:
+			return _def_info.defenceMagn;
+			break;
+
+		case characterMode.Move:
+			return _mov_info.defenceMagn;
+			break;
+
+		case characterMode.Skill:
+		default:
+			return _skill_info.defenceMagn;
+			break;
+		}
 	}
 
 	public void setCharacterMode(characterMode argsMode){
@@ -173,12 +321,12 @@ public enum characterMode{
 }
 
 public enum enumCharaNum{
-	enju_01, syusuran_02, suzusiro_03, gyokuran_04, houzuki_05, mokuren_06, shion_07, syukaido_08, hiragi_09 ,test_10,noInit
+	enju_01, syusuran_02, suzusiro_03, gyokuran_04, houzuki_05, mokuren_06, sakura_07, sion_08, hiragi_09 ,test_10, maxCnt
 }
 
 public enum enumEnemyType{
 	small001
-	,a
+	,largeWolf01
 }
 
 public class typeEnemyStatus{
@@ -193,6 +341,17 @@ public class typeEnemyStatus{
 
 	public typeEnemyStatus(float argsLevel, enumEnemyType argsType){
 		switch (argsType) {
+		case enumEnemyType.largeWolf01:
+			this.maxHP            = argsLevel * 32f + 200f;
+			this.nowHP            = this.maxHP;
+			this.grantExp         = argsLevel * 112;
+			
+			this.attackDeleySec = 3f;
+			this.multiAttackCount = 1f;
+			this.AttackingPower = argsLevel * 1f;
+			
+			break;
+
 		default:
 			this.maxHP            = argsLevel * 14f;
 			this.nowHP            = this.maxHP;

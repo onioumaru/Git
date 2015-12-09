@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2aea99171a10c0742b3b075a1b111089
-timeCreated: 1439452198
+guid: 222c222f08f4c2d44afc51bf76bc7e73
+timeCreated: 1441904593
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -61,92 +61,92 @@ TextureImporter:
     - name: hozuki_00
       rect:
         serializedVersion: 2
-        x: 634
-        y: 938
-        width: 102
-        height: 84
-      alignment: 9
-      pivot: {x: .450980395, y: -3.9523809}
+        x: 454
+        y: 1941
+        width: 118
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: hozuki_01
       rect:
         serializedVersion: 2
-        x: 738
-        y: 939
-        width: 102
-        height: 83
-      alignment: 9
-      pivot: {x: .450980395, y: -4.01204824}
+        x: 574
+        y: 1941
+        width: 118
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: hozuki_02
       rect:
         serializedVersion: 2
-        x: 634
-        y: 783
-        width: 95
-        height: 77
-      alignment: 9
-      pivot: {x: .431578934, y: -4.27272749}
+        x: 694
+        y: 1941
+        width: 118
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: hozuki_03
       rect:
         serializedVersion: 2
-        x: 842
-        y: 944
-        width: 102
-        height: 78
-      alignment: 9
-      pivot: {x: .450980395, y: -4.26923084}
+        x: 814
+        y: 1941
+        width: 118
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: hozuki_04
       rect:
         serializedVersion: 2
-        x: 842
-        y: 864
-        width: 102
-        height: 78
-      alignment: 9
-      pivot: {x: .450980395, y: -4.26923084}
+        x: 454
+        y: 1834
+        width: 118
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: hozuki_05
       rect:
         serializedVersion: 2
-        x: 738
-        y: 859
-        width: 102
-        height: 78
-      alignment: 9
-      pivot: {x: .441176474, y: -4.26923084}
+        x: 574
+        y: 1834
+        width: 118
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: hozuki_06
       rect:
         serializedVersion: 2
-        x: 634
-        y: 862
-        width: 102
-        height: 74
-      alignment: 9
-      pivot: {x: .450980395, y: -4.5}
+        x: 694
+        y: 1834
+        width: 118
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: hozuki_base
       rect:
         serializedVersion: 2
         x: 2
-        y: 30
-        width: 313
-        height: 992
-      alignment: 9
-      pivot: {x: .562300324, y: .498991936}
+        y: 1046
+        width: 450
+        height: 1000
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: hozuki_shadow
       rect:
         serializedVersion: 2
-        x: 317
-        y: 40
-        width: 315
-        height: 982
-      alignment: 9
-      pivot: {x: .561904788, y: .5}
+        x: 2
+        y: 44
+        width: 450
+        height: 1000
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

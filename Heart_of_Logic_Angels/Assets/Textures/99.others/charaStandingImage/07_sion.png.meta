@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 1992278c9cc5efe4d9aac640bcc8ac63
+timeCreated: 1441919890
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sion_01
+    21300002: sion_02
+    21300004: sion_03
+    21300006: sion_04
+    21300008: sion_05
+    21300010: sion_06
+    21300012: sion_07
+    21300014: sion_base
+    21300016: sion_shadow
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: sion_01
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 880
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sion_02
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 736
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sion_03
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 592
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sion_04
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 448
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sion_05
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 304
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sion_06
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 160
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sion_07
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 16
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sion_base
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 72
+        width: 387
+        height: 950
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sion_shadow
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 72
+        width: 387
+        height: 950
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

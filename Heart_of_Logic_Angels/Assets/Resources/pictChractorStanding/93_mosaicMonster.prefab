@@ -11,6 +11,7 @@ GameObject:
   - 222: {fileID: 22269260}
   - 114: {fileID: 11413316}
   - 114: {fileID: 11419786}
+  - 114: {fileID: 11439970}
   m_Layer: 5
   m_Name: 93_mosaicMonster
   m_TagString: Untagged
@@ -56,6 +57,17 @@ MonoBehaviour:
   _childDiffSprite: []
   _fadeInAlfaChannelUseF: 0
   _notMainCharaF: 1
+--- !u!114 &11439970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41be71b5c226fbc4c88e4f0e40f5957f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &22269260
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -108,6 +120,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: defaultScale
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _soundFlag
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -648,7 +648,7 @@ public class saveCharaValueClass{
 			retS = "スズシロ";
 			break;
 		case 3:
-			retS = "ギョクラン";
+			retS = "アカネ";
 			break;
 		case 4:
 			retS = "ホオズキ";
@@ -657,10 +657,10 @@ public class saveCharaValueClass{
 			retS = "モクレン";
 			break;
 		case 6:
-			retS = "シオン";
+			retS = "サクラ";
 			break;
 		case 7:
-			retS = "シュウカイドウ";
+			retS = "シオン";
 			break;
 		case 8:
 			retS = "ヒイラギ";
@@ -668,6 +668,10 @@ public class saveCharaValueClass{
 		}
 
 		return retS;
+	}
+
+	public enumCharaNum getCharaEnum(){
+		return (enumCharaNum)this.Number;
 	}
 }
 

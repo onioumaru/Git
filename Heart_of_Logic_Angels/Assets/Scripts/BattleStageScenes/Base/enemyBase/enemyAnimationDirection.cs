@@ -1,20 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Enemy animation direction.
+/// このコンポーネントは、オブジェクトの前回位置を取得して、
+/// 移動した方向に合わせて、LocalScaleを反転させて、
+/// 異動に合わせて自動的に向きを合わせるようにするもの
+/// 
+/// 付けるだけで良い
+/// </summary>
 public class enemyAnimationDirection : MonoBehaviour {
 	private float beforeDirectionX;
-
 
 	// Use this for initialization
 	void Start () {
 		beforeDirectionX = this.transform.position.x;
 
 		StartCoroutine ( mainLoop() );
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 
 	IEnumerator mainLoop(){

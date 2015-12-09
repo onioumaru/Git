@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21288830}
   - 95: {fileID: 9556892}
   - 114: {fileID: 11412230}
+  - 114: {fileID: 11425494}
   m_Layer: 8
   m_Name: anime
   m_TagString: Untagged
@@ -85,7 +86,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.83000004, y: -1.14999998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 403010}
@@ -130,7 +131,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 5c9ab068ebae1dd4d8982383d8a78ea5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -146,6 +147,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e165abfe6409049a0db64adb8d5862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11425494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141658}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f3794700749e648811831f7645ef23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11443902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,7 +166,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 160010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d63369321c21bc641adfac4300fb7dfb, type: 3}
+  m_Script: {fileID: 11500000, guid: 570beaf057864c2439b2d7b29e387fd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _findingLength: 5
@@ -169,7 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3052dc6ca839ef47941477dff70c252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisEnemyAttackDeleySec: 10
+  _animetionPrefabs: {fileID: 11425494}
+  _attackEffectPrefab: {fileID: 0}
 --- !u!114 &11465690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -187,6 +200,7 @@ MonoBehaviour:
   bitmapFontBasePrefab: {fileID: 175532, guid: 1e2c4b408a8f4df4e89961863610e1b5, type: 2}
   _defaultLevel: 5
   _defaultEnemyType: 0
+  _enemyShadow: {fileID: 21300000, guid: f64f749bce0f82943a4445e5a377f853, type: 3}
 --- !u!114 &11474862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -241,6 +255,11 @@ Prefab:
       propertyPath: _findingLength
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _enemyShadow
+      value: 
+      objectReference: {fileID: 21300000, guid: f64f749bce0f82943a4445e5a377f853,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 160010}

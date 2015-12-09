@@ -48,16 +48,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _childDiffImage: {fileID: 11488890}
   _thisCharaDefaultLocalPosition: {x: 0, y: -263, z: 0}
-  _shadowSprite: {fileID: 21300016, guid: 2aea99171a10c0742b3b075a1b111089, type: 3}
+  _shadowSprite: {fileID: 21300016, guid: 222c222f08f4c2d44afc51bf76bc7e73, type: 3}
   _childDiffSprite:
-  - {fileID: 21300000, guid: 2aea99171a10c0742b3b075a1b111089, type: 3}
-  - {fileID: 21300002, guid: 2aea99171a10c0742b3b075a1b111089, type: 3}
-  - {fileID: 21300004, guid: 2aea99171a10c0742b3b075a1b111089, type: 3}
-  - {fileID: 21300006, guid: 2aea99171a10c0742b3b075a1b111089, type: 3}
-  - {fileID: 21300008, guid: 2aea99171a10c0742b3b075a1b111089, type: 3}
-  - {fileID: 21300010, guid: 2aea99171a10c0742b3b075a1b111089, type: 3}
-  - {fileID: 21300012, guid: 2aea99171a10c0742b3b075a1b111089, type: 3}
+  - {fileID: 21300000, guid: 222c222f08f4c2d44afc51bf76bc7e73, type: 3}
+  - {fileID: 21300002, guid: 222c222f08f4c2d44afc51bf76bc7e73, type: 3}
+  - {fileID: 21300004, guid: 222c222f08f4c2d44afc51bf76bc7e73, type: 3}
+  - {fileID: 21300006, guid: 222c222f08f4c2d44afc51bf76bc7e73, type: 3}
+  - {fileID: 21300008, guid: 222c222f08f4c2d44afc51bf76bc7e73, type: 3}
+  - {fileID: 21300010, guid: 222c222f08f4c2d44afc51bf76bc7e73, type: 3}
+  - {fileID: 21300012, guid: 222c222f08f4c2d44afc51bf76bc7e73, type: 3}
   _fadeInAlfaChannelUseF: 1
+  _notMainCharaF: 0
 --- !u!114 &11440338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -71,7 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300014, guid: 2aea99171a10c0742b3b075a1b111089, type: 3}
+  m_Sprite: {fileID: 21300014, guid: 222c222f08f4c2d44afc51bf76bc7e73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -92,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 2aea99171a10c0742b3b075a1b111089, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 222c222f08f4c2d44afc51bf76bc7e73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -126,8 +127,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 23.3999996, y: 372.100006}
-  m_SizeDelta: {x: 102, y: 84}
+  m_AnchoredPosition: {x: 3.70000005, y: 370}
+  m_SizeDelta: {x: 118, y: 105}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22463706
 RectTransform:
@@ -145,7 +146,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 0, y: -254.899994}
-  m_SizeDelta: {x: 313, y: 992}
+  m_SizeDelta: {x: 450, y: 1000}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &100100000
 Prefab:
@@ -157,12 +158,52 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: _shadowSprite
       value: 
-      objectReference: {fileID: 21300016, guid: 2aea99171a10c0742b3b075a1b111089,
+      objectReference: {fileID: 21300016, guid: 222c222f08f4c2d44afc51bf76bc7e73,
         type: 3}
     - target: {fileID: 0}
       propertyPath: _thisCharaDefaultLocalPosition.y
       value: -263
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300014, guid: 222c222f08f4c2d44afc51bf76bc7e73,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 222c222f08f4c2d44afc51bf76bc7e73,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300002, guid: 222c222f08f4c2d44afc51bf76bc7e73,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300004, guid: 222c222f08f4c2d44afc51bf76bc7e73,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300006, guid: 222c222f08f4c2d44afc51bf76bc7e73,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300008, guid: 222c222f08f4c2d44afc51bf76bc7e73,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300010, guid: 222c222f08f4c2d44afc51bf76bc7e73,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300012, guid: 222c222f08f4c2d44afc51bf76bc7e73,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 147692}

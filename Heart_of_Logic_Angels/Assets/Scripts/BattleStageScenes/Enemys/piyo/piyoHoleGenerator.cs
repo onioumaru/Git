@@ -19,6 +19,8 @@ public class piyoHoleGenerator : MonoBehaviour {
 	}
 
 	IEnumerator mainLoop(){
+		int coolTime = 0;
+
 		while(true){
 			yield return new WaitForSeconds(_ganaratePerSec);
 
@@ -30,9 +32,18 @@ public class piyoHoleGenerator : MonoBehaviour {
 			enemyStandardMovingScript eSMS = tmpGO.GetComponent<enemyStandardMovingScript>();
 
 			Vector2 tmpV2 = Random.insideUnitCircle;
-			Vector3 tmpV3 = new Vector3(this.transform.position.x + tmpV2.x,this.transform.position.y + tmpV2.y ,0f);
+			Vector3 tmpV3 = new Vector3((this.transform.position.x + tmpV2.x) * 2f, this.transform.position.y + tmpV2.y ,0f);
 
 			eSMS.setMoveTypeTargetPosi(0 ,tmpV3);
+
+			coolTime++;
+
+			if (coolTime > 20){
+				coolTime = 0;
+				//20匹ごとにクールタイム1分
+				yield return new WaitForSeconds(60f);
+			}
+
 		}
 	}
 
