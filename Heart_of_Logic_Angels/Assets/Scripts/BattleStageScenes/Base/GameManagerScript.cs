@@ -29,6 +29,8 @@ public class GameManagerScript : MonoBehaviour {
 
 	private HashSet<int> colliderIDs;
 
+	public bool[] _sortieCharas;
+
 	// Use this for initialization
 	void Start () {
 		instantedCmrTracker = (GameObject)Instantiate (_cmrTracker);
@@ -80,6 +82,13 @@ public class GameManagerScript : MonoBehaviour {
 	}
 
 
+	public void clearAllCharaUnbreakable(){
+
+		foreach (gameStartingVariable_Single charaL in loadedCharaList.charalist) {
+			charaL.charaBase.GetComponent<allCharaBase> ().setUnbreakable_suzuSkill (false);
+		}
+
+	}
 	
 	public void setAllCollider2DEnabale(bool argsBool){
 		//全てのコライダーを使用不可にして、イベントが起きないようにする
@@ -129,21 +138,11 @@ public class GameManagerScript : MonoBehaviour {
 
 		charaStartBattleInfo cSBI = new charaStartBattleInfo (sVMS.getNowSceneChangeValue ());
 
-		bool[] sortieCharas;
 		if (_forDebug) {
 			//for debug
-			sortieCharas = new bool[9];
-			sortieCharas[0] = true;
-			sortieCharas[1] = true;
-			sortieCharas[2] = false;
-			sortieCharas[3] = false;
-			sortieCharas[4] = false;
-			sortieCharas[5] = false;
-			sortieCharas[6] = false;
-			sortieCharas[7] = true;
-			sortieCharas[8] = true;
+			//インスペクター上で設定する
 		} else {
-			sortieCharas = sVMS.getSortieCharaNo ();
+			_sortieCharas = sVMS.getSortieCharaNo ();
 		}
 
 
@@ -151,7 +150,7 @@ public class GameManagerScript : MonoBehaviour {
 			enumCharaNum tmpC = (enumCharaNum)loopI;
 
 			//すべてのキャラを作成
-			if (sortieCharas[loopI]){
+			if (_sortieCharas[loopI]){
 				loadedCharaList.setData (tmpC, 1, 0);
 			}
 		}
@@ -166,7 +165,7 @@ public class GameManagerScript : MonoBehaviour {
 
 			//charaMain
 			tmpChara.charaBase = Instantiate(tmpChara.Prefab_charaGrh) as GameObject;
-			tmpChara.charaBase.transform.name = tmpChara.CharaNumber.ToString();
+			tmpChara.charaBase.transform.name = "charaBase_" + tmpChara.CharaNumber.ToString();
 
 			//キャラクターの初期位置
 			tmpChara.charaBase.transform.position = cSBI.getCharaPosition(i);
@@ -195,6 +194,7 @@ public class GameManagerScript : MonoBehaviour {
 		//キャラアイコンの1ページ目の作成
 		this.createCharaIconSet(1);
 	}
+
 
 
 	private Sprite getCharaSprite(enumCharaNum charaNo){
@@ -400,6 +400,15 @@ public class GameManagerScript : MonoBehaviour {
 		return battleTextInstance;
 	}
 
+	public void wakeupRigiBody_AllCharactor(){
+		
+		foreach (gameStartingVariable_Single tmp in this.loadedCharaList.charalist) {
+			if (tmp.charaDestoryF == false){
+
+				tmp.charaBase.transform.GetComponent<Rigidbody2D> ().WakeUp ();
+			}
+		}
+	}
 }
 
 //

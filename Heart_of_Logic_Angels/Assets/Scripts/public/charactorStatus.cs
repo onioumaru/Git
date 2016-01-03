@@ -70,7 +70,7 @@ public class charaUserStatus{
 			restSkillCoolTime = 0;
 			break;
 
-		case enumCharaNum.gyokuran_04:
+		case enumCharaNum.akane_04:
 			this.nowHP = (this.nowLv * 59f) + 20f; // 100 +
 			flyingAtkMagn = 0.2f;
 			flyingDefMagn = 4f;
@@ -142,7 +142,7 @@ public class charaUserStatus{
 			this.maxHP = (this.nowLv * 29f) + 20f; // 100 +
 			break;
 		case enumCharaNum.suzusiro_03:
-		case enumCharaNum.gyokuran_04:
+		case enumCharaNum.akane_04:
 		case enumCharaNum.houzuki_05:
 		case enumCharaNum.mokuren_06:
 		case enumCharaNum.sakura_07:
@@ -194,7 +194,7 @@ public class charaBattleStatus{
 			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
 			_skill_info = new charaBattle_info(4f, 1f, 0, 0, 0 , 0);
 			break;
-		case enumCharaNum.gyokuran_04:
+		case enumCharaNum.akane_04:
 			//近距離攻撃型
 			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
 			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
@@ -321,7 +321,7 @@ public enum characterMode{
 }
 
 public enum enumCharaNum{
-	enju_01, syusuran_02, suzusiro_03, gyokuran_04, houzuki_05, mokuren_06, sakura_07, sion_08, hiragi_09 ,test_10, maxCnt
+	enju_01, syusuran_02, suzusiro_03, akane_04, houzuki_05, mokuren_06, sakura_07, sion_08, hiragi_09 ,test_10, maxCnt
 }
 
 public enum enumEnemyType{

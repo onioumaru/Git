@@ -21,7 +21,38 @@ public class chara_flyingCheck : MonoBehaviour {
 		flyingCheckF = false;
 	}
 
+	void OnTriggerExit2D(Collider2D co){
+		//入った時、着地とする
+		flyingCheckF = true;
+	}
+
 	IEnumerator flyingCheckLoop(){
+		while (true) {
+			yield return new WaitForSeconds(0.35f);
+
+			if (flyingCheckF == true){
+				if (instanceWing == null) {
+					instanceWing = Instantiate (wingEffect) as GameObject;
+
+					instanceWing.transform.parent = this.transform;
+
+					Vector3 tmpV = new Vector3 (0f, -0.15f, 0f);
+					instanceWing.transform.localPosition = tmpV;
+					thisChara.setFlying (true);
+				}
+			} else {
+				if (instanceWing != null) {
+					Destroy(instanceWing);
+					thisChara.setFlying(false);
+				}
+			}
+
+			//毎秒飛行フラグを立てておき、StayでFalse戻す
+			//flyingCheckF = true;
+		}
+	}
+
+	IEnumerator flyingCheckLoopOld(){
 		while (true) {
 			yield return new WaitForSeconds(0.35f);
 
@@ -47,7 +78,7 @@ public class chara_flyingCheck : MonoBehaviour {
 			}
 
 			//毎秒飛行フラグを立てておき、StayでFalse戻す
-			flyingCheckF = true;
+			//flyingCheckF = true;
 		}
 	}
 }

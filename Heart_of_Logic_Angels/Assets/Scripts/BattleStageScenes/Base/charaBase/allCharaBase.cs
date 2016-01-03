@@ -41,7 +41,7 @@ public class allCharaBase : MonoBehaviour {
 	private skillTargetInfo thisSkillTatgetInfo;
 
 	private soundManager_Base sMB;
-
+	private Rigidbody2D thisRigiBody;
 
 	//この値が0になるまで、硬直時間とする
 	public bool movingFreezeFlag = false;
@@ -49,9 +49,18 @@ public class allCharaBase : MonoBehaviour {
 	float offsetX = -0.28f;
 	float offsetY = 0f;
 
-	
+	private bool thisCharaUnbreakable = false;
+
+	public GameObject _charaStatusIconCtrler;
+	private charaStatusIconCtrl charaStatusIconCtrlS; 
+
+	private float regenarateSec = 0;
+	private Coroutine reganateCounterCor;
+
+
 	// Use this for initialization
 	void Start () {
+		thisRigiBody = this.GetComponent<Rigidbody2D> ();
 		sMB = soundManagerGetter.getManager ();
 
 		gmScript = GameObject.Find("GameManager").GetComponentInChildren<GameManagerScript>();
@@ -64,9 +73,17 @@ public class allCharaBase : MonoBehaviour {
 		thisAtkCircle = this.transform.Find("atkCircle").gameObject.GetComponentInChildren<SpriteRenderer> ();
 		thisAttackErea = this.transform.Find ("AttackErea").gameObject;
 		//this.gameObject.Find("")
+
+		//ステータスアイコン表示のオブジェクトは起動時に作成
+		charaStatusIconCtrlS = Instantiate(_charaStatusIconCtrler).GetComponent<charaStatusIconCtrl>();
+		charaStatusIconCtrlS.transform.parent = this.transform;
 		
 		StartCoroutine (mainLoop());
 		StartCoroutine (calcCoolTimeLoop ());
+	}
+
+	void Update(){
+		thisRigiBody.WakeUp ();
 	}
 
 	IEnumerator calcCoolTimeLoop(){
@@ -117,12 +134,14 @@ public class allCharaBase : MonoBehaviour {
 		}
 	}
 
+
 	//
 	//ダメージ処理
 	public void setDamage(float argsInt){
 		GameObject retObj = Instantiate (bitmapFontBasePrefab, this.transform.position, this.transform.rotation) as GameObject;
 
 		//
+		//todo : 無敵時の挙動の実装
 
 		float damage = argsInt * thisChara.battleStatus.getDamage_CalCharaMode();
 		if (thisChara.flyingFlag == true) {
@@ -242,14 +261,63 @@ public class allCharaBase : MonoBehaviour {
 		yield return new WaitForSeconds(argsSec);
 		movingFreezeFlag = false;
 	}
-
-	public void setHealing(int argsVal){
+	
+	public void setHealing(float argsVal){
 		thisChara.nowHP += argsVal;
-
+		
 		if (thisChara.nowHP > thisChara.maxHP) {
 			thisChara.nowHP = thisChara.maxHP;
 		}
 	}
+
+	public void setUnbreakable_suzuSkill(bool argsBool){
+		//無敵かどうか
+
+		//フラグが一緒だったらスルー
+		if (thisCharaUnbreakable == argsBool){
+			return;
+		}
+
+		thisCharaUnbreakable = argsBool;
+
+		if (argsBool) {
+			charaStatusIconCtrlS.setIcon (charaStatusIconAdding.unbreakable00);
+		} else {
+			charaStatusIconCtrlS.removeIcon (charaStatusIconAdding.unbreakable00);
+		}
+	}
+
+	public void setRegenerate_hozukiSkill(float argsSec){
+		//リジェネは瞬間付与なので設定時間でOK
+		regenarateSec += argsSec;
+
+		if (reganateCounterCor == null) {
+			reganateCounterCor = StartCoroutine (reganarateHozukiSkill () );
+		}
+
+		//Debug.Log ("setRegene");
+		charaStatusIconCtrlS.setIcon (charaStatusIconAdding.regenarate01);
+	}
+
+	IEnumerator reganarateHozukiSkill(){
+		//regenarateSec
+		float waitCycleSec = 1f;
+
+		do {
+			regenarateSec -= waitCycleSec;
+
+			Debug.Log("Healing : " + (this.thisChara.maxHP / 50));
+			this.setHealing(this.thisChara.maxHP / 50);
+
+			//チェック間隔
+			yield return new WaitForSeconds (waitCycleSec);
+		} while (regenarateSec > 0);
+
+		regenarateSec = 0f;
+		reganateCounterCor = null;
+		charaStatusIconCtrlS.removeIcon (charaStatusIconAdding.regenarate01);
+	}
+
 
 	public void setFlying(bool argsVal){
 		thisChara.flyingFlag = argsVal;

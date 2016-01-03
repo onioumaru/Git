@@ -23,7 +23,7 @@ TagManager:
   - CharacterMenu
   - systemMenu
   - groundEffect
-  - 
+  - PlayerDefenceEffectErea
   - 
   - 
   - 
@@ -44,8 +44,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: charaBackParticleLayer
+    uniqueID: 4264969263
+    locked: 0
   - name: charactors
     uniqueID: 3568555955
+    locked: 0
+  - name: charaFrontParticle
+    uniqueID: 3604885453
     locked: 0
   - name: DamageFontAndEffect
     uniqueID: 3036771373

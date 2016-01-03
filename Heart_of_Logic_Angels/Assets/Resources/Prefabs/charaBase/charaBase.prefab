@@ -122,7 +122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.96000004, y: 0, z: 0}
+  m_LocalPosition: {x: -1.96, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 431830}
@@ -140,7 +140,7 @@ Transform:
   m_GameObject: {fileID: 130842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .779999971, y: .779999971, z: 1}
+  m_LocalScale: {x: 0.78, y: 0.78, z: 1}
   m_Children: []
   m_Father: {fileID: 412604}
   m_RootOrder: 2
@@ -187,9 +187,10 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112604}
+  m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -203,6 +204,7 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 131830}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
@@ -216,12 +218,13 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146970}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -.100000001}
+  m_Offset: {x: 0, y: -0.1}
   serializedVersion: 2
-  m_Radius: .0500000007
+  m_Radius: 0.05
 --- !u!58 &5894308
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -229,12 +232,13 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194308}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .100000001
+  m_Radius: 0.1
 --- !u!61 &6144800
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -242,12 +246,13 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112604}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -.075000003}
+  m_Offset: {x: 0, y: -0.075}
   serializedVersion: 2
-  m_Size: {x: .100000001, y: .150000006}
+  m_Size: {x: 0.1, y: 0.15}
 --- !u!82 &8214056
 AudioSource:
   m_ObjectHideFlags: 1
@@ -263,6 +268,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -275,23 +281,24 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: .665441155
-      value: .986486495
-      inSlope: -6.34054279
-      outSlope: -6.34054279
+    - time: 0.66544116
+      value: 0.9864865
+      inSlope: -6.340543
+      outSlope: -6.340543
       tangentMode: 0
-    - time: .68382436
-      value: .0189189985
-      inSlope: -.490095109
-      outSlope: -.490095109
+    - time: 0.68382436
+      value: 0.018918999
+      inSlope: -0.4900951
+      outSlope: -0.4900951
       tangentMode: 0
-    - time: .8125
-      value: .00810813904
-      inSlope: .0216218717
-      outSlope: .0216218717
+    - time: 0.8125
+      value: 0.008108139
+      inSlope: 0.021621872
+      outSlope: 0.021621872
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -302,6 +309,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -312,6 +320,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -322,6 +331,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &9506456
 Animator:
   serializedVersion: 3
@@ -385,6 +395,8 @@ MonoBehaviour:
   destroyF: 0
   stopFlag: 0
   movingFreezeFlag: 0
+  _charaStatusIconCtrler: {fileID: 152422, guid: a31244c1b7f71dc4c97ae8213b359b86,
+    type: 2}
 --- !u!114 &11490036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -414,14 +426,18 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 8d93e8899dd638e43986775f85f5d970, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!212 &21230842
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -440,14 +456,18 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3435f022e32ecd44b89dc4a5b0a444f3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: .274509817}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.27450982}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -480,6 +500,10 @@ Prefab:
       propertyPath: m_Size.y
       value: .150000006
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _charaStatusIconCtrler
+      value: 
+      objectReference: {fileID: 152422, guid: a31244c1b7f71dc4c97ae8213b359b86, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 112604}

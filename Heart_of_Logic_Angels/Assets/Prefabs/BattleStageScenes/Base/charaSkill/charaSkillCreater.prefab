@@ -42,22 +42,49 @@ MonoBehaviour:
   _charaSkillEffects:
   - {fileID: 180708, guid: b96d80e4cbf841e4ba2d3a3d1971a9de, type: 2}
   - {fileID: 183244, guid: fe7a6d3b77b4e7040bbebc36f42b7dcc, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 127850, guid: 875ca7c69232ac64abc59300357027a4, type: 2}
+  - {fileID: 175756, guid: 76435f7d31997a543ad35f45e4e5d16c, type: 2}
+  - {fileID: 184814, guid: 540f266d441ec544caf852c4274b51fa, type: 2}
+  - {fileID: 185638, guid: c730a1da51385654ca6f52523a60c420, type: 2}
+  - {fileID: 135476, guid: 7b29bbf549181f043b9d9ec40bca01b4, type: 2}
+  - {fileID: 159570, guid: 6d3efc16c2d11af499d9541f93c313c1, type: 2}
+  - {fileID: 199698, guid: 6fa602d0cb0783146b08424e13efce92, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: _charaSkillEffects.Array.data[2]
+      value: 
+      objectReference: {fileID: 127850, guid: 875ca7c69232ac64abc59300357027a4, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaSkillEffects.Array.data[3]
+      value: 
+      objectReference: {fileID: 175756, guid: 76435f7d31997a543ad35f45e4e5d16c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaSkillEffects.Array.data[4]
+      value: 
+      objectReference: {fileID: 184814, guid: 540f266d441ec544caf852c4274b51fa, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaSkillEffects.Array.data[5]
+      value: 
+      objectReference: {fileID: 185638, guid: c730a1da51385654ca6f52523a60c420, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaSkillEffects.Array.data[6]
+      value: 
+      objectReference: {fileID: 135476, guid: 7b29bbf549181f043b9d9ec40bca01b4, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaSkillEffects.Array.data[7]
+      value: 
+      objectReference: {fileID: 159570, guid: 6d3efc16c2d11af499d9541f93c313c1, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _charaSkillEffects.Array.data[8]
+      value: 
+      objectReference: {fileID: 199698, guid: 6fa602d0cb0783146b08424e13efce92, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 141120}
   m_IsPrefabParent: 1
-  m_IsExploded: 1

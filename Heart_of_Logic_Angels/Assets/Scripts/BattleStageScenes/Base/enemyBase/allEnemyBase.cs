@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-
+[RequireComponent(typeof(Rigidbody2D))]
 public class allEnemyBase : MonoBehaviour {
 	public GameObject _HPBar;
 
@@ -27,9 +27,11 @@ public class allEnemyBase : MonoBehaviour {
 	public enumEnemyType _defaultEnemyType = enumEnemyType.small001;
 
 	public Sprite _enemyShadow;
+	private Rigidbody2D thisRigiBody2D;
 
 	// Use this for initialization
 	void Start() {
+		thisRigiBody2D = this.GetComponent<Rigidbody2D> ();
 		sMB = soundManagerGetter.getManager ();
 
 		grantExpChara = new HashSet<int>();
@@ -69,6 +71,10 @@ public class allEnemyBase : MonoBehaviour {
 		}
 
 		gmS = GameManagerGetter.getGameManager ();
+	}
+
+	void Update(){
+		thisRigiBody2D.WakeUp ();
 	}
 
 	public void setThisEnemyStatus(typeEnemyStatus argsVal){

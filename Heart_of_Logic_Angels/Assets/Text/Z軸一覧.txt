@@ -12,26 +12,30 @@
 
 backGround : skybox
 
-0.Default
+■0.Default
 -100 : ステージのスプライト
 -50 : 各キャラの影
 0　：　基本
 
+■charaBackParticle
+//キャラのパーディクル
+//キャラの裏に描写する
 
-
-1.charactors
+■1.charactors
 -1 : モクレンの弓・薙刀
 0　：　基本
 
+■charaFrontParticle
 
-2.DamageFontAndEffect
+
+■2.DamageFontAndEffect
 0　：　基本
 
 
-3.charaMenu
+■3.charaMenu
 
 
-4.systemMenu
+■4.systemMenu
 
-5.GUI
+■5.GUI
 

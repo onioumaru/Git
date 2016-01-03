@@ -47,7 +47,8 @@ public class spriteRainbower : MonoBehaviour {
 
 			Color tmpC;// = new Color(color_Red ,color_Green, color_Bule, 0.5f);
 			string tmpS = color_Red.ToString("X2") + color_Bule.ToString("X2") + color_Green.ToString("X2") + "64";
-			Color.TryParseHexString(tmpS,out tmpC);
+
+						UnityEngine.ColorUtility.TryParseHtmlString(tmpS,out tmpC);
 
 			//Debug.Log( tmpC.ToHexStringRGBA());
 			spR.color = tmpC;

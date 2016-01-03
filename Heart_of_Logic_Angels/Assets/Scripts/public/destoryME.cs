@@ -6,6 +6,10 @@ public class destoryME : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		if (_waitTime == 0f) {
+			return;
+		}
+
 		StartCoroutine (waitLoop ());
 	}
 
@@ -19,4 +23,10 @@ public class destoryME : MonoBehaviour {
 
 		Destroy (this.gameObject);
 	}
+
+	public void destoryNow(){
+		Destroy (this.gameObject);
+		
+	}
+
 }

@@ -39,7 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 229f3e0f63f528940a5f28441c106377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _forDebug: 0
+  _forDebug: 1
   charaIconEmptyGrp:
   - {fileID: 21300000, guid: c596056677b4b7e4795c6277e65ec0e1, type: 3}
   - {fileID: 21300002, guid: c596056677b4b7e4795c6277e65ec0e1, type: 3}
@@ -88,6 +88,7 @@ MonoBehaviour:
   _talkPartPerefab: {fileID: 130128, guid: 3c98178b1421f584182e4356c1b23993, type: 2}
   _battleTextCanvasPrefab: {fileID: 138386, guid: c2f2d5f000450e040a9f6e53a61ff6e0,
     type: 2}
+  _sortieCharas: 000000010000010001
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

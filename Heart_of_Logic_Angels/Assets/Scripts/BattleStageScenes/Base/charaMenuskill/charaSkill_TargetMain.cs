@@ -27,26 +27,28 @@ public class charaSkill_TargetMain : MonoBehaviour {
 		Vector3 tmpV_zero = new Vector3(0,0,0);
 
 		switch (parentChara.thisChara.charaNo) {
-		case enumCharaNum.syusuran_02:
-			
-			thisSkilltgt = Instantiate(_SkillTarget_Arrow) as GameObject;
+			case enumCharaNum.syusuran_02:
+			case enumCharaNum.akane_04:
+			case enumCharaNum.mokuren_06:
+			case enumCharaNum.hiragi_09:
+					
+				thisSkilltgt = Instantiate(_SkillTarget_Arrow) as GameObject;
 
-			
-			thisSkilltgt.transform.parent = this.transform;
-			thisSkilltgt.transform.localPosition = tmpV_zero;
+				thisSkilltgt.transform.parent = this.transform;
+				thisSkilltgt.transform.localPosition = tmpV_zero;
 
-			thisTrgt.zAngle = thisSkilltgt.transform.localRotation.z;
+				thisTrgt.zAngle = thisSkilltgt.transform.localRotation.z;
 
-			break;
-		case enumCharaNum.enju_01:
-		default:
-			
-			thisSkilltgt = Instantiate(_SkillTarget_Circle) as GameObject;
-			
-			thisSkilltgt.transform.parent = this.transform;
-			thisSkilltgt.transform.localPosition = tmpV_zero;
-			
-			break;
+				break;
+
+			default:
+				
+				thisSkilltgt = Instantiate(_SkillTarget_Circle) as GameObject;
+				
+				thisSkilltgt.transform.parent = this.transform;
+				thisSkilltgt.transform.localPosition = tmpV_zero;
+				
+				break;
 		}
 	}
 
@@ -56,25 +58,28 @@ public class charaSkill_TargetMain : MonoBehaviour {
 		Vector3 firstMouseDown = Camera.main.ScreenToWorldPoint (Input.mousePosition) - this.transform.position;
 
 		switch (parentChara.thisChara.charaNo) {
-		case enumCharaNum.syusuran_02:
-			Vector3 tmpV = new Vector3( firstMouseDown.x,firstMouseDown.y,0f);
-			Vector3 tmpRoteAxis = new Vector3(0,0,1);
-			Vector3 tmpV_front = new Vector3(1,0,0);
+			case enumCharaNum.syusuran_02:
+			case enumCharaNum.akane_04:
+			case enumCharaNum.mokuren_06:
+			case enumCharaNum.hiragi_09:
+				Vector3 tmpV = new Vector3( firstMouseDown.x, firstMouseDown.y,0f);
+				Vector3 tmpRoteAxis = new Vector3(0,0,1);
+				Vector3 tmpV_front = new Vector3(1,0,0);
 
-			float tmpFl = Vector3.Angle(tmpV_front, tmpV);
+				float tmpFl = Vector3.Angle(tmpV_front, tmpV);
 
-			if (tmpV.y < 0){
-				tmpFl = tmpFl * -1f;
-			}
-			thisSkilltgt.transform.rotation = Quaternion.AngleAxis(tmpFl, tmpRoteAxis);
+				if (tmpV.y < 0){
+					tmpFl = tmpFl * -1f;
+				}
+				thisSkilltgt.transform.rotation = Quaternion.AngleAxis(tmpFl, tmpRoteAxis);
 
-			thisTrgt.zAngle = tmpFl;
+				thisTrgt.zAngle = tmpFl;
 
-			break;
-		case enumCharaNum.enju_01:
-		default:
-			//自分中心円なのでクリックされても何もしない
-			break;
+				break;
+
+			default:
+				//自分中心円なのでクリックされても何もしない
+				break;
 		}
 	}
 

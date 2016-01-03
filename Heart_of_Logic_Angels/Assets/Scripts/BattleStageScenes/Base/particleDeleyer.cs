@@ -7,6 +7,9 @@ public class particleDeleyer : MonoBehaviour {
 	public float delayTime;
 	public float endTime;
 
+	public bool _loopUpRotationWoldSpace;
+	public Vector3 _offSetPosition;
+
 	// Use this for initialization
 	void Start () {
 		parentParticle = this.GetComponentsInChildren<ParticleSystem> ();
@@ -14,6 +17,13 @@ public class particleDeleyer : MonoBehaviour {
 		for (int i = 0; i < parentParticle.Length; i++) {
 			parentParticle[i].Stop();
 		}
+
+		if (_loopUpRotationWoldSpace == true) {
+			this.transform.rotation = Quaternion.identity;
+		}
+
+		//WorldSpace
+		this.transform.position += _offSetPosition;
 		
 		StartCoroutine (startDeley ());
 		StartCoroutine (startEndDeley ());

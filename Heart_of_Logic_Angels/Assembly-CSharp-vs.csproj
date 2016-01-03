@@ -72,6 +72,7 @@
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaMenu_heal.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaMenu_parent.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaSkillColliderScript.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaSkillDefenceColliderScript.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaSkill_Creater.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaSkill_FreezeManager.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaSkill_TargetMain.cs" />
