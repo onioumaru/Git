@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11484256}
   - 114: {fileID: 11401538}
   - 114: {fileID: 11443662}
+  - 114: {fileID: 11417804}
   m_Layer: 5
   m_Name: 92_warupiyo
   m_TagString: Untagged
@@ -36,6 +37,18 @@ MonoBehaviour:
   _childDiffSprite: []
   _fadeInAlfaChannelUseF: 0
   _notMainCharaF: 1
+--- !u!114 &11417804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0910a337255a7e244ba971d439e2d582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _defaultLocalScale: {x: 1.5, y: 1.5, z: 1}
 --- !u!114 &11443662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -60,6 +73,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: b88dd332de96f6b418d71d1789ea3a18, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -82,15 +101,15 @@ RectTransform:
   m_GameObject: {fileID: 119180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .0149882901, y: .0149882901, z: .00999219343}
+  m_LocalScale: {x: 0.01498829, y: 0.01498829, z: 0.009992193}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 320, y: 320}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -148,6 +167,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: scalePingPong
       value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _defaultLocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _defaultLocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _defaultLocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

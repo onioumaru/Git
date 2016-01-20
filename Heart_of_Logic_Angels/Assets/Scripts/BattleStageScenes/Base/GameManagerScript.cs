@@ -7,6 +7,7 @@ public class GameManagerScript : MonoBehaviour {
 
 	//GUI上で設定
 	public Sprite[] charaIconEmptyGrp;
+	[System.NonSerialized]
 	public SpriteRenderer[] charaIconEmptyPosision;
 
 	public Sprite[] _charaMainSprite;
@@ -179,8 +180,9 @@ public class GameManagerScript : MonoBehaviour {
 			tmpSprite.sprite = this.getCharaSprite(tmpChara.CharaNumber);
 
 			tmpChara.charaScript = tmpChara.charaBase.GetComponentInParent<allCharaBase>();
-			
+
 			tmpChara.charaScript.thisChara = new charaUserStatus (tmpChara.CharaNumber, 1f);
+
 			tmpChara.charaFlag = Instantiate(tmpChara.Prefab_charaFlag , cSBI.getFlagPosition(i) ,Quaternion.identity) as GameObject;
 			
 			tmpChara.charaScript.thisCharaIndex = i;

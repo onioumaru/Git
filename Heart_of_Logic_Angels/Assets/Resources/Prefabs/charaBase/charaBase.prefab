@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 406456}
   - 212: {fileID: 21206456}
   - 95: {fileID: 9506456}
+  - 114: {fileID: 11487200}
   m_Layer: 9
   m_Name: charaAnime
   m_TagString: Untagged
@@ -372,6 +373,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wingEffect: {fileID: 155906, guid: d44e05032c3d394418c6cb188c492e57, type: 2}
+--- !u!114 &11487200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f2ddbdeb37b4f44862654d887751a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mokurenNataSprite: {fileID: 0}
+  _mokurenYumiSprite: {fileID: 131560, guid: a13cdc9f54d13ae49ad29fafb44f7983, type: 2}
+  _sionCanvasSprite: {fileID: 138724, guid: 9ff88a00d61081a4e875646234756591, type: 2}
 --- !u!114 &11490034
 MonoBehaviour:
   m_ObjectHideFlags: 1

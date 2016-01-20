@@ -132,6 +132,14 @@ Prefab:
       propertyPath: m_Size.y
       value: 1.98353386
       objectReference: {fileID: 0}
+    - target: {fileID: 112420, guid: 4244513ee4ba7a7469c2e81b5541df2f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21286910, guid: 4244513ee4ba7a7469c2e81b5541df2f, type: 2}
+      propertyPath: m_SortingOrder
+      value: -100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4244513ee4ba7a7469c2e81b5541df2f, type: 2}
   m_IsPrefabParent: 0
@@ -394,6 +402,22 @@ Prefab:
     - target: {fileID: 497690, guid: b84590cd8296546449a42899c65b9a8f, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497690, guid: b84590cd8296546449a42899c65b9a8f, type: 2}
+      propertyPath: _sortieCharas.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497690, guid: b84590cd8296546449a42899c65b9a8f, type: 2}
+      propertyPath: _sortieCharas.Array.data[6]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497690, guid: b84590cd8296546449a42899c65b9a8f, type: 2}
+      propertyPath: _sortieCharas.Array.data[8]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497690, guid: b84590cd8296546449a42899c65b9a8f, type: 2}
+      propertyPath: _sortieCharas.Array.data[7]
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b84590cd8296546449a42899c65b9a8f, type: 2}

@@ -7,7 +7,7 @@ using System.Collections;
  * 
  */
 
-public class charaUserStatus{
+public class charaUserStatus : MonoBehaviour {
 	public charaBattleStatus battleStatus;
 
 	public enumCharaNum charaNo;

@@ -21,7 +21,7 @@ public class standingImageActionController : MonoBehaviour {
 			float tmpf = defaultScale + (Random.value / 4f);
 			//tmpf
 
-			Debug.Log (tmpf);
+			//Debug.Log (tmpf);
 
 			Vector3 tmpV = new Vector3(tmpf, tmpf, 1f);
 			this.transform.localScale = tmpV;

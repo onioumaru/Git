@@ -1,10 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BattleStageScenes\Base\particleDeleyer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\talkObject\talkingMainScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaSkill_FreezeManager.cs" Line="62" Column="57" />
-      <File FileName="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaSkillColliderScript.cs" Line="45" Column="5" />
-      <File FileName="Assets\Scripts\BattleStageScenes\Base\particleDeleyer.cs" Line="11" Column="30" />
+      <File FileName="Assets\Scripts\talkObject\talkingMainScript.cs" Line="190" Column="3" />
+      <File FileName="Assets\Scripts\talkObject\talkingPartImageScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\talkObject\standingImageActionController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\talkObject\standingCharaImageParent.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\public\largeBGImageLoader.cs" Line="6" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

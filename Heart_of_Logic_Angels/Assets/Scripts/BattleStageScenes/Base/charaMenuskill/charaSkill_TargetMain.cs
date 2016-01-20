@@ -30,6 +30,7 @@ public class charaSkill_TargetMain : MonoBehaviour {
 			case enumCharaNum.syusuran_02:
 			case enumCharaNum.akane_04:
 			case enumCharaNum.mokuren_06:
+			case enumCharaNum.sion_08:
 			case enumCharaNum.hiragi_09:
 					
 				thisSkilltgt = Instantiate(_SkillTarget_Arrow) as GameObject;
@@ -54,13 +55,13 @@ public class charaSkill_TargetMain : MonoBehaviour {
 
 	
 	void OnMouseDown(){
-
 		Vector3 firstMouseDown = Camera.main.ScreenToWorldPoint (Input.mousePosition) - this.transform.position;
 
 		switch (parentChara.thisChara.charaNo) {
 			case enumCharaNum.syusuran_02:
 			case enumCharaNum.akane_04:
 			case enumCharaNum.mokuren_06:
+			case enumCharaNum.sion_08:
 			case enumCharaNum.hiragi_09:
 				Vector3 tmpV = new Vector3( firstMouseDown.x, firstMouseDown.y,0f);
 				Vector3 tmpRoteAxis = new Vector3(0,0,1);

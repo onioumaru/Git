@@ -162,6 +162,7 @@ public class talkingMainScript : MonoBehaviour {
 	
 	private void pageStart(){
 		//最初だけ呼ばれる
+		//以降は、pageNextが呼ばれる
 		thisStatus = enm_textControllStatus.fadein;	//初期値
 		thisUIText.text = "";	//初期化
 		
@@ -183,7 +184,8 @@ public class talkingMainScript : MonoBehaviour {
 		thisUIText.text = "";
 
 		this.setTextAlpha (true);
-		
+		this.clearSpot ();	//ページ移行時には必ずクリアする
+
 		this.nowPage += 1;
 
 		if (this.nowPage >= allTxt.Length ) {
@@ -255,14 +257,14 @@ public class talkingMainScript : MonoBehaviour {
 			
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
-		
+
 		//進捗増加
 		tmpFindStr = "<forwardEvent:[abcd]>";
 		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
 		if (findF) {
 			//match の取得
 			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
-			
+
 			//Commond 頭文字は被る為、abcdとした
 			// a : route
 			// b : progress
@@ -273,12 +275,25 @@ public class talkingMainScript : MonoBehaviour {
 
 			Debug.Log("matchStr : " + matchStr);
 			// todo
-			this.forwardStoyProgresses(matchStr);
-			
+			this.forwardStroyProgresses(matchStr);
+
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
 
+		//進捗増加
+		tmpFindStr = "<jampToEvent:[*]>";
+		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
+		if (findF) {
+			//match の取得
+			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
 
+			Debug.Log("matchStr : " + matchStr);
+			// todo
+			this.setStroyProgresses(matchStr);
+
+			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
+		}
+			
 
 
 		//bgimage
@@ -419,9 +434,9 @@ public class talkingMainScript : MonoBehaviour {
 	
 	//
 	//
-	private void forwardStoyProgresses(string argsStr){
+	private void forwardStroyProgresses(string argsStr){
 		// <forwardEvent:[abcd]>
-		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//各個の消去
+		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//カッコの消去
 		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
 		
 		string argsPosi = spritStr[1];
@@ -432,7 +447,6 @@ public class talkingMainScript : MonoBehaviour {
 		case "a":
 			sVMS.addStoryProgresses(enum_StoryProgressType.Route);
 			break;
-
 		case "b":
 			sVMS.addStoryProgresses(enum_StoryProgressType.Progress);
 			break;
@@ -446,42 +460,70 @@ public class talkingMainScript : MonoBehaviour {
 	}
 
 
+	private void setStroyProgresses(string argsStr){
+		// <forwardEvent:[abcd]>
+		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//カッコの消去
+		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
+
+		string argsPosi = spritStr[1];
+
+		//直接文字列指定
+		//進行度をジャンプする
+		Debug.Log("jump Sroty tag :" + argsPosi);
+
+		sVMS.setStoryProgress(argsPosi);
+	}
 	
 	//
 	//
 	private void setSpot(string argsStr){
 		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//各個の消去
 		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
-		
+
 		string argsPosi = spritStr[1];
-		
+
 		standingCharaImageParent sSCIS_L = _attachedLeftChara.GetComponent<standingCharaImageParent>();
 		standingCharaImageParent sSCIS_R = _attachedRightChara.GetComponent<standingCharaImageParent>();
 		standingCharaImageParent sSCIS_C = _attachedCenterChara.GetComponent<standingCharaImageParent>();
-		
+
 		//自分以外のイラストは暗くする
-		
+
 		switch (argsPosi) {
 		case "l":
 			sSCIS_L.setThisChildsSpot(true);
 			sSCIS_C.setThisChildsSpot(false);
 			sSCIS_R.setThisChildsSpot(false);
-			
+
 			break;
 		case "r":
 			sSCIS_L.setThisChildsSpot(false);
 			sSCIS_C.setThisChildsSpot(false);
 			sSCIS_R.setThisChildsSpot(true);
-			
+
 			break;
 		case "c":
 			sSCIS_L.setThisChildsSpot(false);
 			sSCIS_C.setThisChildsSpot(true);
 			sSCIS_R.setThisChildsSpot(false);
-			
+
 			break;
 		}
-		
+	}
+
+	/// <summary>
+	/// Clears the spot.
+	/// </summary>
+	private void clearSpot(){
+
+		standingCharaImageParent sSCIS_L = _attachedLeftChara.GetComponent<standingCharaImageParent>();
+		standingCharaImageParent sSCIS_R = _attachedRightChara.GetComponent<standingCharaImageParent>();
+		standingCharaImageParent sSCIS_C = _attachedCenterChara.GetComponent<standingCharaImageParent>();
+
+		//すべて暗くする
+		sSCIS_L.setThisChildsSpot(false);
+		sSCIS_C.setThisChildsSpot(false);
+		sSCIS_R.setThisChildsSpot(false);
+
 	}
 	//
 	//

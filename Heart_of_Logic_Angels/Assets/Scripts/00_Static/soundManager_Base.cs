@@ -90,93 +90,107 @@ public class soundManager_Base : MonoBehaviour {
 		case 0:
 			BGMheader.clip = Resources.Load(path + "00_1_enjyu") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "00_2_enjyu") as AudioClip;
-			delayedTime = 67.5f;
+			//delayedTime = 67.5f;
 
 			break;
 			
 		case 1:
 			BGMheader.clip = Resources.Load(path + "01_1_syusuran") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "01_2_syusuran") as AudioClip;
-			delayedTime = 15.755f;
+			//delayedTime = 15.755f;
 			
 			break;
 		case 2:
 			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "02_2_suzu") as AudioClip;
-			delayedTime = 0f;
+			//delayedTime = 0f;
 			
 			break;
 		case 3:
 			BGMheader.clip = Resources.Load(path + "03_1_akane") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "03_2_akane") as AudioClip;
-			delayedTime = 134.1f;
+			//delayedTime = 134.1f;
 			
 			break;
 		case 4:
 			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "04_2_hozuki") as AudioClip;
-			delayedTime = 0f;
+			//delayedTime = 0f;
 			
 			break;
 		case 5:
 			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "05_2_mokuren") as AudioClip;
-			delayedTime = 0f;
+			//delayedTime = 0f;
 			
 			break;
 		case 6:
 			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "06_2_sakura") as AudioClip;
-			delayedTime = 0f;
+			//delayedTime = 0f;
 			
 			break;
 		case 7:
 			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "07_2_sion") as AudioClip;
-			delayedTime = 0f;
+			//delayedTime = 0f;
 			
 			break;
 		case 8:
 			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "08_2_hiragi") as AudioClip;
-			delayedTime = 0f;
+			//delayedTime = 0f;
 			
 			break;
 		case 9:
 			BGMheader.clip = Resources.Load(path + "09_1_gameover") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
-			delayedTime = 0f;
+			//delayedTime = 0f;
 			
 			break;
 		case 10:
 			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "10_2_ninja") as AudioClip;
-			delayedTime = 0f;
+			//delayedTime = 0f;
 			
 			break;
 		case 11:
 			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "11_2_bittersweet") as AudioClip;
-			delayedTime = 0f;
+			//delayedTime = 0f;
 			
 			break;
 		case 12:
 			BGMheader.clip = Resources.Load(path + "12_stageClear") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
-			delayedTime = 0f;
-			
+			//delayedTime = 0f;
+
+			break;
+
+		case 13:
+			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
+			BGMloop.clip = Resources.Load(path + "13_02_hosikuzu") as AudioClip;
+			//delayedTime = 0f;
+
+			break;
+
+		case 14:
+			BGMheader.clip = Resources.Load(path + "14_1_reflectable_battle") as AudioClip;
+			BGMloop.clip = Resources.Load(path + "14_2_reflectable_battle") as AudioClip;
+			//delayedTime = 0f;
+
 			break;
 
 		default:
 			//実質 delete
 			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
-			delayedTime = 0f;
+			//delayedTime = 0f;
 			
 			break;
 		}
 
-		
+		delayedTime = BGMheader.clip.length;
 		BGMloop.SetScheduledStartTime(delayedTime);
 	}
 

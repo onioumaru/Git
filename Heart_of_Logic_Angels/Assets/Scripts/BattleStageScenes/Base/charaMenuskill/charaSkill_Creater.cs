@@ -25,10 +25,11 @@ public class charaSkill_Creater : MonoBehaviour {
 		int tmpIndex = (int)argsSkillTgt.charaNo;
 
 		switch(argsSkillTgt.charaNo){
+		case enumCharaNum.hiragi_09:
+		case enumCharaNum.sion_08:
 		case enumCharaNum.mokuren_06:
 		case enumCharaNum.akane_04:
 		case enumCharaNum.syusuran_02:
-		case enumCharaNum.hiragi_09:
 			//指向性があるスキル
 			retGO = Instantiate(_charaSkillEffects[tmpIndex]) as GameObject;
 			//親に設定(必須)

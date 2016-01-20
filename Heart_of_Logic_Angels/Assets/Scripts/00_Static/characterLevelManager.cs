@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public class characterLevelManager{ // : MonoBehaviour {
+public class characterLevelManager : ScriptableObject {
 	private List<float> expList;
 
 	public characterLevelManager(){

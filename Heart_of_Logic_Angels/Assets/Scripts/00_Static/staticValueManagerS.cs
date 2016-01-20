@@ -67,6 +67,7 @@ public class staticValueManagerS : MonoBehaviour {
 			nowSceneValue.convertSelectedUserSaveData();
 		}
 	}
+
 	
 	//**//
 
@@ -222,6 +223,33 @@ public class staticValueManagerS : MonoBehaviour {
 		nowSceneValue.convertSelectedUserSaveData ();
 
 		Debug.Log ("進捗増加 : " + nowSceneValue.sceneFileName);
+	}
+	/// <summary>
+	/// 直接文字列指定
+	/// 00-00-00-00
+	/// </summary>
+	public void setStoryProgress(string argsStr){
+
+		string[] tmpS = argsStr.Split('-');
+		this.setStoryProgress( int.Parse(tmpS[0]) ,int.Parse(tmpS[1]) ,int.Parse(tmpS[2]) ,int.Parse(tmpS[3]));
+
+	}
+	/// <summary>
+	/// 個別指定
+	/// 数字を別個指定
+	/// </summary>
+	/// <param name="argsRoute">Arguments route.</param>
+	/// <param name="argsProgress">Arguments progress.</param>
+	/// <param name="argsStage">Arguments stage.</param>
+	/// <param name="argsStep">Arguments step.</param>
+	public void setStoryProgress(int argsRoute,int argsProgress ,int argsStage ,int argsStep){
+		
+		selectedUserSaveDat["StoryRoute"] = argsRoute;
+		selectedUserSaveDat[storyProgress_Key] = argsProgress;
+		selectedUserSaveDat[storyStage_Key] = argsStage;
+		selectedUserSaveDat["StoryStep"] = argsStep;
+
+		nowSceneValue.convertSelectedUserSaveData ();
 	}
 
 	//
