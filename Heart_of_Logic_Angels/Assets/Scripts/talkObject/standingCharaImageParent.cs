@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class standingCharaImageParent : MonoBehaviour {
+	public GameObject _UnderDrawParent;
 	private GameObject childNode;
 
 	// Use this for initialization
@@ -25,23 +26,36 @@ public class standingCharaImageParent : MonoBehaviour {
 
 
 	public void setThisChildsSpot(bool isSpot){
-
+		//カラーは先に定義
+		Color tmpC = new Color(0.5f, 0.5f, 0.5f);
+		if (isSpot) {
+			tmpC = Color.white;
+		}
+			
 		if (this.transform.childCount < 1) {
 			//子がいない場合、処理不要と考える
 			//Debug.Log ("spot return");
 			return;
 				}
-
+			
 		if (isSpot == false) {
 			//このキャラ表示ポジションを後ろに
 			this.transform.SetAsFirstSibling ();
 		}
-		
+
+		//子のImageの色は先につけてしまう
+		Image[] tmpImgs = this.transform.GetComponentsInChildren<Image> ();
+		foreach (Image tmpI in tmpImgs) {
+			tmpI.color = tmpC;
+		}
+
+		/*
 		standingCharaImageS tmpS = childNode.GetComponent<standingCharaImageS>();
 		if (tmpS != null) {
 			//standingCharaImageS　が付いていない、説明用画像が乗っている場合、ここを通る
 			tmpS.setSelfSpot (isSpot);
 		}
+		*/
 
 	}
 
@@ -56,9 +70,29 @@ public class standingCharaImageParent : MonoBehaviour {
 
 		//4桁固定
 
-		if (argsNo.Substring (0, 1) == "9") {
+		string tmpStr = argsNo.Substring (0, 1);
+
+		if (tmpStr != "0" && tmpStr != "1") {
 			
 			switch (argsNo) {	
+			case "2001":
+				//アルルーナ
+				fFullPath = "pictChractorStanding/20_1_aruru-na";
+				break;
+			case "2002":
+				//アルルーナ
+				fFullPath = "pictChractorStanding/20_2_aruru-na";
+				break;
+			case "2003":
+				//アルルーナ
+				fFullPath = "pictChractorStanding/20_3_aruru-na";
+				break;
+
+			case "2004":
+				//アルルーナ
+				fFullPath = "pictChractorStanding/20_4_aruru-na";
+				break;
+
 			case "9200":
 				fFullPath = "pictChractorStanding/92_warupiyo";
 				break;
@@ -105,11 +139,12 @@ public class standingCharaImageParent : MonoBehaviour {
 		case "03":
 			fFullPath = "pictChractorStanding/03_akane";
 			break;
-			
+
 		case "04":
 			fFullPath = "pictChractorStanding/04_hozuki";
 			break;
-			
+
+
 		case "12":
 			fFullPath = "pictChractorStanding/02_suzusiro_noGlass";
 			break;

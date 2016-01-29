@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+//マイフレーム wakeupするのに必要
+[RequireComponent(typeof(Rigidbody2D))]
 public class chara_basicAttack : MonoBehaviour {
 	//アタックディレイはこの関数内で計算する
 	private bool attackDeleyFlag = false;
@@ -19,6 +21,10 @@ public class chara_basicAttack : MonoBehaviour {
 		lastFrameAttackTarget = new List<Transform> ();
 
 		StartCoroutine (mainLoop ());
+	}
+
+	void Update(){
+		this.GetComponent<Rigidbody2D> ().WakeUp();
 	}
 
 	IEnumerator mainLoop(){

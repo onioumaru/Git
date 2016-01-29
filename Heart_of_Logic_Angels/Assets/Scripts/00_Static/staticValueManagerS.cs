@@ -531,10 +531,20 @@ public class staticValueManagerS : MonoBehaviour {
 		
 		return (float)saveDataJSON01[argsKey];
 	}
-	
-	/*
-	charaSaveValues
-*/
+
+
+	/// <summary>
+	/// 省略形の場合、selectedUserSaveDataに保存する
+	/// </summary>
+	/// <param name="srgsCharaVal">Srgs chara value.</param>
+	public void setSaveCharaValue(saveCharaValueClass argsCharaVal){
+		setSaveCharaValue (selectedUserSaveDat, argsCharaVal);
+	}
+	/// <summary>
+	/// 非省略形
+	/// </summary>
+	/// <param name="saveData">Save data.</param>
+	/// <param name="srgsCharaVal">Srgs chara value.</param>
 	public void setSaveCharaValue(Dictionary<string, object> saveData,saveCharaValueClass srgsCharaVal){
 		//tmpSelectedDic.Add(saveCharaValue_Key + indexI.ToString("0"), tmpVal);
 
@@ -542,13 +552,13 @@ public class staticValueManagerS : MonoBehaviour {
 
 		try{
 			//該当キーは全て削除し入れなおし
-			saveData.Remove(saveData + "_Number");
-			saveData.Remove(saveData + "_enable");
-			saveData.Remove(saveData + "_level");
-			saveData.Remove(saveData + "_exp");
-			saveData.Remove(saveData + "_equipment");
-			saveData.Remove(saveData + "_battleLimiter");
-			saveData.Remove(saveData + "_sanity");
+			saveData.Remove(tmpKey + "_Number");
+			saveData.Remove(tmpKey + "_enable");
+			saveData.Remove(tmpKey + "_level");
+			saveData.Remove(tmpKey + "_exp");
+			saveData.Remove(tmpKey + "_equipment");
+			saveData.Remove(tmpKey + "_battleLimiter");
+			saveData.Remove(tmpKey + "_sanity");
 		} catch (UnityException e){
 				}
 
@@ -561,6 +571,19 @@ public class staticValueManagerS : MonoBehaviour {
 		saveData.Add (tmpKey + "_sanity", srgsCharaVal.sanity);
 
 	}
+	/// <summary>
+	/// キャラの追加削除フラグ
+	/// </summary>
+	/// <param name="argsCharaNum">Arguments chara number.</param>
+	/// <param name="argsFlag">If set to <c>true</c> arguments flag.</param>
+	public void setSaveCharaEnableFlag(enumCharaNum argsCharaNum, bool argsFlag){
+		int tmpL = (int)argsCharaNum;
+		saveCharaValueClass beforeSCVC = this.getSaveCharaValue(tmpL);
+
+		beforeSCVC.enable = argsFlag;
+
+		this.setSaveCharaValue (beforeSCVC);
+	}
 
 
 	public sceneChangeValue getNowSceneChangeValue(){
@@ -569,7 +592,7 @@ public class staticValueManagerS : MonoBehaviour {
 	
 	public saveCharaValueClass getSaveCharaValue(int argsCharaNo){
 		//overload
-		return this.getSaveCharaValue (selectedUserSaveDat, argsCharaNo);;
+		return this.getSaveCharaValue (selectedUserSaveDat, argsCharaNo);
 	}
 
 	public saveCharaValueClass getSaveCharaValue(Dictionary<string, object> saveData, int argsCharaNo){

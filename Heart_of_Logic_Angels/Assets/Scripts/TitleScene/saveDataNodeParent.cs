@@ -34,7 +34,7 @@ public class saveDataNodeParent : MonoBehaviour {
 			charaName = "スズシロ";
 			break;
 		case 3:
-			charaName = "ギョクラン";
+			charaName = "アカネ";
 			break;
 		case 4:
 			charaName = "ホオズキ";
@@ -43,10 +43,10 @@ public class saveDataNodeParent : MonoBehaviour {
 			charaName = "モクレン";
 			break;
 		case 6:
-			charaName = "シオン";
+			charaName = "サクラ";
 			break;
 		case 7:
-			charaName = "シュウカイドウ";
+			charaName = "シオン";
 			break;
 		case 8:
 			charaName = "ヒイラギ";

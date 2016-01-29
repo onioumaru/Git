@@ -39,7 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 229f3e0f63f528940a5f28441c106377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _forDebug: 1
+  _forDebug: 0
   charaIconEmptyGrp:
   - {fileID: 21300000, guid: c596056677b4b7e4795c6277e65ec0e1, type: 3}
   - {fileID: 21300002, guid: c596056677b4b7e4795c6277e65ec0e1, type: 3}
@@ -50,10 +50,6 @@ MonoBehaviour:
   - {fileID: 21300012, guid: c596056677b4b7e4795c6277e65ec0e1, type: 3}
   - {fileID: 21300014, guid: c596056677b4b7e4795c6277e65ec0e1, type: 3}
   - {fileID: 21300016, guid: c596056677b4b7e4795c6277e65ec0e1, type: 3}
-  charaIconEmptyPosision:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   _charaMainSprite:
   - {fileID: 21300000, guid: ebee80a0eb701f341a99e47f4c33dcb1, type: 3}
   - {fileID: 21300020, guid: 7fd540662557dc144a6b66c3921f91c5, type: 3}
@@ -194,6 +190,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 867fbb662dc33a6438acfb54d715446c,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: _forDebug
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197690}

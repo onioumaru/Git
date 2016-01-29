@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
+//マイフレーム wakeupするのに必要
 [RequireComponent(typeof(Rigidbody2D))]
 public class allEnemyBase : MonoBehaviour {
 	public GameObject _HPBar;
@@ -89,12 +91,6 @@ public class allEnemyBase : MonoBehaviour {
 		return thisEnemyStat.attackDeleySec;
 	}
 
-	/*
-	IEnumerator mainLoop(){
-
-	}
-	*/
-	
 	public float setDamage(int argsInt, int argsCharaIndex){
 		//戻り値で経験値を返す
 		grantExpChara.Add (argsCharaIndex);

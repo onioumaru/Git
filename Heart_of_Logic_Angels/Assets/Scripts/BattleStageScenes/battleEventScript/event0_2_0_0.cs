@@ -16,7 +16,7 @@ public class event0_2_0_0 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//soundManagerGetter.getManager ().playBGM (1);
+		soundManagerGetter.getManager ().playBGM (1);
 
 		generatedTargetEnemys = new List<GameObject>();
 		//最初の1匹
@@ -43,6 +43,7 @@ public class event0_2_0_0 : MonoBehaviour {
 		StartCoroutine ( startTargetCall() );
 
 		StartCoroutine ( timeEvent() );
+
 	}
 
 	private void clearTargetGenerater(GameObject argsGO, Vector3 argsPosition){
@@ -168,10 +169,14 @@ public class event0_2_0_0 : MonoBehaviour {
 		sceneChangeValue sceneCV = sVMS.getNowSceneChangeValue ();
 
 		//
-		sVMS.addStoryProgresses(enum_StoryProgressType.Step);
+		//sVMS.addStoryProgresses(enum_StoryProgressType.Step);
+		sVMS.setStoryProgress("0-2-0-6");
+		sVMS.setSaveCharaEnableFlag (enumCharaNum.syusuran_02, true);
+
+		GMS.saveBattleResultValues ();
 
 		//Debug.Log ("gotoStageSelect");
-		sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
+		sVMS.changeScene (sceneChangeStatusEnum.gotoTalkScene);
 
 	}
 

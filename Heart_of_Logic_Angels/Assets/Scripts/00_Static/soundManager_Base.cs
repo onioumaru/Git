@@ -82,7 +82,7 @@ public class soundManager_Base : MonoBehaviour {
 		string path = "Sounds/BGM/";
 		//Resources\Sounds\BGM\01_2_go_on
 
-		Debug.Log ("setLoadingBGMList : " + bgmNo);
+		//Debug.Log ("setLoadingBGMList : " + bgmNo);
 
 		//曲ごとにリソースの場所とループタイミングを設定
 		//面倒なので、ソースに直描き
@@ -177,6 +177,20 @@ public class soundManager_Base : MonoBehaviour {
 		case 14:
 			BGMheader.clip = Resources.Load(path + "14_1_reflectable_battle") as AudioClip;
 			BGMloop.clip = Resources.Load(path + "14_2_reflectable_battle") as AudioClip;
+			//delayedTime = 0f;
+
+			break;
+
+		case 15:
+			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
+			BGMloop.clip = Resources.Load(path + "15_2_nc91697") as AudioClip;
+			//delayedTime = 0f;
+
+			break;
+
+		case 16:
+			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
+			BGMloop.clip = Resources.Load(path + "16_2_nc101962") as AudioClip;
 			//delayedTime = 0f;
 
 			break;

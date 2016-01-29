@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childDiffImage: {fileID: 0}
-  _thisCharaDefaultLocalPosition: {x: 0, y: 70, z: 0}
+  _thisCharaDefaultLocalPosition: {x: 0, y: -40, z: 0}
   _shadowSprite: {fileID: 0}
   _childDiffSprite: []
   _fadeInAlfaChannelUseF: 0
@@ -87,6 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _defaultLocalScale: {x: 1.5, y: 1.5, z: 1}
+  _defaultLocalPosition: {x: 0, y: -40, z: 0}
 --- !u!222 &22269260
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -160,6 +161,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: _defaultLocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _defaultLocalPosition.y
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _thisCharaDefaultLocalPosition.y
+      value: -40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

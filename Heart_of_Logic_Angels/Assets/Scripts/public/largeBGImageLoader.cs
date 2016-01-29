@@ -24,6 +24,15 @@ public static class largeBGImageLoader {
 			//渡り廊下01
 			fFullPath = "advBackGroungImage/渡り廊下01";
 			break;
+
+		case "03":
+			fFullPath = "advBackGroungImage/03_植物園";
+			break;
+
+		case "99":
+			//透明画像のダミー
+			fFullPath = "pictChractorStanding/blinkObj";
+			break;
 		}
 		
 		charaBase = Resources.LoadAll<Sprite>(fFullPath);

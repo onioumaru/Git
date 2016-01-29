@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+
 public class GameManagerScript : MonoBehaviour {
 	public bool _forDebug = false;
 
@@ -152,7 +153,7 @@ public class GameManagerScript : MonoBehaviour {
 
 			//すべてのキャラを作成
 			if (_sortieCharas[loopI]){
-				loadedCharaList.setData (tmpC, 1, 0);
+				loadedCharaList.setData (tmpC, 500f, 0);
 			}
 		}
 
@@ -410,6 +411,34 @@ public class GameManagerScript : MonoBehaviour {
 				tmp.charaBase.transform.GetComponent<Rigidbody2D> ().WakeUp ();
 			}
 		}
+	}
+
+	/// <summary>
+	/// 全ての出撃キャラを共通データに設定しなおす
+	/// </summary>
+	public void saveBattleResultValues(){
+		//
+		foreach (gameStartingVariable_Single tmpV in this.loadedCharaList.charalist) {
+			int tmpL = (int)tmpV.CharaNumber;
+			saveCharaValueClass beforeSCVC = sVMS.getSaveCharaValue(tmpL);
+
+			beforeSCVC.exp = tmpV.charaScript.thisChara.totalExp;
+			beforeSCVC.level =  tmpV.charaScript.thisChara.nowLv;
+//			beforeSCVC.sanity = argsSAN;
+
+			sVMS.setSaveCharaValue (beforeSCVC);
+		}
+	}
+
+	/// <summary>
+	/// キャラの追加/離脱フラグ
+	/// </summary>
+	/// <param name="argsCharaNum">Arguments chara number.</param>
+	/// <param name="argsFlag">If set to <c>true</c> arguments flag.</param>
+	public void saveBattleResultValues_EnterCharacterFlag(enumCharaNum argsCharaNum, bool argsFlag){
+		
+		sVMS.setSaveCharaEnableFlag (argsCharaNum ,argsFlag );
+
 	}
 }
 

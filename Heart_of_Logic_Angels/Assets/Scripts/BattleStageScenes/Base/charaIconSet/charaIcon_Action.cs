@@ -49,6 +49,13 @@ public class charaIcon_Action : MonoBehaviour {
 			Vector3 tmpV = new Vector3(thisCharaBase.transform.position.x, thisCharaBase.transform.position.y, -20f);
 			Camera.main.transform.position = tmpV;
 
+			//スキルウェイト中は表示しない
+			allCharaBase thisCharaBaseScrpt = thisCharaBase.GetComponentInChildren<allCharaBase> ();
+			if (thisCharaBaseScrpt.thisChara.battleStatus.charaMode == characterMode.Skill) {
+				//soundManagerGetter.getManager().playOneShotSound(enm_oneShotSound.);
+				return;
+			}
+
 			soundManagerGetter.getManager().playOneShotSound(enm_oneShotSound.charaMenu);
 
 			charaMenuInstance = Instantiate(characterMenu) as GameObject;
@@ -163,5 +170,4 @@ public class charaIcon_Action : MonoBehaviour {
 		leftDragF = false;
 		rightDragF = false;
 	}
-
 }

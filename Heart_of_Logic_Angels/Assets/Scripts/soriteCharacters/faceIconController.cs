@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class faceIconController : MonoBehaviour {
 	public GameObject[] _faceIconObject;
 	public Text _charaInfoText;
+	private GameObject _charaAnime;
 
 	//面倒なので public にするが、GUIから変更しない事
 	public int selectedIconIndex;

@@ -12,7 +12,7 @@ public class talkingMainScript : MonoBehaviour {
 	public GameObject _attachedCenterChara;
 	public Image _bgColor;
 
-	public GameObject[] _iconEff;
+	public GameObject _partsContainerGO;
 	public GameObject _textMainFrame;
 
 	private string[] allTxt;
@@ -41,7 +41,7 @@ public class talkingMainScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log ("fIn this scene, fastest Start is talkingMainScript");
+		Debug.Log ("In this scene, fastest Start is talkingMainScript");
 
 		if (Application.loadedLevelName == "talkScene" ){
 			_bgColor.color = Color.black;
@@ -347,35 +347,35 @@ public class talkingMainScript : MonoBehaviour {
 			
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
-		
-		//表情effect
-		tmpFindStr = "<eff:[0-9]{2}:[lrc]>";
+
+		//フィールドeffect
+		tmpFindStr = "<eff:[0-9]{2}>";
 		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
 		if (findF) {
 			//match の取得
 			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
-			
+
 			//Commond
 			Debug.Log(matchStr);
-			this.setEmotionEffect(matchStr);
-			
+			this.setVisualEffect(matchStr);
+
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
 
 		//表情effect
-		tmpFindStr = "<abyssCloud:[lrc]>";
+		tmpFindStr = "<emoeff:[0-9]{2}:[lrc]>";
 		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
 		if (findF) {
 			//match の取得
 			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
-			
+
 			//Commond
 			Debug.Log(matchStr);
-			this.setAbyssCloud(matchStr);
-			
+			this.setEmotionEffect(matchStr);
+
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
-		
+
 
 		
 		//立ち絵の明るさを設定する
@@ -630,6 +630,30 @@ public class talkingMainScript : MonoBehaviour {
 	}
 
 
+	//setVisualEffect
+	private void setVisualEffect(string argsStr){
+		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//各個の消去
+		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
+
+		string tmpNo = spritStr[1];
+
+
+		switch (tmpNo) {
+		case "00":
+
+			string fFullPath = "Prefabs/talkingParts/visualEff_FadeInOut";
+			GameObject tmpResouce = Resources.Load (fFullPath) as GameObject;
+			GameObject tmpGO = (GameObject)Instantiate (tmpResouce);
+
+			tmpGO.transform.parent = _groundParent.transform;
+			tmpGO.transform.position = Vector3.zero;
+			tmpGO.transform.localScale = Vector3.one;
+			tmpGO.transform.SetAsLastSibling ();
+
+			break;
+		}
+	}
+
 	//
 	//表情アイコンエフェクト
 	//
@@ -637,65 +661,49 @@ public class talkingMainScript : MonoBehaviour {
 		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//各個の消去
 		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
 		
-		int argsIconNo = int.Parse(spritStr[1]);
+//		int argsIconNo = int.Parse(spritStr[1]);
+		string argsEffNo = spritStr[1];
 		string argsPosi = spritStr[2];
 
-
-
 		GameObject tmpBaseTrn = _attachedLeftChara.gameObject;
-		Vector3 baseCharaPosi = Vector3.one;	//準備
 
 		switch (argsPosi) {
 		case "l":
 			tmpBaseTrn = _attachedLeftChara.gameObject;
-			baseCharaPosi = new Vector3(-140f,180f,0);
 
 			break;
 		case "r":
 			tmpBaseTrn = _attachedRightChara.gameObject;
-			baseCharaPosi = new Vector3(290f,180f,0);
 
 			break;
 		case "c":
 			tmpBaseTrn = _attachedCenterChara.gameObject;
-			baseCharaPosi = new Vector3(100f,180f,0);
 			
 			break;
 		}
 
-		// 複製して設置
-		GameObject copyEff = Instantiate ( _iconEff[argsIconNo]) as GameObject;
-		copyEff.transform.SetParent(tmpBaseTrn.transform.parent.transform);
-		copyEff.transform.localPosition = baseCharaPosi;
-	}
+		GameObject tmpGo = Instantiate(_partsContainerGO) as GameObject;
+		talkingPartsContainersScript tPCS = tmpGo.GetComponent<talkingPartsContainersScript> ();
 
-	//setAbyssCloud
-	private void setAbyssCloud(string argsStr){
-		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//各個の消去
-		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
+		returnTalkingParts retPrefabs = tPCS.getCharaEffect (argsEffNo);
 
-		string argsPosi = spritStr[1];
+		if (retPrefabs.backPrefas != null) {
+			foreach (GameObject tmpGO in retPrefabs.backPrefas) {
+				GameObject copyEff = Instantiate (tmpGO) as GameObject;
 
-		string fFullPath = "pictChractorStanding/Eff_abyssCloud";
-		GameObject tmpResouce = Resources.Load(fFullPath) as GameObject;
-
-		GameObject tmpGO = (GameObject)Instantiate(tmpResouce);
-
-		switch (argsPosi) {
-		case "l":
-			tmpGO.transform.parent = _attachedLeftChara.transform;
-			break;
-		case "r":
-			tmpGO.transform.parent = _attachedRightChara.transform;
-			break;
-		case "c":
-			tmpGO.transform.parent = _attachedCenterChara.transform;
-			break;
+				copyEff.transform.SetParent(tmpBaseTrn.transform);
+				copyEff.transform.SetAsLastSibling ();
+			}
 		}
 		
-		tmpGO.transform.localScale = new Vector3(0.7f, 0.7f, 0f);
-		tmpGO.transform.localPosition = Vector3.zero;
+		if (retPrefabs.frontPrefas != null) {
+			foreach (GameObject tmpGO in retPrefabs.frontPrefas) {
+				GameObject copyEff = Instantiate (tmpGO) as GameObject;
 
+				copyEff.transform.SetParent (tmpBaseTrn.transform);
+				copyEff.transform.SetAsFirstSibling ();
+			}
+		}
 	}
 
 
@@ -744,6 +752,14 @@ public class talkingMainScript : MonoBehaviour {
 		Sprite[] charaBase;
 
 		switch (argsImageNo) {
+		case "97":
+			//TODO: 星空の背景画像にする
+			//blinkObj、完全透明（skybox:星）
+			_BGImage.sprite = largeBGImageLoader.getImage("99");
+			_BGImage.color = new Color(1f, 1f, 1f, 0f);
+			_bgColor.color = new Color(1f, 1f, 1f, 0f);
+
+			break;
 		case "98":
 			//半透明 黒
 			_BGImage.sprite = null;

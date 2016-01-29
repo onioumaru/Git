@@ -7,6 +7,7 @@ public class allCharaBase : MonoBehaviour {
 
 	//以下、開始時にSetが必要
 	// 死亡時エフェクトのPrefab
+	[System.NonSerialized]
 	public GameObject thisCharaFlag;
 
 	public int thisCharaIndex;
@@ -21,12 +22,15 @@ public class allCharaBase : MonoBehaviour {
 	public Sprite attackCycle_green;
 	
 	//以下設定不要、自動Set
+	[System.NonSerialized]
 	public GameManagerScript gmScript;
 	public charaUserStatus thisChara;
 	public expLevelInfo calcdExp;
+	[System.NonSerialized]
 	public bool destroyF = false;
 	
 	//スクリプト起動時はTrue（停止）にしておく事
+	[System.NonSerialized]
 	public bool stopFlag;
 
 	//private
@@ -44,6 +48,7 @@ public class allCharaBase : MonoBehaviour {
 	private Rigidbody2D thisRigiBody;
 
 	//この値が0になるまで、硬直時間とする
+	[System.NonSerialized]
 	public bool movingFreezeFlag = false;
 	
 	float offsetX = -0.28f;
@@ -56,6 +61,11 @@ public class allCharaBase : MonoBehaviour {
 
 	private float regenarateSec = 0;
 	private Coroutine reganateCounterCor;
+
+	[SerializeField]
+	private float showNowLevel;
+	[SerializeField]
+	private float showNextExp;
 
 
 	// Use this for initialization
@@ -84,6 +94,10 @@ public class allCharaBase : MonoBehaviour {
 
 	void Update(){
 		thisRigiBody.WakeUp ();
+		#if DEBUG
+			showNowLevel = thisChara.nowLv;
+			showNextExp = thisChara.nextExp;
+		#endif
 	}
 
 	IEnumerator calcCoolTimeLoop(){
@@ -169,7 +183,8 @@ public class allCharaBase : MonoBehaviour {
 		//カメラの追従はリセット
 		cmrTracker.setCharaTrackReset();
 
-		Instantiate (dyingAnimation, origin.position, origin.rotation);
+		GameObject tmpGO = Instantiate (dyingAnimation, origin.position, origin.rotation) as GameObject;
+		tmpGO.GetComponent<deadEffectParent_Script> ()._defaultC = thisChara.charaNo;
 
 		//remove処理は、マネージャーで行う
 		gmScript.destoryChara(thisCharaIndex);
@@ -238,6 +253,10 @@ public class allCharaBase : MonoBehaviour {
 			charaSkill_Creater tmpScr = _charaSkillCreater.GetComponent<charaSkill_Creater> ();
 			tmpScr.instantiateSkillEffect (this.transform, thisSkillTatgetInfo);
 			thisChara.restSkillCoolTime = thisChara.MaxSkillCoolTime;
+
+			//攻撃用コライダーは一時停止
+			thisAttackErea.SetActive(false);
+
 
 			break;
 		}
@@ -328,7 +347,11 @@ public class allCharaBase : MonoBehaviour {
 	}
 
 	public void setBeforeCharaMode(){
+		//スキル使用後、
+		//元の状態に戻す
 		this.setMode (this.thisChara.battleStatus.beforeCharaMode);
+		//アタック用コライダーの復活
+		thisAttackErea.SetActive(true);
 	}
 
 	public float getRestCoolTime(){

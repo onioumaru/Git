@@ -59,6 +59,7 @@ public class standingCharaImageS : MonoBehaviour {
 		_childDiffImage.sprite = blankSprite;
 	}
 
+	/*
 	public void setSelfSpot(bool isSpot){
 
 		Color tmpC = new Color(0.5f, 0.5f, 0.5f);
@@ -73,7 +74,7 @@ public class standingCharaImageS : MonoBehaviour {
 		_childDiffImage.color = tmpC;
 
 	}
-
+*/
 
 	private void initThis(){
 		if (initFlag == true) {

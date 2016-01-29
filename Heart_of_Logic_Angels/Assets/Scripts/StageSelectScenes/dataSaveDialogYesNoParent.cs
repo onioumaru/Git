@@ -71,6 +71,7 @@ public class dataSaveDialogYesNoParent : MonoBehaviour {
 		_saveList.gameObject.SetActive (false);
 		_saveList.createList ();		//saveした場合、リストの再作成
 
+		this.gameObject.SetActive (false);
 		boubleTapFlag = false;
 	}
 	

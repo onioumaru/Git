@@ -34,6 +34,8 @@ public class faceIconScript : MonoBehaviour {
 			return;
 		}
 
+
+
 		if (thisSorityFlag) {
 			//既に選択状態である
 			thisSorityFlag = false;

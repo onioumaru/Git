@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class stageSelectParentDisable : MonoBehaviour {
-
+	public GameObject _yesNoDialog;
 	// Use this for initialization
 	void Start () {
 	
@@ -14,6 +14,7 @@ public class stageSelectParentDisable : MonoBehaviour {
 	}
 
 	public void diseableThisObject(){
+		_yesNoDialog.SetActive (false);
 		this.transform.parent.gameObject.SetActive (false);
 	}
 }

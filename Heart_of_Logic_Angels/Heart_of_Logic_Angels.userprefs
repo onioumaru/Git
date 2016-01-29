@@ -1,12 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\talkObject\talkingMainScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\talkObject\standingCharaImageS.cs">
     <Files>
-      <File FileName="Assets\Scripts\talkObject\talkingMainScript.cs" Line="190" Column="3" />
-      <File FileName="Assets\Scripts\talkObject\talkingPartImageScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\talkObject\standingImageActionController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\talkObject\standingCharaImageParent.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\public\largeBGImageLoader.cs" Line="6" Column="1" />
+      <File FileName="Assets\Scripts\talkObject\standingCharaImageS.cs" Line="53" Column="51" />
+      <File FileName="Assets\Scripts\BattleStageScenes\battleEventScript\event0_3_0_0.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BattleStageScenes\battleEventScript\event0_2_0_0.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BattleStageScenes\Base\GameManagerScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

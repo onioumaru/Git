@@ -23,7 +23,7 @@ public class enemy_basicAttack : MonoBehaviour {
 
 		StartCoroutine (mainLoop ());
 	}
-	
+
 	IEnumerator mainLoop(){
 		while(true){
 			//実質毎フレーム

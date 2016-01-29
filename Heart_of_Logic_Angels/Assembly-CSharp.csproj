@@ -126,6 +126,7 @@
      <Compile Include="Assets\Scripts\Debug\debug_memCheck.cs" />
      <Compile Include="Assets\Scripts\OptionSoundManager\debgPlayScript.cs" />
      <Compile Include="Assets\Scripts\OptionSoundManager\debugPlaySlider.cs" />
+     <Compile Include="Assets\Scripts\OptionSoundManager\debugSaveDataEditerLoader.cs" />
      <Compile Include="Assets\Scripts\OptionSoundManager\optionMenuClose.cs" />
      <Compile Include="Assets\Scripts\OptionSoundManager\optionMenuGlobal.cs" />
      <Compile Include="Assets\Scripts\OptionSoundManager\soundManagerSlider.cs" />
@@ -160,12 +161,17 @@
      <Compile Include="Assets\Scripts\soriteCharacters\soriteCharaDotChanger.cs" />
      <Compile Include="Assets\Scripts\soriteCharacters\sorityYesNoDiaglog.cs" />
      <Compile Include="Assets\Scripts\talkObject\iconEffS.cs" />
+     <Compile Include="Assets\Scripts\talkObject\imageAnimation\uGUIImageAnimationS.cs" />
+     <Compile Include="Assets\Scripts\talkObject\imageAnimation\uGUIImageRotation.cs" />
      <Compile Include="Assets\Scripts\talkObject\standingCharaImageParent.cs" />
      <Compile Include="Assets\Scripts\talkObject\standingCharaImageS.cs" />
+     <Compile Include="Assets\Scripts\talkObject\standingCharaImageUnderDrawParentS.cs" />
      <Compile Include="Assets\Scripts\talkObject\standingImageActionController.cs" />
      <Compile Include="Assets\Scripts\talkObject\talkingCanvasS.cs" />
      <Compile Include="Assets\Scripts\talkObject\talkingMainScript.cs" />
      <Compile Include="Assets\Scripts\talkObject\talkingPartImageScript.cs" />
+     <Compile Include="Assets\Scripts\talkObject\talkingPartsContainersScript.cs" />
+     <Compile Include="Assets\Scripts\talkObject\visualEffect_fadeInOut.cs" />
      <Compile Include="Assets\Scripts\talkObject\waitIconFazerS.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />

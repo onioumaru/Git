@@ -39,6 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86f86ccfbeecf3c4cb90310ff116e7c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _debugDataReset: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -49,6 +50,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: StaticSceneManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _debugDataReset
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

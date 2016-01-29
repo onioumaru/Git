@@ -16,7 +16,7 @@ public class event0_4_0_0 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//soundManagerGetter.getManager ().playBGM (4);
+		soundManagerGetter.getManager ().playBGM (4);
 
 		generatedTargetEnemys = new List<GameObject>();
 
