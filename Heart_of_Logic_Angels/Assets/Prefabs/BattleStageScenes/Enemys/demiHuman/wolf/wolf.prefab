@@ -120,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.32999992, y: -1.5, z: 0}
+  m_LocalPosition: {x: -2.33, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 405228}
@@ -135,12 +135,13 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125378}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.29999995
+  m_Radius: 1.3
 --- !u!58 &5820168
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -148,12 +149,13 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145512}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.29999995
+  m_Radius: 1.3
 --- !u!58 &5871776
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -161,12 +163,13 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164228}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .200000003
+  m_Radius: 0.2
 --- !u!95 &9503384
 Animator:
   serializedVersion: 3
@@ -218,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisMoveType: 0
-  _defaultMovingSpeed: .00999999978
+  _defaultMovingSpeed: 0.01
 --- !u!114 &11414370
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -262,7 +265,8 @@ MonoBehaviour:
   removeEnemyPrefab: {fileID: 181530, guid: 60080e6b4afb15241b3c1b9e9df58254, type: 2}
   bitmapFontBasePrefab: {fileID: 175532, guid: 1e2c4b408a8f4df4e89961863610e1b5, type: 2}
   _defaultLevel: 10
-  _defaultEnemyType: 1
+  _defaultEnemyType: 3
+  _enemyShadow: {fileID: 0}
 --- !u!114 &11459352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -328,14 +332,18 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3435f022e32ecd44b89dc4a5b0a444f3, type: 3}
-  m_Color: {r: .760784388, g: .760784388, b: .760784388, a: 0}
+  m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!212 &21248700
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -354,14 +362,18 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300006, guid: ada3004d1aebd604984afe85787cd099, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!212 &21257984
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -380,21 +392,29 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f3e8a0f770cce81479b06c3b01dc8f37, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: _defaultEnemyType
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 164228}

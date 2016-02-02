@@ -75,7 +75,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _piyoPrefabs: {fileID: 160010, guid: fc76eb56022678a42b7f00f1116f606f, type: 2}
-  _ganaratePerSec: 5
+  _genaratePerSec: 0.5
+  _genarateCoolCount: 20
+  _genarateCoollTime: 120
 --- !u!114 &11487472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -142,6 +144,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_IsKinematic
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _genarateCoolCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _genaratePerSec
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _genarateCoollTime
+      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

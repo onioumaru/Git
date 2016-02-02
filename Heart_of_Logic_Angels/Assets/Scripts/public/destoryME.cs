@@ -3,6 +3,7 @@ using System.Collections;
 
 public class destoryME : MonoBehaviour {
 	public float _waitTime = 0f;
+	float countSec = 0.001f;
 
 	// Use this for initialization
 	void Start () {
@@ -13,14 +14,15 @@ public class destoryME : MonoBehaviour {
 		StartCoroutine (waitLoop ());
 	}
 
-	IEnumerator waitLoop(){
-		float countSec = 0.001f;
+	void FixedUpdate(){
+		countSec += Time.fixedDeltaTime;
+	}
 
+	IEnumerator waitLoop(){
 		while(countSec < _waitTime){
 			yield return null;
-			countSec += Time.fixedDeltaTime;
-		}
 
+		}
 		Destroy (this.gameObject);
 	}
 

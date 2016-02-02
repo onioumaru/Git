@@ -44,20 +44,21 @@ public class talkingPartsContainersScript : MonoBehaviour {
 			break;
 		case "02":
 			//DarkAura
-			GameObject[] retGO_02f = new GameObject[] { _containerBase[2] };
-			GameObject[] retGO_02b =new GameObject[] { _containerBase[3] };
+			GameObject[] retGO_02f = new GameObject[] { _containerBase[3] };
+			GameObject[] retGO_02b = new GameObject[] { _containerBase[2] }; 
 
 			retV.frontPrefas = retGO_02f;
 			retV.backPrefas = retGO_02b;
 
 			break;
 		case "03":
-			//汗
+			//
 			GameObject[] retGO_03 = new GameObject[] { _containerBase[4] };
-			retV.frontPrefas = retGO_03;
+			retV.backPrefas = retGO_03;
 			
 			break;
 		case "04":
+			//darkCloud
 			GameObject[] retGO_04 = new GameObject[] {_containerBase[5]};
 			retV.frontPrefas = retGO_04;
 			

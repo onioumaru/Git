@@ -14,6 +14,8 @@ public class event0_4_0_0 : MonoBehaviour {
 
 	private List<GameObject> generatedTargetEnemys;
 
+	public float _defaultLevel;
+
 	// Use this for initialization
 	void Start () {
 		soundManagerGetter.getManager ().playBGM (4);
@@ -45,9 +47,9 @@ public class event0_4_0_0 : MonoBehaviour {
 		Time.timeScale = 1f;
 		GMS.setAllCollider2DEnabale (true);
 
-		//StartCoroutine ( startTargetCall() );
+		StartCoroutine ( startTargetCall() );
 
-		//StartCoroutine ( timeEvent() );
+		StartCoroutine ( timeEvent() );
 	}
 
 	private void clearTargetGenerater(GameObject argsGO, Vector3 argsPosition){
@@ -55,6 +57,8 @@ public class event0_4_0_0 : MonoBehaviour {
 		GameObject tmpGO = (GameObject)Instantiate (argsGO, argsPosition, Quaternion.identity);
 		generatedTargetEnemys.Add (tmpGO);
 
+		allEnemyBase tmpBase = tmpGO.GetComponent<allEnemyBase> ();
+		tmpBase._defaultLevel = _defaultLevel;
 	}
 
 	private bool checkTargetEnemyAlive(){
@@ -130,6 +134,7 @@ public class event0_4_0_0 : MonoBehaviour {
 		//
 		sVMS.addStoryProgresses(enum_StoryProgressType.Step);
 
+		GMS.saveBattleResultValues ();
 		//Debug.Log ("gotoStageSelect");
 		//sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
 
@@ -145,14 +150,14 @@ public class event0_4_0_0 : MonoBehaviour {
 		float pauseFlameSec = 2f;
 
 		//カメラの移動
-		Camera.main.transform.position = new Vector3 (11f, 0f, -20f);
+		Camera.main.transform.position = new Vector3 (-2f, -1f, -20f);
 		GMS.setAllCollider2DEnabale (false);
 
-		/*
+
 		//開始会話
 		staticValueManagerS sVMS = staticValueManagerGetter.getManager ();
 		sVMS.addStoryProgresses (enum_StoryProgressType.Step);
-		sVMS.getNowSceneChangeValue().sceneFileName = "0-3-0-1";
+		sVMS.getNowSceneChangeValue().sceneFileName = "0-4-0-1";
 
 		GameObject tmpTalkObj = (GameObject)Instantiate (_talkPartPerefab);
 		// トークシーンが破壊されるまでループして待つ
@@ -162,13 +167,13 @@ public class event0_4_0_0 : MonoBehaviour {
 
 		Time.timeScale = 0f;
 
-*/
+
 		//作戦目標
 		missionTargetTitleS _mTTS;
 		GameObject missionTargetCanvas = (GameObject)Instantiate (_missionTargetPrefab);
 		_mTTS = missionTargetCanvas.GetComponent<missionTargetTitleS> ();
 		
-		_mTTS._winDecision.text = "全ての敵を殲滅せよ";
+		_mTTS._winDecision.text = "初期配置の敵を殲滅せよ";
 		_mTTS._loseDecision.text = "部隊の全滅";
 
 		float tmpX;

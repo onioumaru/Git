@@ -490,20 +490,20 @@ public class talkingMainScript : MonoBehaviour {
 
 		switch (argsPosi) {
 		case "l":
-			sSCIS_L.setThisChildsSpot(true);
 			sSCIS_C.setThisChildsSpot(false);
+			sSCIS_L.setThisChildsSpot(true);
 			sSCIS_R.setThisChildsSpot(false);
 
 			break;
 		case "r":
-			sSCIS_L.setThisChildsSpot(false);
 			sSCIS_C.setThisChildsSpot(false);
+			sSCIS_L.setThisChildsSpot(false);
 			sSCIS_R.setThisChildsSpot(true);
 
 			break;
 		case "c":
-			sSCIS_L.setThisChildsSpot(false);
 			sSCIS_C.setThisChildsSpot(true);
+			sSCIS_L.setThisChildsSpot(false);
 			sSCIS_R.setThisChildsSpot(false);
 
 			break;
@@ -520,8 +520,8 @@ public class talkingMainScript : MonoBehaviour {
 		standingCharaImageParent sSCIS_C = _attachedCenterChara.GetComponent<standingCharaImageParent>();
 
 		//すべて暗くする
-		sSCIS_L.setThisChildsSpot(false);
 		sSCIS_C.setThisChildsSpot(false);
+		sSCIS_L.setThisChildsSpot(false);
 		sSCIS_R.setThisChildsSpot(false);
 
 	}
@@ -692,7 +692,8 @@ public class talkingMainScript : MonoBehaviour {
 				GameObject copyEff = Instantiate (tmpGO) as GameObject;
 
 				copyEff.transform.SetParent(tmpBaseTrn.transform);
-				copyEff.transform.SetAsLastSibling ();
+				copyEff.transform.localPosition = Vector3.zero;
+				copyEff.transform.SetAsFirstSibling ();
 			}
 		}
 		
@@ -701,7 +702,8 @@ public class talkingMainScript : MonoBehaviour {
 				GameObject copyEff = Instantiate (tmpGO) as GameObject;
 
 				copyEff.transform.SetParent (tmpBaseTrn.transform);
-				copyEff.transform.SetAsFirstSibling ();
+				copyEff.transform.localPosition = Vector3.zero;
+				copyEff.transform.SetAsLastSibling ();
 			}
 		}
 	}
@@ -810,20 +812,20 @@ public class talkingMainScript : MonoBehaviour {
 
 		switch (argsPosi) {
 		case "l":
+			sSCIS_C.setThisChildsSpot(false);
 			sSCIS_L.initCharactorImage(argsImageNo);
 
 			//sSCIS_L.setThisChildsSpot(false);
 			sSCIS_R.setThisChildsSpot(false);
-			sSCIS_C.setThisChildsSpot(false);
 
 			//tmpShadow.transform.parent = _attachedLeftChara.transform.parent;
 			break;
 		case "r":
+			sSCIS_C.setThisChildsSpot(false);
 			sSCIS_R.initCharactorImage(argsImageNo);
 			
 			sSCIS_L.setThisChildsSpot(false);
 			//sSCIS_R.setThisChildsSpot(false);
-			sSCIS_C.setThisChildsSpot(false);
 
 			break;
 		case "c":

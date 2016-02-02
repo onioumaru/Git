@@ -6,7 +6,10 @@ public class piyoThrowingTaru : MonoBehaviour {
 	public Vector3 _throwRockVector;
 	public float _ganarateSec = 2f;
 
+	private allEnemyBase enemyBase;
+
 	void Start () {
+		enemyBase = this.GetComponent<allEnemyBase> ();
 		StartCoroutine ( mainLoop() );
 	}
 	
@@ -25,6 +28,9 @@ public class piyoThrowingTaru : MonoBehaviour {
 			//投射セット
 			tmpGO.GetComponent<bulletBase_CannotDestory>()._movingSpeedforSec = _throwRockVector;
 			tmpGO.GetComponent<bulletBase_CannotDestory>().deleteTime = 30f;
+
+			float tmpDm = enemyBase.getAttackingPower() * 0.8f;
+			tmpGO.GetComponent<bulletBase_CannotDestory> ().setDealDamage (tmpDm);
 
 			yield return new WaitForSeconds(_ganarateSec);
 		}

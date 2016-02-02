@@ -8,17 +8,17 @@ using System.Collections;
 
 public class battleStageSelectVal{
 	//this paramater is 10000-
+	public int stageRoute;	//0スタート
 	public int storyChapter;
 	public int stageNo;	//0スタート
-	public int stageStep;	//0スタート
 	public string stageTitle;
 	public string stageComment;
 	public Sprite bgImage;
 
-	public battleStageSelectVal(int argsStoryChapter,int argsStageNo, int argsStageStep){
+	public battleStageSelectVal(int argsRoute, int argsStoryChapter,int argsStageNo){
+		this.stageRoute = argsRoute;
 		this.storyChapter = argsStoryChapter;
 		this.stageNo = argsStageNo;
-		this.stageStep = argsStageStep;
 
 		this.setStageStrings();
 
@@ -31,13 +31,14 @@ public class battleStageSelectVal{
 		case 2:
 		case 3:
 			//廊下の場合
-			bgImage = largeBGImageLoader.getImage("00");
-			break;
+			bgImage = largeBGImageLoader.getImage ("00");
 
-		case 4:
-			bgImage = largeBGImageLoader.getImage("02");
-			break;
+			//渡り廊下
+			if (this.stageNo == 1) {
+				bgImage = largeBGImageLoader.getImage("02");
+			}
 
+			break;
 		case 5:
 		case 10:
 			//運動場02(陸上競技場)の場合
@@ -63,13 +64,15 @@ public class battleStageSelectVal{
 		case  3:
 			stageTitle = "3 : 2F 廊下";
 			stageComment = " 階段の下から騒がしく声が聞こえる。\n　先ほどの青い鳥の様だが、\nかなりの数がいるような雰囲気だ。\n";
+
+			if (stageNo == 1) {
+				stageTitle = "3-1 : わたり廊下";
+				stageComment = " アルルーナの助言の通り、\n廊下の突き当たりまで来た。\n今まで何も無かった野外に、\nいつの間にか土の地面が広がっている。\n\nこの渡り廊下から\n歩いて外に出られそうだ。";
+			}
+
 			break;
 		case  4:
-			stageTitle = "4 : わたり廊下";
-			stageComment = " アルルーナの助言の通り、廊下の突き当たりまで来た。\n今まで何も無かった野外に、いつの間にか土の地面が広がっている。\nこの渡り廊下から歩いて外に出れそうだ。";
-			break;
-		case  5:
-			stageTitle = "5 : 陸上競技場";
+			stageTitle = "4 : 陸上競技場";
 			stageComment = " シュスランはこの先から何か気持ち悪いものが流れてくるのを感じていた。\n　その先に何かあるかもしれない。";
 			break;
 

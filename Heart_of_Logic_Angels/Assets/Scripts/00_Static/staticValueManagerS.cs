@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 using System.Collections.Generic;
 using MiniJSON;
@@ -37,7 +38,8 @@ public class staticValueManagerS : MonoBehaviour {
 	//
 	void Awake(){
 		Debug.Log("Awake");
-		Debug.Log(Application.loadedLevelName);
+		Debug.Log(SceneManager.GetActiveScene().name);
+
 
 		Object.DontDestroyOnLoad (this);
 
@@ -162,7 +164,7 @@ public class staticValueManagerS : MonoBehaviour {
 		
 		selectedUserSaveDat.Add(argsFlagName, flagVal);
 	}
-	
+
 	/// <summary>
 	/// 指定した進捗階層を１加算する
 	/// 第２引数で True を指定した際には、対象の進捗度を０にする。基本打に2引数は省略して使用する
@@ -274,21 +276,18 @@ public class staticValueManagerS : MonoBehaviour {
 		return nowSceneValue.sceneFileName;
 		}
 
-	
+
+	public int getStoryRoute(){
+		//storyStage_Key
+		object tmpVal = selectedUserSaveDat["StoryRoute"];
+
+		return int.Parse( tmpVal.ToString());
+	}
+
 	public int getStoryStage(){
 		//storyStage_Key
-
-		/*
-		 * 最初に必ず作っているはずなので不要
-		object tmpObj;
-		
-		selectedUserSaveDat.TryGetValue (storyProgress_Key, out tmpObj);
-		
-		long val = (long)tmpObj;
-		*/
-
 		object tmpVal = selectedUserSaveDat[storyStage_Key];
-		
+
 		return int.Parse( tmpVal.ToString());
 	}
 
@@ -351,8 +350,6 @@ public class staticValueManagerS : MonoBehaviour {
 		string tmpKeyStr = saveCharaValue_Key + argsIndex.ToString ("0") + "_enable";
 		return (bool)selectedUserSaveDat[tmpKeyStr];
 	}
-
-
 
 	public saveCharaValueClass getSaveChara_MaxLevel(int argsIndx){
 		//直接セーブデータ枠1-3の最大レベルキャラを返す

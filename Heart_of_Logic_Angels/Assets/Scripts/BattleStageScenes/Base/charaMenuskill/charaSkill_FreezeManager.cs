@@ -125,6 +125,10 @@ public class charaSkill_FreezeManager : MonoBehaviour {
 			
 		tmpColldr.transform.parent = this.transform;
 		tmpColldr.transform.localPosition = Vector3.zero;
+
+		if (thisCharaNo == enumCharaNum.syusuran_02) {
+			tmpColldr.transform.localRotation = Quaternion.identity;
+		}
 	}
 
 }

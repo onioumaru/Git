@@ -23,6 +23,16 @@ public class charaStartBattleInfo {
 			retPosition[1] = new Vector3(11f, -0.5f, 0f);
 			break;
 
+		case "0-3-1-0":
+			retPosition[0] = new Vector3(1.8f, -1.3f, 0f);
+			retPosition[1] = new Vector3(1.6f, -1.3f, 0f);
+			break;
+
+		case "0-4-0-0":
+			retPosition[0] = new Vector3(3f, -1.3f, 0f);
+			retPosition[1] = new Vector3(3f, -1.7f, 0f);
+			break;
+
 		default:
 			for (int tmpI = 0; tmpI < retPosition.Length ; tmpI++){
 				retPosition[tmpI] = new Vector3(0f, (tmpI * 0.4f), 0f);

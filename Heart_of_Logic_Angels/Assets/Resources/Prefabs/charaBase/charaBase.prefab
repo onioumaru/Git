@@ -416,7 +416,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ff145783367e247ab0cd62a220b3a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisCharaFlag: {fileID: 0}
   thisCharaIndex: 0
   bitmapFontBasePrefab: {fileID: 175532, guid: 1e2c4b408a8f4df4e89961863610e1b5, type: 2}
   dyingAnimation: {fileID: 169508, guid: c267f4fab5fd6e4459a493df4ca43490, type: 2}
@@ -424,13 +423,11 @@ MonoBehaviour:
   attackCycle_red: {fileID: 21300000, guid: 3435f022e32ecd44b89dc4a5b0a444f3, type: 3}
   attackCycle_blue: {fileID: 21300000, guid: f3060839f703008478a7ccbf6d6ad6bf, type: 3}
   attackCycle_green: {fileID: 21300000, guid: b03a76c7501cf7b4e84d78817d22674d, type: 3}
-  gmScript: {fileID: 0}
   thisChara: {fileID: 0}
-  destroyF: 0
-  stopFlag: 0
-  movingFreezeFlag: 0
   _charaStatusIconCtrler: {fileID: 152422, guid: a31244c1b7f71dc4c97ae8213b359b86,
     type: 2}
+  showNowLevel: 0
+  showNextExp: 0
 --- !u!114 &11490036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -442,6 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfbdeddae419b1c4fb642c12344912db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _attackLine: {fileID: 118344, guid: 78977dc8279333947b5c3178f28f7a60, type: 2}
 --- !u!212 &21206456
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -546,6 +544,10 @@ Prefab:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _attackLine
+      value: 
+      objectReference: {fileID: 118344, guid: 78977dc8279333947b5c3178f28f7a60, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 112604}

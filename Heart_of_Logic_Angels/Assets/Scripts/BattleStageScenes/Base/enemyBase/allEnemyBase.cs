@@ -25,11 +25,14 @@ public class allEnemyBase : MonoBehaviour {
 
 	private soundManager_Base sMB;
 	
-	public float _defaultLevel = 5f;
+	public float _defaultLevel;
 	public enumEnemyType _defaultEnemyType = enumEnemyType.small001;
 
 	public Sprite _enemyShadow;
 	private Rigidbody2D thisRigiBody2D;
+
+	[System.NonSerialized]
+	public bool charaFindFlag = false;
 
 	// Use this for initialization
 	void Start() {

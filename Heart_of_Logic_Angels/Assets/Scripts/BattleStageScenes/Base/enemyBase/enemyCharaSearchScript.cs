@@ -7,6 +7,8 @@ public class enemyCharaSearchScript : MonoBehaviour {
 	private enemyStandardMovingScript eSMS;
 	private GameManagerScript gms;
 
+	private Coroutine mainCor;
+
 	public float _findingLength;
 
 
@@ -15,7 +17,7 @@ public class enemyCharaSearchScript : MonoBehaviour {
 		eSMS = this.GetComponent<enemyStandardMovingScript> ();
 		gms = GameManagerGetter.getGameManager ();
 
-		StartCoroutine (mainLoop () );
+		mainCor = StartCoroutine (mainLoop () );
 	}
 
 	IEnumerator mainLoop(){
@@ -31,6 +33,12 @@ public class enemyCharaSearchScript : MonoBehaviour {
 			if (tmpV3.magnitude < _findingLength){
 				//発見範囲に入ったら自動追尾
 				eSMS.setMoveType(0);
+
+				this.transform.GetComponent<allEnemyBase> ().charaFindFlag = true;
+
+				//停止するかは未定
+				//StopCoroutine (mainCor);
+
 				break;
 			}
 		}

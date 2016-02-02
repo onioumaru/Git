@@ -46,6 +46,9 @@ public class charaIcon_Action : MonoBehaviour {
 			//ダブルクリックされた
 			doubleClickCheck = false;
 
+			//トラッキングのリセット（他キャラをロックしている場合、移動しないため）
+			trackingObj.GetComponentInChildren<cameraTrackerScript>().setCharaTrackReset();
+
 			Vector3 tmpV = new Vector3(thisCharaBase.transform.position.x, thisCharaBase.transform.position.y, -20f);
 			Camera.main.transform.position = tmpV;
 

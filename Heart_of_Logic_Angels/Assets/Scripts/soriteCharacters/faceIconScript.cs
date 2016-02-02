@@ -5,9 +5,11 @@ using System.Collections;
 public class faceIconScript : MonoBehaviour {
 	public Sprite _iconChecked;
 	public Sprite _iconNoChecked;
+	public Sprite _iconNotChanged;
 	public int _thisIndex;
-	
+
 	private bool thisSorityFlag = true;
+	private bool thisRockFlag = false;
 
 	private Image checkIcon;
 	private tapedObjectMotion tapSc;
@@ -34,7 +36,11 @@ public class faceIconScript : MonoBehaviour {
 			return;
 		}
 
-
+		if (thisRockFlag == true){
+			//ロックされている場合は無視
+			//TODO : Sound
+			return;
+		}
 
 		if (thisSorityFlag) {
 			//既に選択状態である
@@ -57,5 +63,12 @@ public class faceIconScript : MonoBehaviour {
 	public bool getThisSoriteFlag(){
 		return thisSorityFlag;
 	}
-	
+
+	public void setStatusLock(){
+		thisRockFlag = true;
+
+		//Startより先に走るため、こちらで先にセット
+		checkIcon = this.transform.Find ("chkImage").GetComponent<Image> ();
+		checkIcon.sprite = _iconNotChanged;
+	}	
 }

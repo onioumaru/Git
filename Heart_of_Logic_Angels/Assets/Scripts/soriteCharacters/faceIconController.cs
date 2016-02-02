@@ -28,6 +28,8 @@ public class faceIconController : MonoBehaviour {
 			}
 		}
 
+		this.setRockFlag ();
+
 		this.showSelectedCharaInfo (0);
 
 		soundManagerGetter.getManager().playBGM (10);
@@ -73,5 +75,23 @@ public class faceIconController : MonoBehaviour {
 		}
 
 		return retBool;
+	}
+
+	private void setRockFlag(){
+		int route = sVMS.getStoryRoute();
+		int progress = sVMS.getStoryProgress();
+		int stage = sVMS.getStoryStage();
+
+		string tmpS = route.ToString () + "-" + progress.ToString () + "-" + stage.ToString ();
+
+		Debug.Log (tmpS);
+
+		switch(tmpS){
+		case "0-0-0":
+			faceIconScript fIC = _faceIconObject [0].GetComponent<faceIconScript> ();
+			fIC.setStatusLock ();
+
+			break;
+		}
 	}
 }

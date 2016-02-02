@@ -10,7 +10,7 @@ public class mainFrameScript : MonoBehaviour {
 	private List<battleStageSelectVal> nodeItem;
 //	private stageSelectManagerScript sSMS;
 
-	public void createThisList(int argsProgress , int argsStage){
+	public void createThisList(int argsRoute,int argsProgress , int argsStage){
 		//ノードの削除
 		this.deleteChildNodes ();
 
@@ -26,7 +26,7 @@ public class mainFrameScript : MonoBehaviour {
 
 		default:
 			Debug.Log (thisProgress);
-			battleStageSelectVal tmpVal = new battleStageSelectVal(thisProgress, argsStage,0);
+			battleStageSelectVal tmpVal = new battleStageSelectVal(argsRoute ,thisProgress, argsStage);
 			nodeItem.Add(tmpVal);
 
 			break;

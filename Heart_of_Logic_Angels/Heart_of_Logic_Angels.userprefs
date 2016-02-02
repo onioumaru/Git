@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\talkObject\standingCharaImageS.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BattleStageScenes\battleEventScript\event0_3_1_0.cs">
     <Files>
-      <File FileName="Assets\Scripts\talkObject\standingCharaImageS.cs" Line="53" Column="51" />
-      <File FileName="Assets\Scripts\BattleStageScenes\battleEventScript\event0_3_0_0.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BattleStageScenes\battleEventScript\event0_2_0_0.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BattleStageScenes\Base\GameManagerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyStandardMovingScript.cs" Line="130" Column="3" />
+      <File FileName="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyCharaSearchScript.cs" Line="35" Column="16" />
+      <File FileName="Assets\Scripts\public\charactorStatus.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BattleStageScenes\battleEventScript\event0_3_1_0.cs" Line="30" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

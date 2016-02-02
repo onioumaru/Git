@@ -58,7 +58,6 @@
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\cameraTrackerScript.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaBase\allCharaBase.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaBase\charaAnimationSubScript.cs" />
-     <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaBase\charaStartBattleInfo.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaBase\chara_attackEreaVisible.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaBase\chara_basicAttack.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaBase\chara_flyingCheck.cs" />
@@ -92,6 +91,7 @@
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyHPBarScript.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemySkillColliderBase.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyStandardMovingScript.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyThrowingBullet.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyYellowRingRemoved.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemy_basicAttack.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\fadeOutBitMapFont.cs" />
@@ -116,10 +116,13 @@
      <Compile Include="Assets\Scripts\BattleStageScenes\Enemys\demihuman\wolfSkillAttackScript.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Enemys\piyo\piyoHoleGenerator.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Enemys\piyo\piyoThrowingTaru.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\charaStartBattleInfo.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_1_0_0.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_2_0_0.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_3_0_0.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_3_1_0.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_4_0_0.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\eventMissionFailure.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\eventStageClear.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\groundObject\simpleMovingStep.cs" />
      <Compile Include="Assets\Scripts\Debug\debug_PointerEvent.cs" />
@@ -190,6 +193,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Resources\Fonts\TanukiMagic_1_12\readme.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\codeandweb.com\Editor\SettingsTexturePackerImporter.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
      <None Include="Assets\Resources\ScenarioTxt\0-0-0-0.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />

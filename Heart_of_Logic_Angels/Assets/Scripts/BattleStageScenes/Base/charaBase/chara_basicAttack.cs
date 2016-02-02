@@ -10,13 +10,16 @@ public class chara_basicAttack : MonoBehaviour {
 
 	private Animator thisAnimetor;
 	private allCharaBase parentCharaScrpt;
+	private CircleCollider2D thisCldr;
 
 	private List<Transform> lastFrameAttackTarget;
+	public GameObject _attackLine;
 
 	// Use this for initialization
 	void Start () {
 		thisAnimetor = this.transform.parent.GetComponentInChildren<Animator>();
 		parentCharaScrpt = this.gameObject.GetComponentInParent<allCharaBase>();
+		thisCldr = this.GetComponent<CircleCollider2D> ();
 
 		lastFrameAttackTarget = new List<Transform> ();
 
@@ -72,6 +75,11 @@ public class chara_basicAttack : MonoBehaviour {
 			//Debug.Log ("yield break");
 			yield break;
 		}
+
+		//AttackLineの表示
+		GameObject tmpAttackLine = Instantiate(_attackLine) as GameObject;
+		Vector3[] tmpV3 = new Vector3[]{parentCharaScrpt.transform.position, nearTarget.transform.position};
+		tmpAttackLine.GetComponent<LineRenderer> ().SetPositions (tmpV3);
 
 
 		lastFrameAttackTarget.Clear();

@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: a28666f4d85be9742a4b7747d66776a0
+timeCreated: 1454210332
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: RabbitMan3_0
+    21300002: RabbitMan3_1
+    21300004: RabbitMan3_2
+    21300006: RabbitMan3_3
+    21300008: RabbitMan3_4
+    21300010: RabbitMan3_5
+    21300012: RabbitMan3_6
+    21300014: RabbitMan3_7
+    21300016: RabbitMan3_8
+    21300018: RabbitMan3_9
+    21300020: RabbitMan3_10
+    21300022: RabbitMan3_11
+    21300024: RabbitMan3_12
+    21300026: RabbitMan3_13
+    21300028: RabbitMan3_14
+    21300030: RabbitMan3_15
+    21300032: RabbitMan3_16
+    21300034: RabbitMan3_17
+    21300036: RabbitMan3_18
+    21300038: RabbitMan3_19
+    21300040: RabbitMan3_20
+    21300042: RabbitMan3_21
+    21300044: RabbitMan3_22
+    21300046: RabbitMan3_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: RabbitMan3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 66
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 66
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 66
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 66
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 66
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_7
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 44
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 44
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 44
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_10
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 44
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_11
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 44
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_13
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 22
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_14
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 22
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_15
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 22
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_16
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 22
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_17
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 22
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_19
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_20
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_21
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_22
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RabbitMan3_23
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

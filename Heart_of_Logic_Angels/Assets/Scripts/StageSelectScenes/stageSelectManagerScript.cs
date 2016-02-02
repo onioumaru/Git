@@ -102,11 +102,12 @@ public class stageSelectManagerScript : MonoBehaviour {
 
 
 	void Start(){
-		Debug.Log ("fIn this scene, fastest Start is " + this.name);
+		Debug.Log ("In this scene, fastest Start is " + this.name);
 		soundManagerGetter.getManager ().playBGM (10);
 
 		sVMS = staticValueManagerGetter.getManager ();
 
+		int thisStoryRoute = sVMS.getStoryRoute ();
 		int thisStoryProgress = sVMS.getStoryProgress();
 		int thisStoryStage = sVMS.getStoryStage ();
 
@@ -116,7 +117,7 @@ public class stageSelectManagerScript : MonoBehaviour {
 		Debug.Log ("chapter " + thisStoryProgress + " Stage" + thisStoryStage);
 		
 		mainFrameScript mainFrameS = this.getParentFrame().GetComponent<mainFrameScript>();
-		mainFrameS.createThisList (thisStoryProgress, thisStoryStage);
+		mainFrameS.createThisList (thisStoryRoute, thisStoryProgress, thisStoryStage);
 	}
 }
 

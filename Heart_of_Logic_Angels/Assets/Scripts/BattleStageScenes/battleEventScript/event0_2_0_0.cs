@@ -14,6 +14,8 @@ public class event0_2_0_0 : MonoBehaviour {
 
 	private List<GameObject> generatedTargetEnemys;
 
+	public float _defaultLevel;
+
 	// Use this for initialization
 	void Start () {
 		soundManagerGetter.getManager ().playBGM (1);
@@ -50,7 +52,11 @@ public class event0_2_0_0 : MonoBehaviour {
 
 		GameObject tmpGO = (GameObject)Instantiate (argsGO, argsPosition, Quaternion.identity);
 		generatedTargetEnemys.Add (tmpGO);
+
+		allEnemyBase tmpBase = tmpGO.GetComponent<allEnemyBase> ();
+		tmpBase._defaultLevel = _defaultLevel;
 	}
+
 
 	private bool checkTargetEnemyAlive(){
 

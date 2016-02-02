@@ -153,7 +153,10 @@ public class GameManagerScript : MonoBehaviour {
 
 			//すべてのキャラを作成
 			if (_sortieCharas[loopI]){
-				loadedCharaList.setData (tmpC, 500f, 0);
+
+				saveCharaValueClass tmpCVC = sVMS.getSaveCharaValue ((int)tmpC);
+				//Debug.Log (tmpCVC.exp);
+				loadedCharaList.setData (tmpC, tmpCVC.exp, 0);
 			}
 		}
 
@@ -182,14 +185,13 @@ public class GameManagerScript : MonoBehaviour {
 
 			tmpChara.charaScript = tmpChara.charaBase.GetComponentInParent<allCharaBase>();
 
-			tmpChara.charaScript.thisChara = new charaUserStatus (tmpChara.CharaNumber, 1f);
+			tmpChara.charaScript.thisChara = new charaUserStatus (tmpChara.CharaNumber, tmpChara.totalExp);			//経験値の大本もここで渡す
+			tmpChara.charaScript.calcdExp = characterLevelManagerGetter.getManager().calcLv(tmpChara.totalExp);		//次への経験値などの経験値情報
 
 			tmpChara.charaFlag = Instantiate(tmpChara.Prefab_charaFlag , cSBI.getFlagPosition(i) ,Quaternion.identity) as GameObject;
 			
 			tmpChara.charaScript.thisCharaIndex = i;
 			tmpChara.charaScript.thisCharaFlag = tmpChara.charaFlag;
-
-			tmpChara.charaScript.calcdExp = characterLevelManagerGetter.getManager().calcLv(tmpChara.totalExp);
 
 			tmpChara.charaScript.stopFlag = false;
 		}

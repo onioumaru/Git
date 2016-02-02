@@ -87,13 +87,16 @@ public class allCharaBase : MonoBehaviour {
 		//ステータスアイコン表示のオブジェクトは起動時に作成
 		charaStatusIconCtrlS = Instantiate(_charaStatusIconCtrler).GetComponent<charaStatusIconCtrl>();
 		charaStatusIconCtrlS.transform.parent = this.transform;
-		
+
+		this.setMode (characterMode.Attack);
+
 		StartCoroutine (mainLoop());
 		StartCoroutine (calcCoolTimeLoop ());
 	}
 
 	void Update(){
 		thisRigiBody.WakeUp ();
+
 		#if DEBUG
 			showNowLevel = thisChara.nowLv;
 			showNextExp = thisChara.nextExp;
@@ -200,7 +203,7 @@ public class allCharaBase : MonoBehaviour {
 		
 		if(thisChara.nowLv != this.calcdExp.Lv){
 			//
-			thisChara.resetMaxParameter();
+			thisChara.initParameter();
 			thisChara.nowLv = this.calcdExp.Lv;
 			thisAudio.Play();
 		}
@@ -255,8 +258,7 @@ public class allCharaBase : MonoBehaviour {
 			thisChara.restSkillCoolTime = thisChara.MaxSkillCoolTime;
 
 			//攻撃用コライダーは一時停止
-			thisAttackErea.SetActive(false);
-
+			thisAttackErea.GetComponent<CircleCollider2D>().enabled = false;
 
 			break;
 		}
@@ -347,12 +349,22 @@ public class allCharaBase : MonoBehaviour {
 	}
 
 	public void setBeforeCharaMode(){
-		//スキル使用後、
-		//元の状態に戻す
-		this.setMode (this.thisChara.battleStatus.beforeCharaMode);
 		//アタック用コライダーの復活
-		thisAttackErea.SetActive(true);
+		thisAttackErea.GetComponent<CircleCollider2D>().enabled = true;
+
+		//スキル使用後、元の状態に戻す
+		this.setMode (this.thisChara.battleStatus.beforeCharaMode);
+
+		this.setMovingFreeze_SkillBefore();
 	}
+
+	public void setMovingFreeze_SkillBefore(){
+		//暫定で固定値で硬直
+		float tmpFrzCnt = 2.5f;
+		movingFreezeFlag = true;
+		StartCoroutine(movingFlagClearer(tmpFrzCnt));
+	}
+
 
 	public float getRestCoolTime(){
 		float retVal = 0.01f;

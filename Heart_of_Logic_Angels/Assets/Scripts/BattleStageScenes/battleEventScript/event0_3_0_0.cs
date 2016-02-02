@@ -14,6 +14,8 @@ public class event0_3_0_0 : MonoBehaviour {
 
 	private List<GameObject> generatedTargetEnemys;
 
+	public float _defaultLevel;
+
 	// Use this for initialization
 	void Start () {
 		soundManagerGetter.getManager ().playBGM (1);
@@ -58,6 +60,8 @@ public class event0_3_0_0 : MonoBehaviour {
 		GameObject tmpGO = (GameObject)Instantiate (argsGO, argsPosition, Quaternion.identity);
 		generatedTargetEnemys.Add (tmpGO);
 
+		allEnemyBase tmpBase = tmpGO.GetComponent<allEnemyBase> ();
+		tmpBase._defaultLevel = _defaultLevel;
 	}
 
 	private bool checkTargetEnemyAlive(){
@@ -118,8 +122,12 @@ public class event0_3_0_0 : MonoBehaviour {
 	private IEnumerator stageClear(){
 		staticValueManagerS sVMS = staticValueManagerGetter.getManager ();
 
+		GMS.talkingPartLoader ("0-3-0-4");
+
 		//引き続きコライダーは停止
 		GMS.setAllCollider2DEnabale (false);
+
+		yield return new WaitForSeconds (0.2f);
 
 		Time.timeScale = 1;	//パーティクルを使うため1にする
 
@@ -130,11 +138,11 @@ public class event0_3_0_0 : MonoBehaviour {
 
 		sceneChangeValue sceneCV = sVMS.getNowSceneChangeValue ();
 
-		//
-		sVMS.addStoryProgresses(enum_StoryProgressType.Step);
+		GMS.saveBattleResultValues ();
 
-		//Debug.Log ("gotoStageSelect");
-		//sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
+		//0-3-0-5
+		sVMS.setStoryProgress("0-3-0-5");
+		sVMS.changeScene (sceneChangeStatusEnum.gotoTalkScene);
 
 	}
 
@@ -169,7 +177,7 @@ public class event0_3_0_0 : MonoBehaviour {
 		GameObject missionTargetCanvas = (GameObject)Instantiate (_missionTargetPrefab);
 		_mTTS = missionTargetCanvas.GetComponent<missionTargetTitleS> ();
 		
-		_mTTS._winDecision.text = "全ての敵を殲滅せよ";
+		_mTTS._winDecision.text = "初期配置の敵を殲滅せよ";
 		_mTTS._loseDecision.text = "部隊の全滅";
 
 		float tmpX;
