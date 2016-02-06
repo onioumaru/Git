@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Asset_CharacterPack\Sample\Sample.cs" />
+     <Compile Include="Assets\Scripts\00_Static\LookAt2D.cs" />
      <Compile Include="Assets\Scripts\00_Static\characterLevelManager.cs" />
      <Compile Include="Assets\Scripts\00_Static\managerCreaterScript.cs" />
      <Compile Include="Assets\Scripts\00_Static\soundManager_Base.cs" />
@@ -71,6 +72,7 @@
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaMenu_base.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaMenu_heal.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaMenu_parent.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaMenu_statusLabel.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaSkillColliderSakuraScript.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaSkillColliderScript.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaSkillColliderSionScript.cs" />
@@ -85,6 +87,7 @@
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\commonDamage\commonCharaAttack.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\commonDamage\common_damage.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\allEnemyBase.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\autoRotateScript.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyAnimationDirection.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyAttackAnimation.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyCharaSearchScript.cs" />
@@ -92,6 +95,8 @@
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemySkillColliderBase.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyStandardMovingScript.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyThrowingBullet.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyThunderTowerCollider.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyTowerSeacher.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemyYellowRingRemoved.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\enemyBase\enemy_basicAttack.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\fadeOutBitMapFont.cs" />
@@ -122,8 +127,11 @@
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_3_0_0.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_3_1_0.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_4_0_0.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_5_0_0.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\eventMissionFailure.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\eventStageClear.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\stageParticleParentS.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\typeEnemyStatus.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\groundObject\simpleMovingStep.cs" />
      <Compile Include="Assets\Scripts\Debug\debug_PointerEvent.cs" />
      <Compile Include="Assets\Scripts\Debug\debug_memCheck.cs" />
@@ -189,7 +197,6 @@
      <None Include="Assets\Textures\99.others\emotionIcon\著作出典.txt" />
      <None Include="Assets\Resources\pictChractorStanding\size.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
-     <None Include="Assets\Resources\ScenarioTxt\0-4-0-2.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Resources\Fonts\TanukiMagic_1_12\readme.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
@@ -208,7 +215,6 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Resources\ScenarioTxt\0-5-0-2.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
-     <None Include="Assets\Resources\ScenarioTxt\0-4-0-4.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
      <None Include="Assets\Text\ストーリー仕様.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
@@ -222,6 +228,7 @@
      <None Include="Assets\Resources\Fonts\philosopher0\OFL.txt" />
      <None Include="Assets\Resources\ScenarioTxt\0-3-0-2.txt" />
      <None Include="Assets\Resources\ScenarioTxt\0-2-0-3.txt" />
+     <None Include="Assets\Resources\ScenarioTxt\0-3-1-1.txt" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Textures\51.enemys\info.txt" />

@@ -564,6 +564,9 @@ public class talkingMainScript : MonoBehaviour {
 		case 5:
 			tmpS = enm_oneShotSound.duck;
 			break;
+		case 6:
+			tmpS = enm_oneShotSound.tinnitus;
+			break;
 		}
 
 		soundManagerGetter.getManager().playOneShotSound (tmpS);

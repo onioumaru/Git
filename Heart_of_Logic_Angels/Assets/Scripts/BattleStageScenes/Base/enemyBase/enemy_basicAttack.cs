@@ -14,11 +14,24 @@ public class enemy_basicAttack : MonoBehaviour {
 
 	public GameObject _attackEffectPrefab;
 
+	/// <summary>
+	/// 直下の親以外のEnemyBaseを指定する場合は、ここで実体を指定する
+	/// 基本構造の場合はNullでOK
+	/// プレハブ不可
+	/// </summary>
+	public GameObject _parentBaseNotAutoDetectedTarget;
+
+
 	// Use this for initialization
 	void Start () {
 		lastFrameAttackTarget = new List<Transform> ();
 
-		aEB = this.transform.parent.gameObject.GetComponent<allEnemyBase>();
+		if (_parentBaseNotAutoDetectedTarget == null) {
+			aEB = this.transform.parent.gameObject.GetComponent<allEnemyBase> ();
+		} else {
+			aEB = _parentBaseNotAutoDetectedTarget.transform.GetComponent<allEnemyBase> ();
+		}
+
 		thisEnemyAttackDeleySec = aEB.getAttackingDelay ();
 
 		StartCoroutine (mainLoop ());

@@ -103,7 +103,7 @@ Skybox:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146594}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: d1aca9776cfd7754cb5ad7179c43a4f1, type: 2}
+  m_CustomSkybox: {fileID: 2100000, guid: 53c323af96abc4a4cb67506a19783aa9, type: 2}
 --- !u!50 &5006604
 Rigidbody2D:
   serializedVersion: 2

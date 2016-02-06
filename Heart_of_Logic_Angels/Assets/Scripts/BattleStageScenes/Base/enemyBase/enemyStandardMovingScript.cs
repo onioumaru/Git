@@ -70,7 +70,7 @@ public class enemyStandardMovingScript : MonoBehaviour {
 
 		while (true) {
 			//更新系
-			yield return new WaitForSeconds(10f);
+			yield return new WaitForSeconds(5f);
 			
 			tmpNearChara = gms.getMostNearCharacter(this.transform.position);
 
@@ -86,7 +86,6 @@ public class enemyStandardMovingScript : MonoBehaviour {
 			}
 
 			targetVctr = tmpNearChara.transform.position;
-			//TODO: 停止まで言った場合に、iTweenスクリプトが破棄されてNulpointが出る。
 			bool tmpBool = this.gameObject.GetComponent<iTween>().isRunning;
 
 			if (tmpBool){

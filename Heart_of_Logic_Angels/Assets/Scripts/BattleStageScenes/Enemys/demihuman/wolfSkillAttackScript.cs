@@ -89,7 +89,7 @@ public class wolfSkillAttackScript : MonoBehaviour {
 
 		this.GetComponent<chara_attackEreaVisible>().setVisibleThisCicle();
 
-		StartCoroutine (this.skillAttackWait(nearTarget.transform.position, 1f) );
+		StartCoroutine (this.skillAttackWait(nearTarget.transform.position, aEB.getAttackingPower() * 2.1f) );
 		//Debug.Log ("1");
 		StartCoroutine (this.basicAttackWait());
 		//Debug.Log ("2");

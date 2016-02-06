@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class charaMenu_parent : MonoBehaviour {
@@ -17,6 +18,7 @@ public class charaMenu_parent : MonoBehaviour {
 	void Start () {
 		Time.timeScale = 0;
 		trackedCamera = Camera.main;
+		//allCharaが取れないのでラベルに任せる
 
 		posiZ = this.gameObject.transform.position.z;
 		this.transform.position = new Vector3 (trackedCamera.transform.position.x, trackedCamera.transform.position.y, posiZ);

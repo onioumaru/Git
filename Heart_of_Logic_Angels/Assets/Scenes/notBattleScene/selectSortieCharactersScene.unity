@@ -214,6 +214,46 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1282365146}
+    - target: {fileID: 11491704, guid: 9eac2a7f1d6181d449c21fc216f1742d, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11412994, guid: 9eac2a7f1d6181d449c21fc216f1742d, type: 2}
+      propertyPath: _soundFlag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11463320, guid: 9eac2a7f1d6181d449c21fc216f1742d, type: 2}
+      propertyPath: _soundFlag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481244, guid: 9eac2a7f1d6181d449c21fc216f1742d, type: 2}
+      propertyPath: _soundFlag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419414, guid: 9eac2a7f1d6181d449c21fc216f1742d, type: 2}
+      propertyPath: _soundFlag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11417972, guid: 9eac2a7f1d6181d449c21fc216f1742d, type: 2}
+      propertyPath: _soundFlag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414796, guid: 9eac2a7f1d6181d449c21fc216f1742d, type: 2}
+      propertyPath: _soundFlag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477304, guid: 9eac2a7f1d6181d449c21fc216f1742d, type: 2}
+      propertyPath: _soundFlag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494634, guid: 9eac2a7f1d6181d449c21fc216f1742d, type: 2}
+      propertyPath: _soundFlag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494712, guid: 9eac2a7f1d6181d449c21fc216f1742d, type: 2}
+      propertyPath: _soundFlag
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9eac2a7f1d6181d449c21fc216f1742d, type: 2}
   m_IsPrefabParent: 0

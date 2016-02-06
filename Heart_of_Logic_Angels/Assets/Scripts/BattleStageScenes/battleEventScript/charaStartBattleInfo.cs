@@ -35,9 +35,11 @@ public class charaStartBattleInfo {
 
 		default:
 			for (int tmpI = 0; tmpI < retPosition.Length ; tmpI++){
-				retPosition[tmpI] = new Vector3(0f, (tmpI * 0.4f), 0f);
+				//retPosition[tmpI] = new Vector3(0f, (tmpI * 0.4f), 0f);
 				//Debug.Log (tmpI);
 			}
+
+			//ステージスクリプトに移行中
 			break;
 		}
 	}

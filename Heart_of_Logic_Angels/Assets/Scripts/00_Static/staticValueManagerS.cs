@@ -233,6 +233,7 @@ public class staticValueManagerS : MonoBehaviour {
 	public void setStoryProgress(string argsStr){
 
 		string[] tmpS = argsStr.Split('-');
+		//Debug.Log (tmpS);
 		this.setStoryProgress( int.Parse(tmpS[0]) ,int.Parse(tmpS[1]) ,int.Parse(tmpS[2]) ,int.Parse(tmpS[3]));
 
 	}

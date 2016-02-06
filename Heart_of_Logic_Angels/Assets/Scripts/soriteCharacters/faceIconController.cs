@@ -84,14 +84,38 @@ public class faceIconController : MonoBehaviour {
 
 		string tmpS = route.ToString () + "-" + progress.ToString () + "-" + stage.ToString ();
 
-		Debug.Log (tmpS);
+		//Debug.Log (tmpS);
+		int[] tmpIdx;
 
 		switch(tmpS){
 		case "0-0-0":
-			faceIconScript fIC = _faceIconObject [0].GetComponent<faceIconScript> ();
-			fIC.setStatusLock ();
+		case "0-1-0":
+			tmpIdx = new int[]{ 0 };
+			this.faceIconLoop (tmpIdx);
+
+			break;
+		case "0-2-0":
+		case "0-3-0":
+		case "0-3-1":
+		case "0-4-0":
+			tmpIdx = new int[]{ 0, 1 };
+			this.faceIconLoop (tmpIdx);
 
 			break;
 		}
+
 	}
+
+	/// <summary>
+	/// Faces the icon loop.
+	/// </summary>
+	/// <param name="argsIndex">Arguments index.</param>
+	private void faceIconLoop(int[] argsIndex){
+		
+		for (int loopI = 0; loopI < argsIndex.Length; loopI++) {
+			faceIconScript fIC = _faceIconObject [argsIndex[loopI]].GetComponent<faceIconScript> ();
+			fIC.setStatusLock ();
+		}
+	}
+
 }

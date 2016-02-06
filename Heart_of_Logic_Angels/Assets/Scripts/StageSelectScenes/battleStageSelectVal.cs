@@ -39,10 +39,11 @@ public class battleStageSelectVal{
 			}
 
 			break;
-		case 5:
-		case 10:
+		case 4:
 			//運動場02(陸上競技場)の場合
 			bgImage = largeBGImageLoader.getImage("01");
+			break;
+		case 10:
 			break;
 
 		}
@@ -73,7 +74,7 @@ public class battleStageSelectVal{
 			break;
 		case  4:
 			stageTitle = "4 : 陸上競技場";
-			stageComment = " シュスランはこの先から何か気持ち悪いものが流れてくるのを感じていた。\n　その先に何かあるかもしれない。";
+			stageComment = "　シュスランはこの先から何か気持ちの悪いものが流れてくるのを感じていた。\nこの先に何かあるかもしれない。";
 			break;
 
 		case  10:

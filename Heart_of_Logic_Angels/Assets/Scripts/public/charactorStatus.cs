@@ -170,9 +170,9 @@ public class charaBattleStatus{
 		switch (charaNo) {
 		case enumCharaNum.enju_01:
 			//近接タンク型
-			_atk_info = new charaBattle_info(1.2f , 1f, 0.7f, 1f,  0.1f, 0.9f);
-			_def_info = new charaBattle_info(0.33f, 3f, 0.7f, 0 ,0.033f, 0.1f);
-			_mov_info = new charaBattle_info(0.1f , 3f, 0.2f, 0 ,0.15f  , 1.5f);
+			_atk_info = new charaBattle_info(1.2f , 1f, 0.8f, 1f,  0.1f, 0.9f);
+			_def_info = new charaBattle_info(0.33f, 1f, 0.8f, 0 ,0.06f, 0.1f);
+			_mov_info = new charaBattle_info(0.1f , 3f, 0.6f, 0 ,0.15f, 1.5f);
 			_skill_info = new charaBattle_info(6f, 1f, 0f, 0f, 0f , 1f);
 			break;
 
@@ -323,74 +323,3 @@ public enum characterMode{
 public enum enumCharaNum{
 	enju_01, syusuran_02, suzusiro_03, akane_04, houzuki_05, mokuren_06, sakura_07, sion_08, hiragi_09 ,test_10, maxCnt
 }
-
-public enum enumEnemyType{
-	small001
-	,piyo
-	,rabbitman01
-	,largeWolf01
-}
-
-public class typeEnemyStatus{
-	public float maxHP;
-	public float nowHP;
-
-	public float level;
-	public float grantExp;
-	public float attackDeleySec;
-	public float multiAttackCount;
-	public float AttackingPower;
-
-	public typeEnemyStatus(float argsLevel, enumEnemyType argsType){
-
-		this.multiAttackCount = 1f;
-
-		switch (argsType) {
-		case enumEnemyType.largeWolf01:
-			this.maxHP            = argsLevel * 89f + 200f;
-			this.nowHP            = this.maxHP;
-			this.grantExp         = argsLevel * 112f;
-			
-			this.attackDeleySec = 3f;
-			this.AttackingPower = argsLevel * 22f;
-			
-			break;
-
-		case enumEnemyType.piyo:
-			//Lv3 で　HP500　を目安
-			this.maxHP            = argsLevel * 50f;
-			this.nowHP            = this.maxHP;
-			this.grantExp         = argsLevel + 10;
-
-			this.attackDeleySec = 3f;
-			this.AttackingPower = argsLevel * 3f;
-
-			break;
-
-		case enumEnemyType.rabbitman01:
-			//Lv10 で　HP100
-			//早くて弱い設計
-			this.maxHP            = argsLevel * 10f;
-			this.nowHP            = this.maxHP;
-			this.grantExp         = argsLevel;
-
-			this.attackDeleySec = 1f;
-			this.AttackingPower = argsLevel * 1.1f;
-
-			break;
-
-		default:
-			this.maxHP            = argsLevel * 25f;
-			this.nowHP            = this.maxHP;
-			this.grantExp         = argsLevel * 10;
-
-			this.attackDeleySec = 3f;
-			this.AttackingPower = argsLevel * 1f;
-
-			break;
-		}
-
-	}
-}
-
-

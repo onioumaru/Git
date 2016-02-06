@@ -225,11 +225,6 @@ public class soundManager_Base : MonoBehaviour {
 			if (tmpAC.clip == null){
 				Debug.Log ("audioClip : " + argsS.ToString() + " is not Found");
 			}
-
-
-
-
-
 		} else {
 			tmpAC = oneShotSound[argsS] as AudioSource;
 		}
@@ -256,6 +251,9 @@ public enum enm_oneShotSound{
 	,knocking_a_wooden_door
 	,removeCloud
 	,duck
+	,skillCancel
+	,flipSword
+	,tinnitus
 }
 
 

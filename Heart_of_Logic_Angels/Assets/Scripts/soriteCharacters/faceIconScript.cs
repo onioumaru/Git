@@ -15,6 +15,7 @@ public class faceIconScript : MonoBehaviour {
 	private tapedObjectMotion tapSc;
 	private faceIconController fIC;
 	private soriteCharaDotChanger charaDotScript;
+	private soundManager_Base sMB;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,7 @@ public class faceIconScript : MonoBehaviour {
 		tapSc = this.GetComponent<tapedObjectMotion> ();
 		fIC = this.transform.parent.GetComponent<faceIconController>();
 		charaDotScript = GameObject.Find ("soriteCharaDot").GetComponent<soriteCharaDotChanger>();
+		sMB = soundManagerGetter.getManager ();
 	}
 
 	public void clickIcon(){
@@ -32,15 +34,18 @@ public class faceIconScript : MonoBehaviour {
 
 			fIC.showSelectedCharaInfo(_thisIndex);
 			charaDotScript.setAnimation(_thisIndex);
+			sMB.playOneShotSound (enm_oneShotSound.nomalButton);
 
 			return;
 		}
 
 		if (thisRockFlag == true){
 			//ロックされている場合は無視
-			//TODO : Sound
+			sMB.playOneShotSound (enm_oneShotSound.skillCancel);
 			return;
 		}
+
+		sMB.playOneShotSound (enm_oneShotSound.nomalButton);
 
 		if (thisSorityFlag) {
 			//既に選択状態である

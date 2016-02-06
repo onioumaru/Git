@@ -24,6 +24,7 @@ public class allCharaBase : MonoBehaviour {
 	//以下設定不要、自動Set
 	[System.NonSerialized]
 	public GameManagerScript gmScript;
+	[System.NonSerialized]
 	public charaUserStatus thisChara;
 	public expLevelInfo calcdExp;
 	[System.NonSerialized]

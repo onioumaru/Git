@@ -34,6 +34,16 @@
 12:気難しい
 
 
+■04：ほおずき
+01:にっこり
+02:笑顔
+03:怪訝
+04:涙
+05:しょんぼり
+06:びっくり
+07:おこ
+
+
 
 ■20：アルルーナ
 01:標準
@@ -60,6 +70,7 @@
 
 <eff:[0-9]{2}>
 00 : フェードインフェードアウト。2秒以上のsleeptime必須
+
 
 //ブラックアウトBG変更テンプレ
 <eff:00><sleep:1000>@pg
@@ -104,7 +115,7 @@
 
 
 <se:00>
-
+		case 0:
 			tmpS = enm_oneShotSound.effect001;
 			break;
 		case 1:
@@ -115,9 +126,12 @@
 			break;
 		case 3:
 			tmpS = enm_oneShotSound.knocking_a_wooden_door;
-			4
+			break;
+		case 4:
 			tmpS = enm_oneShotSound.removeCloud;
-			
+			break;
+		case 5:
+			tmpS = enm_oneShotSound.duck;
 			
 			
 			

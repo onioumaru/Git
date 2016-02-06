@@ -160,15 +160,15 @@ public class event0_3_1_0 : MonoBehaviour {
 		sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
 	}
 
-	/*
 
 	void Update(){
 		if (Input.GetKeyDown (KeyCode.Z)) {
 			//debuf
-			//this.OnTriggerStay2D(null);
+			StartCoroutine ( stageClear() );
 		}
 	}
 
+	/*
 	void OnTriggerStay2D(Collider2D argsCo){
 		//Debug.Log ("Enter Collider");
 
@@ -178,10 +178,7 @@ public class event0_3_1_0 : MonoBehaviour {
 		//GMS.talkingPartLoader ("0-3-0-3");
 
 	}
-
 */
-
-
 
 
 	private IEnumerator stageClear(){
@@ -206,7 +203,7 @@ public class event0_3_1_0 : MonoBehaviour {
 		GMS.saveBattleResultValues ();
 
 		//4へ
-		sVMS.addStoryProgresses(enum_StoryProgressType.Progress);
+		sVMS.setStoryProgress("0-3-1-1");
 		sVMS.changeScene (sceneChangeStatusEnum.gotoTalkScene);
 	}
 

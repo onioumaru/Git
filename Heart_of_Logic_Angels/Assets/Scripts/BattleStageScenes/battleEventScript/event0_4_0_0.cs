@@ -7,6 +7,7 @@ public class event0_4_0_0 : MonoBehaviour {
 	private GameObject _missionTargetPrefab;
 	private GameObject _battleStartCaption;
 	private GameObject _stageClearCaption;
+	private GameObject _stageFailure;
 
 	private GameManagerScript GMS;
 
@@ -16,14 +17,15 @@ public class event0_4_0_0 : MonoBehaviour {
 
 	public float _defaultLevel;
 
+	private bool startFailer = false;
+
 	// Use this for initialization
 	void Start () {
 		soundManagerGetter.getManager ().playBGM (4);
 
 		generatedTargetEnemys = new List<GameObject>();
-
-		//最初の1匹
-		//this.clearTargetGenerater (_clearTargetEnemy [0], new Vector3(3.5f, -0.5f, 0f) );
+		//初期配置の敵をすべてセット
+		this.setDefaultEnemyEvntTarget();
 
 		GMS = GameManagerGetter.getGameManager ();
 		GMS.setAllCollider2DEnabale (false);
@@ -42,6 +44,10 @@ public class event0_4_0_0 : MonoBehaviour {
 		//battleClearCaption
 		tmpPath = "Prefabs/missonTargetCaption/battleClearCaption";
 		_stageClearCaption= Resources.Load(tmpPath) as GameObject;
+		//battleMissonFailer
+		tmpPath = "Prefabs/missonTargetCaption/battleMissonFailer";
+		_stageFailure= Resources.Load(tmpPath) as GameObject;
+
 
 		
 		Time.timeScale = 1f;
@@ -50,6 +56,14 @@ public class event0_4_0_0 : MonoBehaviour {
 		StartCoroutine ( startTargetCall() );
 
 		StartCoroutine ( timeEvent() );
+	}
+
+	private void setDefaultEnemyEvntTarget(){
+		allEnemyBase[] tmpBases = GameObject.FindObjectsOfType<allEnemyBase> ();
+
+		foreach (allEnemyBase tmpGO in tmpBases) {
+			generatedTargetEnemys.Add (tmpGO.gameObject);
+		}
 	}
 
 	private void clearTargetGenerater(GameObject argsGO, Vector3 argsPosition){
@@ -61,12 +75,28 @@ public class event0_4_0_0 : MonoBehaviour {
 		tmpBase._defaultLevel = _defaultLevel;
 	}
 
+
+	private void setTargetGenerater(GameObject argsGO){
+
+		generatedTargetEnemys.Add (argsGO);
+
+	}
+
 	private bool checkTargetEnemyAlive(){
 		for (int loopI = 0; loopI < generatedTargetEnemys.Count; loopI++) {
 			if (generatedTargetEnemys[loopI] != null){
 				//破壊されていない奴がいる場合
 				return true;
 			}
+			/*
+			 * 動作が鈍くなることが予想されるので保留
+			 * TODO: ??
+			 * else {
+				//null を発見した場合、リストから削除して再チェック
+				generatedTargetEnemys.RemoveAt (loopI);
+				return true;
+			}
+			*/
 		}
 		return false;
 	}
@@ -81,6 +111,10 @@ public class event0_4_0_0 : MonoBehaviour {
 		while (true) {
 			yield return new WaitForSeconds (2f);
 
+			if (startFailer == false) {
+				this.checkFailure ();
+			}
+
 			if (this.checkTargetEnemyAlive() == false){
 				//すべて破壊確認
 				//wave 1
@@ -94,7 +128,41 @@ public class event0_4_0_0 : MonoBehaviour {
 	}
 	
 
+	private void checkFailure(){
+		foreach (gameStartingVariable_Single gSVS in GMS.loadedCharaList.charalist){
+			if (gSVS.charaBase != null) {
+				return;
+			}
+		}
 
+		//重複起動しないようにフラグ
+		startFailer = true;
+		//全てNull　破壊済み
+		StartCoroutine(missionFailure());
+
+	}
+
+	private IEnumerator missionFailure(){
+		staticValueManagerS sVMS = staticValueManagerGetter.getManager ();
+
+		//コライダーは停止
+		GMS.setAllCollider2DEnabale (false);
+
+		yield return new WaitForSeconds (0.1f);
+
+		Time.timeScale = 1;	//パーティクルを使うため1にする
+
+		GameObject tmpGO = (GameObject)Instantiate (_stageFailure);
+		while (tmpGO != null) {
+			yield return null;
+		}
+
+		//ステップをリセット
+		sVMS.addStoryProgresses(enum_StoryProgressType.Step, true);
+		sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
+	}
+
+	/*
 
 	void Update(){
 		if (Input.GetKeyDown (KeyCode.Z)) {
@@ -112,6 +180,8 @@ public class event0_4_0_0 : MonoBehaviour {
 		//GMS.talkingPartLoader ("0-3-0-3");
 
 	}
+
+*/
 
 
 
@@ -138,19 +208,22 @@ public class event0_4_0_0 : MonoBehaviour {
 		//Debug.Log ("gotoStageSelect");
 		//sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
 
+		//4へ
+		sVMS.setStoryProgress("0-4-0-3");
+		sVMS.changeScene (sceneChangeStatusEnum.gotoTalkScene);
 	}
 
 
 
 	
 	IEnumerator startTargetCall(){
-		float movingFlameSec = 3f;
-		float targetX = -20f;
-		float targetY = 0.1f;
+		float movingFlameSec = 1.5f;
+		float targetX = -5f;
+		float targetY = 0f;
 		float pauseFlameSec = 2f;
 
 		//カメラの移動
-		Camera.main.transform.position = new Vector3 (-2f, -1f, -20f);
+		Camera.main.transform.position = new Vector3 (3.5f, -0.8f, -20f);
 		GMS.setAllCollider2DEnabale (false);
 
 

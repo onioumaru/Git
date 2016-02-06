@@ -291,7 +291,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 30
+  MaxDistance: 20
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -328,7 +328,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -339,7 +339,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -350,7 +350,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!95 &9506456
 Animator:
   serializedVersion: 3
@@ -423,7 +423,6 @@ MonoBehaviour:
   attackCycle_red: {fileID: 21300000, guid: 3435f022e32ecd44b89dc4a5b0a444f3, type: 3}
   attackCycle_blue: {fileID: 21300000, guid: f3060839f703008478a7ccbf6d6ad6bf, type: 3}
   attackCycle_green: {fileID: 21300000, guid: b03a76c7501cf7b4e84d78817d22674d, type: 3}
-  thisChara: {fileID: 0}
   _charaStatusIconCtrler: {fileID: 152422, guid: a31244c1b7f71dc4c97ae8213b359b86,
     type: 2}
   showNowLevel: 0
@@ -548,6 +547,26 @@ Prefab:
       propertyPath: _attackLine
       value: 
       objectReference: {fileID: 118344, guid: 78977dc8279333947b5c3178f28f7a60, type: 2}
+    - target: {fileID: 0}
+      propertyPath: panLevelCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: MaxDistance
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 112604}

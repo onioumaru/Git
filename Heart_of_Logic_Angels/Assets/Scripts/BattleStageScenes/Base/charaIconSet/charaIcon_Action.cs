@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 using System.Collections;
 
 public class charaIcon_Action : MonoBehaviour {
 	//固定.
-	public GameObject characterMenu;
+	public GameObject _characterMenu;
 
 	//start時,init
 	private GameObject thisCharaFlag;
@@ -34,8 +36,8 @@ public class charaIcon_Action : MonoBehaviour {
 
 	
 	void OnMouseDown(){
-		thisCharaBase = this.gameObject.GetComponentInParent<charaIconsetManager> ().thisCharaBase;
-		thisCharaFlag = this.gameObject.GetComponentInParent<charaIconsetManager> ().thisCharaFlag;
+		thisCharaBase = this.transform.parent.GetComponent<charaIconsetManager> ().thisCharaBase;
+		thisCharaFlag = this.transform.parent.GetComponent<charaIconsetManager> ().thisCharaFlag;
 
 		dragCancelF = false;
 
@@ -55,15 +57,19 @@ public class charaIcon_Action : MonoBehaviour {
 			//スキルウェイト中は表示しない
 			allCharaBase thisCharaBaseScrpt = thisCharaBase.GetComponentInChildren<allCharaBase> ();
 			if (thisCharaBaseScrpt.thisChara.battleStatus.charaMode == characterMode.Skill) {
-				//soundManagerGetter.getManager().playOneShotSound(enm_oneShotSound.);
+				soundManagerGetter.getManager().playOneShotSound(enm_oneShotSound.skillCancel);
 				return;
 			}
 
 			soundManagerGetter.getManager().playOneShotSound(enm_oneShotSound.charaMenu);
 
-			charaMenuInstance = Instantiate(characterMenu) as GameObject;
-			charaMenuInstance.GetComponentInChildren<charaMenu_parent>().setParentChara(thisCharaBase);
-			charaMenuInstance.GetComponentInChildren<charaMenu_parent>().setParentIconSet(this.gameObject.transform.parent.gameObject);
+			charaMenuInstance = Instantiate(_characterMenu) as GameObject;
+			charaMenu_parent cmp = charaMenuInstance.GetComponentInChildren<charaMenu_parent> ();
+			cmp.setParentChara(thisCharaBase);
+			cmp.setParentIconSet(this.gameObject.transform.parent.gameObject);
+
+			charaMenu_statusLabel tmpLabel = charaMenuInstance.GetComponentInChildren<charaMenu_statusLabel> ();
+			tmpLabel._labelStatus = this.transform.parent.GetComponent<charaIconsetManager> ().labelStatus;
 		}
 	}
 

@@ -258,12 +258,12 @@ Prefab:
       value: 
       objectReference: {fileID: 1835350056}
     - target: {fileID: 11406710, guid: 3c98178b1421f584182e4356c1b23993, type: 2}
-      propertyPath: _forDebugFileName
-      value: 0-3-0-5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11406710, guid: 3c98178b1421f584182e4356c1b23993, type: 2}
       propertyPath: _forDebug
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406710, guid: 3c98178b1421f584182e4356c1b23993, type: 2}
+      propertyPath: _forDebugFileName
+      value: 0-4-0-3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c98178b1421f584182e4356c1b23993, type: 2}

@@ -25,8 +25,11 @@ public class textureVector {
 
 
 	public float getWidth(){
-//		Debug.Log (tgtTexture.textureRect);
-		return thisScale.x * tgtTexture.textureRect.width / tgtTexture.pixelsPerUnit;
+		//Debug.Log (tgtTexture.textureRect);
+		//return thisScale.x * tgtTexture.textureRect.width / tgtTexture.pixelsPerUnit;
+
+		//横幅の計算の場合は、スケール考慮不要
+		return tgtTexture.textureRect.width / tgtTexture.pixelsPerUnit;
 	}
 
 	public float getHeight(){

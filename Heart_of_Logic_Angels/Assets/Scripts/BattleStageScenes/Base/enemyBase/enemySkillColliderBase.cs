@@ -13,7 +13,8 @@ public class enemySkillColliderBase : MonoBehaviour {
 		dealDamade = argsDamage;
 	}
 
-	void OnTriggerStay2D(Collider2D c){
+	void OnTriggerEnter2D(Collider2D c){
+	//void OnTriggerStay2D(Collider2D c){
 		if (c.gameObject.name.Substring (0, 9) == "charaBase") {
 			
 			allCharaBase charaB = c.gameObject.GetComponent<allCharaBase> ();

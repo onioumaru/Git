@@ -29,6 +29,11 @@ public static class largeBGImageLoader {
 			fFullPath = "advBackGroungImage/03_植物園";
 			break;
 
+		case "04":
+			fFullPath = "advBackGroungImage/shadowRoom";
+			break;
+
+			//
 		case "99":
 			//透明画像のダミー
 			fFullPath = "pictChractorStanding/blinkObj";

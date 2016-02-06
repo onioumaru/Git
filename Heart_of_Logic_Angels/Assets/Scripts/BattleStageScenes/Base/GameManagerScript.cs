@@ -327,7 +327,8 @@ public class GameManagerScript : MonoBehaviour {
 				//設定後位置修正
 				tmpChara.charaIconSet.transform.localPosition = tmpV2;
 				
-				tmpChara.charaIconScript.thisCharaBase = tmpChara.charaBase;
+				//tmpChara.charaIconScript.thisCharaBase = tmpChara.charaBase;
+				tmpChara.charaIconScript._charalistIndex = tgtIndex;
 				tmpChara.charaIconScript.thisCharaFlag = tmpChara.charaFlag;
 
 				

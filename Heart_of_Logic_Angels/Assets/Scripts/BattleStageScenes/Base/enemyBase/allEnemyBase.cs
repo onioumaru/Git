@@ -143,5 +143,13 @@ public class allEnemyBase : MonoBehaviour {
 			break;
 		}
 	}
+
+	public void setDefaultLevel(float argsLevel){
+		_defaultLevel = argsLevel;
+		thisEnemyStat = new typeEnemyStatus(argsLevel, _defaultEnemyType);
+
+		textureVector ttv = new textureVector (this.gameObject);
+		hpBar.setMaxBarLength_argsWidth (ttv.getWidth(), thisEnemyStat.maxHP);
+	}
 }
 
