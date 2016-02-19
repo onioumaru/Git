@@ -36,13 +36,23 @@ public class stageParticleParentS : MonoBehaviour {
 				break;
 				
 			default:
-				tmpSource = Resources.Load (commonPath + "Particle_Smog") as GameObject;
+				tmpSource = Resources.Load (commonPath + "Particle_dropTears") as GameObject;
 				break;
 			}
 			break;
 		case "4":
 			tmpSource = Resources.Load (commonPath + "Particle_sakura") as GameObject;
 			break;
+
+		case "5":
+			tmpSource = Resources.Load (commonPath + "Particle_dropTears") as GameObject;
+			break;
+
+		default:
+			Debug.Log ("stage Particle Not Set!");
+			//tmpSource = Resources.Load (commonPath + "Particle_Smog") as GameObject;
+			break;
+			
 		}
 
 		tmpBase = Instantiate (tmpSource) as GameObject;

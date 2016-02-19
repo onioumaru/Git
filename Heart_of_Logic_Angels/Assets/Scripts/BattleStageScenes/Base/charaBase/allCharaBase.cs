@@ -68,7 +68,6 @@ public class allCharaBase : MonoBehaviour {
 	[SerializeField]
 	private float showNextExp;
 
-
 	// Use this for initialization
 	void Start () {
 		thisRigiBody = this.GetComponent<Rigidbody2D> ();
@@ -328,7 +327,7 @@ public class allCharaBase : MonoBehaviour {
 		do {
 			regenarateSec -= waitCycleSec;
 
-			Debug.Log("Healing : " + (this.thisChara.maxHP / 50));
+			//Debug.Log("Healing : " + (this.thisChara.maxHP / 50));
 			this.setHealing(this.thisChara.maxHP / 50);
 
 			//チェック間隔

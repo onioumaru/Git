@@ -34,6 +34,8 @@ public class allEnemyBase : MonoBehaviour {
 	[System.NonSerialized]
 	public bool charaFindFlag = false;
 
+	public GameObject _findEmotionPrefab;
+
 	// Use this for initialization
 	void Start() {
 		thisRigiBody2D = this.GetComponent<Rigidbody2D> ();
@@ -92,6 +94,18 @@ public class allEnemyBase : MonoBehaviour {
 	
 	public float getAttackingDelay(){
 		return thisEnemyStat.attackDeleySec;
+	}
+
+	public void setFindFlag(bool argsBool){
+		GameObject exclamationPrefab = Resources.Load ("Prefabs/charaBase/exclamation") as GameObject;
+
+		charaFindFlag = argsBool;
+
+		GameObject tmpGO = Instantiate( exclamationPrefab) as GameObject;
+		tmpGO.transform.position = this.transform.position;
+
+		textureVector ttv = new textureVector (this.gameObject);
+		tmpGO.transform.position += new Vector3(0f, ttv.getHeight(), 0f);
 	}
 
 	public float setDamage(int argsInt, int argsCharaIndex){

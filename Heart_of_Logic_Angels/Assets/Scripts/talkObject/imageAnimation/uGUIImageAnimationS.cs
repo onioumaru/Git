@@ -29,6 +29,10 @@ public class uGUIImageAnimationS : MonoBehaviour {
 			thisImage.sprite = _firstAnimation[animePosi];
 		} else {
 			//ループ部
+			if (_LoopAnimation.Length == 0){
+				//ループ部の指定なしの場合、ここで終了
+				return;
+			}
 			thisImage.sprite = _LoopAnimation[animePosi];
 		}
 

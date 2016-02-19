@@ -195,6 +195,13 @@ public class soundManager_Base : MonoBehaviour {
 
 			break;
 
+		case 17:
+			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
+			BGMloop.clip = Resources.Load(path + "17_2_XAEROTRIC_mono") as AudioClip;
+			//delayedTime = 0f;
+
+			break;
+
 		default:
 			//実質 delete
 			BGMheader.clip = Resources.Load(path + "00_dummyBlank") as AudioClip;
@@ -254,6 +261,7 @@ public enum enm_oneShotSound{
 	,skillCancel
 	,flipSword
 	,tinnitus
+	,horror
 }
 
 

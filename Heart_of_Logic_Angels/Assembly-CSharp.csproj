@@ -113,6 +113,9 @@
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\testClass.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\test_Regeneiter.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\textCanvasForBattle\battleTextCanvasParentScript.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\Enemys\Daemon\genaratorDaemonScript.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\Enemys\Daemon\genaratorKicker.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\Enemys\Daemon\generatorSearcherScript.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Enemys\Nightmares\Wizerd\blueWizBase.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Enemys\Nightmares\torch\torchBase.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Enemys\Nightmares\torch\torchman_Base.cs" />

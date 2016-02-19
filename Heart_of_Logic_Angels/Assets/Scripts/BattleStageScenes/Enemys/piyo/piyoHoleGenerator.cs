@@ -7,11 +7,14 @@ public class piyoHoleGenerator : MonoBehaviour {
 	public float _genarateCoolCount = 3f;
 	public float _genarateCoollTime = 60f;
 
-	private float genarateDefaultLevel;
+	public float _genarateDefaultLevel;
 
 	// Use this for initialization
 	void Start () {
-		genarateDefaultLevel = this.GetComponent<allEnemyBase> ()._defaultLevel;
+		if (_genarateDefaultLevel <= 0) {
+			_genarateDefaultLevel = this.GetComponent<allEnemyBase> ()._defaultLevel;
+		}
+
 		StartCoroutine ( mainLoop() );
 	}
 	
@@ -29,7 +32,7 @@ public class piyoHoleGenerator : MonoBehaviour {
 			GameObject tmpGO = (GameObject)Instantiate( _piyoPrefabs);
 			tmpGO.transform.position = this.transform.position;
 
-			tmpGO.GetComponent<allEnemyBase>()._defaultLevel = genarateDefaultLevel;
+			tmpGO.GetComponent<allEnemyBase>()._defaultLevel = _genarateDefaultLevel;
 
 			enemyStandardMovingScript eSMS = tmpGO.GetComponent<enemyStandardMovingScript>();
 

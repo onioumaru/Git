@@ -17,9 +17,4 @@ public class talkingPartImageScript : MonoBehaviour {
 			this.transform.localPosition = _defaultLocalPosition;
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

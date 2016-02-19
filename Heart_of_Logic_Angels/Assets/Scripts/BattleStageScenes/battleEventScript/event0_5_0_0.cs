@@ -3,8 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class event0_5_0_0 : MonoBehaviour {
+	public GameObject[] _missionTargetInstance;
+
 	private GameObject _talkPartPerefab;
 	private GameObject _missionTargetPrefab;
+
 	private GameObject _battleStartCaption;
 	private GameObject _stageClearCaption;
 	private GameObject _stageFailure;
@@ -21,11 +24,18 @@ public class event0_5_0_0 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		soundManagerGetter.getManager ().playBGM (5);
+		soundManagerGetter.getManager ().playBGM (3);
 
 		generatedTargetEnemys = new List<GameObject>();
+
+		this.setDefaultCharaStartPosition ();
+		this.setDefaultEnemyLevel ();
+
 		//初期配置の敵をすべてセット
-		this.setDefaultEnemyEvntTarget();
+		//this.setDefaultEnemyEvntTarget();
+
+		//すでに設置された敵をターゲットにセット
+		this.setEvntTarget();
 
 
 
@@ -55,7 +65,7 @@ public class event0_5_0_0 : MonoBehaviour {
 		Time.timeScale = 1f;
 		GMS.setAllCollider2DEnabale (true);
 
-		//StartCoroutine ( startTargetCall() );
+		StartCoroutine ( startTargetCall() );
 
 		//StartCoroutine ( timeEvent() );
 	}
@@ -64,29 +74,52 @@ public class event0_5_0_0 : MonoBehaviour {
 		allCharaBase[] tmpBases = GameObject.FindObjectsOfType<allCharaBase> ();
 
 		foreach (allCharaBase tmpGO in tmpBases) {
-			this.getDefaultCharaPositon (tmpGO.thisChara.charaNo);
+			tmpGO.transform.position = this.getDefaultCharaPositon (tmpGO.thisChara.charaNo);
 
 		}
 	}
 
 	private Vector3 getDefaultCharaPositon(enumCharaNum argsChara){
+		Debug.Log (((float)argsChara * 0.2f));
+
+		return new Vector3 (3.4f + ((float)argsChara*0.1f), -5f, 0f);
+
+		/*
 		switch (argsChara) {
 		case enumCharaNum.enju_01:
-			return new Vector3 (1.8f, -5.8f, 0f);
+			return new Vector3 (3.9f, -5f, 0f);
 			break;
 		default:
-			return new Vector3 (1.8f, -5.8f, 0f);
+			return new Vector3 (3.9f, -5f, 0f);
 			break;
 		}
+		*/
 	}
 
 
+	/// <summary>
+	/// _missionTargetInstanceをセットする
+	/// 実体・インスタンスを指定すること
+	/// </summary>
+	/// <param name="argsInstance">Arguments instance.</param>
+	private void setEvntTarget(){
+		foreach (GameObject tmpGO in _missionTargetInstance) {
+			generatedTargetEnemys.Add (tmpGO);
+		}
+	}
 
 	private void setDefaultEnemyEvntTarget(){
 		allEnemyBase[] tmpBases = GameObject.FindObjectsOfType<allEnemyBase> ();
 
 		foreach (allEnemyBase tmpGO in tmpBases) {
 			generatedTargetEnemys.Add (tmpGO.gameObject);
+		}
+	}
+
+	private void setDefaultEnemyLevel(){
+		allEnemyBase[] tmpBases = GameObject.FindObjectsOfType<allEnemyBase> ();
+
+		foreach (allEnemyBase tmpGO in tmpBases) {
 			tmpGO.setDefaultLevel(_defaultLevel);
 		}
 	}
@@ -243,19 +276,19 @@ public class event0_5_0_0 : MonoBehaviour {
 
 	IEnumerator startTargetCall(){
 		float movingFlameSec = 1.5f;
-		float targetX = -5f;
-		float targetY = 0f;
+		float targetX = -6.3f;
+		float targetY = 11f;
 		float pauseFlameSec = 2f;
 
 		//カメラの移動
-		Camera.main.transform.position = new Vector3 (3.5f, -0.8f, -20f);
+		Camera.main.transform.position = new Vector3 (3.9f, -5f, -20f);
 		GMS.setAllCollider2DEnabale (false);
 
 
 		//開始会話
 		staticValueManagerS sVMS = staticValueManagerGetter.getManager ();
 		sVMS.addStoryProgresses (enum_StoryProgressType.Step);
-		sVMS.getNowSceneChangeValue().sceneFileName = "0-4-0-1";
+		sVMS.getNowSceneChangeValue().sceneFileName = "0-5-0-1";
 
 		GameObject tmpTalkObj = (GameObject)Instantiate (_talkPartPerefab);
 		// トークシーンが破壊されるまでループして待つ
@@ -271,7 +304,7 @@ public class event0_5_0_0 : MonoBehaviour {
 		GameObject missionTargetCanvas = (GameObject)Instantiate (_missionTargetPrefab);
 		_mTTS = missionTargetCanvas.GetComponent<missionTargetTitleS> ();
 
-		_mTTS._winDecision.text = "初期配置の敵を殲滅せよ";
+		_mTTS._winDecision.text = "対象の敵を撃破せよ";
 		_mTTS._loseDecision.text = "部隊の全滅";
 
 		float tmpX;
@@ -306,17 +339,14 @@ public class event0_5_0_0 : MonoBehaviour {
 		}
 
 		//　作戦目標を見せるWait
-		//_mTTS.startArrowMotion (pauseFlameSec);
+		_mTTS.startArrowMotion (pauseFlameSec);
 
-
-		/*
 		tmpPassedSec = 0f;
 		while(tmpPassedSec < pauseFlameSec){
 			yield return null;
 			
 			tmpPassedSec += Time.fixedDeltaTime;
 		}
-		*/
 
 
 		float returnTime = 3f;

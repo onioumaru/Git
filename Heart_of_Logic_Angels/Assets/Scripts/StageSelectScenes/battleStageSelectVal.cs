@@ -43,6 +43,14 @@ public class battleStageSelectVal{
 			//運動場02(陸上競技場)の場合
 			bgImage = largeBGImageLoader.getImage("01");
 			break;
+		case 5:
+			//球場の場合
+			bgImage = largeBGImageLoader.getImage("05");
+			break;
+		case 6:
+			//図書館
+			bgImage = largeBGImageLoader.getImage("07");
+			break;
 		case 10:
 			break;
 
@@ -75,6 +83,16 @@ public class battleStageSelectVal{
 		case  4:
 			stageTitle = "4 : 陸上競技場";
 			stageComment = "　シュスランはこの先から何か気持ちの悪いものが流れてくるのを感じていた。\nこの先に何かあるかもしれない。";
+			break;
+
+		case  5:
+			stageTitle = "5 : 野球場";
+			stageComment = "　新たにできた道は野外に向かっているようだ。\n\nシュスランとホオズキは、\nこの先から何か禍々しい気を流れてくる感じていた。";
+			break;
+
+		case 6:
+			stageTitle = "6 : 大図書館";
+			stageComment = "　野外に続く道以外にも、建物へと続き道がある。\n\nその先は中学部棟のようだが、\n建物に入ってすぐに大図書館と書かれた立派な扉がある。\nこの中から闇の気を感じる。";
 			break;
 
 		case  10:

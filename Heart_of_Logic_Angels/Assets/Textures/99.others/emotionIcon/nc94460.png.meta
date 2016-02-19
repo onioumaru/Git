@@ -1,0 +1,530 @@
+fileFormatVersion: 2
+guid: c4b47fc082ef1ac4d83f3caadc2294e9
+timeCreated: 1454842825
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nc94460_0
+    21300002: nc94460_1
+    21300004: nc94460_3
+    21300006: nc94460_8
+    21300008: nc94460_9
+    21300010: nc94460_10
+    21300012: nc94460_15
+    21300014: nc94460_16
+    21300016: nc94460_19
+    21300018: nc94460_28
+    21300020: nc94460_29
+    21300022: nc94460_32
+    21300024: nc94460_38
+    21300026: nc94460_39
+    21300028: nc94460_41
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: nc94460_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1246
+        width: 114
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 98.5}
+        - {x: -57, y: -2.5}
+        - {x: -57, y: -89.5}
+        - {x: -49, y: -98.5}
+        - {x: 36, y: -98.5}
+        - {x: 57, y: -86.5}
+        - {x: 57, y: 4.5}
+        - {x: 14, y: 98.5}
+    - name: nc94460_1
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1245
+        width: 63
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 95}
+        - {x: -31.5, y: 41}
+        - {x: -28.5, y: -2}
+        - {x: -31.5, y: -49}
+        - {x: -31.5, y: -95}
+        - {x: 25.5, y: -95}
+        - {x: 27.5, y: -91}
+        - {x: 31.5, y: -20}
+        - {x: 31.5, y: 95}
+    - name: nc94460_3
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1246
+        width: 402
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -151, y: 28.5}
+        - {x: -191, y: -4.5}
+        - {x: -191, y: -24.5}
+        - {x: -189, y: -32.5}
+        - {x: -105, y: -86.5}
+        - {x: -73, y: -86.5}
+        - {x: -62, y: -84.5}
+        - {x: -62, y: -57.5}
+        - {x: -130, y: 28.5}
+      - - {x: 187, y: 4.5}
+        - {x: 180, y: 6.5}
+        - {x: 156, y: 6.5}
+        - {x: 64, y: -52.5}
+        - {x: 64, y: -82.5}
+        - {x: 72, y: -86.5}
+        - {x: 118, y: -86.5}
+        - {x: 197, y: -63.5}
+        - {x: 200, y: -54.5}
+        - {x: 200, y: -25.5}
+      - - {x: 65, y: 67.5}
+        - {x: 61, y: 65.5}
+        - {x: 16, y: -35.5}
+        - {x: 16, y: -57.5}
+        - {x: 28, y: -63.5}
+        - {x: 53, y: -63.5}
+        - {x: 123, y: 24.5}
+        - {x: 123, y: 42.5}
+        - {x: 81, y: 67.5}
+      - - {x: -37, y: 85.5}
+        - {x: -72, y: 72.5}
+        - {x: -72, y: 30.5}
+        - {x: -53, y: -60.5}
+        - {x: -30, y: -60.5}
+        - {x: -10, y: -50.5}
+        - {x: -10, y: 15.5}
+        - {x: -14, y: 80.5}
+        - {x: -16, y: 85.5}
+    - name: nc94460_8
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 942
+        width: 183
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61.5, y: -26}
+        - {x: -76.5, y: -79}
+        - {x: -79.5, y: -82}
+        - {x: -79.5, y: -98}
+        - {x: -40.5, y: -131}
+        - {x: -28.5, y: -131}
+        - {x: -23.5, y: -130}
+        - {x: 83.5, y: -45}
+        - {x: 83.5, y: -31}
+        - {x: 82.5, y: -26}
+      - - {x: -31.5, y: 26}
+        - {x: -85.5, y: 26}
+        - {x: -85.5, y: -42}
+        - {x: -60.5, y: -42}
+        - {x: 82.5, y: -11}
+        - {x: 86.5, y: -4}
+        - {x: 86.5, y: 11}
+        - {x: 77.5, y: 18}
+      - - {x: -27.5, y: 137}
+        - {x: -58.5, y: 117}
+        - {x: -58.5, y: 94}
+        - {x: 69.5, y: 30}
+        - {x: 90.5, y: 30}
+        - {x: 91.5, y: 31}
+        - {x: 91.5, y: 52}
+        - {x: 9.5, y: 137}
+    - name: nc94460_9
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 961
+        width: 153
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 57.5}
+        - {x: -57.5, y: 97.5}
+        - {x: -76.5, y: 97.5}
+        - {x: -76.5, y: 79.5}
+        - {x: -40.5, y: 28.5}
+        - {x: -55.5, y: 15.5}
+        - {x: -62.5, y: -2.5}
+        - {x: 57.5, y: -97.5}
+        - {x: 76.5, y: -97.5}
+        - {x: 76.5, y: -63.5}
+        - {x: 61.5, y: -0.5}
+    - name: nc94460_10
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 970
+        width: 210
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: 85}
+        - {x: -47, y: 17}
+        - {x: -73, y: -16}
+        - {x: -105, y: -61}
+        - {x: -105, y: -85}
+        - {x: -79, y: -85}
+        - {x: 88, y: -22}
+        - {x: 105, y: 18}
+        - {x: 105, y: 85}
+    - name: nc94460_15
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 661
+        width: 152
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76, y: -100}
+        - {x: 28, y: -128}
+        - {x: 76, y: -128}
+        - {x: 76, y: 128}
+        - {x: 46, y: 128}
+        - {x: -76, y: 86}
+    - name: nc94460_16
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 671
+        width: 395
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -155.5, y: 94}
+        - {x: -197.5, y: 37}
+        - {x: -197.5, y: -25}
+        - {x: -140.5, y: -112}
+        - {x: -97.5, y: -112}
+        - {x: 13.5, y: -84}
+        - {x: 193.5, y: 60}
+        - {x: 197.5, y: 62}
+        - {x: 197.5, y: 94}
+      - - {x: 66.5, y: 1}
+        - {x: 24.5, y: -14}
+        - {x: 22.5, y: -16}
+        - {x: 22.5, y: -33}
+        - {x: 25.5, y: -40}
+        - {x: 175.5, y: -47}
+        - {x: 197.5, y: -47}
+        - {x: 197.5, y: -12}
+        - {x: 161.5, y: 1}
+      - - {x: 100.5, y: 46}
+        - {x: 3.5, y: 23}
+        - {x: 3.5, y: -9}
+        - {x: 54.5, y: -9}
+        - {x: 197.5, y: 3}
+        - {x: 197.5, y: 33}
+        - {x: 171.5, y: 46}
+    - name: nc94460_19
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 686
+        width: 198
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 105}
+        - {x: -99, y: 6}
+        - {x: -99, y: -105}
+        - {x: 99, y: -105}
+        - {x: 99, y: 105}
+    - name: nc94460_28
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 379
+        width: 238
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: -16}
+        - {x: -15, y: -41}
+        - {x: -15, y: -90}
+        - {x: -5, y: -101}
+        - {x: 37, y: -101}
+        - {x: 119, y: -41}
+        - {x: 119, y: -16}
+      - - {x: -84, y: 21}
+        - {x: -116, y: 11}
+        - {x: -116, y: -55}
+        - {x: -115, y: -60}
+        - {x: -63, y: -60}
+        - {x: 32, y: -25}
+        - {x: 32, y: 14}
+        - {x: 23, y: 21}
+      - - {x: -80, y: 91}
+        - {x: -86, y: 83}
+        - {x: -86, y: 36}
+        - {x: -81, y: 22}
+        - {x: 26, y: 22}
+        - {x: 58, y: 24}
+        - {x: 62, y: 31}
+        - {x: 62, y: 53}
+        - {x: 20, y: 91}
+    - name: nc94460_29
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 369
+        width: 337
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -151.5, y: 8}
+        - {x: -160.5, y: -3}
+        - {x: -160.5, y: -31}
+        - {x: -93.5, y: -87}
+        - {x: -70.5, y: -87}
+        - {x: -70.5, y: -54}
+        - {x: -87.5, y: -4}
+        - {x: -113.5, y: 8}
+      - - {x: 104.5, y: -15}
+        - {x: 54.5, y: -49}
+        - {x: 54.5, y: -78}
+        - {x: 153.5, y: -78}
+        - {x: 167.5, y: -62}
+        - {x: 167.5, y: -31}
+        - {x: 151.5, y: -15}
+      - - {x: 44.5, y: 101}
+        - {x: -21.5, y: -25}
+        - {x: -21.5, y: -67}
+        - {x: -2.5, y: -67}
+        - {x: 92.5, y: -47}
+        - {x: 117.5, y: -4}
+        - {x: 117.5, y: 96}
+        - {x: 113.5, y: 101}
+      - - {x: -26.5, y: 53}
+        - {x: -64.5, y: 53}
+        - {x: -64.5, y: -25}
+        - {x: -62.5, y: -57}
+        - {x: -54.5, y: -63}
+        - {x: -27.5, y: -63}
+        - {x: -8.5, y: -7}
+        - {x: -8.5, y: 43}
+        - {x: -10.5, y: 49}
+      - - {x: -96.5, y: 93}
+        - {x: -143.5, y: 93}
+        - {x: -145.5, y: 89}
+        - {x: -145.5, y: 58}
+        - {x: -143.5, y: 48}
+        - {x: -89.5, y: -13}
+        - {x: -69.5, y: -13}
+        - {x: -66.5, y: -12}
+        - {x: -66.5, y: 21}
+        - {x: -68.5, y: 32}
+        - {x: -77.5, y: 64}
+        - {x: -84.5, y: 75}
+    - name: nc94460_32
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 466
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 25}
+        - {x: -25, y: 21}
+        - {x: -25, y: -24}
+        - {x: -23, y: -25}
+        - {x: 22, y: -25}
+        - {x: 25, y: -18}
+        - {x: 25, y: 16}
+        - {x: 21, y: 25}
+      - - {x: 16, y: 25}
+        - {x: 16, y: 23}
+        - {x: 22, y: 18}
+        - {x: 25, y: 18}
+        - {x: 25, y: 25}
+    - name: nc94460_38
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 36
+        width: 160
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: -35.5}
+        - {x: -50, y: -66.5}
+        - {x: -50, y: -107.5}
+        - {x: -35, y: -122.5}
+        - {x: -8, y: -122.5}
+        - {x: -4, y: -121.5}
+        - {x: 8, y: -114.5}
+        - {x: 8, y: -35.5}
+      - - {x: -72, y: 129.5}
+        - {x: -80, y: 114.5}
+        - {x: -80, y: 51.5}
+        - {x: -61, y: 20.5}
+        - {x: -40, y: 21.5}
+        - {x: -20, y: 27.5}
+        - {x: -23, y: -28.5}
+        - {x: -15, y: -32.5}
+        - {x: 5, y: -32.5}
+        - {x: 80, y: 32.5}
+        - {x: 80, y: 129.5}
+    - name: nc94460_39
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 6
+        width: 284
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114, y: 144.5}
+        - {x: 85, y: 144.5}
+        - {x: 84, y: 133.5}
+        - {x: 43, y: 125.5}
+        - {x: 39, y: 118.5}
+        - {x: -17, y: 144.5}
+        - {x: -115, y: 144.5}
+        - {x: -142, y: 125.5}
+        - {x: -142, y: -113.5}
+        - {x: -139, y: -121.5}
+        - {x: -105, y: -111.5}
+        - {x: -63, y: -95.5}
+        - {x: -60, y: -82.5}
+        - {x: -52, y: -127.5}
+        - {x: -22, y: -137.5}
+        - {x: -17, y: -127.5}
+        - {x: -13, y: -108.5}
+        - {x: -11, y: -132.5}
+        - {x: 45, y: -144.5}
+        - {x: 142, y: -144.5}
+        - {x: 142, y: 72.5}
+        - {x: 119, y: 138.5}
+    - name: nc94460_41
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 43
+        width: 234
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59, y: -128}
+        - {x: 95, y: -119}
+        - {x: 116, y: -51}
+        - {x: 116, y: 130}
+        - {x: -17, y: 130}
+        - {x: -24, y: 31}
+        - {x: -15, y: 15}
+        - {x: -13, y: -42}
+        - {x: -10, y: -49}
+        - {x: -14, y: -38}
+        - {x: -20, y: 3}
+        - {x: -29, y: 46}
+        - {x: -36, y: 54}
+        - {x: -65, y: 98}
+        - {x: -77, y: 105}
+        - {x: -90, y: 108}
+        - {x: -111, y: 47}
+        - {x: -111, y: -41}
+        - {x: -83, y: -98}
+        - {x: -65, y: -128}
+        - {x: 26, y: -128}
+        - {x: 35, y: -126}
+        - {x: 37, y: -102}
+        - {x: 37, y: -21}
+        - {x: 51, y: -128}
+      - - {x: -25, y: 130}
+        - {x: -52, y: 130}
+        - {x: -55, y: 99}
+        - {x: -55, y: 71}
+        - {x: -49, y: 63}
+        - {x: -45, y: 62}
+        - {x: -23, y: 62}
+        - {x: -16, y: 69}
+        - {x: -16, y: 98}
+        - {x: -22, y: 124}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

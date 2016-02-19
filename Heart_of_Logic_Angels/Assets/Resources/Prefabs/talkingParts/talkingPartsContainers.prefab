@@ -28,16 +28,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _containerBase:
-  - {fileID: 154408, guid: b655fb86852129c4489bb669e795d2f7, type: 2}
+  - {fileID: 130916, guid: b655fb86852129c4489bb669e795d2f7, type: 2}
   - {fileID: 134482, guid: 16f3cfc25bf59224cb93fd8f6c823d98, type: 2}
   - {fileID: 183194, guid: 32cc0c98b6899534cb91b9067ca4da33, type: 2}
   - {fileID: 144088, guid: 252b9ed75912b9b4cbd44c775128e709, type: 2}
   - {fileID: 103706, guid: e17a3dc0e33dab844b62dbd903aca45f, type: 2}
   - {fileID: 121696, guid: 092a2c5c677277940af675bc9cef8171, type: 2}
-  - {fileID: 121696, guid: 092a2c5c677277940af675bc9cef8171, type: 2}
-  - {fileID: 121696, guid: 092a2c5c677277940af675bc9cef8171, type: 2}
-  - {fileID: 121696, guid: 092a2c5c677277940af675bc9cef8171, type: 2}
-  - {fileID: 121696, guid: 092a2c5c677277940af675bc9cef8171, type: 2}
+  - {fileID: 123250, guid: 73e3e9f51126017479545841be4f0b7e, type: 2}
+  - {fileID: 147470, guid: c7dbdbee8f3ba3643b46b4f97f4a1b9f, type: 2}
+  - {fileID: 155322, guid: 54c7d22fd12736e40b8f24782efc2771, type: 2}
+  - {fileID: 145934, guid: 866ace90149370a458731a235defc27f, type: 2}
 --- !u!224 &22412916
 RectTransform:
   m_ObjectHideFlags: 1
@@ -69,7 +69,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: _containerBase.Array.data[0]
       value: 
-      objectReference: {fileID: 154408, guid: b655fb86852129c4489bb669e795d2f7, type: 2}
+      objectReference: {fileID: 130916, guid: b655fb86852129c4489bb669e795d2f7, type: 2}
     - target: {fileID: 0}
       propertyPath: _containerBase.Array.data[1]
       value: 
@@ -90,6 +90,22 @@ Prefab:
       propertyPath: _containerBase.Array.data[5]
       value: 
       objectReference: {fileID: 121696, guid: 092a2c5c677277940af675bc9cef8171, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _containerBase.Array.data[7]
+      value: 
+      objectReference: {fileID: 147470, guid: c7dbdbee8f3ba3643b46b4f97f4a1b9f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _containerBase.Array.data[8]
+      value: 
+      objectReference: {fileID: 155322, guid: 54c7d22fd12736e40b8f24782efc2771, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _containerBase.Array.data[9]
+      value: 
+      objectReference: {fileID: 145934, guid: 866ace90149370a458731a235defc27f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _containerBase.Array.data[6]
+      value: 
+      objectReference: {fileID: 123250, guid: 73e3e9f51126017479545841be4f0b7e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 146632}

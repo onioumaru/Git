@@ -567,6 +567,9 @@ public class talkingMainScript : MonoBehaviour {
 		case 6:
 			tmpS = enm_oneShotSound.tinnitus;
 			break;
+		case 7:
+			tmpS = enm_oneShotSound.horror;
+			break;
 		}
 
 		soundManagerGetter.getManager().playOneShotSound (tmpS);
@@ -709,6 +712,8 @@ public class talkingMainScript : MonoBehaviour {
 				copyEff.transform.SetAsLastSibling ();
 			}
 		}
+
+		Destroy (tmpGo);
 	}
 
 

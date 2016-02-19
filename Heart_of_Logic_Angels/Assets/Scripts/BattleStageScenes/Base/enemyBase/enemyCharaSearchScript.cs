@@ -34,7 +34,7 @@ public class enemyCharaSearchScript : MonoBehaviour {
 				//発見範囲に入ったら自動追尾
 				eSMS.setMoveType(0);
 
-				this.transform.GetComponent<allEnemyBase> ().charaFindFlag = true;
+				this.transform.GetComponent<allEnemyBase> ().setFindFlag(true);
 
 				//停止するかは未定
 				//StopCoroutine (mainCor);

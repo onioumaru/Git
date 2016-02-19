@@ -1,0 +1,5294 @@
+fileFormatVersion: 2
+guid: 7660091302bafa647a6630598b481cf3
+timeCreated: 1454847280
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pipo-emotion_0
+    21300002: pipo-emotion_1
+    21300004: pipo-emotion_2
+    21300006: pipo-emotion_3
+    21300008: pipo-emotion_4
+    21300010: pipo-emotion_5
+    21300012: pipo-emotion_6
+    21300014: pipo-emotion_7
+    21300016: pipo-emotion_8
+    21300018: pipo-emotion_9
+    21300020: pipo-emotion_10
+    21300022: pipo-emotion_11
+    21300024: pipo-emotion_12
+    21300026: pipo-emotion_13
+    21300028: pipo-emotion_14
+    21300030: pipo-emotion_15
+    21300032: pipo-emotion_16
+    21300034: pipo-emotion_17
+    21300036: pipo-emotion_18
+    21300038: pipo-emotion_19
+    21300040: pipo-emotion_20
+    21300042: pipo-emotion_21
+    21300044: pipo-emotion_22
+    21300046: pipo-emotion_23
+    21300048: pipo-emotion_24
+    21300050: pipo-emotion_25
+    21300052: pipo-emotion_26
+    21300054: pipo-emotion_27
+    21300056: pipo-emotion_28
+    21300058: pipo-emotion_29
+    21300060: pipo-emotion_30
+    21300062: pipo-emotion_31
+    21300064: pipo-emotion_32
+    21300066: pipo-emotion_33
+    21300068: pipo-emotion_34
+    21300070: pipo-emotion_35
+    21300072: pipo-emotion_36
+    21300074: pipo-emotion_37
+    21300076: pipo-emotion_38
+    21300078: pipo-emotion_39
+    21300080: pipo-emotion_40
+    21300082: pipo-emotion_41
+    21300084: pipo-emotion_42
+    21300086: pipo-emotion_43
+    21300088: pipo-emotion_44
+    21300090: pipo-emotion_45
+    21300092: pipo-emotion_46
+    21300094: pipo-emotion_47
+    21300096: pipo-emotion_48
+    21300098: pipo-emotion_49
+    21300100: pipo-emotion_50
+    21300102: pipo-emotion_51
+    21300104: pipo-emotion_52
+    21300106: pipo-emotion_53
+    21300108: pipo-emotion_54
+    21300110: pipo-emotion_55
+    21300112: pipo-emotion_56
+    21300114: pipo-emotion_57
+    21300116: pipo-emotion_58
+    21300118: pipo-emotion_59
+    21300120: pipo-emotion_60
+    21300122: pipo-emotion_61
+    21300124: pipo-emotion_62
+    21300126: pipo-emotion_63
+    21300128: pipo-emotion_64
+    21300130: pipo-emotion_65
+    21300132: pipo-emotion_66
+    21300134: pipo-emotion_67
+    21300136: pipo-emotion_68
+    21300138: pipo-emotion_69
+    21300140: pipo-emotion_70
+    21300142: pipo-emotion_71
+    21300144: pipo-emotion_72
+    21300146: pipo-emotion_73
+    21300148: pipo-emotion_74
+    21300150: pipo-emotion_75
+    21300152: pipo-emotion_76
+    21300154: pipo-emotion_77
+    21300156: pipo-emotion_78
+    21300158: pipo-emotion_79
+    21300160: pipo-emotion_80
+    21300162: pipo-emotion_81
+    21300164: pipo-emotion_82
+    21300166: pipo-emotion_83
+    21300168: pipo-emotion_84
+    21300170: pipo-emotion_85
+    21300172: pipo-emotion_86
+    21300174: pipo-emotion_87
+    21300176: pipo-emotion_88
+    21300178: pipo-emotion_89
+    21300180: pipo-emotion_90
+    21300182: pipo-emotion_91
+    21300184: pipo-emotion_92
+    21300186: pipo-emotion_93
+    21300188: pipo-emotion_94
+    21300190: pipo-emotion_95
+    21300192: pipo-emotion_96
+    21300194: pipo-emotion_97
+    21300196: pipo-emotion_98
+    21300198: pipo-emotion_99
+    21300200: pipo-emotion_100
+    21300202: pipo-emotion_101
+    21300204: pipo-emotion_102
+    21300206: pipo-emotion_103
+    21300208: pipo-emotion_104
+    21300210: pipo-emotion_105
+    21300212: pipo-emotion_106
+    21300214: pipo-emotion_107
+    21300216: pipo-emotion_108
+    21300218: pipo-emotion_109
+    21300220: pipo-emotion_110
+    21300222: pipo-emotion_111
+    21300224: pipo-emotion_112
+    21300226: pipo-emotion_113
+    21300228: pipo-emotion_114
+    21300230: pipo-emotion_115
+    21300232: pipo-emotion_116
+    21300234: pipo-emotion_117
+    21300236: pipo-emotion_118
+    21300238: pipo-emotion_119
+    21300240: pipo-emotion_120
+    21300242: pipo-emotion_121
+    21300244: pipo-emotion_122
+    21300246: pipo-emotion_123
+    21300248: pipo-emotion_124
+    21300250: pipo-emotion_125
+    21300252: pipo-emotion_126
+    21300254: pipo-emotion_127
+    21300256: pipo-emotion_128
+    21300258: pipo-emotion_129
+    21300260: pipo-emotion_130
+    21300262: pipo-emotion_131
+    21300264: pipo-emotion_132
+    21300266: pipo-emotion_133
+    21300268: pipo-emotion_134
+    21300270: pipo-emotion_135
+    21300272: pipo-emotion_136
+    21300274: pipo-emotion_137
+    21300276: pipo-emotion_138
+    21300278: pipo-emotion_139
+    21300280: pipo-emotion_140
+    21300282: pipo-emotion_141
+    21300284: pipo-emotion_142
+    21300286: pipo-emotion_143
+    21300288: pipo-emotion_144
+    21300290: pipo-emotion_145
+    21300292: pipo-emotion_146
+    21300294: pipo-emotion_147
+    21300296: pipo-emotion_148
+    21300298: pipo-emotion_149
+    21300300: pipo-emotion_150
+    21300302: pipo-emotion_151
+    21300304: pipo-emotion_152
+    21300306: pipo-emotion_153
+    21300308: pipo-emotion_154
+    21300310: pipo-emotion_155
+    21300312: pipo-emotion_156
+    21300314: pipo-emotion_157
+    21300316: pipo-emotion_158
+    21300318: pipo-emotion_159
+    21300320: pipo-emotion_160
+    21300322: pipo-emotion_161
+    21300324: pipo-emotion_162
+    21300326: pipo-emotion_163
+    21300328: pipo-emotion_164
+    21300330: pipo-emotion_165
+    21300332: pipo-emotion_166
+    21300334: pipo-emotion_167
+    21300336: pipo-emotion_168
+    21300338: pipo-emotion_169
+    21300340: pipo-emotion_170
+    21300342: pipo-emotion_171
+    21300344: pipo-emotion_172
+    21300346: pipo-emotion_173
+    21300348: pipo-emotion_174
+    21300350: pipo-emotion_175
+    21300352: pipo-emotion_176
+    21300354: pipo-emotion_177
+    21300356: pipo-emotion_178
+    21300358: pipo-emotion_179
+    21300360: pipo-emotion_180
+    21300362: pipo-emotion_181
+    21300364: pipo-emotion_182
+    21300366: pipo-emotion_183
+    21300368: pipo-emotion_184
+    21300370: pipo-emotion_185
+    21300372: pipo-emotion_186
+    21300374: pipo-emotion_187
+    21300376: pipo-emotion_188
+    21300378: pipo-emotion_189
+    21300380: pipo-emotion_190
+    21300382: pipo-emotion_191
+    21300384: pipo-emotion_192
+    21300386: pipo-emotion_193
+    21300388: pipo-emotion_194
+    21300390: pipo-emotion_195
+    21300392: pipo-emotion_196
+    21300394: pipo-emotion_197
+    21300396: pipo-emotion_198
+    21300398: pipo-emotion_199
+    21300400: pipo-emotion_200
+    21300402: pipo-emotion_201
+    21300404: pipo-emotion_202
+    21300406: pipo-emotion_203
+    21300408: pipo-emotion_204
+    21300410: pipo-emotion_205
+    21300412: pipo-emotion_206
+    21300414: pipo-emotion_207
+    21300416: pipo-emotion_208
+    21300418: pipo-emotion_209
+    21300420: pipo-emotion_210
+    21300422: pipo-emotion_211
+    21300424: pipo-emotion_212
+    21300426: pipo-emotion_213
+    21300428: pipo-emotion_214
+    21300430: pipo-emotion_215
+    21300432: pipo-emotion_216
+    21300434: pipo-emotion_217
+    21300436: pipo-emotion_218
+    21300438: pipo-emotion_219
+    21300440: pipo-emotion_220
+    21300442: pipo-emotion_221
+    21300444: pipo-emotion_222
+    21300446: pipo-emotion_223
+    21300448: pipo-emotion_224
+    21300450: pipo-emotion_225
+    21300452: pipo-emotion_226
+    21300454: pipo-emotion_227
+    21300456: pipo-emotion_228
+    21300458: pipo-emotion_229
+    21300460: pipo-emotion_230
+    21300462: pipo-emotion_231
+    21300464: pipo-emotion_232
+    21300466: pipo-emotion_233
+    21300468: pipo-emotion_234
+    21300470: pipo-emotion_235
+    21300472: pipo-emotion_236
+    21300474: pipo-emotion_237
+    21300476: pipo-emotion_238
+    21300478: pipo-emotion_239
+    21300480: pipo-emotion_240
+    21300482: pipo-emotion_241
+    21300484: pipo-emotion_242
+    21300486: pipo-emotion_243
+    21300488: pipo-emotion_244
+    21300490: pipo-emotion_245
+    21300492: pipo-emotion_246
+    21300494: pipo-emotion_247
+    21300496: pipo-emotion_248
+    21300498: pipo-emotion_249
+    21300500: pipo-emotion_250
+    21300502: pipo-emotion_251
+    21300504: pipo-emotion_252
+    21300506: pipo-emotion_253
+    21300508: pipo-emotion_254
+    21300510: pipo-emotion_255
+    21300512: pipo-emotion_256
+    21300514: pipo-emotion_257
+    21300516: pipo-emotion_258
+    21300518: pipo-emotion_259
+    21300520: pipo-emotion_260
+    21300522: pipo-emotion_261
+    21300524: pipo-emotion_262
+    21300526: pipo-emotion_263
+    21300528: pipo-emotion_264
+    21300530: pipo-emotion_265
+    21300532: pipo-emotion_266
+    21300534: pipo-emotion_267
+    21300536: pipo-emotion_268
+    21300538: pipo-emotion_269
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pipo-emotion_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_17
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_19
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_21
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_23
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_26
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_27
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_28
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_29
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_37
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_40
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_41
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_43
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_44
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_45
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_46
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_47
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_48
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_49
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_50
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_51
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_52
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_53
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_54
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_55
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_56
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_57
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_58
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_59
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_63
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_67
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_69
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_70
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_71
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_72
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_73
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_74
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_75
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_76
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_77
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_78
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_79
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_80
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_81
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_82
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_83
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_84
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_85
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_86
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_87
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_88
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_89
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_91
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_92
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_93
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_94
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_95
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_96
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_97
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_98
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_99
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_100
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_101
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_102
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_103
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_104
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_105
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_106
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_107
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_108
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_109
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_110
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_111
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_112
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_113
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_114
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_115
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_116
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_117
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_118
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_119
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_121
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_122
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_123
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_124
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_125
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_126
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_127
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_128
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_129
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_130
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_131
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_132
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_133
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_134
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_135
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_136
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_137
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_138
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_139
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_140
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_141
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_142
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_143
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_144
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_145
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_146
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_147
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_148
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -12}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 15, y: 16}
+    - name: pipo-emotion_149
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: pipo-emotion_150
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_151
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 15}
+        - {x: -14, y: 9}
+        - {x: -14, y: -10}
+        - {x: -9, y: -16}
+        - {x: 3, y: -16}
+        - {x: 13, y: -8}
+        - {x: 13, y: 13}
+        - {x: 9, y: 15}
+    - name: pipo-emotion_152
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_153
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_154
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 15}
+        - {x: -14, y: 9}
+        - {x: -14, y: -10}
+        - {x: -9, y: -16}
+        - {x: 3, y: -16}
+        - {x: 13, y: -8}
+        - {x: 13, y: 13}
+        - {x: 9, y: 15}
+    - name: pipo-emotion_155
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_156
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_157
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 15}
+        - {x: -14, y: 9}
+        - {x: -14, y: -10}
+        - {x: -9, y: -16}
+        - {x: 3, y: -16}
+        - {x: 13, y: -8}
+        - {x: 13, y: 13}
+        - {x: 9, y: 15}
+    - name: pipo-emotion_158
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_159
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_160
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 15}
+        - {x: -14, y: 9}
+        - {x: -14, y: -10}
+        - {x: -9, y: -16}
+        - {x: 3, y: -16}
+        - {x: 13, y: -8}
+        - {x: 13, y: 13}
+        - {x: 9, y: 15}
+    - name: pipo-emotion_161
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_162
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_163
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 15}
+        - {x: -14, y: 9}
+        - {x: -14, y: -10}
+        - {x: -9, y: -16}
+        - {x: 3, y: -16}
+        - {x: 13, y: -8}
+        - {x: 13, y: 13}
+        - {x: 9, y: 15}
+    - name: pipo-emotion_164
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_165
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_166
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 15}
+        - {x: -14, y: 9}
+        - {x: -14, y: -10}
+        - {x: -9, y: -16}
+        - {x: 3, y: -16}
+        - {x: 13, y: -8}
+        - {x: 13, y: 13}
+        - {x: 9, y: 15}
+    - name: pipo-emotion_167
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_168
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_169
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 15}
+        - {x: -14, y: 9}
+        - {x: -14, y: -10}
+        - {x: -9, y: -16}
+        - {x: 3, y: -16}
+        - {x: 13, y: -8}
+        - {x: 13, y: 13}
+        - {x: 9, y: 15}
+    - name: pipo-emotion_170
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_171
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_172
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 15}
+        - {x: -14, y: 9}
+        - {x: -14, y: -10}
+        - {x: -9, y: -16}
+        - {x: 3, y: -16}
+        - {x: 13, y: -8}
+        - {x: 13, y: 13}
+        - {x: 9, y: 15}
+    - name: pipo-emotion_173
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_174
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_175
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 15}
+        - {x: -14, y: 9}
+        - {x: -14, y: -10}
+        - {x: -9, y: -16}
+        - {x: 3, y: -16}
+        - {x: 13, y: -8}
+        - {x: 13, y: 13}
+        - {x: 9, y: 15}
+    - name: pipo-emotion_176
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_177
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_178
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 15}
+        - {x: -14, y: 9}
+        - {x: -14, y: -10}
+        - {x: -9, y: -16}
+        - {x: 3, y: -16}
+        - {x: 13, y: -8}
+        - {x: 13, y: 13}
+        - {x: 9, y: 15}
+    - name: pipo-emotion_179
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: -4}
+        - {x: -13, y: -5}
+        - {x: -3, y: -16}
+        - {x: 2, y: -16}
+        - {x: 13, y: -4}
+        - {x: 13, y: 13}
+        - {x: 7, y: 16}
+    - name: pipo-emotion_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 15}
+        - {x: -13, y: 8}
+        - {x: -13, y: -16}
+        - {x: 6, y: -16}
+        - {x: 12, y: -5}
+        - {x: 12, y: 4}
+        - {x: 4, y: 15}
+    - name: pipo-emotion_181
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 16}
+        - {x: -13, y: 7}
+        - {x: -13, y: -2}
+        - {x: -6, y: -13}
+        - {x: 3, y: -13}
+        - {x: 8, y: -12}
+        - {x: 12, y: -1}
+        - {x: 12, y: 9}
+        - {x: 3, y: 16}
+    - name: pipo-emotion_182
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 15}
+        - {x: -13, y: 8}
+        - {x: -13, y: -16}
+        - {x: 6, y: -16}
+        - {x: 12, y: -5}
+        - {x: 12, y: 4}
+        - {x: 4, y: 15}
+    - name: pipo-emotion_183
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 16}
+        - {x: -5, y: 16}
+        - {x: -7, y: 14}
+        - {x: -13, y: 5}
+        - {x: -13, y: -3}
+        - {x: -5, y: -14}
+        - {x: 0, y: -14}
+        - {x: 12, y: -2}
+        - {x: 12, y: 4}
+    - name: pipo-emotion_184
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 14}
+        - {x: -13, y: 3}
+        - {x: -13, y: -5}
+        - {x: -2, y: -16}
+        - {x: 3, y: -16}
+        - {x: 12, y: -6}
+        - {x: 12, y: 4}
+        - {x: 4, y: 14}
+    - name: pipo-emotion_185
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 16}
+        - {x: -5, y: 16}
+        - {x: -7, y: 14}
+        - {x: -13, y: 5}
+        - {x: -13, y: -3}
+        - {x: -5, y: -14}
+        - {x: 0, y: -14}
+        - {x: 12, y: -2}
+        - {x: 12, y: 4}
+    - name: pipo-emotion_186
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 14}
+        - {x: -15, y: 2}
+        - {x: -15, y: 0}
+        - {x: -8, y: -12}
+        - {x: 6, y: -12}
+        - {x: 15, y: -9}
+        - {x: 15, y: 8}
+        - {x: 4, y: 14}
+    - name: pipo-emotion_187
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 14}
+        - {x: -16, y: 8}
+        - {x: -16, y: -3}
+        - {x: -11, y: -12}
+        - {x: -1, y: -12}
+        - {x: 12, y: -5}
+        - {x: 12, y: 8}
+        - {x: 1, y: 14}
+    - name: pipo-emotion_188
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 14}
+        - {x: -15, y: 2}
+        - {x: -15, y: 0}
+        - {x: -8, y: -12}
+        - {x: 6, y: -12}
+        - {x: 15, y: -9}
+        - {x: 15, y: 8}
+        - {x: 4, y: 14}
+    - name: pipo-emotion_189
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 14}
+        - {x: -5, y: 14}
+        - {x: -16, y: 8}
+        - {x: -16, y: -5}
+        - {x: -15, y: -8}
+        - {x: 0, y: -12}
+        - {x: 3, y: -12}
+        - {x: 14, y: 0}
+        - {x: 14, y: 4}
+    - name: pipo-emotion_190
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: -12}
+        - {x: 6, y: -12}
+        - {x: 16, y: -4}
+        - {x: 16, y: 4}
+        - {x: 9, y: 14}
+        - {x: -5, y: 14}
+        - {x: -13, y: 12}
+        - {x: -13, y: -6}
+    - name: pipo-emotion_191
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 14}
+        - {x: -5, y: 14}
+        - {x: -16, y: 8}
+        - {x: -16, y: -5}
+        - {x: -15, y: -8}
+        - {x: 0, y: -12}
+        - {x: 3, y: -12}
+        - {x: 14, y: 0}
+        - {x: 14, y: 4}
+    - name: pipo-emotion_192
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 10}
+        - {x: -12, y: -4}
+        - {x: -9, y: -7}
+        - {x: 0, y: -13}
+        - {x: 8, y: -13}
+        - {x: 13, y: -10}
+        - {x: 13, y: -3}
+        - {x: 7, y: 10}
+        - {x: 4, y: 13}
+        - {x: -9, y: 13}
+    - name: pipo-emotion_193
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 13}
+        - {x: -15, y: -7}
+        - {x: -8, y: -10}
+        - {x: 7, y: -10}
+        - {x: 10, y: -8}
+        - {x: 10, y: 5}
+        - {x: 7, y: 15}
+        - {x: 1, y: 16}
+        - {x: -12, y: 16}
+    - name: pipo-emotion_194
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 10}
+        - {x: -12, y: -4}
+        - {x: -9, y: -7}
+        - {x: 0, y: -13}
+        - {x: 8, y: -13}
+        - {x: 13, y: -10}
+        - {x: 13, y: -3}
+        - {x: 7, y: 10}
+        - {x: 4, y: 13}
+        - {x: -9, y: 13}
+    - name: pipo-emotion_195
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 13}
+        - {x: -5, y: 13}
+        - {x: -9, y: 11}
+        - {x: -14, y: -1}
+        - {x: -14, y: -10}
+        - {x: -8, y: -13}
+        - {x: -2, y: -13}
+        - {x: 11, y: -6}
+        - {x: 11, y: 10}
+    - name: pipo-emotion_196
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 16}
+        - {x: -7, y: 16}
+        - {x: -11, y: 9}
+        - {x: -11, y: -5}
+        - {x: -5, y: -10}
+        - {x: 0, y: -10}
+        - {x: 14, y: -3}
+        - {x: 14, y: 13}
+    - name: pipo-emotion_197
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 13}
+        - {x: -5, y: 13}
+        - {x: -9, y: 11}
+        - {x: -14, y: -1}
+        - {x: -14, y: -10}
+        - {x: -8, y: -13}
+        - {x: -2, y: -13}
+        - {x: 11, y: -6}
+        - {x: 11, y: 10}
+    - name: pipo-emotion_198
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 14}
+        - {x: -12, y: 11}
+        - {x: -12, y: -11}
+        - {x: -10, y: -12}
+        - {x: 9, y: -12}
+        - {x: 13, y: -6}
+        - {x: 13, y: 13}
+        - {x: 12, y: 14}
+    - name: pipo-emotion_199
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 11}
+        - {x: -2, y: 11}
+        - {x: -14, y: 7}
+        - {x: -15, y: 2}
+        - {x: -15, y: -15}
+        - {x: 5, y: -15}
+        - {x: 6, y: -13}
+        - {x: 10, y: 2}
+        - {x: 10, y: 7}
+    - name: pipo-emotion_200
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 14}
+        - {x: -12, y: 11}
+        - {x: -12, y: -11}
+        - {x: -10, y: -12}
+        - {x: 9, y: -12}
+        - {x: 13, y: -6}
+        - {x: 13, y: 13}
+        - {x: 12, y: 14}
+    - name: pipo-emotion_201
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 8}
+        - {x: -6, y: 14}
+        - {x: -10, y: 14}
+        - {x: -14, y: 8}
+        - {x: -14, y: -1}
+        - {x: -7, y: -12}
+        - {x: 9, y: -12}
+        - {x: 11, y: -10}
+        - {x: 11, y: 5}
+        - {x: 8, y: 8}
+    - name: pipo-emotion_202
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 11}
+        - {x: -5, y: 11}
+        - {x: -11, y: 8}
+        - {x: -11, y: -4}
+        - {x: -8, y: -15}
+        - {x: 14, y: -15}
+        - {x: 14, y: 2}
+        - {x: 11, y: 5}
+    - name: pipo-emotion_203
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 8}
+        - {x: -6, y: 14}
+        - {x: -10, y: 14}
+        - {x: -14, y: 8}
+        - {x: -14, y: -1}
+        - {x: -7, y: -12}
+        - {x: 9, y: -12}
+        - {x: 11, y: -10}
+        - {x: 11, y: 5}
+        - {x: 8, y: 8}
+    - name: pipo-emotion_204
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: -3}
+        - {x: -4, y: -14}
+        - {x: 1, y: -14}
+        - {x: 14, y: -4}
+        - {x: 14, y: 2}
+        - {x: 12, y: 5}
+        - {x: -14, y: 5}
+        - {x: -15, y: 2}
+    - name: pipo-emotion_205
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 2}
+        - {x: -15, y: -6}
+        - {x: -2, y: -16}
+        - {x: 4, y: -16}
+        - {x: 14, y: -4}
+        - {x: 14, y: 2}
+    - name: pipo-emotion_206
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: -3}
+        - {x: -4, y: -14}
+        - {x: 1, y: -14}
+        - {x: 14, y: -4}
+        - {x: 14, y: 2}
+        - {x: 12, y: 5}
+        - {x: -14, y: 5}
+        - {x: -15, y: 2}
+    - name: pipo-emotion_207
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 9}
+        - {x: -11, y: 9}
+        - {x: -11, y: 3}
+        - {x: -5, y: -12}
+        - {x: -1, y: -14}
+        - {x: 0, y: -14}
+        - {x: 3, y: -12}
+        - {x: 10, y: 1}
+        - {x: 10, y: 8}
+    - name: pipo-emotion_208
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 6}
+        - {x: -11, y: 2}
+        - {x: -11, y: 0}
+        - {x: -4, y: -15}
+        - {x: -2, y: -16}
+        - {x: 2, y: -16}
+        - {x: 10, y: -2}
+        - {x: 10, y: 6}
+    - name: pipo-emotion_209
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 9}
+        - {x: -11, y: 9}
+        - {x: -11, y: 3}
+        - {x: -5, y: -12}
+        - {x: -1, y: -14}
+        - {x: 0, y: -14}
+        - {x: 3, y: -12}
+        - {x: 10, y: 1}
+        - {x: 10, y: 8}
+    - name: pipo-emotion_210
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: -8}
+        - {x: -9, y: -14}
+        - {x: 6, y: -14}
+        - {x: 13, y: -11}
+        - {x: 13, y: 7}
+        - {x: 12, y: 9}
+        - {x: -14, y: 9}
+    - name: pipo-emotion_211
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 9}
+        - {x: -14, y: -11}
+        - {x: -13, y: -15}
+        - {x: -10, y: -16}
+        - {x: 2, y: -16}
+        - {x: 10, y: -12}
+        - {x: 13, y: -7}
+        - {x: 13, y: 9}
+    - name: pipo-emotion_212
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: -8}
+        - {x: -9, y: -14}
+        - {x: 6, y: -14}
+        - {x: 13, y: -11}
+        - {x: 13, y: 7}
+        - {x: 12, y: 9}
+        - {x: -14, y: 9}
+    - name: pipo-emotion_213
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: -8}
+        - {x: -4, y: -14}
+        - {x: 6, y: -14}
+        - {x: 12, y: -8}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_214
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: -15}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -12}
+        - {x: 12, y: -1}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_215
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: -8}
+        - {x: -4, y: -14}
+        - {x: 6, y: -14}
+        - {x: 12, y: -8}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_216
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -7}
+        - {x: -9, y: -10}
+        - {x: -2, y: -14}
+        - {x: 5, y: -14}
+        - {x: 10, y: -8}
+        - {x: 10, y: 3}
+        - {x: 7, y: 9}
+    - name: pipo-emotion_217
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -13}
+        - {x: -5, y: -16}
+        - {x: 4, y: -16}
+        - {x: 10, y: -9}
+        - {x: 10, y: 4}
+        - {x: 8, y: 9}
+    - name: pipo-emotion_218
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -7}
+        - {x: -9, y: -10}
+        - {x: -2, y: -14}
+        - {x: 5, y: -14}
+        - {x: 10, y: -8}
+        - {x: 10, y: 3}
+        - {x: 7, y: 9}
+    - name: pipo-emotion_219
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 9}
+        - {x: -10, y: 9}
+        - {x: -10, y: -6}
+        - {x: -9, y: -9}
+        - {x: -2, y: -14}
+        - {x: 3, y: -14}
+        - {x: 9, y: -5}
+        - {x: 9, y: 7}
+    - name: pipo-emotion_220
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 9}
+        - {x: -10, y: 9}
+        - {x: -10, y: -13}
+        - {x: -3, y: -16}
+        - {x: 4, y: -16}
+        - {x: 8, y: -11}
+        - {x: 9, y: -6}
+    - name: pipo-emotion_221
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 9}
+        - {x: -10, y: 9}
+        - {x: -10, y: -6}
+        - {x: -9, y: -9}
+        - {x: -2, y: -14}
+        - {x: 3, y: -14}
+        - {x: 9, y: -5}
+        - {x: 9, y: 7}
+    - name: pipo-emotion_222
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 9}
+        - {x: -13, y: 9}
+        - {x: -15, y: 7}
+        - {x: -15, y: -8}
+        - {x: -5, y: -14}
+        - {x: 8, y: -14}
+        - {x: 14, y: -6}
+        - {x: 14, y: 8}
+    - name: pipo-emotion_223
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 9}
+        - {x: -15, y: 9}
+        - {x: -15, y: -8}
+        - {x: -10, y: -13}
+        - {x: -2, y: -16}
+        - {x: 4, y: -16}
+        - {x: 13, y: -6}
+        - {x: 14, y: -3}
+        - {x: 14, y: 7}
+    - name: pipo-emotion_224
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 9}
+        - {x: -13, y: 9}
+        - {x: -15, y: 7}
+        - {x: -15, y: -8}
+        - {x: -5, y: -14}
+        - {x: 8, y: -14}
+        - {x: 14, y: -6}
+        - {x: 14, y: 8}
+    - name: pipo-emotion_225
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: -9}
+        - {x: -8, y: -14}
+        - {x: 6, y: -14}
+        - {x: 13, y: -11}
+        - {x: 13, y: 7}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_226
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: -8}
+        - {x: -5, y: -16}
+        - {x: 2, y: -16}
+        - {x: 9, y: -12}
+        - {x: 13, y: -6}
+        - {x: 13, y: 7}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_227
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: -9}
+        - {x: -8, y: -14}
+        - {x: 6, y: -14}
+        - {x: 13, y: -11}
+        - {x: 13, y: 7}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_228
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 9}
+        - {x: -11, y: 7}
+        - {x: -11, y: -7}
+        - {x: -4, y: -14}
+        - {x: 4, y: -14}
+        - {x: 10, y: -8}
+        - {x: 10, y: 9}
+    - name: pipo-emotion_229
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -11}
+        - {x: -10, y: -12}
+        - {x: -2, y: -16}
+        - {x: 8, y: -16}
+        - {x: 10, y: -15}
+        - {x: 10, y: 9}
+    - name: pipo-emotion_230
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 9}
+        - {x: -11, y: 7}
+        - {x: -11, y: -7}
+        - {x: -4, y: -14}
+        - {x: 4, y: -14}
+        - {x: 10, y: -8}
+        - {x: 10, y: 9}
+    - name: pipo-emotion_231
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 9}
+        - {x: -15, y: 7}
+        - {x: -15, y: -4}
+        - {x: -6, y: -14}
+        - {x: 2, y: -14}
+        - {x: 14, y: -8}
+        - {x: 14, y: 9}
+    - name: pipo-emotion_232
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -15, y: 7}
+        - {x: -14, y: -3}
+        - {x: -5, y: -16}
+        - {x: 3, y: -16}
+        - {x: 10, y: -13}
+        - {x: 14, y: 1}
+        - {x: 14, y: 8}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_233
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 9}
+        - {x: -15, y: 7}
+        - {x: -15, y: -4}
+        - {x: -6, y: -14}
+        - {x: 2, y: -14}
+        - {x: 14, y: -8}
+        - {x: 14, y: 9}
+    - name: pipo-emotion_234
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -7}
+        - {x: -4, y: -14}
+        - {x: 3, y: -14}
+        - {x: 9, y: -8}
+        - {x: 9, y: 7}
+        - {x: 8, y: 9}
+    - name: pipo-emotion_235
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -13}
+        - {x: -4, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -12}
+        - {x: 9, y: 9}
+    - name: pipo-emotion_236
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -7}
+        - {x: -4, y: -14}
+        - {x: 3, y: -14}
+        - {x: 9, y: -8}
+        - {x: 9, y: 7}
+        - {x: 8, y: 9}
+    - name: pipo-emotion_237
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: -10, y: -14}
+        - {x: 9, y: -14}
+        - {x: 16, y: -11}
+        - {x: 16, y: 9}
+    - name: pipo-emotion_238
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -6}
+        - {x: -5, y: -16}
+        - {x: 1, y: -16}
+        - {x: 16, y: -7}
+        - {x: 16, y: 9}
+    - name: pipo-emotion_239
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: -10, y: -14}
+        - {x: 9, y: -14}
+        - {x: 16, y: -11}
+        - {x: 16, y: 9}
+    - name: pipo-emotion_240
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: -8}
+        - {x: -9, y: -14}
+        - {x: 6, y: -14}
+        - {x: 13, y: -11}
+        - {x: 13, y: 7}
+        - {x: 12, y: 9}
+        - {x: -14, y: 9}
+    - name: pipo-emotion_241
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 9}
+        - {x: -14, y: -11}
+        - {x: -13, y: -15}
+        - {x: -10, y: -16}
+        - {x: 2, y: -16}
+        - {x: 10, y: -12}
+        - {x: 13, y: -7}
+        - {x: 13, y: 9}
+    - name: pipo-emotion_242
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: -8}
+        - {x: -9, y: -14}
+        - {x: 6, y: -14}
+        - {x: 13, y: -11}
+        - {x: 13, y: 7}
+        - {x: 12, y: 9}
+        - {x: -14, y: 9}
+    - name: pipo-emotion_243
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: -8}
+        - {x: -4, y: -14}
+        - {x: 6, y: -14}
+        - {x: 12, y: -8}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_244
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: -15}
+        - {x: -8, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -12}
+        - {x: 12, y: -1}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_245
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: -8}
+        - {x: -4, y: -14}
+        - {x: 6, y: -14}
+        - {x: 12, y: -8}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_246
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -7}
+        - {x: -9, y: -10}
+        - {x: -2, y: -14}
+        - {x: 5, y: -14}
+        - {x: 10, y: -8}
+        - {x: 10, y: 3}
+        - {x: 7, y: 9}
+    - name: pipo-emotion_247
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -13}
+        - {x: -5, y: -16}
+        - {x: 4, y: -16}
+        - {x: 10, y: -9}
+        - {x: 10, y: 4}
+        - {x: 8, y: 9}
+    - name: pipo-emotion_248
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -7}
+        - {x: -9, y: -10}
+        - {x: -2, y: -14}
+        - {x: 5, y: -14}
+        - {x: 10, y: -8}
+        - {x: 10, y: 3}
+        - {x: 7, y: 9}
+    - name: pipo-emotion_249
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 9}
+        - {x: -10, y: 9}
+        - {x: -10, y: -6}
+        - {x: -9, y: -9}
+        - {x: -2, y: -14}
+        - {x: 3, y: -14}
+        - {x: 9, y: -5}
+        - {x: 9, y: 7}
+    - name: pipo-emotion_250
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 9}
+        - {x: -10, y: 9}
+        - {x: -10, y: -13}
+        - {x: -3, y: -16}
+        - {x: 4, y: -16}
+        - {x: 8, y: -11}
+        - {x: 9, y: -6}
+    - name: pipo-emotion_251
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 9}
+        - {x: -10, y: 9}
+        - {x: -10, y: -6}
+        - {x: -9, y: -9}
+        - {x: -2, y: -14}
+        - {x: 3, y: -14}
+        - {x: 9, y: -5}
+        - {x: 9, y: 7}
+    - name: pipo-emotion_252
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 9}
+        - {x: -13, y: 9}
+        - {x: -15, y: 7}
+        - {x: -15, y: -8}
+        - {x: -5, y: -14}
+        - {x: 8, y: -14}
+        - {x: 14, y: -6}
+        - {x: 14, y: 8}
+    - name: pipo-emotion_253
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 9}
+        - {x: -15, y: 9}
+        - {x: -15, y: -8}
+        - {x: -10, y: -13}
+        - {x: -2, y: -16}
+        - {x: 4, y: -16}
+        - {x: 13, y: -6}
+        - {x: 14, y: -3}
+        - {x: 14, y: 7}
+    - name: pipo-emotion_254
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 9}
+        - {x: -13, y: 9}
+        - {x: -15, y: 7}
+        - {x: -15, y: -8}
+        - {x: -5, y: -14}
+        - {x: 8, y: -14}
+        - {x: 14, y: -6}
+        - {x: 14, y: 8}
+    - name: pipo-emotion_255
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: -9}
+        - {x: -8, y: -14}
+        - {x: 6, y: -14}
+        - {x: 13, y: -11}
+        - {x: 13, y: 7}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_256
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: -8}
+        - {x: -5, y: -16}
+        - {x: 2, y: -16}
+        - {x: 9, y: -12}
+        - {x: 13, y: -6}
+        - {x: 13, y: 7}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_257
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: -9}
+        - {x: -8, y: -14}
+        - {x: 6, y: -14}
+        - {x: 13, y: -11}
+        - {x: 13, y: 7}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_258
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 9}
+        - {x: -11, y: 7}
+        - {x: -11, y: -7}
+        - {x: -4, y: -14}
+        - {x: 4, y: -14}
+        - {x: 10, y: -8}
+        - {x: 10, y: 9}
+    - name: pipo-emotion_259
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -11}
+        - {x: -10, y: -12}
+        - {x: -2, y: -16}
+        - {x: 8, y: -16}
+        - {x: 10, y: -15}
+        - {x: 10, y: 9}
+    - name: pipo-emotion_260
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 9}
+        - {x: -11, y: 7}
+        - {x: -11, y: -7}
+        - {x: -4, y: -14}
+        - {x: 4, y: -14}
+        - {x: 10, y: -8}
+        - {x: 10, y: 9}
+    - name: pipo-emotion_261
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 9}
+        - {x: -15, y: 7}
+        - {x: -15, y: -4}
+        - {x: -6, y: -14}
+        - {x: 2, y: -14}
+        - {x: 14, y: -8}
+        - {x: 14, y: 9}
+    - name: pipo-emotion_262
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -15, y: 7}
+        - {x: -14, y: -3}
+        - {x: -5, y: -16}
+        - {x: 3, y: -16}
+        - {x: 10, y: -13}
+        - {x: 14, y: 1}
+        - {x: 14, y: 8}
+        - {x: 12, y: 9}
+    - name: pipo-emotion_263
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 9}
+        - {x: -15, y: 7}
+        - {x: -15, y: -4}
+        - {x: -6, y: -14}
+        - {x: 2, y: -14}
+        - {x: 14, y: -8}
+        - {x: 14, y: 9}
+    - name: pipo-emotion_264
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -7}
+        - {x: -4, y: -14}
+        - {x: 3, y: -14}
+        - {x: 9, y: -8}
+        - {x: 9, y: 7}
+        - {x: 8, y: 9}
+    - name: pipo-emotion_265
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -13}
+        - {x: -4, y: -16}
+        - {x: 4, y: -16}
+        - {x: 9, y: -12}
+        - {x: 9, y: 9}
+    - name: pipo-emotion_266
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 9}
+        - {x: -11, y: -7}
+        - {x: -4, y: -14}
+        - {x: 3, y: -14}
+        - {x: 9, y: -8}
+        - {x: 9, y: 7}
+        - {x: 8, y: 9}
+    - name: pipo-emotion_267
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: -10, y: -14}
+        - {x: 9, y: -14}
+        - {x: 16, y: -11}
+        - {x: 16, y: 9}
+    - name: pipo-emotion_268
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -6}
+        - {x: -5, y: -16}
+        - {x: 1, y: -16}
+        - {x: 16, y: -7}
+        - {x: 16, y: 9}
+    - name: pipo-emotion_269
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: -10, y: -14}
+        - {x: 9, y: -14}
+        - {x: 16, y: -11}
+        - {x: 16, y: 9}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

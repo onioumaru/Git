@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconType: 1
-  delayFame: 20
+  delayFrame: 0
 --- !u!114 &11402346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconType: 1
-  delayFame: 10
+  delayFrame: 0
 --- !u!114 &11409040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,7 +99,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300002, guid: 1003bbb43ea4b0e4d90f269f24e79b82, type: 3}
+  m_Sprite: {fileID: 21300018, guid: c4b47fc082ef1ac4d83f3caadc2294e9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -126,7 +126,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300002, guid: 1003bbb43ea4b0e4d90f269f24e79b82, type: 3}
+  m_Sprite: {fileID: 21300018, guid: c4b47fc082ef1ac4d83f3caadc2294e9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -153,7 +153,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300002, guid: 1003bbb43ea4b0e4d90f269f24e79b82, type: 3}
+  m_Sprite: {fileID: 21300018, guid: c4b47fc082ef1ac4d83f3caadc2294e9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconType: 1
-  delayFame: 0
+  delayFrame: 0
 --- !u!222 &22242634
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -251,7 +251,12 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300018, guid: c4b47fc082ef1ac4d83f3caadc2294e9,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134482}

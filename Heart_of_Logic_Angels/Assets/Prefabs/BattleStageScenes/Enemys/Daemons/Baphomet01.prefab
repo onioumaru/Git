@@ -213,6 +213,7 @@ MonoBehaviour:
   _defaultLevel: 3
   _defaultEnemyType: 5
   _enemyShadow: {fileID: 21300000, guid: f64f749bce0f82943a4445e5a377f853, type: 3}
+  _findEmotionPrefab: {fileID: 0}
 --- !u!114 &11452574
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -27,18 +27,13 @@ public class talkingPartsContainersScript : MonoBehaviour {
 		switch (argsNum) {
 		case "00":
 			//汗
-			GameObject[] retGO_00 = new GameObject[0];
-			retGO_00 [0] = _containerBase[0];
-
+			GameObject[] retGO_00 = new GameObject[] { _containerBase[0] };
 			retV.frontPrefas = retGO_00;
-
 			break;
 			//
 		case "01":
 			//汗
-			GameObject[] retGO_01 = new GameObject[0];
-			retGO_01 [0] = _containerBase[1];
-
+			GameObject[] retGO_01 = new GameObject[] { _containerBase[1] };
 			retV.frontPrefas = retGO_01;
 
 			break;
@@ -61,7 +56,35 @@ public class talkingPartsContainersScript : MonoBehaviour {
 			//darkCloud
 			GameObject[] retGO_04 = new GameObject[] {_containerBase[5]};
 			retV.frontPrefas = retGO_04;
-			
+
+			break;
+
+		case "05":
+			//きらり
+			GameObject[] retGO_05 = new GameObject[] {_containerBase[6]};
+			retV.frontPrefas = retGO_05;
+
+			break;
+
+		case "06":
+			//あかるいやつ
+			GameObject[] retGO_06 = new GameObject[] {_containerBase[7]};
+			retV.frontPrefas = retGO_06;
+
+			break;
+
+		case "07":
+			//気づき、びっくり
+			GameObject[] retGO_07 = new GameObject[] {_containerBase[8]};
+			retV.frontPrefas = retGO_07;
+
+			break;
+
+		case "08":
+			//おこ
+			GameObject[] retGO_08 = new GameObject[] {_containerBase[9]};
+			retV.frontPrefas = retGO_08;
+
 			break;
 		}
 

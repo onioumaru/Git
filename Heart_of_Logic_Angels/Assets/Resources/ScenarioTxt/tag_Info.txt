@@ -34,7 +34,17 @@
 12:気難しい
 
 
+■03：アカネ
+00:(なし)
+01:にっこり
+02:どや
+03:よわき
+04:＞＜
+05:てへぺろ
+06:びっくり
+
 ■04：ほおずき
+00:(なし)
 01:にっこり
 02:笑顔
 03:怪訝
@@ -82,6 +92,9 @@
 //01 = トラック
 //02 = 渡り廊下（野外）
 //03 植物園
+//04 シャドウルーム
+//05 球場
+//06 保健室
 
 
 
@@ -115,23 +128,13 @@
 
 
 <se:00>
-		case 0:
-			tmpS = enm_oneShotSound.effect001;
-			break;
-		case 1:
-			tmpS = enm_oneShotSound.attack03;
-			break;
-		case 2:
-			tmpS = enm_oneShotSound.scream_of_a_monster_C1;
-			break;
-		case 3:
-			tmpS = enm_oneShotSound.knocking_a_wooden_door;
-			break;
-		case 4:
-			tmpS = enm_oneShotSound.removeCloud;
-			break;
-		case 5:
-			tmpS = enm_oneShotSound.duck;
-			
-			
-			
+0：effect001
+1：attack03
+2：scream_of_a_monster_C1;
+3：knocking_a_wooden_door
+4：removeCloud
+5：duck
+6：ハウリング
+7：ホラー
+
+

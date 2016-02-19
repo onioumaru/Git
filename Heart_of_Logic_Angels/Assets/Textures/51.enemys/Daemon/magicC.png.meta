@@ -1,0 +1,499 @@
+fileFormatVersion: 2
+guid: c7a264fa644f81f4b9584acadca87b8d
+timeCreated: 1454828604
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: magicC_0
+    21300002: magicC_1
+    21300004: magicC_2
+    21300006: magicC_3
+    21300008: magicC_4
+    21300010: magicC_5
+    21300012: magicC_6
+    21300014: magicC_7
+    21300016: magicC_8
+    21300018: magicC_9
+    21300020: magicC_10
+    21300022: magicC_11
+    21300024: magicC_12
+    21300026: magicC_13
+    21300028: magicC_14
+    21300030: magicC_15
+    21300032: magicC_16
+    21300034: magicC_17
+    21300036: magicC_18
+    21300038: magicC_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: magicC_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 784
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 84}
+        - {x: -21, y: 64}
+        - {x: -21, y: -21}
+        - {x: -24, y: 25}
+        - {x: -37, y: 70}
+        - {x: -52, y: 84}
+        - {x: -53, y: 84}
+        - {x: -63, y: 23}
+        - {x: -63, y: -85}
+        - {x: -50, y: -98}
+        - {x: 39, y: -98}
+        - {x: 62, y: -77}
+        - {x: 62, y: 15}
+        - {x: 48, y: 84}
+    - name: magicC_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 784
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63, y: 91}
+        - {x: -63, y: -69}
+        - {x: -52, y: -98}
+        - {x: 44, y: -98}
+        - {x: 64, y: -79}
+        - {x: 64, y: 14}
+        - {x: 51, y: 91}
+    - name: magicC_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 784
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42, y: 91}
+        - {x: 19, y: 93}
+        - {x: 18, y: 90}
+        - {x: 14, y: 98}
+        - {x: -7, y: 98}
+        - {x: -54, y: 89}
+        - {x: -63, y: -10}
+        - {x: -63, y: -72}
+        - {x: -42, y: -98}
+        - {x: 41, y: -98}
+        - {x: 64, y: -75}
+        - {x: 64, y: -26}
+        - {x: 52, y: 87}
+    - name: magicC_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 784
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: 98}
+        - {x: -39, y: 98}
+        - {x: -58, y: 91}
+        - {x: -62, y: 16}
+        - {x: -62, y: -77}
+        - {x: -43, y: -98}
+        - {x: 50, y: -98}
+        - {x: 64, y: -73}
+        - {x: 64, y: -9}
+        - {x: 59, y: 91}
+    - name: magicC_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42, y: 98}
+        - {x: -49, y: 98}
+        - {x: -63, y: -31}
+        - {x: -63, y: -80}
+        - {x: -48, y: -98}
+        - {x: 49, y: -98}
+        - {x: 63, y: -82}
+        - {x: 63, y: 16}
+        - {x: 55, y: 92}
+    - name: magicC_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 588
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: 98}
+        - {x: -55, y: 92}
+        - {x: -63, y: -38}
+        - {x: -63, y: -74}
+        - {x: -56, y: -98}
+        - {x: 54, y: -98}
+        - {x: 64, y: -72}
+        - {x: 64, y: 86}
+        - {x: 54, y: 98}
+    - name: magicC_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 588
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43, y: 98}
+        - {x: -57, y: 90}
+        - {x: -63, y: 15}
+        - {x: -63, y: -75}
+        - {x: -48, y: -98}
+        - {x: 42, y: -98}
+        - {x: 64, y: -75}
+        - {x: 64, y: 43}
+        - {x: 57, y: 98}
+    - name: magicC_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 588
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 54, y: 98}
+        - {x: -58, y: 98}
+        - {x: -62, y: 69}
+        - {x: -62, y: -84}
+        - {x: -48, y: -98}
+        - {x: 47, y: -98}
+        - {x: 64, y: -71}
+        - {x: 64, y: -36}
+        - {x: 56, y: 75}
+    - name: magicC_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47, y: 98}
+        - {x: -61, y: 60}
+        - {x: -61, y: -85}
+        - {x: -56, y: -98}
+        - {x: 48, y: -98}
+        - {x: 63, y: -83}
+        - {x: 63, y: 23}
+        - {x: 54, y: 98}
+    - name: magicC_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 392
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43, y: 98}
+        - {x: -51, y: 68}
+        - {x: -60, y: 14}
+        - {x: -59, y: -13}
+        - {x: -63, y: -44}
+        - {x: -63, y: -72}
+        - {x: -49, y: -98}
+        - {x: 42, y: -98}
+        - {x: 62, y: -86}
+        - {x: 62, y: 66}
+        - {x: 54, y: 98}
+    - name: magicC_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 392
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60, y: 66}
+        - {x: 50, y: 98}
+        - {x: -45, y: 98}
+        - {x: -63, y: 56}
+        - {x: -63, y: -98}
+        - {x: 48, y: -98}
+        - {x: 64, y: -74}
+        - {x: 64, y: -57}
+        - {x: 63, y: -56}
+    - name: magicC_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 392
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49, y: 98}
+        - {x: -56, y: 98}
+        - {x: -63, y: 43}
+        - {x: -63, y: -82}
+        - {x: -48, y: -98}
+        - {x: 55, y: -98}
+        - {x: 64, y: -77}
+        - {x: 64, y: -20}
+        - {x: 58, y: 74}
+    - name: magicC_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 98}
+        - {x: -54, y: 88}
+        - {x: -62, y: -14}
+        - {x: -62, y: -75}
+        - {x: -46, y: -98}
+        - {x: 46, y: -98}
+        - {x: 64, y: -89}
+        - {x: 64, y: 16}
+        - {x: 49, y: 98}
+    - name: magicC_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 196
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: 73}
+        - {x: 46, y: 69}
+        - {x: 45, y: 76}
+        - {x: 43, y: 84}
+        - {x: 35, y: 98}
+        - {x: -42, y: 98}
+        - {x: -63, y: 78}
+        - {x: -63, y: -98}
+        - {x: 57, y: -98}
+        - {x: 63, y: -95}
+        - {x: 63, y: 59}
+        - {x: 58, y: 80}
+        - {x: 49, y: 82}
+        - {x: 47, y: 79}
+    - name: magicC_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 196
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47, y: 98}
+        - {x: -63, y: 7}
+        - {x: -63, y: -75}
+        - {x: -47, y: -98}
+        - {x: 62, y: -98}
+        - {x: 64, y: -87}
+        - {x: 64, y: -3}
+        - {x: 55, y: 98}
+    - name: magicC_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 196
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 98}
+        - {x: -63, y: -3}
+        - {x: -63, y: -70}
+        - {x: -58, y: -80}
+        - {x: -37, y: -98}
+        - {x: 55, y: -98}
+        - {x: 64, y: -77}
+        - {x: 64, y: -4}
+        - {x: 58, y: 98}
+    - name: magicC_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41, y: 98}
+        - {x: -48, y: 98}
+        - {x: -62, y: 28}
+        - {x: -62, y: -74}
+        - {x: -44, y: -98}
+        - {x: 42, y: -98}
+        - {x: 64, y: -75}
+        - {x: 64, y: -3}
+        - {x: 45, y: 96}
+    - name: magicC_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49, y: 82}
+        - {x: 47, y: 79}
+        - {x: 46, y: 73}
+        - {x: 46, y: 69}
+        - {x: 45, y: 76}
+        - {x: 55, y: 98}
+        - {x: -61, y: 98}
+        - {x: -61, y: -91}
+        - {x: -55, y: -98}
+        - {x: 47, y: -98}
+        - {x: 63, y: -77}
+        - {x: 63, y: 5}
+        - {x: 59, y: 80}
+    - name: magicC_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47, y: 98}
+        - {x: -63, y: 39}
+        - {x: -63, y: -97}
+        - {x: 51, y: -97}
+        - {x: 62, y: -84}
+        - {x: 62, y: 78}
+        - {x: 39, y: 98}
+    - name: magicC_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 65}
+        - {x: -30, y: -62}
+        - {x: -11, y: -67}
+        - {x: -2, y: -67}
+        - {x: 3, y: -64}
+        - {x: 3, y: 58}
+        - {x: 2, y: 65}
+      - - {x: 7, y: -13}
+        - {x: 16, y: -25}
+        - {x: 27, y: -25}
+        - {x: 30, y: -19}
+        - {x: 30, y: 50}
+        - {x: 28, y: 59}
+        - {x: 18, y: 64}
+        - {x: 9, y: 64}
+        - {x: 7, y: 57}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
