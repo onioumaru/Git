@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 34a202e395e43fb4294f2ed7aa7cd199
+timeCreated: 1456420502
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - _childBullet: {fileID: 132906, guid: 63e64a1360cc3874686ebe7565f9b148, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

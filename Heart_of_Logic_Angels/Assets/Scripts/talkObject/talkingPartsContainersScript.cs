@@ -5,16 +5,6 @@ using System.Collections;
 public class talkingPartsContainersScript : MonoBehaviour {
 	public GameObject[] _containerBase;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
 	public returnTalkingParts getCharaEffect(string argsNum){
 		returnTalkingParts retV = new returnTalkingParts();
 

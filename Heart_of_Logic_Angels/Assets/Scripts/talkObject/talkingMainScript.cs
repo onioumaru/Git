@@ -334,17 +334,30 @@ public class talkingMainScript : MonoBehaviour {
 			
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
-		
+
 		//se
 		tmpFindStr = "<se:[0-9]{2}>";
 		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
 		if (findF) {
 			//match の取得
 			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
-			
+
 			Debug.Log("matchStr : " + matchStr);
 			this.setSE(matchStr);			//Commond
-			
+
+			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
+		}
+
+		//se2
+		tmpFindStr = "<se2:.*>";
+		findF = Regex.IsMatch (allTxt [nowPage], tmpFindStr);
+		if (findF) {
+			//match の取得
+			matchStr = Regex.Match(allTxt [nowPage], tmpFindStr).Value;
+
+			Debug.Log("matchStr : " + matchStr);
+			this.setSE2(matchStr);			//Commond
+
 			allTxt [nowPage] = Regex.Replace (allTxt [nowPage], tmpFindStr, "");
 		}
 
@@ -575,6 +588,15 @@ public class talkingMainScript : MonoBehaviour {
 		soundManagerGetter.getManager().playOneShotSound (tmpS);
 	}
 
+	private void setSE2(string argsStr){
+		string tagMain = argsStr.Substring (1, (argsStr.Length-2));		//各個の消去
+		string[] spritStr = tagMain.Split(new string[]{":"}, System.StringSplitOptions.None);	//sprit
+
+		string tmpName = spritStr[1];
+
+		soundManagerGetter.getManager().playOneShotSound (tmpName);
+	}
+
 	//
 	//
 	private void setSleep(string argsStr){
@@ -643,13 +665,27 @@ public class talkingMainScript : MonoBehaviour {
 
 		string tmpNo = spritStr[1];
 
+		string fFullPath = "";
+		GameObject tmpResouce = null;
+		GameObject tmpGO = null;
 
 		switch (tmpNo) {
 		case "00":
+			fFullPath = "Prefabs/talkingParts/visualEff/visualEff_FadeInOut";
+			tmpResouce = Resources.Load (fFullPath) as GameObject;
+			tmpGO = (GameObject)Instantiate (tmpResouce);
 
-			string fFullPath = "Prefabs/talkingParts/visualEff_FadeInOut";
-			GameObject tmpResouce = Resources.Load (fFullPath) as GameObject;
-			GameObject tmpGO = (GameObject)Instantiate (tmpResouce);
+			tmpGO.transform.parent = _groundParent.transform;
+			tmpGO.transform.position = Vector3.zero;
+			tmpGO.transform.localScale = Vector3.one;
+			tmpGO.transform.SetAsLastSibling ();
+
+			break;
+
+		case "01":
+			fFullPath = "Prefabs/talkingParts/visualEff/visualEff_Flash";
+			tmpResouce = Resources.Load (fFullPath) as GameObject;
+			tmpGO = (GameObject)Instantiate (tmpResouce);
 
 			tmpGO.transform.parent = _groundParent.transform;
 			tmpGO.transform.position = Vector3.zero;

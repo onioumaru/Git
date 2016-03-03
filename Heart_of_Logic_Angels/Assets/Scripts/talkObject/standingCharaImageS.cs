@@ -126,13 +126,13 @@ public class standingCharaImageS : MonoBehaviour {
 
 					if (movCnt < shadowMoveCnt){
 						//影の移動
-						
-						float tmpX = thisImageShadow.transform.localPosition.x;
-						float tmpY = thisImageShadow.transform.localPosition.y;
+						Vector3 tmpV3 = new Vector3(0.5f, 0.1f,0f);
 
-						Vector3 tmpV3 = new Vector3(tmpX + 1f,tmpY , thisImageShadow.transform.localPosition.z);
+						if (this.transform.position.x < 0) {
+							tmpV3 = new Vector3(-0.5f, 0.1f,0f);
+						}
 
-						thisImageShadow.transform.localPosition = tmpV3;
+						thisImageShadow.transform.localPosition += tmpV3;
 						movCnt += 1;
 					}else{
 						fadeInStartF = false;

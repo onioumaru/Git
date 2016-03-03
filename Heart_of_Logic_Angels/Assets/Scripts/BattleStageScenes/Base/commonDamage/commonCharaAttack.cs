@@ -29,7 +29,7 @@ public class commonCharaAttack
 
 		if (chkBase != null) {
 			if (chkBase.destoryF == true){
-				Debug.Log ("isDestoryFlag!!");
+				//Debug.Log ("isDestoryFlag!!");
 				return false;
 			}
 
@@ -41,7 +41,7 @@ public class commonCharaAttack
 		bulletBase_CanDestory chkBlt = targetEnemy.gameObject.GetComponent<bulletBase_CanDestory> ();
 		if (chkBlt != null) {
 			if (chkBlt.destoryF == true){
-				Debug.Log ("isDestoryFlag!!");
+				//Debug.Log ("isDestoryFlag!!");
 				return false;
 			}
 			//Check OK

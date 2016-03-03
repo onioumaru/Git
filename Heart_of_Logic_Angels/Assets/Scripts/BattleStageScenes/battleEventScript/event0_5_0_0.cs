@@ -267,7 +267,7 @@ public class event0_5_0_0 : MonoBehaviour {
 		//sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
 
 		//4へ
-		sVMS.setStoryProgress("0-4-0-3");
+		sVMS.setStoryProgress("0-5-0-2");
 		sVMS.changeScene (sceneChangeStatusEnum.gotoTalkScene);
 	}
 

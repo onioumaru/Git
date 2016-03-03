@@ -238,6 +238,33 @@ public class soundManager_Base : MonoBehaviour {
 
 		tmpAC.Play ();
 	}
+
+	/// <summary>
+	/// 文字列を直で入れる
+	/// </summary>
+	/// <param name="argsStr">Arguments string.</param>
+	public void playOneShotSound(string argsStr){
+		string path = "Sounds/SE/";
+		AudioSource tmpAC = null;
+
+		if (oneShotSound.ContainsKey( argsStr ) == false) {
+			//作って入れる
+			GameObject tmpGO = Instantiate(_SE_base) as GameObject;
+			tmpAC = tmpGO.GetComponent<AudioSource>();
+
+			oneShotSound.Add(argsStr, tmpAC);
+
+			tmpAC.clip = Resources.Load(path + argsStr ) as AudioClip;
+
+			if (tmpAC.clip == null){
+				Debug.Log ("audioClip : " + argsStr + " is not Found");
+			}
+		} else {
+			tmpAC = oneShotSound[argsStr] as AudioSource;
+		}
+
+		tmpAC.Play ();
+	}
 }
 
 
@@ -262,6 +289,9 @@ public enum enm_oneShotSound{
 	,flipSword
 	,tinnitus
 	,horror
+	,findit
+	,buni
+	,deadEffectSound
 }
 
 

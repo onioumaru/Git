@@ -48,6 +48,10 @@ public class stageParticleParentS : MonoBehaviour {
 			tmpSource = Resources.Load (commonPath + "Particle_dropTears") as GameObject;
 			break;
 
+		case "6":
+			tmpSource = Resources.Load (commonPath + "nature2") as GameObject;
+			break;
+
 		default:
 			Debug.Log ("stage Particle Not Set!");
 			//tmpSource = Resources.Load (commonPath + "Particle_Smog") as GameObject;

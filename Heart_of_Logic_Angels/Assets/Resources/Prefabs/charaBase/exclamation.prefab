@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21231582}
   - 95: {fileID: 9513400}
   - 114: {fileID: 11478774}
+  - 114: {fileID: 11453332}
   m_Layer: 0
   m_Name: exclamation
   m_TagString: Untagged
@@ -47,6 +48,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11453332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4d10c56eb23de44da7f73c7d4a4be74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wakeSound: 16
 --- !u!114 &11478774
 MonoBehaviour:
   m_ObjectHideFlags: 1

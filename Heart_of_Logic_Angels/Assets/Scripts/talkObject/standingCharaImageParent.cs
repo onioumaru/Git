@@ -144,6 +144,21 @@ public class standingCharaImageParent : MonoBehaviour {
 			fFullPath = "pictChractorStanding/04_hozuki";
 			break;
 
+		case "05":
+			fFullPath = "pictChractorStanding/05_mokuren";
+			break;
+
+		case "06":
+			fFullPath = "pictChractorStanding/06_sakura";
+			break;
+
+		case "07":
+			fFullPath = "pictChractorStanding/07_sion";
+			break;
+
+		case "08":
+			fFullPath = "pictChractorStanding/08_hiragi";
+			break;
 
 		case "12":
 			fFullPath = "pictChractorStanding/02_suzusiro_noGlass";

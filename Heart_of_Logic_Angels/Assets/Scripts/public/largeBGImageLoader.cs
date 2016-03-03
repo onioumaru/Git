@@ -45,6 +45,18 @@ public static class largeBGImageLoader {
 			fFullPath = "advBackGroungImage/図書館背景";
 			break;
 
+		case "08":
+			fFullPath = "advBackGroungImage/体育館";
+			break;
+
+		case "09":
+			fFullPath = "advBackGroungImage/rouka002";
+			break;
+
+		case "10":
+			fFullPath = "advBackGroungImage/rouka003";
+			break;
+
 			//
 		case "99":
 			//透明画像のダミー
