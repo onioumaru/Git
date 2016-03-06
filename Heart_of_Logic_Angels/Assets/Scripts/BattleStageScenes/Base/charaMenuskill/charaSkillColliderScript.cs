@@ -67,7 +67,7 @@ public class charaSkillColliderScript : MonoBehaviour {
 
 			break;
 		case enumCharaNum.akane_04:
-			if ( (intervalCnt % 10) != 0) {
+			if ( (intervalCnt % 5) != 0) {
 				return;
 			}
 

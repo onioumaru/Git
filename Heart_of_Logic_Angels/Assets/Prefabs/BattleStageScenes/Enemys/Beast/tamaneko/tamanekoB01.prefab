@@ -32,6 +32,7 @@ GameObject:
   - 114: {fileID: 11437838}
   - 114: {fileID: 11490296}
   - 50: {fileID: 5041228}
+  - 114: {fileID: 11454930}
   m_Layer: 8
   m_Name: tamanekoB01
   m_TagString: Untagged
@@ -89,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.33, y: 1.69, z: 0}
+  m_LocalPosition: {x: -2.68, y: -1.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 438964}
@@ -184,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _defaultMovingSpeed: 0.015
-  _outRangeLength: 0.3
+  _outRangeLength: 1.5
 --- !u!114 &11449746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,6 +195,17 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54f3794700749e648811831f7645ef23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11454930
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f6bda95881b6744be0826b39f62eff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11478740
@@ -219,12 +231,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _HPBar: {fileID: 160188, guid: 589f935d5589c85498422b24ee2ff6a8, type: 2}
-  destoryF: 0
   removeEnemyPrefab: {fileID: 181530, guid: 60080e6b4afb15241b3c1b9e9df58254, type: 2}
   bitmapFontBasePrefab: {fileID: 175532, guid: 1e2c4b408a8f4df4e89961863610e1b5, type: 2}
   _defaultLevel: 3
-  _defaultEnemyType: 0
+  _defaultEnemyType: 6
   _enemyShadow: {fileID: 21300000, guid: f64f749bce0f82943a4445e5a377f853, type: 3}
+  animeScalingFlag: 1
 --- !u!114 &11489824
 MonoBehaviour:
   m_ObjectHideFlags: 1

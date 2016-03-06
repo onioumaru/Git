@@ -433,7 +433,7 @@ MonoBehaviour:
   _fazerIconSR: {fileID: 11455140}
   _groundParent: {fileID: 130128}
   _forDebug: 0
-  _forDebugFileName: 0-3-0-5
+  _forDebugFileName: 0-7-0-2
 --- !u!114 &11414416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconType: 1
-  delayFame: 10
+  delayFrame: 0
 --- !u!114 &11414872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconType: 1
-  delayFame: 20
+  delayFrame: 0
 --- !u!114 &11432758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -878,7 +878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconType: 0
-  delayFame: 0
+  delayFrame: 0
 --- !u!114 &11480958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -891,7 +891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconType: 1
-  delayFame: 0
+  delayFrame: 0
 --- !u!114 &11482008
 MonoBehaviour:
   m_ObjectHideFlags: 1

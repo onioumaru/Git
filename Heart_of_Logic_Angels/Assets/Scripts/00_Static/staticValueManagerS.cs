@@ -35,6 +35,7 @@ public class staticValueManagerS : MonoBehaviour {
 	private bool[] sortieCharaNo;
 
 
+
 	//
 	void Awake(){
 		Debug.Log("Awake");
@@ -233,7 +234,7 @@ public class staticValueManagerS : MonoBehaviour {
 	public void setStoryProgress(string argsStr){
 
 		string[] tmpS = argsStr.Split('-');
-		//Debug.Log (tmpS);
+		Debug.Log (tmpS);
 		this.setStoryProgress( int.Parse(tmpS[0]) ,int.Parse(tmpS[1]) ,int.Parse(tmpS[2]) ,int.Parse(tmpS[3]));
 
 	}
@@ -445,7 +446,7 @@ public class staticValueManagerS : MonoBehaviour {
 		if (tmpStr == "") {
 			//作ってセーブ
 			Dictionary<string, object> tmpDc = new Dictionary<string, object> ();
-			tmpDc.Add ("thisSaveName", playerPrefskeyString);
+			tmpDc.Add ("thisSaveName", System.DateTime.Now.ToString("yyyy/MM/dd HH:mm"));
 			tmpDc.Add ("playCnt", 0);
 			tmpDc.Add ("StoryRoute", 0);
 			tmpDc.Add ("StoryProgress", 0);
@@ -480,10 +481,30 @@ public class staticValueManagerS : MonoBehaviour {
 		}
 	}
 
+	public void createNewGameData(){
+		//new Game
+		//selectedUserSaveDat
+
+		Dictionary<string, object> tmpDc = new Dictionary<string, object> ();
+		tmpDc.Add ("thisSaveName", System.DateTime.Now.ToString("yyyy/MM/dd HH:mm"));
+		tmpDc.Add ("playCnt", 0);
+		tmpDc.Add ("StoryRoute", 0);
+		tmpDc.Add ("StoryProgress", 0);
+		tmpDc.Add ("StoryStage", 0);
+		tmpDc.Add ("StoryStep", 0);
+		tmpDc.Add ("StoryMode", "nomal");
+
+		//キャラの枠だけ作成
+		for (int indexI = 0;indexI < 9; indexI++){
+			saveCharaValueClass tmpVal = new saveCharaValueClass(indexI) ;
+
+			this.setSaveCharaValue(tmpDc, tmpVal);
+		}
+
+		selectedUserSaveDat = tmpDc;
+	}
 
 
-	
-	
 /*
  * 		setJSON
  */
@@ -574,11 +595,59 @@ public class staticValueManagerS : MonoBehaviour {
 	/// </summary>
 	/// <param name="argsCharaNum">Arguments chara number.</param>
 	/// <param name="argsFlag">If set to <c>true</c> arguments flag.</param>
-	public void setSaveCharaEnableFlag(enumCharaNum argsCharaNum, bool argsFlag){
+	public void setSaveCharaEnableFlag(enumCharaNum argsCharaNum, bool argsFlag, enumCharactorJoinType argsExpType){
 		int tmpL = (int)argsCharaNum;
 		saveCharaValueClass beforeSCVC = this.getSaveCharaValue(tmpL);
 
+		//フラグセット
 		beforeSCVC.enable = argsFlag;
+
+		switch (argsExpType) {
+		case enumCharactorJoinType.dontTouchExp:
+			//何もしない
+			break;
+		case enumCharactorJoinType.maxExp:
+			
+			float maxVal = 0;
+
+			for (int loopI = 0; loopI < 9; loopI++) {
+				saveCharaValueClass tmpC = this.getSaveCharaValue (loopI);
+
+				Debug.Log (tmpC.exp);
+
+				if (maxVal < tmpC.exp) {
+					maxVal = tmpC.exp;
+				}
+			} 
+
+			beforeSCVC.exp = maxVal;
+
+			break;
+
+		case enumCharactorJoinType.avarageExp:
+
+			float Allexp = 0;
+
+			for (int loopI = 0; loopI < 9; loopI++) {
+				saveCharaValueClass tmpC = this.getSaveCharaValue (loopI);
+				Allexp += tmpC.exp;
+			} 
+
+			beforeSCVC.exp = Allexp / 9f;
+
+			break;
+
+		case enumCharactorJoinType.sameEnju:
+			int enjuNum = (int)enumCharaNum.enju_01;
+			beforeSCVC.exp = this.getSaveCharaValue (enjuNum).exp * 0.9f;
+
+			Debug.Log (beforeSCVC.exp);
+
+			break;
+		}
+
+		//レベルを計算してセット
+		beforeSCVC.level = characterLevelManagerGetter.getManager ().calcLv (beforeSCVC.exp).Lv;
 
 		this.setSaveCharaValue (beforeSCVC);
 	}
@@ -639,6 +708,24 @@ public class staticValueManagerS : MonoBehaviour {
 		
 		return retStr;
 	}
+
+	public bool getRenderingShadowFlag(){
+		string tmpStr = PlayerPrefs.GetString ("Option_RenderShadow");
+		if (tmpStr == "") {
+			tmpStr = "False";
+		}
+		return System.Convert.ToBoolean (tmpStr);
+	}
+
+	public bool getRenderingStageEffFlag(){
+		string tmpStr = PlayerPrefs.GetString ("Option_RenderStageEff");
+		if (tmpStr == "") {
+			tmpStr = "False";
+		}
+		return System.Convert.ToBoolean (tmpStr);
+	}
+
+
 }
 
 /*
@@ -821,4 +908,9 @@ public class sceneChangeValue{
 
 
 
-
+public enum enumCharactorJoinType{
+	dontTouchExp,
+	maxExp,
+	avarageExp,
+	sameEnju
+}

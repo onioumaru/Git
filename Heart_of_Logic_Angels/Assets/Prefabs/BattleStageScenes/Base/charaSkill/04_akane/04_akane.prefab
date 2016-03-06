@@ -337,8 +337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024368ac5b2c44e429de96e4a31c2e74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalFreezeSec: 7
-  colliderCreateSec: 5.1
+  totalFreezeSec: 3
+  colliderCreateSec: 2.9
   thisCollider: {fileID: 189412, guid: 1b30944b220f8f146ad5f653e001813d, type: 2}
   thisCharaNo: 3
   _OtherDestoryFlag: 1
@@ -356,6 +356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayTime: 0
   endTime: 3
+  _loopUpRotationWoldSpace: 0
+  _offSetPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &11468260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -369,6 +371,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayTime: 3
   endTime: 20
+  _loopUpRotationWoldSpace: 0
+  _offSetPosition: {x: 0, y: 0, z: 0}
 --- !u!198 &19821286
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -12419,6 +12423,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_CollisionDetection
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: totalFreezeSec
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colliderCreateSec
+      value: 2.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

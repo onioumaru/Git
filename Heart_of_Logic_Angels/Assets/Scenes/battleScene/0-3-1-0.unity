@@ -349,6 +349,18 @@ Prefab:
       propertyPath: m_Name
       value: uzu (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 11457964, guid: 33657345bfcc01049a639c30a319c8d6, type: 2}
+      propertyPath: _genaratePerSec
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457964, guid: 33657345bfcc01049a639c30a319c8d6, type: 2}
+      propertyPath: _genarateCoollTime
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457964, guid: 33657345bfcc01049a639c30a319c8d6, type: 2}
+      propertyPath: _genarateCoolCount
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33657345bfcc01049a639c30a319c8d6, type: 2}
   m_IsPrefabParent: 0
@@ -394,6 +406,14 @@ Prefab:
     - target: {fileID: 21272842, guid: 33657345bfcc01049a639c30a319c8d6, type: 2}
       propertyPath: m_SortingLayerID
       value: -726411341
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457964, guid: 33657345bfcc01049a639c30a319c8d6, type: 2}
+      propertyPath: _genaratePerSec
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11457964, guid: 33657345bfcc01049a639c30a319c8d6, type: 2}
+      propertyPath: _genarateCoollTime
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33657345bfcc01049a639c30a319c8d6, type: 2}

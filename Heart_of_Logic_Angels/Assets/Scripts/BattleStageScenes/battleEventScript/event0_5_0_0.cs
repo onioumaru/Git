@@ -67,7 +67,7 @@ public class event0_5_0_0 : MonoBehaviour {
 
 		StartCoroutine ( startTargetCall() );
 
-		//StartCoroutine ( timeEvent() );
+		StartCoroutine ( timeEvent() );
 	}
 
 	private void setDefaultCharaStartPosition(){
@@ -162,8 +162,7 @@ public class event0_5_0_0 : MonoBehaviour {
 
 	IEnumerator timeEvent(){
 		// 時間経過 系
-		yield return new WaitForSeconds (30f);
-
+		//yield return new WaitForSeconds (30f);
 		//GMS.talkingPartLoader ("0-3-0-2");
 
 		while (true) {
@@ -266,7 +265,9 @@ public class event0_5_0_0 : MonoBehaviour {
 		//Debug.Log ("gotoStageSelect");
 		//sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
 
-		//4へ
+		//新規キャラの追加
+		GMS.saveBattleResultValues_EnterCharacterFlag(enumCharaNum.akane_04, true, enumCharactorJoinType.maxExp);
+
 		sVMS.setStoryProgress("0-5-0-2");
 		sVMS.changeScene (sceneChangeStatusEnum.gotoTalkScene);
 	}

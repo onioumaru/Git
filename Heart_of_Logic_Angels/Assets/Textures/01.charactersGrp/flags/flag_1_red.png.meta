@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 815b91ff1d13df7439535dc065eb51ee
+timeCreated: 1457200974
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: flag_1_red_0
@@ -19,7 +21,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -39,11 +41,12 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -58,9 +61,15 @@ TextureImporter:
         y: 96
         width: 63
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 16}
+        - {x: 0, y: -16}
+        - {x: 33, y: -16}
+        - {x: 46, y: 2}
+        - {x: 46, y: 16}
     - name: flag_1_red_1
       rect:
         serializedVersion: 2
@@ -68,9 +77,17 @@ TextureImporter:
         y: 64
         width: 63
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53, y: 8}
+        - {x: 27, y: 16}
+        - {x: 0, y: 16}
+        - {x: 0, y: -16}
+        - {x: 14, y: -16}
+        - {x: 41, y: -7}
+        - {x: 53, y: 2}
     - name: flag_1_red_2
       rect:
         serializedVersion: 2
@@ -78,9 +95,16 @@ TextureImporter:
         y: 32
         width: 63
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 16}
+        - {x: 0, y: -16}
+        - {x: 13, y: -16}
+        - {x: 41, y: -4}
+        - {x: 52, y: 10}
+        - {x: 52, y: 16}
     - name: flag_1_red_3
       rect:
         serializedVersion: 2
@@ -88,10 +112,17 @@ TextureImporter:
         y: 0
         width: 63
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-  spritePackingTag: charactersGrp
+      outline:
+      - - {x: 0, y: 16}
+        - {x: 0, y: -16}
+        - {x: 22, y: -16}
+        - {x: 46, y: 7}
+        - {x: 46, y: 16}
+    outline: []
+  spritePackingTag: alltexture
   userData: 
   assetBundleName: 
   assetBundleVariant: 

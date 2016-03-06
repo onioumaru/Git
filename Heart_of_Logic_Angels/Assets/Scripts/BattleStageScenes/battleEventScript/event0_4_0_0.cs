@@ -208,6 +208,8 @@ public class event0_4_0_0 : MonoBehaviour {
 		//Debug.Log ("gotoStageSelect");
 		//sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
 
+		//ホオズキの追加
+		GMS.saveBattleResultValues_EnterCharacterFlag(enumCharaNum.houzuki_05, true, enumCharactorJoinType.maxExp);
 		//4へ
 		sVMS.setStoryProgress("0-4-0-3");
 		sVMS.changeScene (sceneChangeStatusEnum.gotoTalkScene);

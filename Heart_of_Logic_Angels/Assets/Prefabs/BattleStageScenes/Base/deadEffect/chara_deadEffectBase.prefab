@@ -3125,8 +3125,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -726411341
+  m_SortingOrder: 97
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -3166,8 +3166,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -726411341
+  m_SortingOrder: 98
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -3207,8 +3207,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -726411341
+  m_SortingOrder: 99
   m_Sprite: {fileID: 21300004, guid: 88f116608038c0e4ba9a3039242d7e3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3223,6 +3223,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: _wakeSound
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SortingLayerID
+      value: -726411341
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SortingOrder
+      value: 97
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

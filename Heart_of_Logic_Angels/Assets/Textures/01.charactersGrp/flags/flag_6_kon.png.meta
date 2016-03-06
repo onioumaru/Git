@@ -19,7 +19,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -39,11 +39,12 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -58,9 +59,15 @@ TextureImporter:
         y: 96
         width: 64
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 16}
+        - {x: -32, y: -16}
+        - {x: 1, y: -16}
+        - {x: 14, y: 2}
+        - {x: 14, y: 16}
     - name: flag_6_kon_1
       rect:
         serializedVersion: 2
@@ -68,9 +75,17 @@ TextureImporter:
         y: 64
         width: 64
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 8}
+        - {x: -5, y: 16}
+        - {x: -32, y: 16}
+        - {x: -32, y: -16}
+        - {x: -18, y: -16}
+        - {x: 9, y: -7}
+        - {x: 21, y: 2}
     - name: flag_6_kon_2
       rect:
         serializedVersion: 2
@@ -78,9 +93,16 @@ TextureImporter:
         y: 32
         width: 64
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 16}
+        - {x: -32, y: -16}
+        - {x: -19, y: -16}
+        - {x: 9, y: -4}
+        - {x: 20, y: 10}
+        - {x: 20, y: 16}
     - name: flag_6_kon_3
       rect:
         serializedVersion: 2
@@ -88,10 +110,17 @@ TextureImporter:
         y: 0
         width: 64
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-  spritePackingTag: charactersGrp
+      outline:
+      - - {x: -32, y: 16}
+        - {x: -32, y: -16}
+        - {x: -10, y: -16}
+        - {x: 14, y: 7}
+        - {x: 14, y: 16}
+    outline: []
+  spritePackingTag: alltexture
   userData: 
   assetBundleName: 
   assetBundleVariant: 

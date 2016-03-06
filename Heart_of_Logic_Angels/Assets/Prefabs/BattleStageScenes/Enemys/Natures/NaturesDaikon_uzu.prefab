@@ -43,7 +43,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.7, y: 1.69, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 448318}
@@ -121,12 +121,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _HPBar: {fileID: 160188, guid: 589f935d5589c85498422b24ee2ff6a8, type: 2}
-  destoryF: 0
   removeEnemyPrefab: {fileID: 181530, guid: 60080e6b4afb15241b3c1b9e9df58254, type: 2}
   bitmapFontBasePrefab: {fileID: 175532, guid: 1e2c4b408a8f4df4e89961863610e1b5, type: 2}
   _defaultLevel: 10
-  _defaultEnemyType: 0
+  _defaultEnemyType: 4
   _enemyShadow: {fileID: 21300000, guid: f64f749bce0f82943a4445e5a377f853, type: 3}
+  animeScalingFlag: 1
 --- !u!114 &11488874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,9 +143,10 @@ MonoBehaviour:
   _genarateCoolCount: 3
   _genarateCoollTime: 60
   _genarateDefaultLevel: 0
-  _meetingWorldPosition: {x: 1, y: 0, z: 0}
+  _meetingWorldPosition: {x: 0, y: 2, z: 0}
   _meetingCircleMagnX: 1
   _meetingCircleMagnY: 1
+  _genalateLimit: 0
 --- !u!212 &21252798
 SpriteRenderer:
   m_ObjectHideFlags: 1

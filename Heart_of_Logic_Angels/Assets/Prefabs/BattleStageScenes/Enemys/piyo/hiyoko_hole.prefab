@@ -76,8 +76,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _piyoPrefabs: {fileID: 160010, guid: fc76eb56022678a42b7f00f1116f606f, type: 2}
   _genaratePerSec: 0.5
-  _genarateCoolCount: 20
+  _genarateCoolCount: 10
   _genarateCoollTime: 120
+  _genarateDefaultLevel: 0
+  _meetingWorldPosition: {x: 0, y: 0, z: 0}
+  _meetingCircleMagnX: 2
+  _meetingCircleMagnY: 1
+  _genalateLimit: 0
 --- !u!114 &11487472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,12 +95,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _HPBar: {fileID: 160188, guid: 589f935d5589c85498422b24ee2ff6a8, type: 2}
-  destoryF: 0
   removeEnemyPrefab: {fileID: 181530, guid: 60080e6b4afb15241b3c1b9e9df58254, type: 2}
   bitmapFontBasePrefab: {fileID: 175532, guid: 1e2c4b408a8f4df4e89961863610e1b5, type: 2}
   _defaultLevel: 3
   _defaultEnemyType: 0
   _enemyShadow: {fileID: 0}
+  animeScalingFlag: 1
 --- !u!212 &21255256
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -147,7 +152,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _genarateCoolCount
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _genaratePerSec

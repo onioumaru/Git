@@ -177,8 +177,8 @@ public class event0_2_0_0 : MonoBehaviour {
 		//
 		//sVMS.addStoryProgresses(enum_StoryProgressType.Step);
 		sVMS.setStoryProgress("0-2-0-6");
-		sVMS.setSaveCharaEnableFlag (enumCharaNum.syusuran_02, true);
 
+		GMS.saveBattleResultValues_EnterCharacterFlag(enumCharaNum.syusuran_02, true, enumCharactorJoinType.maxExp);
 		GMS.saveBattleResultValues ();
 
 		//Debug.Log ("gotoStageSelect");

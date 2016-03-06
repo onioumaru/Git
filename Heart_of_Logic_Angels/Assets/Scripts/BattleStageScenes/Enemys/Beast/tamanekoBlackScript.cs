@@ -25,7 +25,11 @@ public class tamanekoBlackScript : MonoBehaviour {
 	IEnumerator iconDelay(){
 		yield return new WaitForSeconds (0.5f);
 
-		thisAnimeObj.transform.localScale += new Vector3 (0.1f, 0.1f, 0f);
+		if (thisAnimeObj.transform.localScale.x > 0) {
+			thisAnimeObj.transform.localScale += new Vector3 (0.1f, 0.1f, 0f);
+		} else {
+			thisAnimeObj.transform.localScale += new Vector3 (-0.1f, 0.1f, 0f);
+		}
 
 		GameObject exclamationPrefab = Resources.Load ("Prefabs/charaBase/enemyPowerUpIcon") as GameObject;
 

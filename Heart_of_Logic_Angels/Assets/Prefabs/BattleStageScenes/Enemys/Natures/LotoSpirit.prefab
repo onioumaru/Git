@@ -90,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: -3.71, z: 0}
+  m_LocalPosition: {x: 6.5, y: -1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 421626}
@@ -183,12 +183,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _HPBar: {fileID: 160188, guid: 589f935d5589c85498422b24ee2ff6a8, type: 2}
-  destoryF: 0
   removeEnemyPrefab: {fileID: 181530, guid: 60080e6b4afb15241b3c1b9e9df58254, type: 2}
   bitmapFontBasePrefab: {fileID: 175532, guid: 1e2c4b408a8f4df4e89961863610e1b5, type: 2}
   _defaultLevel: 10
-  _defaultEnemyType: 0
+  _defaultEnemyType: 8
   _enemyShadow: {fileID: 21300000, guid: f64f749bce0f82943a4445e5a377f853, type: 3}
+  animeScalingFlag: 1
 --- !u!114 &11418598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -234,7 +234,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _largeBulletPrefab: {fileID: 167836, guid: 16d5b7908b8bcd0418b3640967066e0f, type: 2}
-  _createBulletPosi: {x: 0, y: -2.5, z: 0}
+  _createBulletPosi: {x: -3, y: 3.5, z: 0}
+  _bulletSourcePrefab: {fileID: 186928, guid: f2382dd5f064c674d99b1cc8df7b38d5, type: 2}
+  _bulletSourceMovingTotalFrame: 600
+  _bulletDamageMagn: 1
 --- !u!114 &11472660
 MonoBehaviour:
   m_ObjectHideFlags: 1

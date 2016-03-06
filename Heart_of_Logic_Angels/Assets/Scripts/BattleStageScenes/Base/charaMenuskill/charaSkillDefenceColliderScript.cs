@@ -8,7 +8,7 @@ public class charaSkillDefenceColliderScript : MonoBehaviour {
 		switch (thisChara.thisChara.charaNo) {
 		case enumCharaNum.houzuki_05:
 			//リジェネのセット
-			thisChara.setRegenerate_hozukiSkill (10f);
+			thisChara.setRegenerate_hozukiSkill (150f);
 
 			break;
 		case enumCharaNum.suzusiro_03:
@@ -32,7 +32,7 @@ public class charaSkillDefenceColliderScript : MonoBehaviour {
 
 		switch (thisChara.thisChara.charaNo) {
 		case enumCharaNum.houzuki_05:
-			c.transform.GetComponent<allCharaBase> ().setRegenerate_hozukiSkill (10f);
+			c.transform.GetComponent<allCharaBase> ().setRegenerate_hozukiSkill (150f);
 
 			break;
 		case enumCharaNum.suzusiro_03:

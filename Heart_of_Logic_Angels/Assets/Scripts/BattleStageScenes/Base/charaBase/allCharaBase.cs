@@ -52,7 +52,7 @@ public class allCharaBase : MonoBehaviour {
 	[System.NonSerialized]
 	public bool movingFreezeFlag = false;
 	
-	float offsetX = -0.28f;
+	float offsetX = 0f; //-0.28f;
 	float offsetY = 0f;
 
 	private bool thisCharaUnbreakable = false;
@@ -63,10 +63,8 @@ public class allCharaBase : MonoBehaviour {
 	private float regenarateSec = 0;
 	private Coroutine reganateCounterCor;
 
-	[SerializeField]
-	private float showNowLevel;
-	[SerializeField]
-	private float showNextExp;
+	public GameObject _HPBar;
+	private enemyHPBarScript hpBar;
 
 	// Use this for initialization
 	void Start () {
@@ -90,17 +88,14 @@ public class allCharaBase : MonoBehaviour {
 
 		this.setMode (characterMode.Attack);
 
+		this.createHPBar ();
+
 		StartCoroutine (mainLoop());
 		StartCoroutine (calcCoolTimeLoop ());
 	}
 
 	void Update(){
 		thisRigiBody.WakeUp ();
-
-		#if DEBUG
-			showNowLevel = thisChara.nowLv;
-			showNextExp = thisChara.nextExp;
-		#endif
 	}
 
 	IEnumerator calcCoolTimeLoop(){
@@ -151,27 +146,54 @@ public class allCharaBase : MonoBehaviour {
 		}
 	}
 
+	public void createHPBar(){
+		//HP Barの作成
+		if (hpBar != null) {
+			Destroy (hpBar.gameObject);
+		}
+
+		GameObject tmpHpbarGO = Instantiate (_HPBar) as GameObject;
+		tmpHpbarGO.transform.parent = this.transform;
+
+		tmpHpbarGO.transform.localPosition = Vector3.zero;
+		//位置補正
+		textureVector ttv = new textureVector (this.gameObject);
+		Vector3 tmpV = ttv.getBottomOffset_ForCenterPivot(0, -0.1f, true);
+		tmpHpbarGO.transform.localPosition += tmpV;
+
+		hpBar = tmpHpbarGO.GetComponent<enemyHPBarScript>();
+		hpBar.setMaxBarLength_argsWidth (ttv.getWidth(true), thisChara.maxHP);
+
+	}
+
 
 	//
 	//ダメージ処理
 	public void setDamage(float argsInt){
 		GameObject retObj = Instantiate (bitmapFontBasePrefab, this.transform.position, this.transform.rotation) as GameObject;
 
+
 		//
 		//todo : 無敵時の挙動の実装
+		if (thisCharaUnbreakable == true){
+			sMB.playOneShotSound(enm_oneShotSound.metal);
+			return;
+		}
+
 
 		float damage = argsInt * thisChara.battleStatus.getDamage_CalCharaMode();
 		if (thisChara.flyingFlag == true) {
 			damage = damage * thisChara.flyingDefMagn;
 		}
-
-
+			
 		// ここまでにダメージ計算
 
 		retObj.GetComponentInChildren<common_damage> ().showDamage (this.transform, damage);
 		thisAnimeter.SetTrigger ("gotoDamage");
 
 		thisChara.nowHP -= damage;
+
+		hpBar.setHP (thisChara.nowHP);
 		
 		if (thisChara.nowHP < 1) {
 			this.destroyF = true;
@@ -285,7 +307,9 @@ public class allCharaBase : MonoBehaviour {
 	
 	public void setHealing(float argsVal){
 		thisChara.nowHP += argsVal;
-		
+
+		hpBar.setHP (thisChara.nowHP);
+
 		if (thisChara.nowHP > thisChara.maxHP) {
 			thisChara.nowHP = thisChara.maxHP;
 		}
@@ -328,7 +352,7 @@ public class allCharaBase : MonoBehaviour {
 			regenarateSec -= waitCycleSec;
 
 			//Debug.Log("Healing : " + (this.thisChara.maxHP / 50));
-			this.setHealing(this.thisChara.maxHP / 50);
+			this.setHealing(this.thisChara.maxHP / 50f);
 
 			//チェック間隔
 			yield return new WaitForSeconds (waitCycleSec);
@@ -358,13 +382,23 @@ public class allCharaBase : MonoBehaviour {
 		this.setMovingFreeze_SkillBefore();
 	}
 
+
 	public void setMovingFreeze_SkillBefore(){
 		//暫定で固定値で硬直
+		//スキル使用時の移動硬直
 		float tmpFrzCnt = 2.5f;
+
+		//特定のキャラは上書き
+		switch (thisChara.charaNo){
+		case enumCharaNum.akane_04:
+			tmpFrzCnt = 1f;
+			break;
+		}
+
+
 		movingFreezeFlag = true;
 		StartCoroutine(movingFlagClearer(tmpFrzCnt));
 	}
-
 
 	public float getRestCoolTime(){
 		float retVal = 0.01f;

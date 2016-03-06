@@ -42,7 +42,16 @@ public class sorityYesNoDiaglog : MonoBehaviour {
 		yield return new WaitForSeconds (0.1f);
 
 		staticValueManagerS sVMS = staticValueManagerGetter.getManager ();
-		sVMS.changeScene(sceneChangeStatusEnum.gotoBattle);
+
+		int tmpProgress = sVMS.getStoryProgress ();
+		switch (tmpProgress) {
+		case 7:
+			sVMS.changeScene(sceneChangeStatusEnum.gotoTalkScene);
+			break;
+		default:
+			sVMS.changeScene(sceneChangeStatusEnum.gotoBattle);
+			break;
+		}
 
 		boubleTapFlag = false;
 	}

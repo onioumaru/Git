@@ -8,9 +8,10 @@ public class NatureBullet_Shine3 : MonoBehaviour {
 
 	private Coroutine genarateLoopCor;
 
+	private float dealDamege;
+
 	// Use this for initialization
 	void Start () {
-
 		StartCoroutine ( selfRotate() );
 		genarateLoopCor = StartCoroutine ( genarateLoop() );
 	}
@@ -18,7 +19,6 @@ public class NatureBullet_Shine3 : MonoBehaviour {
 	IEnumerator selfRotate(){
 		while (true) {
 			this.transform.Rotate (new Vector3(0,0, _rotateAngle)); //Quaternion.AngleAxis (5f, Vector3.forward)
-
 			yield return new WaitForSeconds (0.0001f);
 		}
 	}
@@ -27,7 +27,6 @@ public class NatureBullet_Shine3 : MonoBehaviour {
 		GameObject tmpGO = null;
 
 		while (true) {
-
 			for (int loopI = 0; loopI < 6; loopI++) {
 				tmpGO = Instantiate(_childBullet) as GameObject;
 				tmpGO.transform.position = this.transform.position;
@@ -36,6 +35,8 @@ public class NatureBullet_Shine3 : MonoBehaviour {
 				tmpGO.transform.rotation = Quaternion.AngleAxis(60f * loopI ,Vector3.forward);
 
 				tmpGO.GetComponent<simpleMovingScript> ().setSimpleMovingUp ();
+
+				tmpGO.GetComponent<bulletBase_CannotDestory> ().setDealDamage(dealDamege);
 			}
 
 			yield return new WaitForSeconds (genarateCycleSec);
@@ -46,4 +47,7 @@ public class NatureBullet_Shine3 : MonoBehaviour {
 		StopCoroutine (genarateLoopCor);
 	}
 
+	public void setDealDamege(float argsDam){
+		dealDamege = argsDam;
+	}
 }

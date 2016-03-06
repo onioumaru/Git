@@ -17,7 +17,21 @@ public class textureVector {
 	}
 
 	public textureVector(GameObject argsGameobject){
-		SpriteRenderer tmpSR = argsGameobject.transform.GetComponentInChildren<SpriteRenderer> ();
+		SpriteRenderer tmpSR = null;
+		Transform tmpTr = argsGameobject.transform.Find("anime");
+
+		//"anime"がない場合
+		if (tmpTr == null) {
+			tmpTr = argsGameobject.transform.Find("charaAnime");
+		}
+
+		//"anime"も"charaAnime"もない場合
+		if (tmpTr == null) {
+			tmpSR = argsGameobject.transform.GetComponentInChildren<SpriteRenderer> ();
+		} else {
+			tmpSR = tmpTr.GetComponent<SpriteRenderer> ();
+		}
+
 		thisScale = tmpSR.transform.localScale;
 		tgtTexture = tmpSR.sprite;
 	}

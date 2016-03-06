@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _defaultLocalScale: {x: 1, y: 1, z: 1}
+  _defaultLocalPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &11454856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -89,18 +90,7 @@ MonoBehaviour:
   _childDiffImage: {fileID: 11454856}
   _thisCharaDefaultLocalPosition: {x: 0, y: -263, z: 0}
   _shadowSprite: {fileID: 0}
-  _childDiffSprite:
-  - {fileID: 21300000, guid: fdb885e1373ee3845a33b927ddb81d50, type: 3}
-  - {fileID: 21300002, guid: fdb885e1373ee3845a33b927ddb81d50, type: 3}
-  - {fileID: 21300004, guid: fdb885e1373ee3845a33b927ddb81d50, type: 3}
-  - {fileID: 21300006, guid: fdb885e1373ee3845a33b927ddb81d50, type: 3}
-  - {fileID: 21300008, guid: fdb885e1373ee3845a33b927ddb81d50, type: 3}
-  - {fileID: 21300010, guid: fdb885e1373ee3845a33b927ddb81d50, type: 3}
-  - {fileID: 21300012, guid: fdb885e1373ee3845a33b927ddb81d50, type: 3}
-  - {fileID: 21300014, guid: fdb885e1373ee3845a33b927ddb81d50, type: 3}
-  - {fileID: 21300016, guid: fdb885e1373ee3845a33b927ddb81d50, type: 3}
-  - {fileID: 21300018, guid: fdb885e1373ee3845a33b927ddb81d50, type: 3}
-  - {fileID: 21300020, guid: fdb885e1373ee3845a33b927ddb81d50, type: 3}
+  _childDiffSprite: []
   _fadeInAlfaChannelUseF: 0
   _notMainCharaF: 1
 --- !u!114 &11459682
@@ -185,6 +175,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: _shadowSprite
       value: 
       objectReference: {fileID: 0}
@@ -208,6 +202,61 @@ Prefab:
       propertyPath: _defaultLocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: fdb885e1373ee3845a33b927ddb81d50,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300002, guid: fdb885e1373ee3845a33b927ddb81d50,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300004, guid: fdb885e1373ee3845a33b927ddb81d50,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300006, guid: fdb885e1373ee3845a33b927ddb81d50,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300008, guid: fdb885e1373ee3845a33b927ddb81d50,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300010, guid: fdb885e1373ee3845a33b927ddb81d50,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300012, guid: fdb885e1373ee3845a33b927ddb81d50,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300014, guid: fdb885e1373ee3845a33b927ddb81d50,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300016, guid: fdb885e1373ee3845a33b927ddb81d50,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300018, guid: fdb885e1373ee3845a33b927ddb81d50,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _childDiffSprite.Array.data[10]
+      value: 
+      objectReference: {fileID: 21300020, guid: fdb885e1373ee3845a33b927ddb81d50,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 161762}

@@ -54,5 +54,4 @@
 ダメージを受けたら、
 ヒールボタンでHPゲージ(赤いゲージ)が回復する事を
 確認してみましょう。@pg
-<sleep:1500>@pg
-<forwardEvent:d>
+<sleep:1500>@pg<forwardEvent:d>

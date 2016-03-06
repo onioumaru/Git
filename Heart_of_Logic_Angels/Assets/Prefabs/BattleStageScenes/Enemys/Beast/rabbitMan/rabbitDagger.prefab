@@ -171,8 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e8072d126481a4bab0ec2ab6054cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisMoveType: 1
-  _defaultMovingSpeed: 0.1
+  _defaultMovingSpeed: 0.05
   _outRangeLength: 0.5
 --- !u!114 &11487730
 MonoBehaviour:
@@ -226,7 +225,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: _defaultMovingSpeed
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _outRangeLength

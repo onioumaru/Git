@@ -438,14 +438,28 @@ public class GameManagerScript : MonoBehaviour {
 	/// </summary>
 	/// <param name="argsCharaNum">Arguments chara number.</param>
 	/// <param name="argsFlag">If set to <c>true</c> arguments flag.</param>
-	public void saveBattleResultValues_EnterCharacterFlag(enumCharaNum argsCharaNum, bool argsFlag){
-		
-		sVMS.setSaveCharaEnableFlag (argsCharaNum ,argsFlag );
+	public void saveBattleResultValues_EnterCharacterFlag(enumCharaNum argsCharaNum, bool argsFlag, enumCharactorJoinType joinType){
+
+		sVMS.setSaveCharaEnableFlag (argsCharaNum ,argsFlag ,joinType );
 
 	}
+
 }
 
 //
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 public class gameStartingVariable_Single{

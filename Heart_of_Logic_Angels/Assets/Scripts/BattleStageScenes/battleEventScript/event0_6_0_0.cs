@@ -32,7 +32,7 @@ public class event0_6_0_0 : MonoBehaviour {
 		this.setDefaultEnemyLevel ();
 
 		//初期配置の敵をすべてセット
-		//this.setDefaultEnemyEvntTarget();
+		this.setDefaultEnemyEvntTarget();
 
 		//すでに設置された敵をターゲットにセット
 		this.setEvntTarget();
@@ -63,9 +63,9 @@ public class event0_6_0_0 : MonoBehaviour {
 		Time.timeScale = 1f;
 		GMS.setAllCollider2DEnabale (true);
 
-		//StartCoroutine ( startTargetCall() );
+		StartCoroutine ( startTargetCall() );
 
-		//StartCoroutine ( timeEvent() );
+		StartCoroutine ( timeEvent() );
 	}
 
 	private void setDefaultCharaStartPosition(){
@@ -160,7 +160,7 @@ public class event0_6_0_0 : MonoBehaviour {
 
 	IEnumerator timeEvent(){
 		// 時間経過 系
-		yield return new WaitForSeconds (30f);
+		//yield return new WaitForSeconds (30f);
 
 		//GMS.talkingPartLoader ("0-3-0-2");
 
@@ -260,12 +260,14 @@ public class event0_6_0_0 : MonoBehaviour {
 		//
 		sVMS.addStoryProgresses(enum_StoryProgressType.Step);
 
+		//新規キャラの追加
+		GMS.saveBattleResultValues_EnterCharacterFlag(enumCharaNum.suzusiro_03, true, enumCharactorJoinType.sameEnju);
+
 		GMS.saveBattleResultValues ();
 		//Debug.Log ("gotoStageSelect");
 		//sVMS.changeScene (sceneChangeStatusEnum.gotoStageSelect);
 
-		//4へ
-		//sVMS.setStoryProgress("0-4-0-3");
+		sVMS.setStoryProgress("0-6-0-2");
 		sVMS.changeScene (sceneChangeStatusEnum.gotoTalkScene);
 	}
 
@@ -279,14 +281,14 @@ public class event0_6_0_0 : MonoBehaviour {
 		float pauseFlameSec = 2f;
 
 		//カメラの移動
-		Camera.main.transform.position = new Vector3 (3.9f, -5f, -20f);
+		Camera.main.transform.position = new Vector3 (-8.5f, 2.5f, -20f);
 		GMS.setAllCollider2DEnabale (false);
 
 
 		//開始会話
 		staticValueManagerS sVMS = staticValueManagerGetter.getManager ();
 		sVMS.addStoryProgresses (enum_StoryProgressType.Step);
-		sVMS.getNowSceneChangeValue().sceneFileName = "0-5-0-1";
+		sVMS.getNowSceneChangeValue().sceneFileName = "0-6-0-1";
 
 		GameObject tmpTalkObj = (GameObject)Instantiate (_talkPartPerefab);
 		// トークシーンが破壊されるまでループして待つ
@@ -302,7 +304,7 @@ public class event0_6_0_0 : MonoBehaviour {
 		GameObject missionTargetCanvas = (GameObject)Instantiate (_missionTargetPrefab);
 		_mTTS = missionTargetCanvas.GetComponent<missionTargetTitleS> ();
 
-		_mTTS._winDecision.text = "対象の敵を撃破せよ";
+		_mTTS._winDecision.text = "初期配置の敵を撃破せよ";
 		_mTTS._loseDecision.text = "部隊の全滅";
 
 		float tmpX;
@@ -313,12 +315,13 @@ public class event0_6_0_0 : MonoBehaviour {
 
 		//最初のウェイト
 		tmpPassedSec = 0f;
-		while(tmpPassedSec < 1f){
+		while(tmpPassedSec < 1.5f){
 			yield return null;
 
 			tmpPassedSec += Time.fixedDeltaTime;
 		}
 
+		/*
 
 		//目標地点までの移動
 		tmpPassedSec = 0f;
@@ -364,6 +367,8 @@ public class event0_6_0_0 : MonoBehaviour {
 
 			Camera.main.transform.position = new Vector3(tmpX, tmpY, -20f);
 		}
+
+		*/
 
 		//パーティクルを使うので時間開始
 		Time.timeScale = 1f;

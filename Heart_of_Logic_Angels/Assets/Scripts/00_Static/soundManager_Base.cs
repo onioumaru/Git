@@ -292,6 +292,7 @@ public enum enm_oneShotSound{
 	,findit
 	,buni
 	,deadEffectSound
+	,metal
 }
 
 

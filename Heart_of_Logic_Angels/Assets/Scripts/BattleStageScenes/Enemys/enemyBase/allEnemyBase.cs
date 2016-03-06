@@ -40,11 +40,14 @@ public class allEnemyBase : MonoBehaviour {
 
 	public bool animeScalingFlag = true;
 
+	private staticValueManagerS sVMS;
+
 
 	// Use this for initialization
 	void Start() {
 		thisRigiBody2D = this.GetComponent<Rigidbody2D> ();
 		sMB = soundManagerGetter.getManager ();
+		sVMS = staticValueManagerGetter.getManager ();
 
 		grantExpChara = new HashSet<int>();
 		thisEnemyStat = new typeEnemyStatus(_defaultLevel, _defaultEnemyType);
@@ -52,7 +55,8 @@ public class allEnemyBase : MonoBehaviour {
 		this.createHPBar ();
 
 		//影の作成
-		if (_enemyShadow != null) {
+		//重いので一時的に停止
+		if (_enemyShadow != null && sVMS.getRenderingShadowFlag()) {
 			//影がセットされているときは表示
 			GameObject tmpEnemyShadow = new GameObject ("enemyShadow");
 			tmpEnemyShadow.AddComponent<SpriteRenderer> ();

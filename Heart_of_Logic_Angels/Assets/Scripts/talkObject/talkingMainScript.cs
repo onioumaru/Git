@@ -637,18 +637,16 @@ public class talkingMainScript : MonoBehaviour {
 			sVMS.changeScene(sceneChangeStatusEnum.gotoTalkScene);
 			
 			break;
-			/*
-			 * バトルは出撃設定が出来ない為、停止
+
 		case "b":
 			//バトル
 			//会話パートからは、シーン名直接指定
-			sceneChangeValue tmpBtlVal = sVMS.getNowSceneChangeValue();
-			tmpBtlVal.sceneFileName = argsOption;
+			//sceneChangeValue tmpBtlVal = sVMS.getNowSceneChangeValue();
+			//tmpBtlVal.sceneFileName = argsOption;
 			
 			sVMS.changeScene(sceneChangeStatusEnum.gotoBattle);
 
 			break;
-			*/
 		case "s":
 			//ステージセレクト
 			sVMS.changeScene(sceneChangeStatusEnum.gotoStageSelect);

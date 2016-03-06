@@ -20,6 +20,9 @@ public class dialogYesNoParent : MonoBehaviour {
 		string baseStr = "\nで始めてよろしいですか？";
 
 		switch (argsIndex) {
+		case -1:
+			baseStr = "新しいゲーム" + baseStr;
+			break;
 		case 0:
 			baseStr = "SaveData 1" + baseStr;
 			break;
@@ -61,9 +64,15 @@ public class dialogYesNoParent : MonoBehaviour {
 		yield return new WaitForSeconds (0.1f);
 
 		staticValueManagerS sSMS = staticValueManagerGetter.getManager ();
+
 		//セーブデータの選択
-		sSMS.setSelectedSaveDat(selectedSaveIndex);
-		
+		if (selectedSaveIndex == -1) {
+			//new Game
+			sSMS.createNewGameData();
+		} else {
+			sSMS.setSelectedSaveDat(selectedSaveIndex);
+		}
+
 		sSMS.changeScene(sceneChangeStatusEnum.dataLoading);
 		boubleTapFlag = false;
 	}

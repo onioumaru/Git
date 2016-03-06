@@ -51,6 +51,10 @@ public class battleStageSelectVal{
 			//図書館
 			bgImage = largeBGImageLoader.getImage("07");
 			break;
+		case 7:
+			//体育館
+			bgImage = largeBGImageLoader.getImage("09");
+			break;
 		case 10:
 			break;
 
@@ -92,7 +96,12 @@ public class battleStageSelectVal{
 
 		case 6:
 			stageTitle = "6 : 大図書館";
-			stageComment = "　野外に続く道以外にも、建物へと続き道がある。\n\nその先は中学部棟のようだが、\n建物に入ってすぐに大図書館と書かれた立派な扉がある。\nこの中から闇の気を感じる。";
+			stageComment = "　野外に続く道以外にも、建物へと続く道がある。\n\nその道は中等部棟へと続いており、\n建物に入ってすぐに大図書館と書かれた立派な扉がある。\nこの中から闇の気を感じる。";
+			break;
+
+		case 7:
+			stageTitle = "7 : 中等部棟";
+			stageComment = "　先ほどは闇の気配を優先して探索したが、\n今のところ、それらしい気配はない。\n　まずは落ち着いて中等部棟を探索するのが良いだろうか。";
 			break;
 
 		case  10:

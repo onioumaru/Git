@@ -1,10 +1,21 @@
 fileFormatVersion: 2
 guid: 74ff145783367e247ab0cd62a220b3a2
-timeCreated: 1441869494
+timeCreated: 1456981738
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - thisCharaFlag: {instanceID: 0}
+  - bitmapFontBasePrefab: {instanceID: 0}
+  - dyingAnimation: {instanceID: 0}
+  - _charaSkillCreater: {instanceID: 0}
+  - attackCycle_red: {instanceID: 0}
+  - attackCycle_blue: {instanceID: 0}
+  - attackCycle_green: {instanceID: 0}
+  - gmScript: {instanceID: 0}
+  - thisChara: {instanceID: 0}
+  - _charaStatusIconCtrler: {instanceID: 0}
+  - _HPBar: {fileID: 160188, guid: 589f935d5589c85498422b24ee2ff6a8, type: 2}
   executionOrder: -200
   icon: {instanceID: 0}
   userData: 

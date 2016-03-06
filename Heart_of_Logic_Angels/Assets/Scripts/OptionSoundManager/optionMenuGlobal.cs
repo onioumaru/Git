@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class optionMenuGlobal : MonoBehaviour {
+	public Toggle _renderShadowToggle;
+	public Toggle _renderStageEffToggle;
 
 	// Use this for initialization
 	void Start () {
@@ -10,6 +13,13 @@ public class optionMenuGlobal : MonoBehaviour {
 
 		//全てのコライダーを無効化
 		this.diseableAllColliders ();
+
+		staticValueManagerS sVMS = staticValueManagerGetter.getManager ();
+
+		_renderShadowToggle.isOn = sVMS.getRenderingShadowFlag ();
+		Debug.Log (sVMS.getRenderingShadowFlag ());
+		_renderStageEffToggle.isOn = sVMS.getRenderingStageEffFlag ();
+		Debug.Log ( sVMS.getRenderingStageEffFlag ());
 	}
 
 	void diseableAllColliders(){
@@ -21,4 +31,19 @@ public class optionMenuGlobal : MonoBehaviour {
 				}
 	}
 
+	public void changeSenceStageSelect(){
+		staticValueManagerGetter.getManager ().changeScene (sceneChangeStatusEnum.gotoStageSelect);
+	}
+
+	public void changeSenceTitle(){
+		staticValueManagerGetter.getManager ().changeScene (sceneChangeStatusEnum.gotoTitle);
+	}
+
+	public void setRenderShadow(){
+		PlayerPrefs.SetString("Option_RenderShadow", _renderShadowToggle.isOn.ToString());
+	}
+
+	public void setRenderStageEff(){
+		PlayerPrefs.SetString("Option_RenderStageEff", _renderStageEffToggle.isOn.ToString());
+	}
 }

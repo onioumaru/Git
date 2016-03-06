@@ -13,6 +13,10 @@ public class stageParticleParentS : MonoBehaviour {
 
 		staticValueManagerS s = staticValueManagerGetter.getManager ();
 
+		if (s.getRenderingStageEffFlag () == false) {
+			return;
+		}
+
 		sceneChangeValue scv = s.getNowSceneChangeValue();
 		string[] tmpStr = scv.sceneFileName.Split (new string[]{"-"}, System.StringSplitOptions.None );
 
@@ -36,7 +40,7 @@ public class stageParticleParentS : MonoBehaviour {
 				break;
 				
 			default:
-				tmpSource = Resources.Load (commonPath + "Particle_dropTears") as GameObject;
+				tmpSource = Resources.Load (commonPath + "Particle_Smog") as GameObject;
 				break;
 			}
 			break;
@@ -50,6 +54,10 @@ public class stageParticleParentS : MonoBehaviour {
 
 		case "6":
 			tmpSource = Resources.Load (commonPath + "nature2") as GameObject;
+			break;
+
+		case "7":
+			tmpSource = Resources.Load (commonPath + "Particle_dropTears") as GameObject;
 			break;
 
 		default:

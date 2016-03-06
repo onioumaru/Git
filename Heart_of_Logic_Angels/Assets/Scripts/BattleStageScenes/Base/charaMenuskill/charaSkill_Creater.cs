@@ -5,16 +5,6 @@ public class charaSkill_Creater : MonoBehaviour {
 
 	public GameObject[] _charaSkillEffects;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
 	public GameObject instantiateSkillEffect(Transform argsParentTransform, skillTargetInfo argsSkillTgt){
 		// スキルエフェクトのクローンを作成し
 		// 呼び出し元を親に設定

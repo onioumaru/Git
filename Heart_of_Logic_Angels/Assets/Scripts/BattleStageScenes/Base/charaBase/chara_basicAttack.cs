@@ -60,9 +60,20 @@ public class chara_basicAttack : MonoBehaviour {
 			}
 		}
 
+		attackDeleyFlag = true;
+		//移動硬直
+		parentCharaScrpt.setMovingFreeze();
+
+		thisAnimetor.SetTrigger("gotoAttack");
+
+		//暫定で10フレームのアニメーションwaitを置く
+		for (int loopI = 0; loopI < 3; loopI++){
+			yield return null;
+		}
+
+
 		if (nearTarget == null) {
-			//ターゲットが他キャラが同一フレームで倒した場合,ここを通る
-			//1体の場合、起りやすい
+			//ターゲットが他キャラが同一フレームで倒した場合,攻撃モーション中に消滅した場合、ここを通る
 			//即終了
 			yield break;
 		}
@@ -73,6 +84,7 @@ public class chara_basicAttack : MonoBehaviour {
 		//チェックと実行
 		if (tmpAtk.exec() == false) {
 			//Debug.Log ("yield break");
+			lastFrameAttackTarget.Clear();
 			yield break;
 		}
 
@@ -81,16 +93,11 @@ public class chara_basicAttack : MonoBehaviour {
 		Vector3[] tmpV3 = new Vector3[]{parentCharaScrpt.transform.position, nearTarget.transform.position};
 		tmpAttackLine.GetComponent<LineRenderer> ().SetPositions (tmpV3);
 
-
 		lastFrameAttackTarget.Clear();
-		attackDeleyFlag = true;
-		//移動硬直
-		parentCharaScrpt.setMovingFreeze();
+
 
 		//Attack Cycleの表示
 		parentCharaScrpt.setAttackCycleShow();
-
-		thisAnimetor.SetTrigger("gotoAttack");
 		
 		float tmpAttackDeley = parentCharaScrpt.thisChara.battleStatus.thisInfo.attackDelayTime;
 		//アタックディレイ

@@ -11,6 +11,7 @@ GameObject:
   - 114: {fileID: 11400698}
   - 222: {fileID: 22242634}
   - 114: {fileID: 11417834}
+  - 114: {fileID: 11462862}
   m_Layer: 0
   m_Name: 02_iconEffect_awate
   m_TagString: Untagged
@@ -161,6 +162,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11462862
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0910a337255a7e244ba971d439e2d582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _defaultLocalScale: {x: 0, y: 0, z: 0}
+  _defaultLocalPosition: {x: -140, y: 150, z: 0}
 --- !u!114 &11470292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -257,6 +271,14 @@ Prefab:
       value: 
       objectReference: {fileID: 21300018, guid: c4b47fc082ef1ac4d83f3caadc2294e9,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: _defaultLocalPosition.x
+      value: -140
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _defaultLocalPosition.y
+      value: 150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134482}

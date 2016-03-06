@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childBullet: {fileID: 132906, guid: 63e64a1360cc3874686ebe7565f9b148, type: 2}
-  genarateCycleSec: 1.5
+  genarateCycleSec: 2
   _rotateAngle: 0.1
 --- !u!212 &21259470
 SpriteRenderer:
@@ -93,7 +93,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: genarateCycleSec
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 167836}
