@@ -62,6 +62,7 @@ public class event0_1_0_0 : MonoBehaviour {
 	private IEnumerator stageClear(){
 		staticValueManagerS sVMS = staticValueManagerGetter.getManager ();
 
+		/*
 		//会話表示
 		sVMS.getNowSceneChangeValue().sceneFileName = "0-1-0-3";
 		GameObject tmpGO = (GameObject)Instantiate (_talkPartPerefab);
@@ -73,6 +74,10 @@ public class event0_1_0_0 : MonoBehaviour {
 
 		//引き続きコライダーは停止
 		GMS.setAllCollider2DEnabale (false);
+
+		*/
+
+		GameObject tmpGO ;
 
 		Time.timeScale = 1;	//パーティクルを使うため1にする
 

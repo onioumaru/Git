@@ -29,7 +29,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -49,11 +49,12 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -71,6 +72,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: -14}
+        - {x: 15, y: -15}
+        - {x: 16, y: -12}
+        - {x: 16, y: 12}
+        - {x: 9, y: 16}
+        - {x: -8, y: 16}
+        - {x: -14, y: 4}
+        - {x: -14, y: -16}
+        - {x: 8, y: -16}
+        - {x: 8, y: -8}
+        - {x: 8, y: -10}
     - name: "\u30B5\u30AF\u30E902_1"
       rect:
         serializedVersion: 2
@@ -81,6 +94,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 16}
+        - {x: -9, y: 16}
+        - {x: -15, y: 2}
+        - {x: -15, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 12}
     - name: "\u30B5\u30AF\u30E902_2"
       rect:
         serializedVersion: 2
@@ -91,6 +111,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 15}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: "\u30B5\u30AF\u30E902_3"
       rect:
         serializedVersion: 2
@@ -101,6 +127,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -12, y: 11}
+        - {x: -12, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 15}
+        - {x: 15, y: 16}
     - name: "\u30B5\u30AF\u30E902_4"
       rect:
         serializedVersion: 2
@@ -111,6 +144,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -13, y: 12}
+        - {x: -16, y: 2}
+        - {x: -16, y: -9}
+        - {x: -15, y: -15}
+        - {x: -10, y: -16}
+        - {x: 8, y: -16}
+        - {x: 16, y: -13}
+        - {x: 16, y: 9}
+        - {x: 11, y: 16}
     - name: "\u30B5\u30AF\u30E902_5"
       rect:
         serializedVersion: 2
@@ -121,6 +165,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 16}
+        - {x: -11, y: 13}
+        - {x: -15, y: 3}
+        - {x: -15, y: -11}
+        - {x: -13, y: -16}
+        - {x: 8, y: -16}
+        - {x: 15, y: -4}
+        - {x: 15, y: 12}
+        - {x: 10, y: 16}
     - name: "\u30B5\u30AF\u30E902_6"
       rect:
         serializedVersion: 2
@@ -131,6 +185,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 16}
+        - {x: -9, y: 16}
+        - {x: -15, y: 2}
+        - {x: -15, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 12}
     - name: "\u30B5\u30AF\u30E902_7"
       rect:
         serializedVersion: 2
@@ -141,6 +202,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -14, y: 7}
+        - {x: -14, y: -12}
+        - {x: -12, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 15}
+        - {x: 14, y: 16}
     - name: "\u30B5\u30AF\u30E902_8"
       rect:
         serializedVersion: 2
@@ -151,6 +220,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -14, y: 4}
+        - {x: -14, y: -12}
+        - {x: -10, y: -16}
+        - {x: 9, y: -16}
+        - {x: 14, y: -14}
+        - {x: 14, y: 13}
+        - {x: 11, y: 16}
     - name: "\u30B5\u30AF\u30E902_9"
       rect:
         serializedVersion: 2
@@ -161,6 +239,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 16}
+        - {x: -11, y: 12}
+        - {x: -13, y: 9}
+        - {x: -13, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 12}
+        - {x: 10, y: 16}
     - name: "\u30B5\u30AF\u30E902_10"
       rect:
         serializedVersion: 2
@@ -171,6 +257,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -15, y: 8}
+        - {x: -15, y: -16}
+        - {x: 9, y: -16}
+        - {x: 16, y: -13}
+        - {x: 16, y: 12}
+        - {x: 7, y: 16}
     - name: "\u30B5\u30AF\u30E902_11"
       rect:
         serializedVersion: 2
@@ -181,7 +275,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-  spritePackingTag: 
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -13, y: 12}
+        - {x: -13, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -15}
+        - {x: 16, y: 13}
+        - {x: 13, y: 16}
+    outline: []
+  spritePackingTag: battleMain
   userData: 
   assetBundleName: 
   assetBundleVariant: 

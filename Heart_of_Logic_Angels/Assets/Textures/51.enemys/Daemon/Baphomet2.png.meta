@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: db6b109addfb4124bbfbeaef409be616
-timeCreated: 1454654659
+timeCreated: 1457330922
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -59,9 +59,9 @@ TextureImporter:
         x: 120
         y: 84
         width: 40
-        height: 28
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Baphomet2_4
@@ -70,9 +70,9 @@ TextureImporter:
         x: 160
         y: 84
         width: 40
-        height: 28
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Baphomet2_5
@@ -81,13 +81,13 @@ TextureImporter:
         x: 200
         y: 84
         width: 40
-        height: 28
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     outline: []
-  spritePackingTag: 
+  spritePackingTag: battleMain
   userData: 
   assetBundleName: 
   assetBundleVariant: 

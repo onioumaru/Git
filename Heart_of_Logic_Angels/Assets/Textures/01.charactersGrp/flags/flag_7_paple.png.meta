@@ -63,11 +63,11 @@ TextureImporter:
       pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -32, y: 16}
-        - {x: -32, y: -16}
+      - - {x: 0, y: 16}
         - {x: 0, y: -16}
-        - {x: 15, y: -4}
-        - {x: 15, y: 16}
+        - {x: 32, y: -16}
+        - {x: 47, y: -4}
+        - {x: 47, y: 16}
     - name: flag_7_paple_1
       rect:
         serializedVersion: 2
@@ -79,12 +79,12 @@ TextureImporter:
       pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -32, y: 16}
-        - {x: -32, y: -16}
-        - {x: -7, y: -16}
-        - {x: 22, y: -3}
-        - {x: 22, y: 10}
-        - {x: -8, y: 16}
+      - - {x: 0, y: 16}
+        - {x: 0, y: -16}
+        - {x: 25, y: -16}
+        - {x: 54, y: -3}
+        - {x: 54, y: 10}
+        - {x: 24, y: 16}
     - name: flag_7_paple_2
       rect:
         serializedVersion: 2
@@ -96,12 +96,12 @@ TextureImporter:
       pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -32, y: 16}
-        - {x: -32, y: -16}
-        - {x: -12, y: -16}
-        - {x: 13, y: -9}
-        - {x: 21, y: 7}
-        - {x: 21, y: 16}
+      - - {x: 0, y: 16}
+        - {x: 0, y: -16}
+        - {x: 20, y: -16}
+        - {x: 45, y: -9}
+        - {x: 53, y: 7}
+        - {x: 53, y: 16}
     - name: flag_7_paple_3
       rect:
         serializedVersion: 2
@@ -113,13 +113,13 @@ TextureImporter:
       pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -32, y: 16}
-        - {x: -32, y: -16}
-        - {x: -3, y: -16}
-        - {x: 15, y: 6}
-        - {x: 15, y: 16}
+      - - {x: 0, y: 16}
+        - {x: 0, y: -16}
+        - {x: 29, y: -16}
+        - {x: 47, y: 6}
+        - {x: 47, y: 16}
     outline: []
-  spritePackingTag: alltexture
+  spritePackingTag: battleMain
   userData: 
   assetBundleName: 
   assetBundleVariant: 

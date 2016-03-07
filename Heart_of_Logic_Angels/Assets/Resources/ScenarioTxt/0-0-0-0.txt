@@ -26,5 +26,4 @@
 
 そう。
 私たちは…@pg
-<sleep:2000>@pg
-<nextScene:t:1>
+<nextScene:t:1><sleep:2000>@pg

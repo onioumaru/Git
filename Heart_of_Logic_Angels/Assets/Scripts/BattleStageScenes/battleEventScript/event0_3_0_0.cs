@@ -46,13 +46,24 @@ public class event0_3_0_0 : MonoBehaviour {
 		tmpPath = "Prefabs/missonTargetCaption/battleClearCaption";
 		_stageClearCaption= Resources.Load(tmpPath) as GameObject;
 
-		
+
+		this.setDefaultCharaStartPosition ();
+
+
 		Time.timeScale = 1f;
 		GMS.setAllCollider2DEnabale (true);
 
 		StartCoroutine ( startTargetCall() );
 
 		StartCoroutine ( timeEvent() );
+	}
+
+	private void setDefaultCharaStartPosition(){
+		allCharaBase[] tmpBases = GameObject.FindObjectsOfType<allCharaBase> ();
+
+		foreach (allCharaBase tmpGO in tmpBases) {
+			tmpGO.thisCharaFlag.transform.position = tmpGO.transform.position;
+		}
 	}
 
 	private void clearTargetGenerater(GameObject argsGO, Vector3 argsPosition){

@@ -224,7 +224,6 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\codeandweb.com\Readme.txt" />
      <None Include="Assets\Resources\ScenarioTxt\0-7-0-0.txt" />
-     <None Include="Assets\Resources\ScenarioTxt\0-1-0-4.txt" />
      <None Include="Assets\Resources\ScenarioTxt\0-7-0-1.txt" />
      <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />

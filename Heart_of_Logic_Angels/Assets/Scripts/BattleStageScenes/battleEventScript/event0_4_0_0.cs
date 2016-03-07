@@ -27,6 +27,9 @@ public class event0_4_0_0 : MonoBehaviour {
 		//初期配置の敵をすべてセット
 		this.setDefaultEnemyEvntTarget();
 
+		this.setDefaultCharaStartPosition ();
+		this.setDefaultEnemyLevel ();
+
 		GMS = GameManagerGetter.getGameManager ();
 		GMS.setAllCollider2DEnabale (false);
 
@@ -56,6 +59,23 @@ public class event0_4_0_0 : MonoBehaviour {
 		StartCoroutine ( startTargetCall() );
 
 		StartCoroutine ( timeEvent() );
+	}
+
+	private void setDefaultEnemyLevel(){
+		allEnemyBase[] tmpBases = GameObject.FindObjectsOfType<allEnemyBase> ();
+
+		foreach (allEnemyBase tmpGO in tmpBases) {
+			tmpGO.setDefaultLevel(_defaultLevel);
+		}
+	}
+
+	private void setDefaultCharaStartPosition(){
+		allCharaBase[] tmpBases = GameObject.FindObjectsOfType<allCharaBase> ();
+
+		foreach (allCharaBase tmpGO in tmpBases) {
+			//tmpGO.transform.position = this.getDefaultCharaPositon (tmpGO.thisChara.charaNo);
+			tmpGO.thisCharaFlag.transform.position = tmpGO.transform.position;
+		}
 	}
 
 	private void setDefaultEnemyEvntTarget(){

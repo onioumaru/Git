@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: ab1963b89b4f25d479af301ca3128bc7
+timeCreated: 1457330389
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: hiyoco_waru_full_0
@@ -74,7 +76,7 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: hiyoco_waru_full_1
@@ -85,7 +87,7 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: hiyoco_waru_full_2
@@ -96,7 +98,7 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: hiyoco_waru_full_3
@@ -107,7 +109,7 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: hiyoco_waru_full_4
@@ -118,7 +120,7 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: hiyoco_waru_full_5
@@ -129,143 +131,11 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: hiyoco_waru_full_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 33
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: hiyoco_waru_full_7
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 33
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: hiyoco_waru_full_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 33
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: hiyoco_waru_full_9
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 33
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: hiyoco_waru_full_10
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 33
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: hiyoco_waru_full_11
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 33
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: hiyoco_waru_full_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: hiyoco_waru_full_13
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 1
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: hiyoco_waru_full_14
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 1
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: hiyoco_waru_full_15
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 1
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: hiyoco_waru_full_16
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 1
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: hiyoco_waru_full_17
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 1
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     outline: []
-  spritePackingTag: alltexture
+  spritePackingTag: battleMain
   userData: 
   assetBundleName: 
   assetBundleVariant: 

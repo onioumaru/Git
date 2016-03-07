@@ -67,7 +67,7 @@ public class allEnemyBase : MonoBehaviour {
 			tmpEnemyShadow.transform.localPosition = Vector3.zero;
 
 			textureVector ttv = new textureVector (this.gameObject);
-			Vector3 tmpThisWidth = ttv.getBottomOffset_ForCenterPivot(0f, 0f, animeScalingFlag);
+			Vector3 tmpThisWidth = ttv.getBottomOffset_ForCenterPivot(0f, 0.05f, animeScalingFlag);
 			tmpEnemyShadow.transform.localPosition += tmpThisWidth;
 
 			//影画像は128
@@ -91,7 +91,7 @@ public class allEnemyBase : MonoBehaviour {
 		tmpHpbarGO.transform.localPosition = Vector3.zero;
 		//位置補正
 		textureVector ttv = new textureVector (this.gameObject);
-		Vector3 tmpV = ttv.getBottomOffset_ForCenterPivot(0, -0.1f, animeScalingFlag);
+		Vector3 tmpV = ttv.getBottomOffset_ForCenterPivot(0, -0.05f, animeScalingFlag);
 		tmpHpbarGO.transform.localPosition += tmpV;
 
 		hpBar = tmpHpbarGO.GetComponent<enemyHPBarScript>();

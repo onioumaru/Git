@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11455960}
   - 114: {fileID: 11430654}
   - 58: {fileID: 5871858}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tapHealBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 4: {fileID: 435600}
   - 198: {fileID: 19818914}
   - 199: {fileID: 19947968}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1601,6 +1601,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: InitialModule.startSize.minCurve.m_Curve.Array.data[0].value
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

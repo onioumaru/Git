@@ -26,7 +26,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -46,11 +46,12 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -68,6 +69,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 23.5}
+        - {x: -22.5, y: 19.5}
+        - {x: -22.5, y: -12.5}
+        - {x: -15.5, y: -23.5}
+        - {x: 24.5, y: -23.5}
+        - {x: 28.5, y: -22.5}
+        - {x: 28.5, y: -3.5}
+        - {x: 16.5, y: 23.5}
     - name: wolf_batt02_1
       rect:
         serializedVersion: 2
@@ -78,6 +88,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 23.5}
+        - {x: -18.5, y: 13.5}
+        - {x: -18.5, y: -6.5}
+        - {x: -10.5, y: -20.5}
+        - {x: -4.5, y: -23.5}
+        - {x: 26.5, y: -23.5}
+        - {x: 30.5, y: -22.5}
+        - {x: 30.5, y: 5.5}
+        - {x: 21.5, y: 23.5}
     - name: wolf_batt02_2
       rect:
         serializedVersion: 2
@@ -88,6 +108,20 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 23.5}
+        - {x: -12.5, y: 17.5}
+        - {x: -16.5, y: 2.5}
+        - {x: -16.5, y: -10.5}
+        - {x: -13.5, y: -22.5}
+        - {x: -6.5, y: -23.5}
+        - {x: 30.5, y: -23.5}
+        - {x: 30.5, y: 15.5}
+        - {x: 23.5, y: 23.5}
+      - - {x: -27.5, y: -17.5}
+        - {x: -27.5, y: -14.5}
+        - {x: -30.5, y: -13.5}
+        - {x: -30.5, y: -18.5}
     - name: wolf_batt02_3
       rect:
         serializedVersion: 2
@@ -98,6 +132,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: 23.5}
+        - {x: -14.5, y: 23.5}
+        - {x: -27.5, y: 13.5}
+        - {x: -27.5, y: -20.5}
+        - {x: -25.5, y: -21.5}
+        - {x: 9.5, y: -21.5}
+        - {x: 19.5, y: -10.5}
+        - {x: 19.5, y: 12.5}
     - name: wolf_batt02_4
       rect:
         serializedVersion: 2
@@ -108,6 +151,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 23.5}
+        - {x: -23.5, y: 19.5}
+        - {x: -26.5, y: 14.5}
+        - {x: -26.5, y: -18.5}
+        - {x: -25.5, y: -21.5}
+        - {x: 7.5, y: -21.5}
+        - {x: 18.5, y: -10.5}
+        - {x: 18.5, y: 15.5}
+        - {x: 15.5, y: 23.5}
     - name: wolf_batt02_5
       rect:
         serializedVersion: 2
@@ -118,6 +171,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 23.5}
+        - {x: -23.5, y: 20.5}
+        - {x: -25.5, y: 11.5}
+        - {x: -25.5, y: -5.5}
+        - {x: -22.5, y: -13.5}
+        - {x: -6.5, y: -23.5}
+        - {x: 11.5, y: -23.5}
+        - {x: 17.5, y: -8.5}
+        - {x: 17.5, y: 20.5}
+        - {x: 14.5, y: 23.5}
     - name: wolf_batt02_6
       rect:
         serializedVersion: 2
@@ -128,6 +192,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 6.5}
+        - {x: -5.5, y: 6.5}
+        - {x: -23.5, y: -3.5}
+        - {x: -30.5, y: -14.5}
+        - {x: -30.5, y: -21.5}
+        - {x: -29.5, y: -23.5}
+        - {x: 30.5, y: -23.5}
+        - {x: 30.5, y: -4.5}
+        - {x: 27.5, y: -2.5}
     - name: wolf_batt02_7
       rect:
         serializedVersion: 2
@@ -138,6 +212,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 6.5}
+        - {x: -5.5, y: 6.5}
+        - {x: -23.5, y: -3.5}
+        - {x: -30.5, y: -14.5}
+        - {x: -30.5, y: -21.5}
+        - {x: -29.5, y: -23.5}
+        - {x: 30.5, y: -23.5}
+        - {x: 30.5, y: -4.5}
+        - {x: 27.5, y: -2.5}
     - name: wolf_batt02_8
       rect:
         serializedVersion: 2
@@ -148,7 +232,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-  spritePackingTag: 
+      outline:
+      - - {x: 10.5, y: 6.5}
+        - {x: -5.5, y: 6.5}
+        - {x: -23.5, y: -3.5}
+        - {x: -30.5, y: -14.5}
+        - {x: -30.5, y: -21.5}
+        - {x: -29.5, y: -23.5}
+        - {x: 30.5, y: -23.5}
+        - {x: 30.5, y: -4.5}
+        - {x: 27.5, y: -2.5}
+    outline: []
+  spritePackingTag: battleMain
   userData: 
   assetBundleName: 
   assetBundleVariant: 

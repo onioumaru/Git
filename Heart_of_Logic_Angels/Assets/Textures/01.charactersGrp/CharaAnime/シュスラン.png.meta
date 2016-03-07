@@ -277,7 +277,7 @@ TextureImporter:
         - {x: 15, y: 0}
         - {x: 15, y: 10}
     outline: []
-  spritePackingTag: alltexture
+  spritePackingTag: battleMain
   userData: 
   assetBundleName: 
   assetBundleVariant: 

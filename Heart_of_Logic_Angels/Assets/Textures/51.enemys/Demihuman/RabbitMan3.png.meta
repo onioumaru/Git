@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a28666f4d85be9742a4b7747d66776a0
-timeCreated: 1454210332
+timeCreated: 1457330322
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -74,39 +74,6 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: RabbitMan3_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 66
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_1
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 66
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_2
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 66
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
     - name: RabbitMan3_3
       rect:
         serializedVersion: 2
@@ -115,7 +82,7 @@ TextureImporter:
         width: 14
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: RabbitMan3_4
@@ -126,7 +93,7 @@ TextureImporter:
         width: 14
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: RabbitMan3_5
@@ -137,209 +104,11 @@ TextureImporter:
         width: 14
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 44
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_7
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 44
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_8
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 44
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_9
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 44
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_10
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 44
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_11
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 44
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 22
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_13
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 22
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_14
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 22
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_15
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 22
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_16
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 22
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_17
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 22
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_19
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 0
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_20
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 0
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_21
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 0
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_22
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 0
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RabbitMan3_23
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 0
-        width: 14
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     outline: []
-  spritePackingTag: 
+  spritePackingTag: battleMain
   userData: 
   assetBundleName: 
   assetBundleVariant: 

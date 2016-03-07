@@ -28,14 +28,15 @@ public class charaMenu_base : MonoBehaviour {
 
 		//
 
+		/*
 		thisPosition = this.gameObject.transform;
 
 		Vector3 tmpV = new Vector3 (-10f, 0f, 0f);
 		tmpV = tmpV + thisPosition.localPosition ;
 
 		this.gameObject.transform.localPosition = tmpV;
-
-		thisSpriteR = this.gameObject.GetComponentInChildren<SpriteRenderer>();
+*/
+		thisSpriteR = this.gameObject.GetComponent<SpriteRenderer>();
 
 		Color tmpC = thisSpriteR.color;
 		tmpC.a = 1f;
@@ -49,7 +50,9 @@ public class charaMenu_base : MonoBehaviour {
 			}
 		}
 	}
-	
+
+	/* 処理が重いため一旦停止
+
 	// Update is called once per frame
 	void Update () {
 		if (scrollInDelay < 0) {
@@ -62,6 +65,7 @@ public class charaMenu_base : MonoBehaviour {
 			scrollInDelay -= 1;		
 		}
 	}
+	*/
 
 	void OnMouseDown(){
 		parentMenu.buttonActionFlag = true;

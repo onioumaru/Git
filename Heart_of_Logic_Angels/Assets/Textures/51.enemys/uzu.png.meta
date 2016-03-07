@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -295,7 +295,7 @@ TextureImporter:
         - {x: -23.5, y: 53.5}
         - {x: -52.5, y: 29.5}
     outline: []
-  spritePackingTag: 
+  spritePackingTag: battleMain
   userData: 
   assetBundleName: 
   assetBundleVariant: 

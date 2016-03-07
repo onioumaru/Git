@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaIconSet\charaIconset_modeIcon.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaMenu_base.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaMenu_heal.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaMenu_movingFrezeFlag.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaMenu_parent.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaMenu_statusLabel.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\charaMenuskill\charaSkillColliderSakuraScript.cs" />
@@ -320,7 +321,6 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\codeandweb.com\Readme.txt" />
      <None Include="Assets\Resources\ScenarioTxt\0-7-0-0.txt" />
-     <None Include="Assets\Resources\ScenarioTxt\0-1-0-4.txt" />
      <None Include="Assets\Resources\ScenarioTxt\0-7-0-1.txt" />
      <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />

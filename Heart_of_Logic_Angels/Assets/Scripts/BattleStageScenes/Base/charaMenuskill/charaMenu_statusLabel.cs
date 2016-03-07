@@ -23,14 +23,16 @@ public class charaMenu_statusLabel : MonoBehaviour {
 		//charaUserStatus tmpCha = tmpSgvs.charaScript.thisChara;
 
 		string setStr = "Lv." + _labelStatus.nowLv + "\nHP : " + _labelStatus.nowHP + " / " + _labelStatus.maxHP + "\n";
-		setStr += "Next Level : " + _labelStatus.nextExp + "\n" + "CoolTime : 残り" + _labelStatus.restSkillCoolTime + " Sec";
+		setStr += "Next Level : " + _labelStatus.nextExp + "\n";
+
+		if (_labelStatus.restSkillCoolTime == "0.00") {
+			setStr += "CoolTime : なし　準備OK！";
+		} else {
+			setStr += "CoolTime : 残り" + _labelStatus.restSkillCoolTime + " Sec";
+		}
+
 
 		this.GetComponent<Text> ().text = setStr;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
 

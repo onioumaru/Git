@@ -75,7 +75,7 @@ public class event0_5_0_0 : MonoBehaviour {
 
 		foreach (allCharaBase tmpGO in tmpBases) {
 			tmpGO.transform.position = this.getDefaultCharaPositon (tmpGO.thisChara.charaNo);
-
+			tmpGO.thisCharaFlag.transform.position = tmpGO.transform.position;
 		}
 	}
 

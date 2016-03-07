@@ -21,11 +21,14 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
@@ -36,12 +39,14 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -59,6 +64,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.5, y: -24.5}
+        - {x: -23.5, y: -36.5}
+        - {x: 21.5, y: -36.5}
+        - {x: 33.5, y: -32.5}
+        - {x: 33.5, y: 17.5}
+        - {x: 30.5, y: 30.5}
+        - {x: -16.5, y: 30.5}
+        - {x: -34.5, y: 23.5}
     - name: yellow_ring_1
       rect:
         serializedVersion: 2
@@ -69,6 +83,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.33333, y: -33.5}
+        - {x: -34.33333, y: -43.5}
+        - {x: 37.66667, y: -43.5}
+        - {x: 40.66667, y: -42.5}
+        - {x: 40.66667, y: 19.5}
+        - {x: 38.66667, y: 26.5}
+        - {x: 29.666672, y: 36.5}
+        - {x: -21.333328, y: 36.5}
+        - {x: -39.33333, y: 30.5}
     - name: yellow_ring_2
       rect:
         serializedVersion: 2
@@ -79,6 +103,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.166656, y: 53.5}
+        - {x: -56.166656, y: 47.5}
+        - {x: -56.166656, y: -51.5}
+        - {x: -53.166656, y: -60.5}
+        - {x: 48.833344, y: -60.5}
+        - {x: 57.833344, y: -35.5}
+        - {x: 57.833344, y: 40.5}
+        - {x: 33.833344, y: 53.5}
     - name: yellow_ring_3
       rect:
         serializedVersion: 2
@@ -89,6 +122,25 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 78.5}
+        - {x: -79.5, y: 39.5}
+        - {x: -79.5, y: -41.5}
+        - {x: -68.5, y: -76.5}
+        - {x: -57.5, y: -81.5}
+        - {x: 76.5, y: -81.5}
+        - {x: 79.5, y: -63.5}
+        - {x: 79.5, y: 68.5}
+        - {x: 47.5, y: 78.5}
+      - - {x: -16.5, y: -15.5}
+        - {x: -19.5, y: -15.5}
+        - {x: -22.5, y: -18.5}
+        - {x: -23.5, y: -22.5}
+        - {x: -19.5, y: -27.5}
+        - {x: -14.5, y: -27.5}
+        - {x: -11.5, y: -22.5}
+        - {x: -11.5, y: -18.5}
+        - {x: -13.5, y: -16.5}
     - name: yellow_ring_4
       rect:
         serializedVersion: 2
@@ -99,6 +151,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.666687, y: 80.5}
+        - {x: -45.333313, y: 80.5}
+        - {x: -80.33331, y: 47.5}
+        - {x: -82.33331, y: 28.5}
+        - {x: -82.33331, y: -39.5}
+        - {x: -60.333313, y: -85.5}
+        - {x: 63.666687, y: -85.5}
+        - {x: 83.66669, y: -41.5}
+        - {x: 83.66669, y: 55.5}
+        - {x: 78.66669, y: 62.5}
     - name: yellow_ring_5
       rect:
         serializedVersion: 2
@@ -109,5 +172,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-  spritePackingTag: 
+      outline:
+      - - {x: 47.833313, y: 80.5}
+        - {x: -36.166687, y: 80.5}
+        - {x: -83.16669, y: 62.5}
+        - {x: -83.16669, y: -60.5}
+        - {x: -41.166687, y: -85.5}
+        - {x: 54.833313, y: -85.5}
+        - {x: 80.83331, y: -56.5}
+        - {x: 80.83331, y: 41.5}
+        - {x: 78.83331, y: 48.5}
+    outline: []
+  spritePackingTag: battleMain
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

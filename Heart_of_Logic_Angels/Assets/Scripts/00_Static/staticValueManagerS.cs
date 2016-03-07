@@ -96,13 +96,15 @@ public class staticValueManagerS : MonoBehaviour {
 			switch(	int.Parse(tmpPgrs.ToString())){
 			case 0:
 				//now Game
-				Application.LoadLevel("talkScene");
+				//Application.LoadLevel("talkScene");
+				SceneManager.LoadSceneAsync ("talkScene");
 
 				break;
 			default:
 				//基本ここ
 				//ステージセレクトへ移動
-				Application.LoadLevel("stageSelect");
+				//Application.LoadLevel("stageSelect");
+				SceneManager.LoadSceneAsync ("stageSelect");
 				break;
 			}
 
@@ -110,31 +112,35 @@ public class staticValueManagerS : MonoBehaviour {
 			
 		case sceneChangeStatusEnum.gotoTitle:
 			// argsVal は必要ない
-			Application.LoadLevel("title");
+			//Application.LoadLevel("title");
+			SceneManager.LoadSceneAsync ("title");
 			break;
 			
 		case sceneChangeStatusEnum.gotoTalkScene:
 			//下記の関数がスタートする
 			//talkScene - talkingMain - mainText - talkingMainScript - Start()
-			Application.LoadLevel("talkScene");
+			//Application.LoadLevel("talkScene");
+			SceneManager.LoadSceneAsync ("talkScene");
 			
 			break;
 		case sceneChangeStatusEnum.gotoStageSelect:
-			Debug.Log ("stageSelect");
-			Application.LoadLevel("stageSelect");
+			//Debug.Log ("stageSelect");
+			//Application.LoadLevel("stageSelect");
+			SceneManager.LoadSceneAsync ("stageSelect");
 			
 			break;
 			
 		case sceneChangeStatusEnum.gotoSortieSelect:
-			Debug.Log ("gotoSortieSelect");
-			Application.LoadLevel("selectSortieCharactersScene");
+			//Debug.Log ("gotoSortieSelect");
+			//Application.LoadLevel("selectSortieCharactersScene");
+			SceneManager.LoadSceneAsync ("selectSortieCharactersScene");
 			
 			break;
 
 		case sceneChangeStatusEnum.gotoBattle:
-			Debug.Log ("goto Battle : " + tmpSCV.sceneFileName);
-
-			Application.LoadLevel(tmpSCV.sceneFileName);
+			//Debug.Log ("goto Battle : " + tmpSCV.sceneFileName);
+			//Application.LoadLevel(tmpSCV.sceneFileName);
+			SceneManager.LoadSceneAsync (tmpSCV.sceneFileName);
 			break;
 		}
 	}

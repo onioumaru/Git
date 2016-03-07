@@ -27,7 +27,7 @@ public class charaUserStatus : Behaviour{
 
 	public float MaxSkillCoolTime;
 	//クールタイムのカウントダウンで使用するため、0
-	public float restSkillCoolTime;
+	public float restSkillCoolTime = 0f;
 	
 	public charaUserStatus(enumCharaNum charaNo, float charaExp){
 		this.battleStatus = new charaBattleStatus (charaNo);
@@ -47,7 +47,7 @@ public class charaUserStatus : Behaviour{
 	}
 
 	public void initParameter(){
-		restSkillCoolTime = 0;
+		//restSkillCoolTime = 0;
 
 		switch (this.charaNo){
 		case enumCharaNum.enju_01:

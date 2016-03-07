@@ -66,6 +66,8 @@ public class talkingMainScript : MonoBehaviour {
 			this.startResouceRead (sceneFileName);
 		}
 
+		_textMainFrame.GetComponent<Image> ().enabled = true;
+
 		//メイン処理
 		StartCoroutine ( loopText () );
 	}
@@ -93,7 +95,6 @@ public class talkingMainScript : MonoBehaviour {
 	IEnumerator loopText(){
 
 		while (true) {
-			yield return null; //new WaitForSeconds(0.05f);
 
 			switch(thisStatus){
 			case enm_textControllStatus.fadein:
@@ -146,6 +147,7 @@ public class talkingMainScript : MonoBehaviour {
 				break;
 			}
 
+			yield return null; //new WaitForSeconds(0.05f);
 		}
 	}
 

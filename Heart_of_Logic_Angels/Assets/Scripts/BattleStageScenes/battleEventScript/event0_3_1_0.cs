@@ -30,6 +30,8 @@ public class event0_3_1_0 : MonoBehaviour {
 		GMS = GameManagerGetter.getGameManager ();
 		GMS.setAllCollider2DEnabale (false);
 
+		this.setDefaultCharaStartPosition ();
+
 		Time.timeScale = 0f;
 
 		//talkingParts/talkingMain
@@ -55,6 +57,14 @@ public class event0_3_1_0 : MonoBehaviour {
 		StartCoroutine ( startTargetCall() );
 
 		StartCoroutine ( timeEvent() );
+	}
+
+	private void setDefaultCharaStartPosition(){
+		allCharaBase[] tmpBases = GameObject.FindObjectsOfType<allCharaBase> ();
+
+		foreach (allCharaBase tmpGO in tmpBases) {
+			tmpGO.thisCharaFlag.transform.position = tmpGO.transform.position;
+		}
 	}
 
 	private void setDefaultEnemyEvntTarget(){

@@ -60,7 +60,9 @@ public class chara_basicAttack : MonoBehaviour {
 			}
 		}
 
+		//アタックコライダの使用フラグ
 		attackDeleyFlag = true;
+
 		//移動硬直
 		parentCharaScrpt.setMovingFreeze();
 
@@ -75,6 +77,10 @@ public class chara_basicAttack : MonoBehaviour {
 		if (nearTarget == null) {
 			//ターゲットが他キャラが同一フレームで倒した場合,攻撃モーション中に消滅した場合、ここを通る
 			//即終了
+			Debug.Log ("破壊済みオブジェクトを攻撃");
+			attackDeleyFlag = false;
+			lastFrameAttackTarget.Clear();
+
 			yield break;
 		}
 
@@ -83,8 +89,10 @@ public class chara_basicAttack : MonoBehaviour {
 		commonCharaAttack tmpAtk = new commonCharaAttack (nearTarget.gameObject, parentCharaScrpt.gameObject, tmpDm);
 		//チェックと実行
 		if (tmpAtk.exec() == false) {
-			//Debug.Log ("yield break");
+			Debug.Log ("攻撃判定を失敗");
+			attackDeleyFlag = false;
 			lastFrameAttackTarget.Clear();
+
 			yield break;
 		}
 
@@ -94,7 +102,6 @@ public class chara_basicAttack : MonoBehaviour {
 		tmpAttackLine.GetComponent<LineRenderer> ().SetPositions (tmpV3);
 
 		lastFrameAttackTarget.Clear();
-
 
 		//Attack Cycleの表示
 		parentCharaScrpt.setAttackCycleShow();

@@ -66,6 +66,8 @@ public class allCharaBase : MonoBehaviour {
 	public GameObject _HPBar;
 	private enemyHPBarScript hpBar;
 
+	public Sprite _charaShadow;
+
 	// Use this for initialization
 	void Start () {
 		thisRigiBody = this.GetComponent<Rigidbody2D> ();
@@ -89,6 +91,30 @@ public class allCharaBase : MonoBehaviour {
 		this.setMode (characterMode.Attack);
 
 		this.createHPBar ();
+
+		staticValueManagerS sVMS = staticValueManagerGetter.getManager ();
+
+		//影の作成
+		//重いので一時的に停止
+		if (_charaShadow != null && sVMS.getRenderingShadowFlag()) {
+			//影がセットされているときは表示
+			GameObject tmpEnemyShadow = new GameObject ("charaShadow");
+			tmpEnemyShadow.AddComponent<SpriteRenderer> ();
+			tmpEnemyShadow.GetComponent<SpriteRenderer> ().sprite = _charaShadow;
+			tmpEnemyShadow.GetComponent<SpriteRenderer> ().color = new Color(1f, 1f, 1f, 0.3f);
+
+			tmpEnemyShadow.transform.parent = this.transform;
+			tmpEnemyShadow.transform.localPosition = Vector3.zero;
+
+			textureVector ttv = new textureVector (this.gameObject);
+			Vector3 tmpThisWidth = ttv.getBottomOffset_ForCenterPivot(0f, 0.05f, false);
+			tmpEnemyShadow.transform.localPosition += tmpThisWidth;
+
+			//影画像は128
+			float tmpScale = ttv.getWidth(false) / 1.28f;
+			tmpEnemyShadow.transform.localScale = new Vector3(tmpScale,tmpScale,1f);
+
+		}
 
 		StartCoroutine (mainLoop());
 		StartCoroutine (calcCoolTimeLoop ());
@@ -154,6 +180,7 @@ public class allCharaBase : MonoBehaviour {
 
 		GameObject tmpHpbarGO = Instantiate (_HPBar) as GameObject;
 		tmpHpbarGO.transform.parent = this.transform;
+		tmpHpbarGO.name = "charaHPBar";
 
 		tmpHpbarGO.transform.localPosition = Vector3.zero;
 		//位置補正
@@ -228,6 +255,8 @@ public class allCharaBase : MonoBehaviour {
 			thisChara.initParameter();
 			thisChara.nowLv = this.calcdExp.Lv;
 			thisAudio.Play();
+
+			this.createHPBar ();
 		}
 	}
 	//

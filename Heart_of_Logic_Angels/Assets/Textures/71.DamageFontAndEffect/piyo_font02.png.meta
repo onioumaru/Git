@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: f9fd20bf92ea88844abaed70defbba1a
+timeCreated: 1457330214
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: piyo_font02_0
@@ -110,7 +112,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -130,11 +132,12 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -142,156 +145,6 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: piyo_font02_0
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_2
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_4
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_5
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_6
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_7
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_8
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_9
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_10
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_11
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_12
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_13
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_14
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 113
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: piyo_font02_15
       rect:
         serializedVersion: 2
@@ -300,8 +153,9 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: piyo_font02_16
       rect:
         serializedVersion: 2
@@ -310,8 +164,9 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: piyo_font02_17
       rect:
         serializedVersion: 2
@@ -320,8 +175,9 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: piyo_font02_18
       rect:
         serializedVersion: 2
@@ -330,8 +186,9 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: piyo_font02_19
       rect:
         serializedVersion: 2
@@ -340,8 +197,9 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: piyo_font02_20
       rect:
         serializedVersion: 2
@@ -350,8 +208,9 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: piyo_font02_21
       rect:
         serializedVersion: 2
@@ -360,8 +219,9 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: piyo_font02_22
       rect:
         serializedVersion: 2
@@ -370,8 +230,9 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: piyo_font02_23
       rect:
         serializedVersion: 2
@@ -380,8 +241,9 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: piyo_font02_24
       rect:
         serializedVersion: 2
@@ -390,709 +252,11 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_25
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 97
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_26
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 97
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_27
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 97
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_28
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 97
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_29
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 97
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_30
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 97
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_31
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_32
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_33
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_34
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_35
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_36
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_37
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_38
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_39
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_40
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_41
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_42
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_43
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_44
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_45
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_46
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 81
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_47
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_48
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_49
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_50
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_51
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_52
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_53
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_54
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_55
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_56
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_57
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_58
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_59
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_60
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_61
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_62
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 65
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_63
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_64
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_65
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_66
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_67
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_68
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_69
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_70
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_71
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_72
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_73
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_74
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_75
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_76
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_77
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_78
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 49
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_79
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_80
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_81
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_82
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_83
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_84
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_85
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_86
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_87
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_88
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_89
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_90
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_91
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_92
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_93
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piyo_font02_94
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 33
-        width: 15
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-  spritePackingTag: DmgAndEff
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: battleMain
   userData: 
   assetBundleName: 
   assetBundleVariant: 

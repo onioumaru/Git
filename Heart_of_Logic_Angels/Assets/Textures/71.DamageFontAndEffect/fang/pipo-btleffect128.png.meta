@@ -25,7 +25,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -45,11 +45,12 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -67,6 +68,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 32}
+        - {x: -12, y: 16}
+        - {x: -12, y: 0}
+        - {x: -1, y: -12}
+        - {x: 9, y: -12}
+        - {x: 12, y: -8}
+        - {x: 25, y: 17}
+        - {x: 25, y: 32}
     - name: pipo-btleffect128_1
       rect:
         serializedVersion: 2
@@ -77,6 +87,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 25}
+        - {x: 19, y: 32}
+        - {x: -5, y: 32}
+        - {x: -20, y: -2}
+        - {x: -20, y: -10}
+        - {x: -7, y: -26}
+        - {x: 0, y: -26}
+        - {x: 8, y: -19}
+        - {x: 13, y: -10}
+        - {x: 22, y: 8}
+        - {x: 24, y: 13}
     - name: pipo-btleffect128_2
       rect:
         serializedVersion: 2
@@ -87,6 +109,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: 30}
+        - {x: -3, y: 30}
+        - {x: -18, y: 17}
+        - {x: -26, y: -9}
+        - {x: -26, y: -18}
+        - {x: -17, y: -32}
+        - {x: 4, y: -32}
+        - {x: 15, y: -24}
+        - {x: 20, y: -4}
+        - {x: 21, y: 4}
+        - {x: 21, y: 29}
     - name: pipo-btleffect128_3
       rect:
         serializedVersion: 2
@@ -97,6 +131,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 25}
+        - {x: -28, y: 2}
+        - {x: -28, y: -31}
+        - {x: -27, y: -32}
+        - {x: 10, y: -32}
+        - {x: 21, y: -28}
+        - {x: 21, y: 25}
     - name: pipo-btleffect128_4
       rect:
         serializedVersion: 2
@@ -107,6 +149,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 25}
+        - {x: 0, y: 25}
+        - {x: -6, y: 17}
+        - {x: -26, y: -1}
+        - {x: -28, y: -6}
+        - {x: -28, y: -17}
+        - {x: -19, y: -32}
+        - {x: 4, y: -32}
+        - {x: 9, y: -29}
+        - {x: 21, y: 1}
+        - {x: 21, y: 22}
     - name: pipo-btleffect128_5
       rect:
         serializedVersion: 2
@@ -117,6 +171,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 25}
+        - {x: -10, y: 15}
+        - {x: -19, y: -10}
+        - {x: -21, y: -16}
+        - {x: -21, y: -24}
+        - {x: -17, y: -32}
+        - {x: 3, y: -32}
+        - {x: 17, y: -26}
+        - {x: 21, y: -1}
+        - {x: 21, y: 25}
     - name: pipo-btleffect128_6
       rect:
         serializedVersion: 2
@@ -127,6 +192,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 25}
+        - {x: -10, y: 15}
+        - {x: -19, y: -10}
+        - {x: -21, y: -16}
+        - {x: -21, y: -24}
+        - {x: -17, y: -32}
+        - {x: 3, y: -32}
+        - {x: 17, y: -26}
+        - {x: 21, y: -1}
+        - {x: 21, y: 25}
     - name: pipo-btleffect128_7
       rect:
         serializedVersion: 2
@@ -137,7 +213,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-  spritePackingTag: DmgAndEff
+      outline:
+      - - {x: 1, y: 25}
+        - {x: -13, y: 17}
+        - {x: -21, y: -9}
+        - {x: -21, y: -32}
+        - {x: 11, y: -32}
+        - {x: 21, y: -29}
+        - {x: 21, y: 25}
+    outline: []
+  spritePackingTag: battleMain
   userData: 
   assetBundleName: 
   assetBundleVariant: 
