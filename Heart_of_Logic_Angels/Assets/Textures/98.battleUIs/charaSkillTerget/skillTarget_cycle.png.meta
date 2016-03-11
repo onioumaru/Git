@@ -1,0 +1,472 @@
+fileFormatVersion: 2
+guid: a7e82e24c710b2344bf0a8908d2b2a38
+timeCreated: 1457455037
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skillTarget_cycle_0
+    21300002: skillTarget_cycle_1
+    21300004: skillTarget_cycle_2
+    21300006: skillTarget_cycle_3
+    21300008: skillTarget_cycle_4
+    21300010: skillTarget_cycle_5
+    21300012: skillTarget_cycle_6
+    21300014: skillTarget_cycle_7
+    21300016: skillTarget_cycle_8
+    21300018: skillTarget_cycle_9
+    21300020: skillTarget_cycle_10
+    21300022: skillTarget_cycle_11
+    21300024: skillTarget_cycle_12
+    21300026: skillTarget_cycle_13
+    21300028: skillTarget_cycle_14
+    21300030: skillTarget_cycle_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: skillTarget_cycle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 14}
+        - {x: -12, y: 9}
+        - {x: -14, y: 2}
+        - {x: -14, y: -7}
+        - {x: -9, y: -15}
+        - {x: 11, y: -15}
+        - {x: 15, y: -8}
+        - {x: 15, y: 9}
+        - {x: 10, y: 14}
+    - name: skillTarget_cycle_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 21}
+        - {x: -21, y: 8}
+        - {x: -21, y: -8}
+        - {x: -19, y: -15}
+        - {x: -11, y: -22}
+        - {x: 10, y: -22}
+        - {x: 22, y: -17}
+        - {x: 22, y: 11}
+        - {x: 9, y: 21}
+    - name: skillTarget_cycle_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: 31}
+        - {x: -26, y: 31}
+        - {x: -31, y: 24}
+        - {x: -31, y: -15}
+        - {x: -23, y: -33}
+        - {x: 19, y: -33}
+        - {x: 31, y: -22}
+        - {x: 33, y: -11}
+        - {x: 33, y: 20}
+    - name: skillTarget_cycle_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: 42}
+        - {x: -37, y: 42}
+        - {x: -42, y: 23}
+        - {x: -42, y: -29}
+        - {x: -22, y: -43}
+        - {x: 16, y: -43}
+        - {x: 28, y: -39}
+        - {x: 43, y: -22}
+        - {x: 43, y: 19}
+    - name: skillTarget_cycle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 53}
+        - {x: -53, y: 35}
+        - {x: -53, y: -43}
+        - {x: -34, y: -54}
+        - {x: 54, y: -54}
+        - {x: 54, y: 53}
+      - - {x: -10, y: 17}
+        - {x: -17, y: 14}
+        - {x: -17, y: -14}
+        - {x: -15, y: -18}
+        - {x: 14, y: -18}
+        - {x: 18, y: -16}
+        - {x: 18, y: 11}
+        - {x: 13, y: 17}
+    - name: skillTarget_cycle_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 64}
+        - {x: -45, y: 64}
+        - {x: -64, y: 23}
+        - {x: -64, y: -36}
+        - {x: -40, y: -65}
+        - {x: 31, y: -65}
+        - {x: 40, y: -64}
+        - {x: 65, y: -36}
+        - {x: 65, y: 30}
+        - {x: 62, y: 48}
+      - - {x: -22, y: 28}
+        - {x: -28, y: 22}
+        - {x: -28, y: -15}
+        - {x: -21, y: -29}
+        - {x: 26, y: -29}
+        - {x: 29, y: -18}
+        - {x: 29, y: 25}
+        - {x: 19, y: 28}
+    - name: skillTarget_cycle_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 74}
+        - {x: -74, y: 54}
+        - {x: -74, y: -43}
+        - {x: -43, y: -76}
+        - {x: 30, y: -76}
+        - {x: 76, y: -61}
+        - {x: 76, y: 52}
+        - {x: 47, y: 74}
+    - name: skillTarget_cycle_7
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: 85}
+        - {x: -48, y: 85}
+        - {x: -85, y: 54}
+        - {x: -85, y: -33}
+        - {x: -71, y: -79}
+        - {x: -38, y: -87}
+        - {x: 47, y: -87}
+        - {x: 87, y: -38}
+        - {x: 87, y: 23}
+        - {x: 84, y: 41}
+    - name: skillTarget_cycle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62, y: 96}
+        - {x: -37, y: 96}
+        - {x: -85, y: 55}
+        - {x: -95, y: 29}
+        - {x: -95, y: -31}
+        - {x: -93, y: -49}
+        - {x: -56, y: -84}
+        - {x: -38, y: -97}
+        - {x: 46, y: -97}
+        - {x: 67, y: -88}
+        - {x: 97, y: -35}
+        - {x: 97, y: 45}
+    - name: skillTarget_cycle_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 108, y: -29}
+        - {x: 108, y: 34}
+        - {x: 89, y: 79}
+        - {x: 36, y: 106}
+        - {x: -27, y: 106}
+        - {x: -52, y: 100}
+        - {x: -101, y: 52}
+        - {x: -106, y: 34}
+        - {x: -106, y: -24}
+        - {x: -100, y: -55}
+        - {x: -74, y: -83}
+        - {x: -32, y: -108}
+        - {x: 24, y: -108}
+        - {x: 47, y: -104}
+        - {x: 93, y: -68}
+        - {x: 106, y: -40}
+    - name: skillTarget_cycle_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 119, y: 27}
+        - {x: 104, y: 68}
+        - {x: 78, y: 98}
+        - {x: 33, y: 117}
+        - {x: -19, y: 117}
+        - {x: -53, y: 107}
+        - {x: -87, y: 86}
+        - {x: -117, y: 41}
+        - {x: -117, y: -30}
+        - {x: -104, y: -68}
+        - {x: -51, y: -115}
+        - {x: -27, y: -119}
+        - {x: 29, y: -119}
+        - {x: 74, y: -99}
+        - {x: 92, y: -84}
+        - {x: 119, y: -35}
+    - name: skillTarget_cycle_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: -31}
+        - {x: 128, y: 26}
+        - {x: 117, y: 59}
+        - {x: 98, y: 85}
+        - {x: 66, y: 114}
+        - {x: 29, y: 127}
+        - {x: 22, y: 128}
+        - {x: -22, y: 128}
+        - {x: -73, y: 112}
+        - {x: -118, y: 63}
+        - {x: -126, y: 36}
+        - {x: -127, y: 18}
+        - {x: -127, y: -32}
+        - {x: -108, y: -77}
+        - {x: -82, y: -104}
+        - {x: -40, y: -128}
+        - {x: 32, y: -128}
+        - {x: 70, y: -116}
+        - {x: 97, y: -93}
+        - {x: 126, y: -45}
+    - name: skillTarget_cycle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 104, y: 39}
+        - {x: 83, y: 74}
+        - {x: 42, y: 103}
+        - {x: -40, y: 103}
+        - {x: -69, y: 83}
+        - {x: -103, y: 36}
+        - {x: -103, y: -23}
+        - {x: -83, y: -76}
+        - {x: -37, y: -104}
+        - {x: 16, y: -104}
+        - {x: 34, y: -102}
+        - {x: 65, y: -88}
+        - {x: 103, y: -47}
+        - {x: 104, y: -38}
+    - name: skillTarget_cycle_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 115, y: 25}
+        - {x: 108, y: 55}
+        - {x: 94, y: 71}
+        - {x: 59, y: 101}
+        - {x: 27, y: 113}
+        - {x: -28, y: 113}
+        - {x: -66, y: 95}
+        - {x: -83, y: 83}
+        - {x: -111, y: 38}
+        - {x: -113, y: 32}
+        - {x: -113, y: -24}
+        - {x: -108, y: -57}
+        - {x: -57, y: -109}
+        - {x: -27, y: -115}
+        - {x: 32, y: -115}
+        - {x: 72, y: -96}
+        - {x: 108, y: -54}
+        - {x: 115, y: -35}
+    - name: skillTarget_cycle_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 126, y: -26}
+        - {x: 126, y: 22}
+        - {x: 116, y: 59}
+        - {x: 84, y: 96}
+        - {x: 42, y: 122}
+        - {x: 27, y: 124}
+        - {x: -24, y: 124}
+        - {x: -67, y: 112}
+        - {x: -112, y: 66}
+        - {x: -124, y: 22}
+        - {x: -124, y: -23}
+        - {x: -111, y: -60}
+        - {x: -102, y: -79}
+        - {x: -60, y: -116}
+        - {x: -29, y: -127}
+        - {x: 24, y: -127}
+        - {x: 37, y: -126}
+        - {x: 66, y: -110}
+        - {x: 98, y: -84}
+        - {x: 116, y: -62}
+    - name: skillTarget_cycle_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: -50}
+        - {x: 128, y: 49}
+        - {x: 122, y: 65}
+        - {x: 97, y: 98}
+        - {x: 69, y: 119}
+        - {x: 45, y: 128}
+        - {x: -44, y: 128}
+        - {x: -71, y: 118}
+        - {x: -105, y: 89}
+        - {x: -122, y: 59}
+        - {x: -128, y: 43}
+        - {x: -128, y: -45}
+        - {x: -120, y: -64}
+        - {x: -112, y: -79}
+        - {x: -86, y: -109}
+        - {x: -57, y: -126}
+        - {x: -49, y: -128}
+        - {x: 56, y: -128}
+        - {x: 89, y: -109}
+        - {x: 112, y: -82}
+        - {x: 126, y: -56}
+    outline: []
+  spritePackingTag: battleCharaMenu
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

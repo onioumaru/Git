@@ -24,9 +24,9 @@ public class simpleMovingScript : MonoBehaviour {
 
 	IEnumerator simpleMoveVector(Vector3 argsV3){
 		while (true) {
-			this.transform.position += argsV3 * _defaultMovingSpeed;
+			this.transform.position += argsV3 * _defaultMovingSpeed * Time.deltaTime * 35f;
 
-			yield return new WaitForSeconds (0.001f);
+			yield return new WaitForSeconds (0.0001f);
 		}
 	}
 
@@ -38,9 +38,9 @@ public class simpleMovingScript : MonoBehaviour {
 
 	IEnumerator simpleMoveUp(){
 		while (true) {
-			this.transform.position += this.transform.up * _defaultMovingSpeed;
+			this.transform.position += this.transform.up * _defaultMovingSpeed * Time.deltaTime * 35f;
 
-			yield return new WaitForSeconds (0.001f);
+			yield return new WaitForSeconds (0.0001f);
 		}
 	}
 

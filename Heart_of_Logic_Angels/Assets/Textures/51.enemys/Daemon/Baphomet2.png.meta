@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: db6b109addfb4124bbfbeaef409be616
-timeCreated: 1457330922
+timeCreated: 1457555974
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -56,9 +56,9 @@ TextureImporter:
     - name: Baphomet2_3
       rect:
         serializedVersion: 2
-        x: 120
+        x: 133
         y: 84
-        width: 40
+        width: 20
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -67,9 +67,9 @@ TextureImporter:
     - name: Baphomet2_4
       rect:
         serializedVersion: 2
-        x: 160
+        x: 173
         y: 84
-        width: 40
+        width: 20
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -78,9 +78,9 @@ TextureImporter:
     - name: Baphomet2_5
       rect:
         serializedVersion: 2
-        x: 200
+        x: 213
         y: 84
-        width: 40
+        width: 20
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

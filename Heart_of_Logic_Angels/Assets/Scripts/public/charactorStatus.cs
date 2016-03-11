@@ -68,19 +68,19 @@ public class charaUserStatus : Behaviour{
 			this.nowHP = (this.nowLv * 56f) + 20f; // 100 +
 			flyingAtkMagn = 0.4f;
 			flyingDefMagn = 1.5f;
-			MaxSkillCoolTime = 15f;
+			MaxSkillCoolTime = 300f;
 			break;
 
 		case enumCharaNum.akane_04:
 			this.nowHP = (this.nowLv * 49f) + 20f; // 100 +
 			flyingAtkMagn = 0.2f;
 			flyingDefMagn = 2.5f;
-			MaxSkillCoolTime = 15f;
+			MaxSkillCoolTime = 90f;
 			break;
 
 		case enumCharaNum.houzuki_05:
 			this.nowHP = (this.nowLv * 62f) + 20f; // 100 +
-			flyingAtkMagn = 0.2f;
+			flyingAtkMagn = 0.9f;
 			flyingDefMagn = 2.5f;
 			MaxSkillCoolTime = 300f;
 			break;
@@ -180,7 +180,7 @@ public class charaBattleStatus{
 		case enumCharaNum.suzusiro_03:
 			//バランスタンク型
 			_atk_info = new charaBattle_info(1f  ,1.2f,  1f,0.5f, 0.07f,0.8f);
-			_def_info = new charaBattle_info(1f  ,1.2f,0.7f,0.5f, 0.03f,0.15f);
+			_def_info = new charaBattle_info(1f  ,1.2f,0.7f,0.5f, 0.03f,0.1f);
 			_mov_info = new charaBattle_info(0.1f,1.2f,0.6f,0.5f, 0.13f, 1f);
 			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0, 1f);
 			break;

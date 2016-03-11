@@ -254,7 +254,8 @@ public class allCharaBase : MonoBehaviour {
 			//
 			thisChara.initParameter();
 			thisChara.nowLv = this.calcdExp.Lv;
-			thisAudio.Play();
+
+			soundManagerGetter.getManager ().playOneShotSound (enm_oneShotSound.Voice_LvUp);
 
 			this.createHPBar ();
 		}

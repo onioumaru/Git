@@ -5,7 +5,6 @@ using System.Collections;
 public class charaMenu_base : MonoBehaviour {
 	private Transform thisPosition;
 	private SpriteRenderer thisSpriteR;
-	private AudioSource thisAudioS;
 	private Animator thisAnime;
 	
 	public float scrollInDelay;
@@ -23,7 +22,6 @@ public class charaMenu_base : MonoBehaviour {
 		//
 		parentMenu = this.gameObject.GetComponentInParent<charaMenu_parent> ();
 		parentChara = parentMenu.getAllCharaScript ();
-		thisAudioS = this.gameObject.GetComponentInParent<AudioSource> ();
 		thisAnime = this.gameObject.GetComponentInParent<Animator> ();
 
 		//
@@ -74,22 +72,20 @@ public class charaMenu_base : MonoBehaviour {
 		case 0:
 			parentChara.setMode(characterMode.Attack);
 			parentMenu.setCharaModeIcon(characterMode.Attack);
-			thisAudioS.Play();
 			break;
 		case 1:
 			parentChara.setMode(characterMode.Defence);
 			parentMenu.setCharaModeIcon(characterMode.Defence);
-			thisAudioS.Play();
 			break;
 		case 2:
 			parentChara.setMode(characterMode.Move);
 			parentMenu.setCharaModeIcon(characterMode.Move);
-			thisAudioS.Play();
 			break;
 		case 3:
 			//アニメーション終了時にイベント発生
 			break;
 		}
+		soundManagerGetter.getManager ().playOneShotSound (enm_oneShotSound.modeChange);
 		thisAnime.updateMode = AnimatorUpdateMode.UnscaledTime;
 	}
 

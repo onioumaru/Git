@@ -132,6 +132,14 @@ Prefab:
       propertyPath: _findingLength
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 21281138, guid: a71a6353ff175844db5671bef3452bea, type: 2}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21281138, guid: a71a6353ff175844db5671bef3452bea, type: 2}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a71a6353ff175844db5671bef3452bea, type: 2}
   m_IsPrefabParent: 0

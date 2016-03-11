@@ -39,6 +39,9 @@ public class LotoSpirit_bulletScript : MonoBehaviour {
 				this.transform.Find("anime").GetComponent<Animator>().SetTrigger("gotoNomal");
 
 				this.StopAllCoroutines ();
+
+				GameObject.Destroy (bulletSourceInstance);
+
 				break;
 			}
 			yield return new WaitForSeconds (1f);

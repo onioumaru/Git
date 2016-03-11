@@ -6,6 +6,8 @@ public class optionMenuGlobal : MonoBehaviour {
 	public Toggle _renderShadowToggle;
 	public Toggle _renderStageEffToggle;
 
+	private	staticValueManagerS sVMS;
+
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("optionMenuGlobal : Set Time.timeScale = 0");
@@ -14,7 +16,7 @@ public class optionMenuGlobal : MonoBehaviour {
 		//全てのコライダーを無効化
 		this.diseableAllColliders ();
 
-		staticValueManagerS sVMS = staticValueManagerGetter.getManager ();
+		sVMS = staticValueManagerGetter.getManager ();
 
 		_renderShadowToggle.isOn = sVMS.getRenderingShadowFlag ();
 		Debug.Log (sVMS.getRenderingShadowFlag ());
@@ -32,10 +34,14 @@ public class optionMenuGlobal : MonoBehaviour {
 	}
 
 	public void changeSenceStageSelect(){
+		//ステップの進行度は必ず0に
+		sVMS.addStoryProgresses (enum_StoryProgressType.Step, true);
 		staticValueManagerGetter.getManager ().changeScene (sceneChangeStatusEnum.gotoStageSelect);
 	}
 
 	public void changeSenceTitle(){
+		//ステップの進行度は必ず0に
+		sVMS.addStoryProgresses (enum_StoryProgressType.Step, true);
 		staticValueManagerGetter.getManager ().changeScene (sceneChangeStatusEnum.gotoTitle);
 	}
 

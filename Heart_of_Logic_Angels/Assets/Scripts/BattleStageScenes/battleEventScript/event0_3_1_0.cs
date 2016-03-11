@@ -21,7 +21,7 @@ public class event0_3_1_0 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		soundManagerGetter.getManager ().playBGM (4);
+		soundManagerGetter.getManager ().playBGM (5);
 
 		generatedTargetEnemys = new List<GameObject>();
 		//初期配置の敵をすべてセット
@@ -113,9 +113,9 @@ public class event0_3_1_0 : MonoBehaviour {
 
 	IEnumerator timeEvent(){
 		// 時間経過 系
-		//yield return new WaitForSeconds (30f);
+		yield return new WaitForSeconds (10f);
 
-		//GMS.talkingPartLoader ("0-3-0-2");
+		GMS.talkingPartLoader ("0-3-1-0");
 
 		while (true) {
 			yield return new WaitForSeconds (2f);

@@ -37,7 +37,7 @@ public class missionTargetTitleS : MonoBehaviour {
 		
 					tmpPassedSec += Time.fixedDeltaTime;
 
-					tmpY -= 0.5f;
+					tmpY -= 2f;
 					if (tmpY < 0f) {
 							tmpY = 20f;
 					}

@@ -46,6 +46,7 @@ public class sorityYesNoDiaglog : MonoBehaviour {
 		int tmpProgress = sVMS.getStoryProgress ();
 		switch (tmpProgress) {
 		case 7:
+			sVMS.addStoryProgresses (enum_StoryProgressType.Step, true);
 			sVMS.changeScene(sceneChangeStatusEnum.gotoTalkScene);
 			break;
 		default:

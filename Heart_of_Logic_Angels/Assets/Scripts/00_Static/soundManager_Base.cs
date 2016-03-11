@@ -293,6 +293,8 @@ public enum enm_oneShotSound{
 	,buni
 	,deadEffectSound
 	,metal
+	,modeChange
+	,Voice_LvUp
 }
 
 

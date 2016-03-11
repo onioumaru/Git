@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clearTargetEnemy: []
+  _defaultLevel: 8
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

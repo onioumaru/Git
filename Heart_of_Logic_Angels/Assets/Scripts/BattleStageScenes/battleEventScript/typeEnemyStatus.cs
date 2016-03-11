@@ -44,10 +44,10 @@ public class typeEnemyStatus : MonoBehaviour{
 			//早くて弱い設計
 			this.maxHP            = argsLevel * argsLevel * 0.8f;
 			this.nowHP            = this.maxHP;
-			this.grantExp         = argsLevel;
+			this.grantExp         = argsLevel * argsLevel * 0.9f + 50f;
 
 			this.attackDeleySec = 1f;
-			this.AttackingPower = argsLevel * 1.1f;
+			this.AttackingPower = argsLevel * 0.84f;
 
 			break;
 
@@ -66,8 +66,7 @@ public class typeEnemyStatus : MonoBehaviour{
 			break;
 
 		case enumEnemyType.daemon01:
-			//固い&攻撃間隔が長い
-			this.maxHP            = argsLevel * argsLevel * 11f;
+			this.maxHP            = argsLevel * argsLevel * 6.5f;
 			this.nowHP            = this.maxHP;
 			this.grantExp         = argsLevel * 11f;
 

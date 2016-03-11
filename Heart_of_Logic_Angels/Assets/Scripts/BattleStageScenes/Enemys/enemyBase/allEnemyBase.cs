@@ -170,7 +170,8 @@ public class allEnemyBase : MonoBehaviour {
 			
 			sMB.playOneShotSound(enm_oneShotSound.attack03);
 
-			this.removedMe (this.transform);
+			Instantiate (removeEnemyPrefab, this.transform.position,Quaternion.identity);
+			Destroy (this.gameObject);
 			return 0;
 
 		} else {
@@ -179,11 +180,6 @@ public class allEnemyBase : MonoBehaviour {
 			return 0;
 
 		}
-	}
-
-	public void removedMe(Transform origin){
-		Instantiate (removeEnemyPrefab, origin.position, origin.rotation);
-		Destroy (this.gameObject);
 	}
 
 	public void setMoving(int argsType, float argsMovingSpeed){

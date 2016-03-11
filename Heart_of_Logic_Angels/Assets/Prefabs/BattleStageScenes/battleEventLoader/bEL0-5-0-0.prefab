@@ -42,7 +42,7 @@ MonoBehaviour:
   _missionTargetInstance:
   - {fileID: 0}
   _clearTargetEnemy: []
-  _defaultLevel: 10
+  _defaultLevel: 9
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
