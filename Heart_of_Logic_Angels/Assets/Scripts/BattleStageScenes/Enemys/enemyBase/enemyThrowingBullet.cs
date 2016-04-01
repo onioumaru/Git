@@ -33,6 +33,7 @@ public class enemyThrowingBullet : MonoBehaviour {
 
 				Vector3 tmpV = this.transform.position;
 				GameObject nearChara =	GMS.getMostNearCharacter (tmpV);
+				if (nearChara == null){yield break;}
 
 				eTB.setMoveTypeTargetPosi (1, nearChara.transform.position - tmpV);
 

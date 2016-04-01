@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6cbb843156f95f41beb29499f4fcdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waitTime: 0.1
+  _waitTime: 0.2
 --- !u!120 &12084628
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -95,7 +95,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _waitTime
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

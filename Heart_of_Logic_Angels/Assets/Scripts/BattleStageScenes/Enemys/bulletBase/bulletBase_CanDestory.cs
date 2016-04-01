@@ -9,10 +9,7 @@ public class bulletBase_CanDestory : MonoBehaviour {
 	//くらい判定エリアを持っているオブジェクトにアタッチする事
 	public void interceptedThisBullet(){
 		Destroy (this.gameObject);
-	}
 
-	void OnDestroy(){
-		//flipSword
 		soundManagerGetter.getManager().playOneShotSound(enm_oneShotSound.flipSword);
 
 		if (_destroyEff != null) {

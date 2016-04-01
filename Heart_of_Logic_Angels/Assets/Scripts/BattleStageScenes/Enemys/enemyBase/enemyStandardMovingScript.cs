@@ -67,7 +67,6 @@ public class enemyStandardMovingScript : MonoBehaviour {
 			yield return new WaitForSeconds(5f);
 			
 			tmpNearChara = gms.getMostNearCharacter(this.transform.position);
-
 			if (tmpNearChara == null){yield break;}
 
 			Vector3 chkRange = tmpNearChara.transform.position - this.transform.position;

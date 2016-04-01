@@ -236,7 +236,7 @@ MonoBehaviour:
   _largeBulletPrefab: {fileID: 167836, guid: 16d5b7908b8bcd0418b3640967066e0f, type: 2}
   _createBulletPosi: {x: -3, y: 3.5, z: 0}
   _bulletSourcePrefab: {fileID: 186928, guid: f2382dd5f064c674d99b1cc8df7b38d5, type: 2}
-  _bulletSourceMovingTotalFrame: 600
+  _bulletSourceMovingTotalFrame: 60
   _bulletDamageMagn: 10
 --- !u!114 &11472660
 MonoBehaviour:

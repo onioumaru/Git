@@ -378,6 +378,15 @@ public class GameManagerScript : MonoBehaviour {
 		}
 	}
 
+
+	/// <summary>
+	/// 最寄りのプレイヤーキャラクターを返す
+	/// 全滅時にエラーを吐くので、ループの場合は確実にNull処理をすること
+	/// 例：
+	/// if (charaGO == null){yield break;}
+	/// </summary>
+	/// <returns>The most near character.</returns>
+	/// <param name="argsWorldPosision">Arguments world posision.</param>
 	public GameObject getMostNearCharacter(Vector3 argsWorldPosision){
 		float tmpNearVal = 999999;
 		GameObject retGO = null;

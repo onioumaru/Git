@@ -161,7 +161,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u672C\u30A2\u30D7\u30EA\u306F\u3001\u30A2\u30FC\u30EA\u30FC\u30A2\u30AF\u30BB\u30B9\u7248\u3068\u306A\u308A\u307E\u3059\u3002\n\n\u30A2\u30D7\u30EA\u8D77\u52D5\u6642\u3001\u5E83\u544A\u52D5\u753B\u304C\u518D\u751F\u3055\u308C\u307E\u3059\u304C\u3001\n\u5B9F\u88C5\u30C6\u30B9\u30C8\u3068\u306A\u308A\u307E\u3059\u306E\u3067\u3001\u4ECA\u5F8C\u5909\u66F4\u3055\u308C\u308B\u4E88\u5B9A\u3067\u3059\u3002\n\n\u3054\u5354\u529B\u306E\u7A0B\u3001\u3088\u308D\u3057\u304F\u304A\u9858\u3044\u3044\u305F\u3057\u307E\u3059\u3002"
+  m_Text: "\u672C\u30A2\u30D7\u30EA\u306F\u3001\u30D9\u30FC\u30BF\u7248\u3068\u306A\u308A\u307E\u3059\u3002\n\n\u30A2\u30D7\u30EA\u8D77\u52D5\u6642\u3001\u5E83\u544A\u52D5\u753B\u304C\u518D\u751F\u3055\u308C\u307E\u3059\u304C\u3001\n\u5B9F\u88C5\u30C6\u30B9\u30C8\u3068\u306A\u308A\u307E\u3059\u306E\u3067\u3001\u4ECA\u5F8C\u5909\u66F4\u3055\u308C\u308B\u4E88\u5B9A\u3067\u3059\u3002\n\n\u3054\u5354\u529B\u306E\u7A0B\u3001\u3088\u308D\u3057\u304F\u304A\u9858\u3044\u3044\u305F\u3057\u307E\u3059\u3002"
 --- !u!114 &11442388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -254,10 +254,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 854, y: 480}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

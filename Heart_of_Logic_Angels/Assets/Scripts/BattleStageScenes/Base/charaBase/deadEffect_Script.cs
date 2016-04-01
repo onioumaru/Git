@@ -12,7 +12,7 @@ public class deadEffect_Script : MonoBehaviour {
 		while (true) {
 			yield return new WaitForSeconds(0.001f);
 
-			this.transform.localPosition += _movingMoment;
+			this.transform.localPosition += _movingMoment * 35f * Time.deltaTime;
 		}
 	}
 }

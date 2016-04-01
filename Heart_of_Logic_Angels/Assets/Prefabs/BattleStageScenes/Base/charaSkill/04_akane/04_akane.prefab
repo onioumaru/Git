@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 3
-  endTime: 20
+  endTime: 30
   _loopUpRotationWoldSpace: 0
   _offSetPosition: {x: 0, y: 0, z: 0}
 --- !u!198 &19821286
@@ -2007,10 +2007,10 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4280558847
+        rgba: 4280578559
       minMaxState: 0
     startSize:
-      scalar: 5
+      scalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2021,18 +2021,18 @@ ParticleSystem:
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-        m_RotationOrder: 4
+        m_RotationOrder: 0
       minCurve:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 0.4
+          value: 0.33333334
           inSlope: 0
           outSlope: 0
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-        m_RotationOrder: 4
+        m_RotationOrder: 0
       minMaxState: 3
     startRotationX:
       scalar: 1
@@ -2158,7 +2158,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 80
+      scalar: 10
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3345,7 +3345,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     startSpeed:
-      scalar: 0.5
+      scalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3474,7 +3474,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 6
+      scalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3483,31 +3483,21 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-        m_RotationOrder: 4
+        m_RotationOrder: 0
       minCurve:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-        - time: 1
-          value: 0
+          value: 0.33333334
           inSlope: 0
           outSlope: 0
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-        m_RotationOrder: 4
-      minMaxState: 0
+        m_RotationOrder: 0
+      minMaxState: 3
     startRotationX:
       scalar: 1
       maxCurve:
@@ -3610,13 +3600,13 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 2
     enabled: 1
-    type: 4
+    type: 5
     radius: 0.59
-    angle: 20
+    angle: 14
     length: 5
-    boxX: 1
-    boxY: 8.15
-    boxZ: 1
+    boxX: 0.5
+    boxY: 0.5
+    boxZ: 0.5
     arc: 360
     placementMode: 0
     m_Mesh: {fileID: 0}
@@ -3632,7 +3622,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 3
+      scalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3687,9 +3677,9 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
+          value: 0.55288464
+          inSlope: 2
+          outSlope: 2
           tangentMode: 0
         - time: 1
           value: 1
@@ -3698,7 +3688,7 @@ ParticleSystem:
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-        m_RotationOrder: 4
+        m_RotationOrder: 0
       minCurve:
         serializedVersion: 2
         m_Curve:
@@ -4950,10 +4940,10 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 2737703471
+        rgba: 2151022614
       minMaxState: 0
     startSize:
-      scalar: 0.95
+      scalar: 2.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5101,7 +5091,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 5
+      scalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -9367,7 +9357,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 1442829914
+        rgba: 1437868595
       minMaxState: 0
     startSize:
       scalar: 3
@@ -12089,8 +12079,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: -726411341
+  m_SortingOrder: 10000
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -12294,8 +12284,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: -726411341
+  m_SortingOrder: 99
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -12431,6 +12421,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: colliderCreateSec
       value: 2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: endTime
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -27,6 +27,7 @@ public class enemyCharaSearchScript : MonoBehaviour {
 			yield return new WaitForSeconds(2f);
 
 			GameObject charaGO = gms.getMostNearCharacter(this.transform.position);
+			if (charaGO == null){yield break;}
 
 			Vector3 tmpV3 = charaGO.transform.position - this.transform.position;
 

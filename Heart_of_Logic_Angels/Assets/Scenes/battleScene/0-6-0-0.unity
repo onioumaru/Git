@@ -124,34 +124,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 166060, guid: 18552625fa2e3c44eac4dd27a2b7eada, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6166998, guid: 18552625fa2e3c44eac4dd27a2b7eada, type: 2}
-      propertyPath: m_Size.x
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 6166998, guid: 18552625fa2e3c44eac4dd27a2b7eada, type: 2}
-      propertyPath: m_Size.y
-      value: 10.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 441030, guid: 18552625fa2e3c44eac4dd27a2b7eada, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -8.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 441030, guid: 18552625fa2e3c44eac4dd27a2b7eada, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 18552625fa2e3c44eac4dd27a2b7eada, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 405464, guid: 18552625fa2e3c44eac4dd27a2b7eada, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.02
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18552625fa2e3c44eac4dd27a2b7eada, type: 2}
   m_IsPrefabParent: 0
@@ -428,7 +400,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11459414, guid: 895e6ddae5272a44b9e3accd6f3c6474, type: 2}
       propertyPath: _bulletSourceMovingTotalFrame
-      value: 600
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 895e6ddae5272a44b9e3accd6f3c6474, type: 2}
@@ -484,6 +456,10 @@ Prefab:
       propertyPath: _bulletSourcePrefab
       value: 
       objectReference: {fileID: 186928, guid: f2382dd5f064c674d99b1cc8df7b38d5, type: 2}
+    - target: {fileID: 11459414, guid: 895e6ddae5272a44b9e3accd6f3c6474, type: 2}
+      propertyPath: _bulletSourceMovingTotalFrame
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 895e6ddae5272a44b9e3accd6f3c6474, type: 2}
   m_IsPrefabParent: 0
@@ -843,7 +819,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11497690, guid: b84590cd8296546449a42899c65b9a8f, type: 2}
       propertyPath: _forDebug
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11497690, guid: b84590cd8296546449a42899c65b9a8f, type: 2}
       propertyPath: _sortieCharas.Array.data[4]
