@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{317E100E-3335-8659-2BA5-9298778155AC}") = "HeartofLogic_Clicker", "Assembly-CSharp-firstpass.csproj", "{21617736-0665-7AA1-E316-F4D97015CF3A}"
+EndProject
+Project("{317E100E-3335-8659-2BA5-9298778155AC}") = "HeartofLogic_Clicker", "Assembly-CSharp.csproj", "{97E2CA3C-33F5-69DF-9E9F-6A1ABF69ADF1}"
+EndProject
+Project("{317E100E-3335-8659-2BA5-9298778155AC}") = "HeartofLogic_Clicker", "Assembly-CSharp-Editor.csproj", "{1912B0C3-FF7E-B095-AE19-95CBC3DC35C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21617736-0665-7AA1-E316-F4D97015CF3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21617736-0665-7AA1-E316-F4D97015CF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21617736-0665-7AA1-E316-F4D97015CF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21617736-0665-7AA1-E316-F4D97015CF3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E2CA3C-33F5-69DF-9E9F-6A1ABF69ADF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E2CA3C-33F5-69DF-9E9F-6A1ABF69ADF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E2CA3C-33F5-69DF-9E9F-6A1ABF69ADF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E2CA3C-33F5-69DF-9E9F-6A1ABF69ADF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1912B0C3-FF7E-B095-AE19-95CBC3DC35C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1912B0C3-FF7E-B095-AE19-95CBC3DC35C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1912B0C3-FF7E-B095-AE19-95CBC3DC35C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1912B0C3-FF7E-B095-AE19-95CBC3DC35C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
