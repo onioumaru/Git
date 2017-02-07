@@ -104,7 +104,8 @@ public class chara_basicAttack : MonoBehaviour {
 		lastFrameAttackTarget.Clear();
 
 		//Attack Cycleの表示
-		parentCharaScrpt.setAttackCycleShow();
+		//攻撃時のサークル表示はうざいので一旦止めてみる
+		//parentCharaScrpt.setAttackCycleShow();
 		
 		float tmpAttackDeley = parentCharaScrpt.thisChara.battleStatus.thisInfo.attackDelayTime;
 		//アタックディレイ

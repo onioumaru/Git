@@ -7,7 +7,7 @@ public class wingAuto : MonoBehaviour {
 	private int loopCnt = 0;
 
 	// Use this for initialization
-	void Start () {
+	void OnEnable () {
 		if (this.transform.localScale.x < 0) {
 			angleRvrs = -1;
 				}

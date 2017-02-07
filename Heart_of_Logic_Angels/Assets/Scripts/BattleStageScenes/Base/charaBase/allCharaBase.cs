@@ -291,7 +291,7 @@ public class allCharaBase : MonoBehaviour {
 		thisAtkCircle.gameObject.transform.localScale = tmpVct;
 
 		//サークルの表示
-		this.setAttackCycleShow ();
+		thisAtkCircle.GetComponent<chara_attackEreaVisible>().setVisibleThisCicle();
 
 		switch(argsMode){
 		case characterMode.Attack:
@@ -314,13 +314,6 @@ public class allCharaBase : MonoBehaviour {
 
 			break;
 		}
-	}
-
-	//サークルを表示
-	public void setAttackCycleShow(){
-		Color tmpC = thisAtkCircle.color;
-		tmpC.a = 0.3f;
-		thisAtkCircle.color = tmpC;
 	}
 
 	//攻撃硬直

@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BattleStageScenes\Enemys\Natures\LotoSpirit_bulletScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BattleStageScenes\Base\charaBase\charaAnimationSubScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\BattleStageScenes\Enemys\Natures\LotoSpirit_bulletScript.cs" Line="11" Column="41" />
-      <File FileName="Assets\Scripts\BattleStageScenes\Enemys\bulletBase\bulletBase_CanDestory.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BattleStageScenes\Base\charaBase\chara_flyingCheck.cs" Line="51" Column="70" />
+      <File FileName="Assets\Scripts\BattleStageScenes\Base\charaBase\charaAnimationSubScript.cs" Line="50" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

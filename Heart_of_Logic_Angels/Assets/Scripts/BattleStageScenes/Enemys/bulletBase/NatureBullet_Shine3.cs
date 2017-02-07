@@ -19,7 +19,7 @@ public class NatureBullet_Shine3 : MonoBehaviour {
 	IEnumerator selfRotate(){
 		while (true) {
 			this.transform.Rotate (new Vector3(0,0, _rotateAngle * Time.deltaTime * 35f)); //Quaternion.AngleAxis (5f, Vector3.forward)
-			Debug.Log(Time.deltaTime);
+			//Debug.Log(Time.deltaTime);
 			yield return new WaitForSeconds (0.0001f);
 		}
 	}

@@ -4,6 +4,8 @@ using System.Collections;
 public class chara_flyingCheck : MonoBehaviour {
 	//GUI上でアタッチ
 	public GameObject wingEffect;
+	public GameObject wingHuwahuwaMosion;
+
 	private GameObject instanceWing = null;
 	private allCharaBase thisChara;
 	
@@ -30,7 +32,8 @@ public class chara_flyingCheck : MonoBehaviour {
 		while (true) {
 			yield return new WaitForSeconds(0.35f);
 
-			if (flyingCheckF == true){
+			if (flyingDoneF == false && flyingCheckF == true){
+				/*
 				if (instanceWing == null) {
 					instanceWing = Instantiate (wingEffect) as GameObject;
 
@@ -39,42 +42,27 @@ public class chara_flyingCheck : MonoBehaviour {
 					Vector3 tmpV = new Vector3 (0f, -0.15f, 0f);
 					instanceWing.transform.localPosition = tmpV;
 					thisChara.setFlying (true);
-				}
-			} else {
+				}*/
+
+				thisChara.setFlying (true);
+
+				//自動生成から設置済みに変更
+				wingEffect.SetActive(true);
+				wingHuwahuwaMosion.transform.GetComponent<charaAnimationSubScript>().flyingHuwahuwaSet(true);
+				flyingDoneF = true;
+
+			} else if(flyingDoneF == true && flyingCheckF == false) {
+				/*
 				if (instanceWing != null) {
 					Destroy(instanceWing);
 					thisChara.setFlying(false);
-				}
-			}
+				}*/
 
-			//毎秒飛行フラグを立てておき、StayでFalse戻す
-			//flyingCheckF = true;
-		}
-	}
+				thisChara.setFlying (false);
 
-	IEnumerator flyingCheckLoopOld(){
-		while (true) {
-			yield return new WaitForSeconds(0.35f);
-
-			if (flyingCheckF == true){
-				if (flyingDoneF == false){
-					flyingDoneF = true;
-
-					instanceWing = Instantiate (wingEffect) as GameObject;
-					
-					instanceWing.transform.parent = this.transform;
-					
-					Vector3 tmpV = new Vector3 (0f, -0.15f, 0f);
-					instanceWing.transform.localPosition = tmpV;
-				}
-
-			} else {
-				if (flyingDoneF == true) {
-					Destroy(instanceWing);
-					thisChara.setFlying(false);
-
-					flyingDoneF = false;
-				}
+				wingEffect.SetActive(false);
+				wingHuwahuwaMosion.transform.GetComponent<charaAnimationSubScript> ().flyingHuwahuwaSet (false);
+				flyingDoneF = false;
 			}
 
 			//毎秒飛行フラグを立てておき、StayでFalse戻す
