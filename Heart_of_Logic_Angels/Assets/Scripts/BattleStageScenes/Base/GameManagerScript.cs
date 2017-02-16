@@ -193,7 +193,7 @@ public class GameManagerScript : MonoBehaviour {
 			tmpChara.charaScript.thisCharaIndex = i;
 			tmpChara.charaScript.thisCharaFlag = tmpChara.charaFlag;
 
-			tmpChara.charaScript.stopFlag = false;
+			tmpChara.charaScript.movingStopFlag = false;
 		}
 
 		//キャラアイコンの1ページ目の作成

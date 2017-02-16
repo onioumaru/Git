@@ -21,7 +21,7 @@ public class charaMenu_movingFrezeFlag : MonoBehaviour {
 
 	void OnMouseDown(){
 		//フラグの反転
-		parentChara.movingFreezeFlag = !parentChara.movingFreezeFlag;
+		parentChara.attackFreezeFlag = !parentChara.attackFreezeFlag;
 
 		this.autoSetSprite ();
 
@@ -29,7 +29,7 @@ public class charaMenu_movingFrezeFlag : MonoBehaviour {
 	}
 
 	private void autoSetSprite(){
-		if (parentChara.movingFreezeFlag) {
+		if (parentChara.attackFreezeFlag) {
 			thisSR.sprite = _onButtonSprite;
 		}else {
 			thisSR.sprite = _offButtonSprite;

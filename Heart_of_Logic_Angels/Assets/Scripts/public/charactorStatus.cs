@@ -166,7 +166,7 @@ public class charaBattleStatus{
 			_atk_info = new charaBattle_info(1.2f , 1f, 0.6f, 1f,  0.1f, 0.9f);
 			_def_info = new charaBattle_info(0.33f, 1f, 0.6f, 0 ,0.06f, 0.15f);
 			_mov_info = new charaBattle_info(0.1f , 3f, 0.6f, 0 ,0.16f, 1.5f);
-			_skill_info = new charaBattle_info(6f, 1f, 0f, 0f, 0f , 1f);
+			_skill_info = new charaBattle_info(6f, 1f, 0f, 0f, 0f , 0f);
 			break;
 
 		case enumCharaNum.syusuran_02:
@@ -174,7 +174,7 @@ public class charaBattleStatus{
 			_atk_info = new charaBattle_info(0.8f , 1.2f, 2f, 0.9f , 0.09f , 1.05f);
 			_def_info = new charaBattle_info(0.2f , 1f, 1.5f, 0.01f, 0.05f, 0.6f);
 			_mov_info = new charaBattle_info(0.6f , 3f, 0.2f, 0.2f, 0.13f , 1.5f);
-			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0, 1f);
+			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0, 0f);
 			break;
 
 		case enumCharaNum.suzusiro_03:
@@ -182,7 +182,7 @@ public class charaBattleStatus{
 			_atk_info = new charaBattle_info(1f  ,1.2f,  1f,0.5f, 0.07f,0.8f);
 			_def_info = new charaBattle_info(1f  ,1.2f,0.7f,0.5f, 0.03f,0.1f);
 			_mov_info = new charaBattle_info(0.1f,1.2f,0.6f,0.5f, 0.13f, 1f);
-			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0, 1f);
+			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0, 0f);
 			break;
 
 		case enumCharaNum.akane_04:
@@ -190,7 +190,7 @@ public class charaBattleStatus{
 			_atk_info = new charaBattle_info(1.1f, 0.9f,   1f, 0f,  0.1f, 0.85f);
 			_def_info = new charaBattle_info(0.1f, 0.2f, 0.7f, 0.2f, 0.08f, 0.7f);
 			_mov_info = new charaBattle_info(0.1f ,1.1f, 0.1f, 0f, 0.16f, 1f);
-			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 1f);
+			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 0f);
 			break;
 
 		case enumCharaNum.houzuki_05:
@@ -198,7 +198,7 @@ public class charaBattleStatus{
 			_atk_info = new charaBattle_info(1.53f, 2.1f, 0.8f, 2.1f, 0.13f, 1.1f);
 			_def_info = new charaBattle_info(1.53f, 3.5f, 0.5f , 0.5f ,0.1f, 0.3f);
 			_mov_info = new charaBattle_info(0.1f, 3f, 0.1f , 0, 0.3f, 2f);
-			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 1f);
+			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 0f);
 			break;
 
 		case enumCharaNum.mokuren_06:
@@ -206,35 +206,35 @@ public class charaBattleStatus{
 			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
 			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
 			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
-			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 1f);
+			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 0f);
 			break;
 		case enumCharaNum.sakura_07:
 			//遠距離スピード型
 			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
 			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
 			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
-			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 1f);
+			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 0f);
 			break;
 		case enumCharaNum.sion_08:
 			//遠距離特殊型
 			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
 			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
 			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
-			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 1f);
+			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 0f);
 			break;
 		case enumCharaNum.hiragi_09:
 			//万能型
 			_atk_info = new charaBattle_info(  1f ,1f , 1f  ,0.5f, 0.1f, 1);
 			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0 ,0.05f ,0.1f);
 			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0 ,0.2f ,1.5f);
-			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 1f);
+			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 0f);
 			break;
 		case enumCharaNum.test_10:
 			//for debug
 			_atk_info = new charaBattle_info(  1f ,1f ,1f   ,0.5f ,0.1f ,1);
 			_def_info = new charaBattle_info(0.5f ,2f ,0.5f ,0    ,0.05f ,0.2f);
 			_mov_info = new charaBattle_info(0.1f ,3f ,0.2f ,0    ,0.2f ,1.5f);
-			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 1f);
+			_skill_info = new charaBattle_info(6f, 1f, 0, 0, 0 , 0f);
 			break;
 		}
 		this.setCharacterMode(characterMode.Attack);

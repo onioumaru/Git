@@ -15,6 +15,8 @@ public class chara_basicAttack : MonoBehaviour {
 	private List<Transform> lastFrameAttackTarget;
 	public GameObject _attackLine;
 
+	private float crossRangeLength = 0.45f;
+
 	// Use this for initialization
 	void Start () {
 		thisAnimetor = this.transform.parent.GetComponentInChildren<Animator>();
@@ -32,12 +34,36 @@ public class chara_basicAttack : MonoBehaviour {
 
 	IEnumerator mainLoop(){
 		while (true) {
+			//疑似毎フレーム
 			yield return new WaitForSeconds(1f/61f);
 
+			//交戦判定
+			//攻撃判定が終わるとリストがクリアされる為、先にやる必要がある
+			if (lastFrameAttackTarget.Count == 0) {
+				parentCharaScrpt.crossRangeFreezeFlag = false;
+			} else {
+				//Debug.Log ("cross");
+				this.checkCrossRange ();
+			}
+
+			//攻撃判定、アタックディレイが終わったとき
 			if (lastFrameAttackTarget.Count != 0 && attackDeleyFlag == false){
 
 				yield return StartCoroutine(this.mostNearEnemyAttacking());
 
+			}
+		}
+	}
+
+	private void checkCrossRange(){
+
+		foreach(Transform tmpTr in lastFrameAttackTarget){
+			Vector3 tmpV3 = this.transform.position - tmpTr.position;
+
+			Debug.Log (tmpV3.magnitude);
+			if (tmpV3.magnitude <= crossRangeLength) {
+				parentCharaScrpt.crossRangeFreezeFlag = true;
+				return;
 			}
 		}
 	}

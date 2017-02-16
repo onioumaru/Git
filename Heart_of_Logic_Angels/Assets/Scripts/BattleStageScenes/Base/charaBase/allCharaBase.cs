@@ -20,6 +20,8 @@ public class allCharaBase : MonoBehaviour {
 	public Sprite attackCycle_red;
 	public Sprite attackCycle_blue;
 	public Sprite attackCycle_green;
+
+	public GameObject _LevelUpEff;
 	
 	//以下設定不要、自動Set
 	[System.NonSerialized]
@@ -29,10 +31,20 @@ public class allCharaBase : MonoBehaviour {
 	public expLevelInfo calcdExp;
 	[System.NonSerialized]
 	public bool destroyF = false;
-	
+
+
+	//
+	//移動制御系フラグ
+	//
+
 	//スクリプト起動時はTrue（停止）にしておく事
 	[System.NonSerialized]
-	public bool stopFlag;
+	public bool movingStopFlag;		//これは完全停止したいときに使う。Trueになった場合、移動目標の旗が立っていても停止する
+
+	[System.NonSerialized]
+	public bool attackFreezeFlag = false;			//攻撃硬直による停止。攻撃が終われば動き出す
+	public bool crossRangeFreezeFlag = false;		//交戦判定による停止。攻撃範囲の近くに敵がいる場合停止
+
 
 	//private
 	private cameraTrackerScript cmrTracker;
@@ -48,9 +60,6 @@ public class allCharaBase : MonoBehaviour {
 	private soundManager_Base sMB;
 	private Rigidbody2D thisRigiBody;
 
-	//この値が0になるまで、硬直時間とする
-	[System.NonSerialized]
-	public bool movingFreezeFlag = false;
 	
 	float offsetX = 0f; //-0.28f;
 	float offsetY = 0f;
@@ -138,12 +147,12 @@ public class allCharaBase : MonoBehaviour {
 		while (true) {
 			yield return null;//new WaitForSeconds (1f / 61f);
 
-			if (stopFlag == true) {
+			if (movingStopFlag == true) {
 					Vector2 tmpVct = new Vector2 (0, 0);
 					GetComponent<Rigidbody2D>().velocity = tmpVct;
 
 			} else {
-					if (movingFreezeFlag == true) {
+				if (attackFreezeFlag == true || crossRangeFreezeFlag == true) {
 							//停止
 							Vector2 tmpVct = new Vector2 (0, 0);
 							GetComponent<Rigidbody2D>().velocity = tmpVct;
@@ -163,7 +172,7 @@ public class allCharaBase : MonoBehaviour {
 							}
 	
 							if (tmpV.magnitude < 0.02f) {
-									stopFlag = true;
+									movingStopFlag = true;
 							} else {
 									GetComponent<Rigidbody2D>().velocity = tmpV.normalized * thisChara.battleStatus.thisInfo.movingSpeedMagn;
 							}
@@ -199,7 +208,6 @@ public class allCharaBase : MonoBehaviour {
 	public void setDamage(float argsInt){
 		GameObject retObj = Instantiate (bitmapFontBasePrefab, this.transform.position, this.transform.rotation) as GameObject;
 
-
 		//
 		//todo : 無敵時の挙動の実装
 		if (thisCharaUnbreakable == true){
@@ -207,15 +215,13 @@ public class allCharaBase : MonoBehaviour {
 			return;
 		}
 
-
 		float damage = argsInt * thisChara.battleStatus.getDamage_CalCharaMode();
 		if (thisChara.flyingFlag == true) {
 			damage = damage * thisChara.flyingDefMagn;
 		}
 			
 		// ここまでにダメージ計算
-
-		retObj.GetComponentInChildren<common_damage> ().showDamage (this.transform, damage);
+		retObj.GetComponentInChildren<common_damage> ().showDamage (this.transform, damage, Color.red);
 		thisAnimeter.SetTrigger ("gotoDamage");
 
 		thisChara.nowHP -= damage;
@@ -257,6 +263,10 @@ public class allCharaBase : MonoBehaviour {
 
 			soundManagerGetter.getManager ().playOneShotSound (enm_oneShotSound.Voice_LvUp);
 
+			GameObject tmpGO = Instantiate (_LevelUpEff);
+			tmpGO.transform.parent = this.transform;
+			tmpGO.transform.localPosition = Vector3.zero;
+			
 			this.createHPBar ();
 		}
 	}
@@ -319,13 +329,13 @@ public class allCharaBase : MonoBehaviour {
 	//攻撃硬直
 	public void setMovingFreeze(){
 		float tmpFrzCnt = thisChara.battleStatus.thisInfo.attackFreezeTime;
-		movingFreezeFlag = true;
+		attackFreezeFlag = true;
 		StartCoroutine(movingFlagClearer(tmpFrzCnt));
 	}
 
 	IEnumerator movingFlagClearer(float argsSec){
 		yield return new WaitForSeconds(argsSec);
-		movingFreezeFlag = false;
+		attackFreezeFlag = false;
 	}
 	
 	public void setHealing(float argsVal){
@@ -419,7 +429,7 @@ public class allCharaBase : MonoBehaviour {
 		}
 
 
-		movingFreezeFlag = true;
+		attackFreezeFlag = true;
 		StartCoroutine(movingFlagClearer(tmpFrzCnt));
 	}
 

@@ -27,7 +27,14 @@ public class common_damage : MonoBehaviour {
 	}
 
 
+
 	public void showDamage(Transform origin, float argsVal){
+		
+		showDamage (origin, argsVal, Color.white);
+
+	}
+
+	public void showDamage(Transform origin, float argsVal, Color fcolor){
 		Vector3 tmpVcDef = new Vector3 (0f, 1f);
 		this.GetComponent<Rigidbody2D>().velocity = tmpVcDef;
 
@@ -48,6 +55,7 @@ public class common_damage : MonoBehaviour {
 			GameObject retObj =	Instantiate(bitMapFont[tmpInt],(this.transform.position + tmpV2), this.transform.rotation) as GameObject;
 			
 			retObj.transform.localScale = new Vector3(2f,2f,1f);
+			retObj.transform.GetComponent<SpriteRenderer> ().color = fcolor;
 
 			retObj.transform.parent = this.transform;
 		}

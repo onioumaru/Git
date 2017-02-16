@@ -87,6 +87,7 @@
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\fadeOutBitMapFont.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\healEffect\healEffect.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\healEffect\healEffectBase.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\Base\levelUp.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\mainBattleStage\battleStageScript.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\mainBattleStage\stage_dragErea.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\Base\missionTargetTitleS.cs" />
@@ -139,6 +140,7 @@
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_5_0_0.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_6_0_0.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_7_0_0.cs" />
+     <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\event0_8_0_0.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\eventMissionFailure.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\eventStageClear.cs" />
      <Compile Include="Assets\Scripts\BattleStageScenes\battleEventScript\stageParticleParentS.cs" />

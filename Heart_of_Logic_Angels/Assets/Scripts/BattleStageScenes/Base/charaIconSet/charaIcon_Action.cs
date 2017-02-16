@@ -27,6 +27,10 @@ public class charaIcon_Action : MonoBehaviour {
 	private GameObject charaMenuInstance;
 	private GameManagerScript GMS;
 
+	private float frikXOffset = 0.3f;
+	private float frikYOffset = 0.3f;
+
+
 	void Start(){
 		trackingObj = GameObject.Find("CameraTracker");
 
@@ -83,7 +87,7 @@ public class charaIcon_Action : MonoBehaviour {
 		if (charaMenuInstance == null) {
 			Vector2 firstMouseDown = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 	
-			float tmpY = this.gameObject.transform.localPosition.y + this.gameObject.transform.parent.transform.localPosition.y + this.gameObject.transform.parent.transform.parent.transform.localPosition.y + 0.5f;
+			float tmpY = this.gameObject.transform.localPosition.y + this.gameObject.transform.parent.transform.localPosition.y + this.gameObject.transform.parent.transform.parent.transform.localPosition.y + frikYOffset;
 			float tmpX = this.gameObject.transform.localPosition.x + this.gameObject.transform.parent.transform.localPosition.x+ this.gameObject.transform.parent.transform.parent.transform.localPosition.x;
 
 					if (firstMouseDown.y > tmpY) {
@@ -117,7 +121,7 @@ public class charaIcon_Action : MonoBehaviour {
 
 											float diffX = firstMouseDown.x - tmpX;
 				
-											if (Mathf.Abs (diffX) > 1f) {
+											if (Mathf.Abs (diffX) > frikXOffset) {
 													if (diffX > 0) {
 															//右
 															//Debug.Log("diffX > 0");
@@ -146,7 +150,7 @@ public class charaIcon_Action : MonoBehaviour {
 			//本物のフラグを移動させる
 			thisCharaFlag.transform.position = cloneCharaFlag.transform.position;
 			//移動開始
-			thisCharaBase.GetComponentInChildren<allCharaBase> ().stopFlag = false;
+			thisCharaBase.GetComponentInChildren<allCharaBase> ().movingStopFlag = false;
 			//Clone削除
 			Destroy (cloneCharaFlag);
 			
