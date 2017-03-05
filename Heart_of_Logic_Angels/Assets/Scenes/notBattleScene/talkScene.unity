@@ -267,7 +267,7 @@ Prefab:
       objectReference: {fileID: 1835350056}
     - target: {fileID: 11406710, guid: 3c98178b1421f584182e4356c1b23993, type: 2}
       propertyPath: _forDebug
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11406710, guid: 3c98178b1421f584182e4356c1b23993, type: 2}
       propertyPath: _forDebugFileName

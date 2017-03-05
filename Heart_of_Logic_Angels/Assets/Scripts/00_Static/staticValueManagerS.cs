@@ -491,6 +491,10 @@ public class staticValueManagerS : MonoBehaviour {
 		//new Game
 		//selectedUserSaveDat
 
+		PlayerPrefs.SetString("Option_RenderShadow", "true");
+		PlayerPrefs.SetString ("Option_RenderStageEff", "true");
+
+
 		Dictionary<string, object> tmpDc = new Dictionary<string, object> ();
 		tmpDc.Add ("thisSaveName", System.DateTime.Now.ToString("yyyy/MM/dd HH:mm"));
 		tmpDc.Add ("playCnt", 0);

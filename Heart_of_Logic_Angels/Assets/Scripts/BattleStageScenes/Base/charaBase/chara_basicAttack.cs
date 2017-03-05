@@ -60,7 +60,7 @@ public class chara_basicAttack : MonoBehaviour {
 		foreach(Transform tmpTr in lastFrameAttackTarget){
 			Vector3 tmpV3 = this.transform.position - tmpTr.position;
 
-			Debug.Log (tmpV3.magnitude);
+//			Debug.Log (tmpV3.magnitude);
 			if (tmpV3.magnitude <= crossRangeLength) {
 				parentCharaScrpt.crossRangeFreezeFlag = true;
 				return;

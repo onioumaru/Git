@@ -1,11 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\talkObject\talkingMainScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\ScenarioTxt\0-4-0-3.txt">
     <Files>
-      <File FileName="Assets\Scripts\talkObject\talkingMainScript.cs" Line="75" Column="52" />
-      <File FileName="Assets\Scripts\BattleStageScenes\Base\charaBase\chara_basicAttack.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BattleStageScenes\Base\charaBase\allCharaBase.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BattleStageScenes\battleEventScript\event0_8_0_0.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\ScenarioTxt\0-4-0-3.txt" Line="284" Column="35" />
+      <File FileName="Assets\Scripts\00_Static\staticValueManagerS.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

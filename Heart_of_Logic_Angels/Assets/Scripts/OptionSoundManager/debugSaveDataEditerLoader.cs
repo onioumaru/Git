@@ -76,6 +76,11 @@ public class debugSaveDataEditerLoader : MonoBehaviour {
 	}
 
 	public void deleteSaveData(){
-		
+		PlayerPrefs.DeleteKey (jsonSaveKey01);
+		PlayerPrefs.DeleteKey (jsonSaveKey02);
+		PlayerPrefs.DeleteKey (jsonSaveKey03);
+		Debug.Log ("delete all");
+		//PlayerPrefs.DeleteAll ();
+		//PlayerPrefs.Save ();
 	}
 }

@@ -200,7 +200,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453546, guid: cd105111a1aede040a9e21ba53fe20ec, type: 2}
       propertyPath: _angleSpeedPerSec
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd105111a1aede040a9e21ba53fe20ec, type: 2}
@@ -544,7 +544,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453546, guid: cd105111a1aede040a9e21ba53fe20ec, type: 2}
       propertyPath: _angleSpeedPerSec
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 442222, guid: cd105111a1aede040a9e21ba53fe20ec, type: 2}
       propertyPath: m_LocalRotation.z
@@ -895,7 +895,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481452, guid: cd105111a1aede040a9e21ba53fe20ec, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 189330, guid: cd105111a1aede040a9e21ba53fe20ec, type: 2}
       propertyPath: m_Name
@@ -915,7 +915,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453546, guid: cd105111a1aede040a9e21ba53fe20ec, type: 2}
       propertyPath: _angleSpeedPerSec
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd105111a1aede040a9e21ba53fe20ec, type: 2}
@@ -1135,7 +1135,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453546, guid: cd105111a1aede040a9e21ba53fe20ec, type: 2}
       propertyPath: _angleSpeedPerSec
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11453546, guid: cd105111a1aede040a9e21ba53fe20ec, type: 2}
       propertyPath: _sideAngleValue
